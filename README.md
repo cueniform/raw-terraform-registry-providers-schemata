@@ -1,0 +1,1 @@
+# terraform-registry-schema-collector

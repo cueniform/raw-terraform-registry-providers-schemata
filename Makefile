@@ -1,0 +1,5 @@
+default:
+	false
+
+test:
+	true

@@ -23,8 +23,8 @@ jobs:
           ref: "new"
           fetch-depth: 0
       - name: "Check if `develop` has been rebased onto `new`"
-        run: "git merge-base --is-ancestor new develop"
+        run: "git merge-base --is-ancestor new origin/develop"
       - name: "Merge develop into new"
         run: |
-          git merge develop --ff-only
+          git merge origin/develop --ff-only
           git push

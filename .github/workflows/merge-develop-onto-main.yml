@@ -1,0 +1,30 @@
+name: main/merge/develop
+
+"on":
+  push:
+    branches: [ "develop" ]
+
+concurrency: "main"
+
+jobs:
+  test_and_merge:
+    name: "Merge develop into main/new"
+    runs-on: "ubuntu-latest"
+    permissions:
+      contents: write
+    steps:
+      - name: "Check out code"
+        uses: "actions/checkout@v3"
+      - name: "Run tests"
+        run: "make test"
+      - name: "Check out code"
+        uses: "actions/checkout@v3"
+        with:
+          ref: "main/new"
+          fetch-depth: 0
+      - name: "Check if `develop` has been rebased onto `main/new`"
+        run: "git merge-base --is-ancestor main/new develop"
+      - name: "Merge develop into main/new"
+        run: |
+          git merge develop --ff-only
+          git push

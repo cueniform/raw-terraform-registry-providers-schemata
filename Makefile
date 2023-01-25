@@ -1,10 +1,7 @@
 SHELL:=/bin/bash
 CUE?=cue
 CLEANABLE_FILES=tmp/terraform/provider.tf.json tmp/terraform/.terraform.lock.hcl tmp/terraform/.terraform/
-
 default:
-clean:
-	rm -rvf $(CLEANABLE_FILES)
 
 .PHONY: test
 test:
@@ -34,3 +31,5 @@ tmp/terraform/.terraform/providers/registry.terraform.io/$(PROVIDER)/$(VERSION)/
 
 default:
 	false
+clean:
+	rm -rvf $(CLEANABLE_FILES)

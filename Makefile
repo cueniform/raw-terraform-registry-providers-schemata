@@ -20,7 +20,7 @@ test:
 	diff -u ./{test/,}tmp/schema.json
 	# Test tmp/schema.json.zstd
 	make PROVIDER=hashicorp/null VERSION=3.2.1 tmp/schema.json.zstd
-	diff -u ./{test/,}tmp/schema.json.zstd
+	diff -u test/tmp/schema.json <(zstd -dcf tmp/schema.json.zstd)
 	make clean
 
 tmp/terraform/provider.tf.json: | check-input-variables

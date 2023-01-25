@@ -1,0 +1,10 @@
+{
+    "terraform": {
+        "required_providers": {
+            "provider": {
+                "source": "test_namespace/test_provider",
+                "version": "1.2.3"
+            }
+        }
+    }
+}

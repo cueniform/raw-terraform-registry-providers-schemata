@@ -1,4 +1,5 @@
 SHELL:=/bin/bash
+CUE?=cue
 default:
 
 .PHONY: test
@@ -8,7 +9,7 @@ test:
 	rm tmp/terraform/provider.tf.json
 
 tmp/terraform/provider.tf.json:
-	cue export cueniform.com/collector/lib/templates \
+	$(CUE) export cueniform.com/collector/lib/templates \
 	  --inject provider_version="$(VERSION)" --inject provider_identifier="$(PROVIDER)" \
 	  -e provider_tf.out --outfile "$@"
 

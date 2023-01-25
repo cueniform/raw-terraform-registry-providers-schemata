@@ -15,6 +15,10 @@ jobs:
     steps:
       - name: "Check out code"
         uses: "actions/checkout@v3"
+      - name: "Install CUE"
+        uses: "cue-lang/setup-cue@0be332bb74c8a2f07821389447ba3163e2da3bfb"
+        with:
+          version: "latest"
       - name: "Run tests"
         run: "make test"
       - name: "Check out code"

@@ -12,6 +12,7 @@ endef
 check: check_provider_tf_json
 check: check_terraform_lock_hcl
 check: check_hashicorp_null_plugin_binary
+check: check_schema
 
 .PHONY: check_provider_tf_json
 check_provider_tf_json: 
@@ -26,10 +27,16 @@ check_terraform_lock_hcl:
 	$(ASSERT_AND_CLEAN)
 
 .PHONY: check_hashicorp_null_plugin_binary
-check_hashicorp_null_plugin_binary: TARGET_MAKE=build/terraform/.terraform/providers/registry.terraform.io/hashicorp/null/3.2.1/linux_amd64
-check_hashicorp_null_plugin_binary: TARGET_CHECK=$(TARGET_MAKE)/terraform-provider-null_v3.2.1_x5
+check_hashicorp_null_plugin_binary: TARGET=build/terraform/.terraform
+check_hashicorp_null_plugin_binary: FILE=$(TARGET)/providers/registry.terraform.io/hashicorp/null/3.2.1/linux_amd64/terraform-provider-null_v3.2.1
 check_hashicorp_null_plugin_binary:
-	rm -rv $(TARGET_MAKE)/
-	$(MAKE_HC_NULL) $(TARGET_MAKE)/
-	sha512sum $(TARGET_CHECK) >$(TARGET_CHECK).sha512sum
+	rm $(FILE).sha512sum
+	$(MAKE_HC_NULL) $(TARGET)/
+	sha512sum $(FILE) >$(FILE).sha512sum
+	$(ASSERT_AND_CLEAN)
+
+.PHONY: check_schema
+check_schema:
+	rm build/schema.json
+	$(MAKE_HC_NULL) build/schema.json
 	$(ASSERT_AND_CLEAN)

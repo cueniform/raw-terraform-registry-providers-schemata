@@ -38,5 +38,7 @@ check_hashicorp_null_plugin_binary:
 .PHONY: check_schema
 check_schema:
 	rm build/schema.json
-	$(MAKE_HC_NULL) build/schema.json
+	$(MAKE_HC_NULL) build/schema.json.zstd
+	zstd -dcf build/schema.json.zstd >build/schema.json
 	$(ASSERT_AND_CLEAN)
+

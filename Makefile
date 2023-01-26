@@ -23,11 +23,8 @@ build/terraform/provider.tf.json: | check-input-variables
 .PHONY: test
 test:
 	# Test build/terraform/provider.tf.json
-	make -C system-test/scenario-1 check
 	# Test build/terraform/.terraform.lock.hcl
-	make PROVIDER=test_namespace/test_provider VERSION=1.2.3 build/terraform/.terraform.lock.hcl
-	diff -u ./{test/,}build/terraform/.terraform.lock.hcl
-	make clean
+	make -C system-test/scenario-1 check
 	# Test build/terraform/.terraform/<some provider>
 	make PROVIDER=hashicorp/null VERSION=3.2.1 build/terraform/.terraform/providers/registry.terraform.io/hashicorp/null/3.2.1/linux_amd64/
 	sha256sum -c test/build/terraform/.terraform/providers/registry.terraform.io/hashicorp/null/3.2.1/linux_amd64/terraform-provider-null_v3.2.1_x5.SHA256SUM

@@ -2,8 +2,8 @@
     "terraform": {
         "required_providers": {
             "provider": {
-                "source": "dummy_namespace/dummy_provider",
-                "version": "1.2.3"
+                "source": "hashicorp/null",
+                "version": "3.2.1"
             }
         }
     }

@@ -1,2 +1,9 @@
 /build/terraform/.terraform/providers/registry.terraform.io/hashicorp/null/3.2.1/linux_amd64/terraform-provider-null_v3.2.1
+/build/schema.json.zstd
 /schemata/providers/hashicorp/null/3.2.1.json.zstd
+build/meta/meta.schema_compressed_sha512.txt
+build/meta/meta.schema_compressed_size_bytes.txt
+build/meta/meta.terraform.json
+build/meta/meta.timestamp.txt
+schemata/providers/hashicorp/null/metadata/3.2.1.v1meta.cue
+schemata/providers/hashicorp/null/metadata/metadata.cue

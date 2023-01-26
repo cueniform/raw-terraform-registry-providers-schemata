@@ -23,9 +23,7 @@ build/terraform/provider.tf.json: | check-input-variables
 .PHONY: test
 test:
 	# Test build/terraform/provider.tf.json
-	make PROVIDER=test_namespace/test_provider VERSION=1.2.3 build/terraform/provider.tf.json
-	diff -u ./{test/,}build/terraform/provider.tf.json
-	make clean
+	make -C system-test/scenario-1 check
 	# Test build/terraform/.terraform.lock.hcl
 	make PROVIDER=test_namespace/test_provider VERSION=1.2.3 build/terraform/.terraform.lock.hcl
 	diff -u ./{test/,}build/terraform/.terraform.lock.hcl

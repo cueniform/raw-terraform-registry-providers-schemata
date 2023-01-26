@@ -1,7 +1,7 @@
+default: # no-op default target, defined at end of file
 SHELL:=/bin/bash
 CUE?=cue
 TERRAFORM=terraform -chdir="build/terraform"
-default:
 PROVIDER_SPACE_SEP_STRING=$(subst /, ,$(PROVIDER))
 PROVIDER_NAMESPACE=$(word 1,$(PROVIDER_SPACE_SEP_STRING))
 PROVIDER_IDENTIFIER=$(word 2,$(PROVIDER_SPACE_SEP_STRING))
@@ -28,15 +28,7 @@ build/terraform/provider.tf.json: | check-input-variables
 
 .PHONY: test
 test:
-	# Test build/terraform/provider.tf.json
-	# Test build/terraform/.terraform.lock.hcl
-	# Test build/terraform/.terraform/<some provider>
-	# Test build/schema.json
-	# Test build/schema.json.zstd
 	make -C system-test/scenario-1 check
-	make PROVIDER=hashicorp/null VERSION=3.2.1 schemata/providers/hashicorp/null/3.2.1.json.zstd
-	diff -u test/build/schema.json <(zstd -dcf schemata/providers/hashicorp/null/3.2.1.json.zstd)
-	make clean
 
 .PHONY: check-input-variables
 check-input-variables:

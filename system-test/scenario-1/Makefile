@@ -13,6 +13,7 @@ check: check_provider_tf_json
 check: check_terraform_lock_hcl
 check: check_hashicorp_null_plugin_binary
 check: check_schema
+check: check_filing_cabinet_schema
 
 .PHONY: check_provider_tf_json
 check_provider_tf_json: 
@@ -42,3 +43,9 @@ check_schema:
 	zstd -dcf build/schema.json.zstd >build/schema.json
 	$(ASSERT_AND_CLEAN)
 
+.PHONY: check_filing_cabinet_schema
+check_filing_cabinet_schema:
+	rm build/schema.json
+	$(MAKE_HC_NULL) schemata/providers/hashicorp/null/3.2.1.json.zstd
+	zstd -dcf schemata/providers/hashicorp/null/3.2.1.json.zstd >build/schema.json
+	$(ASSERT_AND_CLEAN)

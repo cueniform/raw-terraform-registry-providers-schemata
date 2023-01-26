@@ -21,6 +21,8 @@ test:
 	# Test tmp/schema.json.zstd
 	make PROVIDER=hashicorp/null VERSION=3.2.1 tmp/schema.json.zstd
 	diff -u test/tmp/schema.json <(zstd -dcf tmp/schema.json.zstd)
+	make PROVIDER=hashicorp/null VERSION=3.2.1 schemata/providers/hashicorp/null/3.2.1.json.zstd
+	diff -u test/tmp/schema.json <(zstd -dcf schemata/providers/hashicorp/null/3.2.1.json.zstd)
 	make clean
 
 tmp/terraform/provider.tf.json: | check-input-variables
@@ -31,12 +33,15 @@ tmp/terraform/.terraform.lock.hcl: | check-input-variables
 	$(CUE) export cueniform.com/collector/lib/templates --force \
 	  --inject provider_version="$(VERSION)" --inject provider_identifier="$(PROVIDER)" \
 	  -e lockfile_hcl.out --outfile "$@" --out text
-tmp/terraform/.terraform/providers/registry.terraform.io/$(PROVIDER)/$(VERSION)/linux_amd64/: tmp/terraform/provider.tf.json tmp/terraform/.terraform.lock.hcl
+tmp/terraform/.terraform/providers/registry.terraform.io/$(PROVIDER)/$(VERSION)/linux_amd64/: tmp/terraform/provider.tf.json tmp/terraform/.terraform.lock.hcl | check-input-variables
 	terraform -chdir="tmp/terraform" init -lockfile=readonly -input=false -no-color
 tmp/schema.json: tmp/terraform/.terraform/providers/registry.terraform.io/$(PROVIDER)/$(VERSION)/linux_amd64/
 	terraform -chdir="tmp/terraform" providers schema -json >"$@"
 tmp/schema.json.zstd: tmp/schema.json
 	zstd --ultra -22 "$^" -o "$@" --force
+schemata/providers/$(PROVIDER)/$(VERSION).json.zstd: tmp/schema.json.zstd | check-input-variables
+	mkdir -p "$(dir $@)"
+	mv --update --no-target-directory --verbose "$^" "$@"
 
 .PHONY: check-input-variables
 check-input-variables:

@@ -5,6 +5,15 @@ TERRAFORM=terraform -chdir="build/terraform"
 PROVIDER_SPACE_SEP_STRING=$(subst /, ,$(PROVIDER))
 PROVIDER_NAME=$(word 2,$(PROVIDER_SPACE_SEP_STRING))
 NON=| tr -d '\n'
+.PHONY: force
+
+#######################################################
+### Top-level files we want to accumulate & commit ####
+#######################################################
+
+schemata/providers/$(PROVIDER)/$(VERSION).json.zstd: build/schema.json.zstd | check_input_variables
+	mkdir -p "$(dir $@)"
+	mv --update --no-target-directory --verbose "$^" "$@"
 
 schemata/providers/$(PROVIDER)/metadata/$(VERSION).v1meta.cue: build/meta/ | check_input_variables schemata/providers/$(PROVIDER)/metadata/metadata.cue
 	{ \
@@ -23,54 +32,10 @@ schemata/providers/$(PROVIDER)/metadata/metadata.cue: | check_input_variables
 	  --inject provider_identifier="$(PROVIDER)" \
 	  -e package_file.out --outfile "$@" --out text
 
-build/meta/: build/meta/meta.provider_version.txt
-build/meta/: build/meta/meta.provider_identifier.txt
-build/meta/: build/meta/meta.timestamp.txt
-build/meta/: build/meta/meta.schema_raw_filename.txt
-build/meta/: build/meta/meta.schema_raw_format.txt
-build/meta/: build/meta/meta.schema_raw_size_bytes.txt
-build/meta/: build/meta/meta.schema_raw_sha512.txt
-build/meta/: build/meta/meta.schema_compressed_filename.txt
-build/meta/: build/meta/meta.schema_compressed_format.txt
-build/meta/: build/meta/meta.schema_compressed_size_bytes.txt
-build/meta/: build/meta/meta.schema_compressed_sha512.txt
-build/meta/: build/meta/meta.terraform.json
-build/meta/: build/meta/meta.env_GITHUB_SHA.txt
-build/meta/: build/meta/meta.env_GITHUB_WORKFLOW_SHA.txt
-build/meta/: build/meta/meta.env_GITHUB_WORKFLOW_REF.txt
+#######################################################
+### Interim schema files ##############################
+#######################################################
 
-build/meta/meta.provider_version.txt: build/schema.json | check_input_variables
-	echo "$(VERSION)" $(NON) >"$@"
-build/meta/meta.provider_identifier.txt: build/schema.json | check_input_variables
-	echo "$(PROVIDER)" $(NON) >"$@"
-build/meta/meta.terraform.json: build/schema.json
-	$(TERRAFORM) version -json >"$@"
-build/meta/meta.timestamp.txt: force
-	date -uIs $(NON) >"$@"
-build/meta/meta.schema_raw_sha512.txt: build/schema.json
-build/meta/meta.schema_compressed_sha512.txt: build/schema.json.zstd
-build/meta/meta.%_sha512.txt:
-	sha512sum "$^" | cut -f1 -d ' ' $(NON) >"$@"
-build/meta/meta.schema_compressed_format.txt: force
-	echo "zstd" $(NON) >"$@"
-build/meta/meta.schema_raw_format.txt: force
-	echo "json" $(NON) >"$@"
-build/meta/meta.schema_raw_size_bytes.txt: build/schema.json
-build/meta/meta.schema_compressed_size_bytes.txt: build/schema.json.zstd
-build/meta/meta.%_size_bytes.txt:
-	stat --printf %s "$<" $(NON) >"$@"
-build/meta/meta.env_%.txt: force
-	printenv "$*" $(NON) >"$@"
-build/meta/meta.schema_raw_filename.txt: build/schema.json | check_input_variables
-	echo "$(VERSION).json" $(NON) >"$@"
-build/meta/meta.schema_compressed_filename.txt: build/schema.json.zstd | check_input_variables
-	echo "$(VERSION).json.zstd" $(NON) >"$@"
-
-.PHONY: force
-
-schemata/providers/$(PROVIDER)/$(VERSION).json.zstd: build/schema.json.zstd | check_input_variables
-	mkdir -p "$(dir $@)"
-	mv --update --no-target-directory --verbose "$^" "$@"
 build/schema.json.zstd: build/schema.json
 	zstd --ultra -22 "$^" -o "$@" --force
 build/schema.json: build/terraform/.terraform/
@@ -87,6 +52,58 @@ build/terraform/provider.tf.json: | check_input_variables
 	$(CUE) export cueniform.com/collector/lib/templates --force \
 	  --inject provider_version="$(VERSION)" --inject provider_identifier="$(PROVIDER)" \
 	  -e provider_tf.out --outfile "$@"
+
+#######################################################
+### Interim metadata files ############################
+#######################################################
+
+build/meta/: build/meta/meta.provider_version.txt
+build/meta/: build/meta/meta.provider_identifier.txt
+build/meta/: build/meta/meta.timestamp.txt
+build/meta/: build/meta/meta.schema_raw_filename.txt
+build/meta/: build/meta/meta.schema_raw_format.txt
+build/meta/: build/meta/meta.schema_raw_size_bytes.txt
+build/meta/: build/meta/meta.schema_raw_sha512.txt
+build/meta/: build/meta/meta.schema_compressed_filename.txt
+build/meta/: build/meta/meta.schema_compressed_format.txt
+build/meta/: build/meta/meta.schema_compressed_size_bytes.txt
+build/meta/: build/meta/meta.schema_compressed_sha512.txt
+build/meta/: build/meta/meta.terraform.json
+build/meta/: build/meta/meta.env_GITHUB_SHA.txt
+build/meta/: build/meta/meta.env_GITHUB_WORKFLOW_SHA.txt
+build/meta/: build/meta/meta.env_GITHUB_WORKFLOW_REF.txt
+
+build/meta/meta.terraform.json: build/schema.json
+	$(TERRAFORM) version -json >"$@"
+build/meta/meta.timestamp.txt: force
+	date -uIs $(NON) >"$@"
+build/meta/meta.provider_version.txt: build/schema.json | check_input_variables
+	echo "$(VERSION)" $(NON) >"$@"
+build/meta/meta.provider_identifier.txt: build/schema.json | check_input_variables
+	echo "$(PROVIDER)" $(NON) >"$@"
+build/meta/meta.schema_compressed_format.txt: force
+	echo "zstd" $(NON) >"$@"
+build/meta/meta.schema_raw_format.txt: force
+	echo "json" $(NON) >"$@"
+build/meta/meta.schema_raw_filename.txt: build/schema.json | check_input_variables
+	echo "$(VERSION).json" $(NON) >"$@"
+build/meta/meta.schema_compressed_filename.txt: build/schema.json.zstd | check_input_variables
+	echo "$(VERSION).json.zstd" $(NON) >"$@"
+
+build/meta/meta.schema_raw_size_bytes.txt: build/schema.json
+build/meta/meta.schema_compressed_size_bytes.txt: build/schema.json.zstd
+build/meta/meta.schema_raw_sha512.txt: build/schema.json
+build/meta/meta.schema_compressed_sha512.txt: build/schema.json.zstd
+build/meta/meta.%_size_bytes.txt:
+	stat --printf %s "$<" $(NON) >"$@"
+build/meta/meta.%_sha512.txt:
+	sha512sum "$^" | cut -f1 -d ' ' $(NON) >"$@"
+build/meta/meta.env_%.txt: force
+	printenv "$*" $(NON) >"$@"
+
+#######################################################
+### Asorted misc targets ##############################
+#######################################################
 
 .PHONY: test
 test:

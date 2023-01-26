@@ -28,7 +28,7 @@ build/terraform/provider.tf.json: | check-input-variables
 
 .PHONY: test
 test:
-	make -C system-test/scenario-1 check
+	make -C test/scenario-1 check
 
 .PHONY: check-input-variables
 check-input-variables:

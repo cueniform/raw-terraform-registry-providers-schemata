@@ -8,6 +8,17 @@ define ASSERT_AND_CLEAN
   git restore ./build/
 endef
 
+BOLD_RED:=$(shell echo -e "\e[31;1m")
+BOLD_GREEN:=$(shell echo -e "\e[32;1m")
+BOLD_YELLOW:=$(shell echo -e "\e[33;1m")
+COLOUR_RESET:=$(shell echo -e "\e[0m")
+
+define TESTMSG
+#
+# $(BOLD_YELLOW)Testing: $@$(COLOUR_RESET)
+#
+endef
+
 .PHONY: check
 check: check_provider_tf_json
 check: check_terraform_lock_hcl
@@ -18,13 +29,15 @@ check: check_meta_build
 check: check_meta_cue
 
 .PHONY: check_provider_tf_json
-check_provider_tf_json: 
+check_provider_tf_json:
+	$(TESTMSG)
 	rm build/terraform/provider.tf.json
 	$(MAKE_HC_NULL) build/terraform/provider.tf.json
 	$(ASSERT_AND_CLEAN)
 
 .PHONY: check_terraform_lock_hcl
 check_terraform_lock_hcl:
+	$(TESTMSG)
 	rm build/terraform/.terraform.lock.hcl
 	$(MAKE_HC_NULL) build/terraform/.terraform.lock.hcl
 	$(ASSERT_AND_CLEAN)
@@ -33,6 +46,7 @@ check_terraform_lock_hcl:
 check_hashicorp_null_plugin_binary: TARGET=build/terraform/.terraform
 check_hashicorp_null_plugin_binary: FILE=$(TARGET)/providers/registry.terraform.io/hashicorp/null/3.2.1/linux_amd64/terraform-provider-null_v3.2.1
 check_hashicorp_null_plugin_binary:
+	$(TESTMSG)
 	rm $(FILE).sha512sum
 	$(MAKE_HC_NULL) $(TARGET)/
 	sha512sum $(FILE) >$(FILE).sha512sum
@@ -40,6 +54,7 @@ check_hashicorp_null_plugin_binary:
 
 .PHONY: check_schema
 check_schema:
+	$(TESTMSG)
 	rm build/schema.json
 	$(MAKE_HC_NULL) build/schema.json.zstd
 	zstd -dcf build/schema.json.zstd >build/schema.json
@@ -47,6 +62,7 @@ check_schema:
 
 .PHONY: check_filing_cabinet_schema
 check_filing_cabinet_schema:
+	$(TESTMSG)
 	rm build/schema.json
 	$(MAKE_HC_NULL) schemata/providers/hashicorp/null/3.2.1.json.zstd
 	zstd -dcf schemata/providers/hashicorp/null/3.2.1.json.zstd >build/schema.json
@@ -54,18 +70,21 @@ check_filing_cabinet_schema:
 
 .PHONY: export_github_envvars
 export_github_envvars: force
+	$(TESTMSG)
 	$(eval export GITHUB_SHA=GITHUB_SHA-is-set-in-test-makefile)
 	$(eval export GITHUB_WORKFLOW_SHA=GITHUB_WORKFLOW_SHA-is-set-in-test-makefile)
 	$(eval unexport GITHUB_WORKFLOW_REF)
 
 .PHONY: check_meta_build
 check_meta_build: export_github_envvars
+	$(TESTMSG)
 	rm build/meta/*
 	$(MAKE_HC_NULL) build/meta/
 	$(ASSERT_AND_CLEAN)
 
 .PHONY: check_meta_cue
 check_meta_cue: export_github_envvars
+	$(TESTMSG)
 	rm build/meta/*
 	$(MAKE_HC_NULL) schemata/providers/hashicorp/null/metadata/{3.2.1.v1meta.cue,metadata.cue}
 	$(CUE) vet -c cueniform.com/collector/schemata/providers/hashicorp/null/metadata

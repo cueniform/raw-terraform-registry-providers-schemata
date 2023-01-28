@@ -158,10 +158,19 @@ update_target: | check_input_variables
 	&& echo $(PROVIDER):$(VERSION) >$(TARGET)
 
 .PHONY: test
-test:
+test: deps
 	$(MSG)
 	make -C test/one_provider_one_version check
 	make -C test/one_provider_two_version check
+
+.PHONY: deps
+.SILENT: deps
+deps:
+	$(MSG)
+	$(CUE)       version
+	$(TERRAFORM) version
+	sha512sum  --version
+	zstd       --version
 
 .PHONY: check_input_variables
 check_input_variables:

@@ -1,0 +1,35 @@
+name: main/schedule/poll-registry-provider-versions
+
+"on":
+  schedule:
+    - cron: '33 3 * * *'
+
+concurrency: "main"
+
+jobs:
+  poll_and_commit:
+    name: "Poll registry for provider versions"
+    runs-on: "ubuntu-latest"
+    permissions:
+      contents: "write"
+    steps:
+      - name: "Install CUE"
+        uses: "cue-lang/setup-cue@0be332bb74c8a2f07821389447ba3163e2da3bfb"
+        with:
+          version: "latest"
+      - name: "Check out code"
+        uses: "actions/checkout@v3"
+        with:
+          fetch-depth: 0
+      - name: "Run registry tests"
+        run: "make -C registry check"
+      - name: "Poll registry and serialise responses"
+        run: "make registry"
+      - name: "Commit and push to main"
+        run: |
+          git add -v registry
+          if git commit -m "[bot] Registry poller: new provider versions"; then
+            git push -v
+          else
+            echo "Registry poller: no new provider versions detected"
+          fi

@@ -26,7 +26,6 @@ endef
 #######################################################
 
 .PHONY: all
-all: | check_input_variables
 all: schemata/providers/$(PROVIDER)/$(VERSION).json.zstd
 all: schemata/providers/$(PROVIDER)/metadata/$(VERSION).v1meta.cue
 	$(MSG)
@@ -165,6 +164,7 @@ endif
 
 .PHONY: update_target
 update_target: | check_input_variables
+	$(MSG)
 	! fgrep -qx $(PROVIDER):$(VERSION) $(TARGET) \
 	&& echo $(PROVIDER):$(VERSION) >$(TARGET)
 

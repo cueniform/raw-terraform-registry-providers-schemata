@@ -1,7 +1,5 @@
 default: # no-op default target, defined at end of file
 THIS_MAKEFILE:=$(lastword $(MAKEFILE_LIST))
-SHELL:=/bin/bash -euo pipefail
-CUE?=cue
 TERRAFORM=terraform -chdir="build/terraform"
 PROVIDER_SPACE_SEP_STRING=$(subst /, ,$(PROVIDER))
 PROVIDER_VENDOR=$(word 1,$(PROVIDER_SPACE_SEP_STRING))
@@ -10,16 +8,7 @@ TARGET:=build/target
 NON=| tr -d '\n'
 .PHONY: FORCE
 
-BOLD_RED:=$(shell echo -e "\e[31;1m")
-BOLD_GREEN:=$(shell echo -e "\e[32;1m")
-BOLD_YELLOW:=$(shell echo -e "\e[33;1m")
-COLOUR_RESET:=$(shell echo -e "\e[0m")
-
-define MSG
-#
-# $(BOLD_GREEN)Making: $@$(COLOUR_RESET)
-#
-endef
+include Makefile.shared
 
 #######################################################
 ### Convenience shims #################################

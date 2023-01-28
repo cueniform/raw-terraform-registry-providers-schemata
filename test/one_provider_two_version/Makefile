@@ -1,4 +1,4 @@
-include ../Makefile.shared
+include Makefile.shared
 
 define ASSERT_AND_CLEAN
   git diff --exit-code ./
@@ -13,6 +13,10 @@ MAKE_HC_NULL=make -f ../../Makefile PROVIDER=hashicorp/null
 .PHONY: check
 check: | $(TF_PLUGIN_CACHE_DIR)
 check: check_sequential_invocations
+
+clean:
+	make -f ../../Makefile clean
+	git restore .
 
 $(TF_PLUGIN_CACHE_DIR):
 	$(TESTMSG)

@@ -20,7 +20,9 @@ jobs:
         with:
           version: "latest"
       - name: "Run tests"
-        run: "make test"
+        run: |
+          make --version
+          make test
       - name: "Check out code"
         uses: "actions/checkout@v3"
         with:

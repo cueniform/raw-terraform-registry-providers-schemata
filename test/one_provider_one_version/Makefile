@@ -1,4 +1,4 @@
-include ../Makefile.shared
+include Makefile.shared
 
 define ASSERT_AND_CLEAN
   git diff --exit-code ./
@@ -21,6 +21,10 @@ check: check_filing_cabinet_schema
 check: check_meta_build
 check: check_meta_cue
 check: check_make_schema
+
+clean:
+	make -f ../../Makefile clean
+	git restore .
 
 $(TF_PLUGIN_CACHE_DIR):
 	$(TESTMSG)

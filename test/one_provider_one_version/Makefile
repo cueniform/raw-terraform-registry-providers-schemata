@@ -1,4 +1,4 @@
-include ../../Makefile
+include ../Makefile.shared
 
 define ASSERT_AND_CLEAN
   git diff --exit-code ./
@@ -6,19 +6,10 @@ define ASSERT_AND_CLEAN
   git restore ./build/
 endef
 
-BOLD_RED:=$(shell echo -e "\e[31;1m")
-BOLD_GREEN:=$(shell echo -e "\e[32;1m")
-BOLD_YELLOW:=$(shell echo -e "\e[33;1m")
-COLOUR_RESET:=$(shell echo -e "\e[0m")
-
-define TESTMSG
-#
-# $(BOLD_YELLOW)Testing: $@$(COLOUR_RESET)
-#
-endef
-
+.PHONY: FORCE
 export TF_PLUGIN_CACHE_DIR?=$(HOME)/.terraform-plugin-cache-dir/
-MAKE_HC_NULL=make VERSION=3.2.1 PROVIDER=hashicorp/null
+MAKE_HC_NULL=make -f ../../Makefile VERSION=3.2.1 PROVIDER=hashicorp/null
+SHELL:=/bin/bash -euo pipefail
 
 .PHONY: check
 check: | $(TF_PLUGIN_CACHE_DIR)
@@ -76,7 +67,7 @@ check_filing_cabinet_schema:
 	$(ASSERT_AND_CLEAN)
 
 .PHONY: export_github_envvars
-export_github_envvars: force
+export_github_envvars: FORCE
 	$(TESTMSG)
 	$(eval export GITHUB_SHA=GITHUB_SHA-is-set-in-test-makefile)
 	$(eval export GITHUB_WORKFLOW_SHA=GITHUB_WORKFLOW_SHA-is-set-in-test-makefile)

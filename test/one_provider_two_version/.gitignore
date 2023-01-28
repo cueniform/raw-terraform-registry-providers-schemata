@@ -1,0 +1,5 @@
+/build/*
+/schemata/providers/hashicorp/null/*.zstd
+/schemata/providers/hashicorp/null/metadata/3.2.0.v1meta.cue
+/schemata/providers/hashicorp/null/metadata/3.2.1.v1meta.cue
+/schemata/providers/hashicorp/null/metadata/metadata.cue

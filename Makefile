@@ -1,11 +1,14 @@
 default: # no-op default target, defined at end of file
+THIS_MAKEFILE:=$(lastword $(MAKEFILE_LIST))
 SHELL:=/bin/bash -euo pipefail
 CUE?=cue
 TERRAFORM=terraform -chdir="build/terraform"
 PROVIDER_SPACE_SEP_STRING=$(subst /, ,$(PROVIDER))
+PROVIDER_VENDOR=$(word 1,$(PROVIDER_SPACE_SEP_STRING))
 PROVIDER_NAME=$(word 2,$(PROVIDER_SPACE_SEP_STRING))
+TARGET:=build/target
 NON=| tr -d '\n'
-.PHONY: force
+.PHONY: FORCE
 
 BOLD_RED:=$(shell echo -e "\e[31;1m")
 BOLD_GREEN:=$(shell echo -e "\e[32;1m")
@@ -26,19 +29,18 @@ endef
 all: | check_input_variables
 all: schemata/providers/$(PROVIDER)/$(VERSION).json.zstd
 all: schemata/providers/$(PROVIDER)/metadata/$(VERSION).v1meta.cue
-all: schemata/providers/$(PROVIDER)/metadata/metadata.cue
 	$(MSG)
 
 #######################################################
 ### Top-level files we want to accumulate & commit ####
 #######################################################
 
-schemata/providers/$(PROVIDER)/$(VERSION).json.zstd: build/schema.json.zstd | check_input_variables
+schemata/providers/$(PROVIDER)/$(VERSION).json.zstd: build/schema.json.zstd
 	$(MSG)
 	mkdir -p "$(dir $@)"
 	cp --update --no-target-directory --verbose "$^" "$@"
 
-schemata/providers/$(PROVIDER)/metadata/$(VERSION).v1meta.cue: build/meta/ | check_input_variables schemata/providers/$(PROVIDER)/metadata/metadata.cue
+schemata/providers/$(PROVIDER)/metadata/$(VERSION).v1meta.cue: build/meta/ | schemata/providers/$(PROVIDER)/metadata/metadata.cue
 	$(MSG)
 	{ \
 	  echo "package v1" ; \
@@ -50,7 +52,7 @@ schemata/providers/$(PROVIDER)/metadata/$(VERSION).v1meta.cue: build/meta/ | che
 	} >"$@"
 	cue fmt "$@"
 
-schemata/providers/$(PROVIDER)/metadata/metadata.cue: | check_input_variables
+schemata/providers/$(PROVIDER)/metadata/metadata.cue:
 	$(MSG)
 	mkdir -p "$(dir $@)"
 	$(CUE) export cueniform.com/collector/lib/templates/metadata --force \
@@ -64,20 +66,20 @@ schemata/providers/$(PROVIDER)/metadata/metadata.cue: | check_input_variables
 build/schema.json.zstd: build/schema.json
 	$(MSG)
 	zstd --ultra -22 "$^" -o "$@" --force
-build/schema.json: build/terraform/.terraform/
+build/schema.json: build/terraform/.terraform/ $(TARGET)
 	$(MSG)
 	$(TERRAFORM) providers schema -json >"$@"
 build/terraform/.terraform/: build/terraform/.terraform/providers/registry.terraform.io/$(PROVIDER)/$(VERSION)/linux_amd64/terraform-provider-$(PROVIDER_NAME)_v$(VERSION)
-build/terraform/.terraform/providers/registry.terraform.io/$(PROVIDER)/$(VERSION)/linux_amd64/terraform-provider-$(PROVIDER_NAME)_v$(VERSION): build/terraform/provider.tf.json build/terraform/.terraform.lock.hcl | check_input_variables
+build/terraform/.terraform/providers/registry.terraform.io/$(PROVIDER)/$(VERSION)/linux_amd64/terraform-provider-$(PROVIDER_NAME)_v$(VERSION): build/terraform/provider.tf.json build/terraform/.terraform.lock.hcl
 	$(MSG)
 	$(TERRAFORM) init -lockfile=readonly -input=false -no-color
 	mv "$$(find "$(dir $@)" -executable -type f -ls | sort -nk7 | awk 'END{for (i=1; i<11; i++) $$i="";  gsub(/^[[:space:]]+|[[:space:]]+$$/,""); print}')" "$@" || touch "$@"
-build/terraform/.terraform.lock.hcl: | check_input_variables
+build/terraform/.terraform.lock.hcl: $(TARGET)
 	$(MSG)
 	$(CUE) export cueniform.com/collector/lib/templates --force \
 	  --inject provider_version="$(VERSION)" --inject provider_identifier="$(PROVIDER)" \
 	  -e lockfile_hcl.out --outfile "$@" --out text
-build/terraform/provider.tf.json: | check_input_variables
+build/terraform/provider.tf.json: $(TARGET)
 	$(MSG)
 	$(CUE) export cueniform.com/collector/lib/templates --force \
 	  --inject provider_version="$(VERSION)" --inject provider_identifier="$(PROVIDER)" \
@@ -103,16 +105,17 @@ build/meta/: | build/meta/meta.env_GITHUB_SHA.txt
 build/meta/: | build/meta/meta.env_GITHUB_WORKFLOW_SHA.txt
 build/meta/: | build/meta/meta.env_GITHUB_WORKFLOW_REF.txt
 
-build/meta/meta.terraform.json: build/schema.json
+build/meta/meta.terraform.json: $(TARGET)
 	$(MSG)
 	$(TERRAFORM) version -json >"$@"
-build/meta/meta.timestamp.txt: force
+.PHONY: build/meta/meta.timestamp.txt
+build/meta/meta.timestamp.txt:
 	$(MSG)
 	date -uIs $(NON) >"$@"
-build/meta/meta.provider_version.txt: build/schema.json | check_input_variables
+build/meta/meta.provider_version.txt: $(TARGET)
 	$(MSG)
 	echo "$(VERSION)" $(NON) >"$@"
-build/meta/meta.provider_identifier.txt: build/schema.json | check_input_variables
+build/meta/meta.provider_identifier.txt: $(TARGET)
 	$(MSG)
 	echo "$(PROVIDER)" $(NON) >"$@"
 build/meta/meta.schema_compressed_format.txt: $(MAKEFILE_LIST)
@@ -121,17 +124,17 @@ build/meta/meta.schema_compressed_format.txt: $(MAKEFILE_LIST)
 build/meta/meta.schema_raw_format.txt: $(MAKEFILE_LIST)
 	$(MSG)
 	echo "json" $(NON) >"$@"
-build/meta/meta.schema_raw_filename.txt: build/schema.json | check_input_variables
+build/meta/meta.schema_raw_filename.txt: $(TARGET)
 	$(MSG)
 	echo "$(VERSION).json" $(NON) >"$@"
-build/meta/meta.schema_compressed_filename.txt: build/schema.json.zstd | check_input_variables
+build/meta/meta.schema_compressed_filename.txt: $(TARGET)
 	$(MSG)
 	echo "$(VERSION).json.zstd" $(NON) >"$@"
 
-build/meta/meta.schema_raw_size_bytes.txt: build/schema.json
+build/meta/meta.schema_raw_size_bytes.txt:        build/schema.json
+build/meta/meta.schema_raw_sha512.txt:            build/schema.json
 build/meta/meta.schema_compressed_size_bytes.txt: build/schema.json.zstd
-build/meta/meta.schema_raw_sha512.txt: build/schema.json
-build/meta/meta.schema_compressed_sha512.txt: build/schema.json.zstd
+build/meta/meta.schema_compressed_sha512.txt:     build/schema.json.zstd
 
 #######################################################
 ### Pattern target ####################################
@@ -143,7 +146,7 @@ build/meta/meta.%_size_bytes.txt:
 build/meta/meta.%_sha512.txt:
 	$(MSG)
 	sha512sum "$^" | cut -f1 -d ' ' $(NON) >"$@"
-build/meta/meta.env_%.txt: force
+build/meta/meta.env_%.txt: FORCE
 	$(MSG)
 	{ printenv "$*" || true; } $(NON) >"$@"
 
@@ -156,10 +159,22 @@ build/meta/meta.env_%.txt: force
 ### Asorted misc targets ##############################
 #######################################################
 
+ifeq (,$(filter clean test,$(MAKECMDGOALS)))
+$(THIS_MAKEFILE): update_target
+endif
+
+.PHONY: update_target
+update_target: | check_input_variables
+	if ! fgrep -qx $(PROVIDER):$(VERSION) $(TARGET); then \
+	  echo UPDATING $(TARGET); \
+	  echo $(PROVIDER):$(VERSION) >$(TARGET); \
+	fi
+
 .PHONY: test
 test:
 	$(MSG)
-	make -C test/scenario-1 check
+	make -C test/one_provider_one_version check
+	make -C test/one_provider_two_version check
 
 .PHONY: check_input_variables
 check_input_variables:
@@ -177,6 +192,7 @@ CLEANABLE_FILES+=build/terraform/.terraform/
 CLEANABLE_FILES+=build/schema.json
 CLEANABLE_FILES+=build/schema.json.zstd
 CLEANABLE_FILES+=build/meta/*
+CLEANABLE_FILES+=build/target
 clean:
 	$(MSG)
 	rm -rvf $(CLEANABLE_FILES)

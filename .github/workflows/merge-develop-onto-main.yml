@@ -8,7 +8,7 @@ concurrency: "main"
 
 jobs:
   test_and_merge:
-    name: "Merge develop into new"
+    name: "Merge develop into main"
     runs-on: "ubuntu-latest"
     permissions:
       contents: "write"
@@ -24,11 +24,11 @@ jobs:
       - name: "Check out code"
         uses: "actions/checkout@v3"
         with:
-          ref: "new"
+          ref: "main"
           fetch-depth: 0
-      - name: "Check if `develop` has been rebased onto `new`"
-        run: "git merge-base --is-ancestor new origin/develop"
-      - name: "Merge develop into new"
+      - name: "Check if `develop` has been rebased onto `main`"
+        run: "git merge-base --is-ancestor main origin/develop"
+      - name: "Merge develop into main"
         run: |
           git merge origin/develop --ff-only
           git push

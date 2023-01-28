@@ -71,7 +71,7 @@ build/terraform/.terraform/: build/terraform/.terraform/providers/registry.terra
 build/terraform/.terraform/providers/registry.terraform.io/$(PROVIDER)/$(VERSION)/linux_amd64/terraform-provider-$(PROVIDER_NAME)_v$(VERSION): build/terraform/provider.tf.json build/terraform/.terraform.lock.hcl | check_input_variables
 	$(MSG)
 	$(TERRAFORM) init -lockfile=readonly -input=false -no-color
-	mv "$$(find "$(dir $@)" -executable -type f -ls | sort -nk7 | awk 'END{for (i=1; i<11; i++) $$i="";  gsub(/^[[:space:]]+|[[:space:]]+$$/,""); print}')" "$@"
+	mv "$$(find "$(dir $@)" -executable -type f -ls | sort -nk7 | awk 'END{for (i=1; i<11; i++) $$i="";  gsub(/^[[:space:]]+|[[:space:]]+$$/,""); print}')" "$@" || touch "$@"
 build/terraform/.terraform.lock.hcl: | check_input_variables
 	$(MSG)
 	$(CUE) export cueniform.com/collector/lib/templates --force \

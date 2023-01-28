@@ -27,6 +27,7 @@ check: check_meta_build
 check: check_meta_cue
 
 MAKE_HC_NULL=make VERSION=3.2.1 PROVIDER=hashicorp/null
+export TF_PLUGIN_CACHE_DIR=$(CURDIR)/plugin-cache-dir/
 
 .PHONY: check_provider_tf_json
 check_provider_tf_json:

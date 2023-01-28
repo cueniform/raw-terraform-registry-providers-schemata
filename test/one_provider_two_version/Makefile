@@ -24,8 +24,8 @@ check_sequential_invocations: export GITHUB_WORKFLOW_SHA=GITHUB_WORKFLOW_SHA-is-
 check_sequential_invocations: export GITHUB_WORKFLOW_REF=
 check_sequential_invocations:
 	$(TESTMSG)
-	$(MAKE_HC_NULL) VERSION=3.2.0 all
-	$(MAKE_HC_NULL) VERSION=3.2.1 all
+	$(MAKE_HC_NULL) VERSION=3.2.0 schema
+	$(MAKE_HC_NULL) VERSION=3.2.1 schema
 	$(CUE) vet -c cueniform.com/collector/schemata/providers/hashicorp/null/metadata
 	$(CUE) vet -c cueniform.com/collector/schemata/providers/hashicorp/null/metadata:v1
 	$(ASSERT_AND_CLEAN)

@@ -25,9 +25,9 @@ endef
 ### Convenience shims #################################
 #######################################################
 
-.PHONY: all
-all: schemata/providers/$(PROVIDER)/$(VERSION).json.zstd
-all: schemata/providers/$(PROVIDER)/metadata/$(VERSION).v1meta.cue
+.PHONY: schema
+schema: schemata/providers/$(PROVIDER)/$(VERSION).json.zstd
+schema: schemata/providers/$(PROVIDER)/metadata/$(VERSION).v1meta.cue
 	$(MSG)
 
 #######################################################

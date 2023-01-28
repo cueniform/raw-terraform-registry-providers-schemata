@@ -89,11 +89,11 @@ check_meta_cue: export_github_envvars
 	$(CUE) vet -c cueniform.com/collector/schemata/providers/hashicorp/null/metadata:v1
 	$(ASSERT_AND_CLEAN)
 
-.PHONY: check_all
-check_all: export_github_envvars
+.PHONY: check_make_schema
+check_make_schema: export_github_envvars
 	$(TESTMSG)
 	git ls-tree --name-only -r HEAD build  | xargs -n1 rm -fv
-	$(MAKE_HC_NULL) all
+	$(MAKE_HC_NULL) schema
 	$(CUE) vet -c cueniform.com/collector/schemata/providers/hashicorp/null/metadata
 	$(CUE) vet -c cueniform.com/collector/schemata/providers/hashicorp/null/metadata:v1
 	$(ASSERT_AND_CLEAN)

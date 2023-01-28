@@ -165,10 +165,8 @@ endif
 
 .PHONY: update_target
 update_target: | check_input_variables
-	if ! fgrep -qx $(PROVIDER):$(VERSION) $(TARGET); then \
-	  echo UPDATING $(TARGET); \
-	  echo $(PROVIDER):$(VERSION) >$(TARGET); \
-	fi
+	! fgrep -qx $(PROVIDER):$(VERSION) $(TARGET) \
+	&& echo $(PROVIDER):$(VERSION) >$(TARGET)
 
 .PHONY: test
 test:

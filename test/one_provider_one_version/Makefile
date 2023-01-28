@@ -20,7 +20,7 @@ check: check_schema
 check: check_filing_cabinet_schema
 check: check_meta_build
 check: check_meta_cue
-
+check: check_make_schema
 
 $(TF_PLUGIN_CACHE_DIR):
 	$(TESTMSG)

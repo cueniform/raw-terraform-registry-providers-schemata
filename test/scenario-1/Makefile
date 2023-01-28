@@ -18,6 +18,7 @@ define TESTMSG
 endef
 
 .PHONY: check
+check: $(TF_PLUGIN_CACHE_DIR)
 check: check_provider_tf_json
 check: check_terraform_lock_hcl
 check: check_hashicorp_null_plugin_binary
@@ -27,7 +28,11 @@ check: check_meta_build
 check: check_meta_cue
 
 MAKE_HC_NULL=make VERSION=3.2.1 PROVIDER=hashicorp/null
-export TF_PLUGIN_CACHE_DIR=$(CURDIR)/plugin-cache-dir/
+export TF_PLUGIN_CACHE_DIR?=$(HOME)/.terraform-plugin-cache-dir/
+
+$(TF_PLUGIN_CACHE_DIR):
+	$(TESTMSG)
+	mkdir -p "$@"
 
 .PHONY: check_provider_tf_json
 check_provider_tf_json:

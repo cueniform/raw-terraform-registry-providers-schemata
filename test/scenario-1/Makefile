@@ -1,7 +1,5 @@
 include ../../Makefile
 
-MAKE_HC_NULL=make VERSION=3.2.1 PROVIDER=hashicorp/null
-
 define ASSERT_AND_CLEAN
   git diff --exit-code ./
   git clean -X ./ --force
@@ -28,6 +26,8 @@ check: check_filing_cabinet_schema
 check: check_meta_build
 check: check_meta_cue
 
+MAKE_HC_NULL=make VERSION=3.2.1 PROVIDER=hashicorp/null
+
 .PHONY: check_provider_tf_json
 check_provider_tf_json:
 	$(TESTMSG)
@@ -47,9 +47,9 @@ check_hashicorp_null_plugin_binary: TARGET=build/terraform/.terraform
 check_hashicorp_null_plugin_binary: FILE=$(TARGET)/providers/registry.terraform.io/hashicorp/null/3.2.1/linux_amd64/terraform-provider-null_v3.2.1
 check_hashicorp_null_plugin_binary:
 	$(TESTMSG)
-	rm $(FILE).sha512sum
+	rm checksums
 	$(MAKE_HC_NULL) $(TARGET)/
-	sha512sum $(FILE) >$(FILE).sha512sum
+	sha512sum $(FILE) >checksums
 	$(ASSERT_AND_CLEAN)
 
 .PHONY: check_schema
@@ -87,6 +87,15 @@ check_meta_cue: export_github_envvars
 	$(TESTMSG)
 	rm build/meta/*
 	$(MAKE_HC_NULL) schemata/providers/hashicorp/null/metadata/{3.2.1.v1meta.cue,metadata.cue}
+	$(CUE) vet -c cueniform.com/collector/schemata/providers/hashicorp/null/metadata
+	$(CUE) vet -c cueniform.com/collector/schemata/providers/hashicorp/null/metadata:v1
+	$(ASSERT_AND_CLEAN)
+
+.PHONY: check_all
+check_all: export_github_envvars
+	$(TESTMSG)
+	git ls-tree --name-only -r HEAD build  | xargs -n1 rm -fv
+	$(MAKE_HC_NULL) all
 	$(CUE) vet -c cueniform.com/collector/schemata/providers/hashicorp/null/metadata
 	$(CUE) vet -c cueniform.com/collector/schemata/providers/hashicorp/null/metadata:v1
 	$(ASSERT_AND_CLEAN)

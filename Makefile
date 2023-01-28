@@ -1,5 +1,5 @@
 default: # no-op default target, defined at end of file
-SHELL:=/bin/bash
+SHELL:=/bin/bash -euo pipefail
 CUE?=cue
 TERRAFORM=terraform -chdir="build/terraform"
 PROVIDER_SPACE_SEP_STRING=$(subst /, ,$(PROVIDER))
@@ -19,13 +19,24 @@ define MSG
 endef
 
 #######################################################
+### Convenience shims #################################
+#######################################################
+
+.PHONY: all
+all: | check_input_variables
+all: schemata/providers/$(PROVIDER)/$(VERSION).json.zstd
+all: schemata/providers/$(PROVIDER)/metadata/$(VERSION).v1meta.cue
+all: schemata/providers/$(PROVIDER)/metadata/metadata.cue
+	$(MSG)
+
+#######################################################
 ### Top-level files we want to accumulate & commit ####
 #######################################################
 
 schemata/providers/$(PROVIDER)/$(VERSION).json.zstd: build/schema.json.zstd | check_input_variables
 	$(MSG)
 	mkdir -p "$(dir $@)"
-	mv --update --no-target-directory --verbose "$^" "$@"
+	cp --update --no-target-directory --verbose "$^" "$@"
 
 schemata/providers/$(PROVIDER)/metadata/$(VERSION).v1meta.cue: build/meta/ | check_input_variables schemata/providers/$(PROVIDER)/metadata/metadata.cue
 	$(MSG)
@@ -57,7 +68,6 @@ build/schema.json: build/terraform/.terraform/
 	$(MSG)
 	$(TERRAFORM) providers schema -json >"$@"
 build/terraform/.terraform/: build/terraform/.terraform/providers/registry.terraform.io/$(PROVIDER)/$(VERSION)/linux_amd64/terraform-provider-$(PROVIDER_NAME)_v$(VERSION)
-	$(MSG)
 build/terraform/.terraform/providers/registry.terraform.io/$(PROVIDER)/$(VERSION)/linux_amd64/terraform-provider-$(PROVIDER_NAME)_v$(VERSION): build/terraform/provider.tf.json build/terraform/.terraform.lock.hcl | check_input_variables
 	$(MSG)
 	$(TERRAFORM) init -lockfile=readonly -input=false -no-color
@@ -79,7 +89,7 @@ build/terraform/provider.tf.json: | check_input_variables
 
 build/meta/: build/meta/meta.provider_version.txt
 build/meta/: build/meta/meta.provider_identifier.txt
-build/meta/: build/meta/meta.timestamp.txt
+build/meta/: | build/meta/meta.timestamp.txt
 build/meta/: build/meta/meta.schema_raw_filename.txt
 build/meta/: build/meta/meta.schema_raw_format.txt
 build/meta/: build/meta/meta.schema_raw_size_bytes.txt
@@ -89,9 +99,9 @@ build/meta/: build/meta/meta.schema_compressed_format.txt
 build/meta/: build/meta/meta.schema_compressed_size_bytes.txt
 build/meta/: build/meta/meta.schema_compressed_sha512.txt
 build/meta/: build/meta/meta.terraform.json
-build/meta/: build/meta/meta.env_GITHUB_SHA.txt
-build/meta/: build/meta/meta.env_GITHUB_WORKFLOW_SHA.txt
-build/meta/: build/meta/meta.env_GITHUB_WORKFLOW_REF.txt
+build/meta/: | build/meta/meta.env_GITHUB_SHA.txt
+build/meta/: | build/meta/meta.env_GITHUB_WORKFLOW_SHA.txt
+build/meta/: | build/meta/meta.env_GITHUB_WORKFLOW_REF.txt
 
 build/meta/meta.terraform.json: build/schema.json
 	$(MSG)
@@ -105,10 +115,10 @@ build/meta/meta.provider_version.txt: build/schema.json | check_input_variables
 build/meta/meta.provider_identifier.txt: build/schema.json | check_input_variables
 	$(MSG)
 	echo "$(PROVIDER)" $(NON) >"$@"
-build/meta/meta.schema_compressed_format.txt: force
+build/meta/meta.schema_compressed_format.txt: $(MAKEFILE_LIST)
 	$(MSG)
 	echo "zstd" $(NON) >"$@"
-build/meta/meta.schema_raw_format.txt: force
+build/meta/meta.schema_raw_format.txt: $(MAKEFILE_LIST)
 	$(MSG)
 	echo "json" $(NON) >"$@"
 build/meta/meta.schema_raw_filename.txt: build/schema.json | check_input_variables
@@ -122,6 +132,11 @@ build/meta/meta.schema_raw_size_bytes.txt: build/schema.json
 build/meta/meta.schema_compressed_size_bytes.txt: build/schema.json.zstd
 build/meta/meta.schema_raw_sha512.txt: build/schema.json
 build/meta/meta.schema_compressed_sha512.txt: build/schema.json.zstd
+
+#######################################################
+### Pattern target ####################################
+#######################################################
+
 build/meta/meta.%_size_bytes.txt:
 	$(MSG)
 	stat --printf %s "$<" $(NON) >"$@"
@@ -130,7 +145,12 @@ build/meta/meta.%_sha512.txt:
 	sha512sum "$^" | cut -f1 -d ' ' $(NON) >"$@"
 build/meta/meta.env_%.txt: force
 	$(MSG)
-	printenv "$*" $(NON) >"$@"
+	{ printenv "$*" || true; } $(NON) >"$@"
+
+# Directories without explicit recipes
+%/:
+	$(MSG)
+	touch "$@"
 
 #######################################################
 ### Asorted misc targets ##############################

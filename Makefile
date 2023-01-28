@@ -144,24 +144,35 @@ build/meta/meta.env_%.txt: FORCE
 	touch "$@"
 
 #######################################################
-### Asorted misc targets ##############################
+### Sub-make targets ##################################
 #######################################################
-
-ifeq (,$(filter clean test,$(MAKECMDGOALS)))
-$(THIS_MAKEFILE): update_target
-endif
-
-.PHONY: update_target
-update_target: | check_input_variables
-	$(MSG)
-	! fgrep -qx $(PROVIDER):$(VERSION) $(TARGET) \
-	&& echo $(PROVIDER):$(VERSION) >$(TARGET)
 
 .PHONY: test
 test: deps
 	$(MSG)
 	make -C test/one_provider_one_version check
 	make -C test/one_provider_two_version check
+	make -C test/registry check
+
+.PHONY: registry
+registry:
+	$(MSG)
+	make -C registry all
+
+#######################################################
+### Asorted misc targets ##############################
+#######################################################
+
+GOALS_WITHOUT_PARAMS:=clean test deps registry
+ifeq (,$(filter $(GOALS_WITHOUT_PARAMS),$(MAKECMDGOALS)))
+$(THIS_MAKEFILE): update_target
+endif
+
+.PHONY: update_target
+update_target: | check_params
+	$(MSG)
+	! fgrep -qx $(PROVIDER):$(VERSION) $(TARGET) \
+	&& echo $(PROVIDER):$(VERSION) >$(TARGET)
 
 .PHONY: deps
 .SILENT: deps
@@ -172,8 +183,8 @@ deps:
 	sha512sum  --version
 	zstd       --version
 
-.PHONY: check_input_variables
-check_input_variables:
+.PHONY: check_params
+check_params:
 	$(MSG)
 ifndef VERSION
 	$(error VERSION is not set)

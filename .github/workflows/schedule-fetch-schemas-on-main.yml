@@ -39,8 +39,9 @@ jobs:
           git config user.name "[bot] Schema Fetcher"
           git config user.email "<>"
 
-          git add -v schemata
+          git add -v schemata/\*.zstd
           num=$(git status -s | grep -c ^A)
+          git add -v schemata
 
           if git commit -m "Schema fetcher: $num new schemas added"; then
             git push -v

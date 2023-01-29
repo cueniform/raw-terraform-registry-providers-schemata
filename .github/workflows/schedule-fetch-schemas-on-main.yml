@@ -52,4 +52,6 @@ jobs:
 
           if git commit -m "Schema fetcher: $num new schemas"; then
             git push -v
+          else
+            echo "Schema fetcher: git commit failed: assuming no new files; not pushing"
           fi

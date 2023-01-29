@@ -1,0 +1,48 @@
+name: main/schedule/fetch-missing-provider-schemas
+
+"on":
+  schedule:
+    - cron: "44 4 * * *"
+  workflow_dispatch:
+    inputs:
+      count:
+        description: "Number of schemas to fetch"
+        required: false
+        type: number
+        default: 2
+
+concurrency: "main"
+
+jobs:
+  fetch_and_commit:
+    name: "Fetch missing provider schemas"
+    runs-on: "ubuntu-latest"
+    permissions:
+      contents: "write"
+    env:
+      COUNT: "${{ github.event.inputs.count || 3 }}"
+    steps:
+      - name: "Check out code"
+        uses: "actions/checkout@v3"
+        with:
+          fetch-depth: 0
+      - name: "Install CUE"
+        uses: "cue-lang/setup-cue@0be332bb74c8a2f07821389447ba3163e2da3bfb"
+        with:
+          version: "latest"
+      - name: "Run missing-provider-schema-related tests"
+        run: "make -C test/one_provider_two_version check"
+      - name: "Fetch a batch of ${{ env.COUNT }} missing provider schemas"
+        run: "make missing_schemas COUNT=$COUNT"
+      - name: "Commit and push to main"
+        run: |
+          git config user.name "[bot] Schema Fetcher"
+          git config user.email "<>"
+
+          git add -v schemata
+          num=$(git status -s | grep -c ^A)
+
+          if git commit -m "Schema fetcher: $num new schemas added"; then
+            git push -v
+          fi
+          echo "Schema fetcher: $num new schemas detected"

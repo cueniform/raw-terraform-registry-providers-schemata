@@ -32,7 +32,7 @@ jobs:
           version: "latest"
       - name: "Run missing-provider-schema-related tests"
         run: "make -C test/one_provider_two_version check"
-      - name: "Fetch a batch of ${{ env.COUNT }} missing provider schemas"
+      - name: "Fetch up to ${{ env.COUNT }} missing provider schemas"
         run: "make missing_schemas COUNT=$COUNT"
       - name: "Commit and push to main"
         run: |

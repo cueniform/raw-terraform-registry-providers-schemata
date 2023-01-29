@@ -20,7 +20,7 @@ jobs:
     permissions:
       contents: "write"
     env:
-      COUNT: "${{ github.event.inputs.count || 3 }}"
+      COUNT: "${{ github.event.inputs.count || 7 }}" # FIXME move this default to the repo env
     steps:
       - name: "Check out code"
         uses: "actions/checkout@v3"

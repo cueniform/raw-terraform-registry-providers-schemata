@@ -36,5 +36,18 @@ all: $(FILES) # Don't use this outside of testing, use bucket-* instead
 bucket-%: FORCE
 	$(MSG)
 
+.PHONY: debug
+debug:
+	# PROVIDER: $(PROVIDERS)
+	# BUCKETS: $(BUCKETS)
+	# NUM_BUCKETS: $(NUM_BUCKETS)
+	# BUCKET-0: $(BUCKET-0)
+	# BUCKET-1: $(BUCKET-1)
+	# BUCKET-2: $(BUCKET-2)
+	# BUCKET-3: $(BUCKET-3)
+	# BUCKET-4: $(BUCKET-4)
+	# BUCKET-5: $(BUCKET-5)
+	# BUCKET-6: $(BUCKET-6)
+
 default:
 	false

@@ -2,10 +2,7 @@ include Makefile.shared
 default:
 .PHONY: FORCE
 
-PROVIDERS:=\
-provider.namespace.hashicorp.type.null.cue \
-provider.namespace.hashicorp.type.random.cue \
-provider.namespace.integrations.type.github.cue \
+include Makefile.PROVIDERS
 
 # We're assuming that we'll match the stem 'provider.namespace.*.type.*.cue',
 # such that neither namespace nor type contain periods, spaces; or anything

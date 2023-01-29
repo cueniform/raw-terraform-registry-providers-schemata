@@ -2,3 +2,7 @@ PROVIDERS:=\
 provider.namespace.hashicorp.type.null.cue \
 provider.namespace.hashicorp.type.random.cue \
 provider.namespace.integrations.type.github.cue \
+provider.namespace.hashicorp.type.aws.cue \
+provider.namespace.hashicorp.type.azurerm.cue \
+provider.namespace.hashicorp.type.google.cue \
+provider.namespace.hashicorp.type.kubernetes.cue \

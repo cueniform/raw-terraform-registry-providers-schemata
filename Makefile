@@ -1,6 +1,6 @@
 default: # no-op default target, defined at end of file
 THIS_MAKEFILE:=$(lastword $(MAKEFILE_LIST))
-GOALS_WITHOUT_PARAMS:=clean test deps registry test-registry test-schema
+GOALS_WITHOUT_PARAMS:=clean test deps registry test-registry test-schema missing_schemas missing
 TERRAFORM=terraform -chdir="build/terraform"
 PROVIDER_SPACE_SEP_STRING=$(subst /, ,$(PROVIDER))
 PROVIDER_VENDOR=$(word 1,$(PROVIDER_SPACE_SEP_STRING))
@@ -32,6 +32,14 @@ test-registry:
 ### Convenience shims #################################
 #######################################################
 
+.PHONY: missing_schemas
+missing_schemas: COUNT?=10
+missing_schemas: missing
+	head -n $(COUNT) missing \
+	| while read NAMESPACE TYPE VERSION; do \
+	  $(MAKE) -f $(THIS_MAKEFILE) schema PROVIDER="$${NAMESPACE}/$${TYPE}" VERSION="$${VERSION}" ;\
+	done
+
 .PHONY: schema
 schema: schemata/providers/$(PROVIDER)/$(VERSION).json.zstd
 schema: schemata/providers/$(PROVIDER)/metadata/$(VERSION).v1meta.cue
@@ -41,12 +49,11 @@ schema: schemata/providers/$(PROVIDER)/metadata/$(VERSION).v1meta.cue
 ### Top-level files we want to accumulate & commit ####
 #######################################################
 
-schemata/providers/$(PROVIDER)/$(VERSION).json.zstd: build/schema.json.zstd
+schemata/providers/$(PROVIDER)/$(VERSION).json.zstd: build/schema.json.zstd | schemata/providers/$(PROVIDER)/
 	$(MSG)
-	mkdir -p "$(dir $@)"
 	cp --update --no-target-directory --verbose "$^" "$@"
 
-schemata/providers/$(PROVIDER)/metadata/$(VERSION).v1meta.cue: build/meta/ | schemata/providers/$(PROVIDER)/metadata/metadata.cue
+schemata/providers/$(PROVIDER)/metadata/$(VERSION).v1meta.cue: build/meta/ | schemata/providers/$(PROVIDER)/metadata/
 	$(MSG)
 	{ \
 	  echo "package v1" ; \
@@ -58,12 +65,18 @@ schemata/providers/$(PROVIDER)/metadata/$(VERSION).v1meta.cue: build/meta/ | sch
 	} >"$@"
 	cue fmt "$@"
 
+schemata/providers/$(PROVIDER)/metadata/: | schemata/providers/$(PROVIDER)/metadata/metadata.cue
+schemata/providers/$(PROVIDER)/metadata/: | schemata/providers/$(PROVIDER)/metadata/v1meta.cue
+
 schemata/providers/$(PROVIDER)/metadata/metadata.cue:
 	$(MSG)
-	mkdir -p "$(dir $@)"
 	$(CUE) export cueniform.com/collector/lib/templates/metadata --force \
 	  --inject provider_identifier="$(PROVIDER)" \
 	  -e package_file.out --outfile "$@" --out text
+
+schemata/providers/$(PROVIDER)/metadata/v1meta.cue:
+	$(MSG)
+	echo "package v1" >"$@"
 
 #######################################################
 ### Interim schema files ##############################
@@ -174,6 +187,14 @@ registry:
 #######################################################
 ### Asorted misc targets ##############################
 #######################################################
+
+missing: SORT?=shuf
+missing:
+	$(MSG)
+	$(CUE) export cueniform.com/collector/schemata:missing \
+	  -e text --out text \
+	| $(SORT) \
+	>"$@"
 
 ifeq (,$(filter $(GOALS_WITHOUT_PARAMS),$(MAKECMDGOALS)))
 $(THIS_MAKEFILE): update_target

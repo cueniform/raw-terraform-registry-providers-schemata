@@ -8,3 +8,4 @@
 /build/meta/meta.timestamp.txt
 /schemata/providers/hashicorp/null/metadata/3.2.1.v1meta.cue
 /schemata/providers/hashicorp/null/metadata/metadata.cue
+/schemata/providers/hashicorp/null/metadata/v1meta.cue

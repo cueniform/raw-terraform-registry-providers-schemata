@@ -2,4 +2,5 @@
 /build/*
 /build/terraform/*
 /build/meta/*
+/missing
 !.gitkeep

@@ -24,6 +24,7 @@ provider.namespace.%.cue: FORCE
 	$(CUE) vet -c "$@"
 
 FILES=$(sort $(PROVIDERS))
+# Don't forget to run the tests when changing the number of buckets!
 BUCKETS:=1 2 3 4 5
 NUM_BUCKETS:=$(words $(BUCKETS))
 $(foreach B,$(BUCKETS),$(eval BUCKET-$(B)!=echo $(FILES) | xargs -n1 | awk '!((NR+$(B))%$(NUM_BUCKETS))'))

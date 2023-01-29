@@ -7,9 +7,6 @@ provider.namespace.hashicorp.type.null.cue \
 provider.namespace.hashicorp.type.random.cue \
 provider.namespace.integrations.type.github.cue \
 
-.PHONY: all
-all: $(PROVIDERS) ;
-
 # We're assuming that we'll match the stem 'provider.namespace.*.type.*.cue',
 # such that neither namespace nor type contain periods, spaces; or anything
 # filesystem-relevant. Revisit this as needed.
@@ -28,6 +25,19 @@ provider.namespace.%.cue: FORCE
 	  --path provider: --path $(NAMESPACE): --path $(TYPE): \
 	  --force
 	$(CUE) vet -c "$@"
+
+FILES=$(sort $(PROVIDERS))
+BUCKETS:=0 1 2
+NUM_BUCKETS:=$(words $(BUCKETS))
+$(foreach B,$(BUCKETS),$(eval BUCKET-$(B)!=echo $(FILES) | xargs -n1 | awk '!((NR+$(B))%$(NUM_BUCKETS))'))
+$(foreach B,$(BUCKETS),$(eval bucket-$(B): $$(BUCKET-$(B))))
+
+.PHONY: all
+all: $(FILES) # Don't use this outside of testing, use bucket-* instead
+	$(MSG)
+
+bucket-%: FORCE
+	$(MSG)
 
 default:
 	false

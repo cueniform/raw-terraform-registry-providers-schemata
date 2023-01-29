@@ -1,5 +1,6 @@
 default: # no-op default target, defined at end of file
 THIS_MAKEFILE:=$(lastword $(MAKEFILE_LIST))
+GOALS_WITHOUT_PARAMS:=clean test deps registry test-registry test-schema
 TERRAFORM=terraform -chdir="build/terraform"
 PROVIDER_SPACE_SEP_STRING=$(subst /, ,$(PROVIDER))
 PROVIDER_VENDOR=$(word 1,$(PROVIDER_SPACE_SEP_STRING))
@@ -9,6 +10,23 @@ NON=| tr -d '\n'
 .PHONY: FORCE
 
 include Makefile.shared
+
+#######################################################
+### Test targets ######################################
+#######################################################
+
+.PHONY: test
+test: deps test-schema test-registry
+	$(MSG)
+.PHONY: test-schema
+test-schema:
+	$(MSG)
+	make -C test/one_provider_one_version check
+	make -C test/one_provider_two_version check
+.PHONY: test-registry
+test-registry:
+	$(MSG)
+	make -C test/registry check
 
 #######################################################
 ### Convenience shims #################################
@@ -147,13 +165,6 @@ build/meta/meta.env_%.txt: FORCE
 ### Sub-make targets ##################################
 #######################################################
 
-.PHONY: test
-test: deps
-	$(MSG)
-	make -C test/one_provider_one_version check
-	make -C test/one_provider_two_version check
-	make -C test/registry check
-
 .PHONY: registry
 registry:
 	$(MSG)
@@ -163,7 +174,6 @@ registry:
 ### Asorted misc targets ##############################
 #######################################################
 
-GOALS_WITHOUT_PARAMS:=clean test deps registry
 ifeq (,$(filter $(GOALS_WITHOUT_PARAMS),$(MAKECMDGOALS)))
 $(THIS_MAKEFILE): update_target
 endif

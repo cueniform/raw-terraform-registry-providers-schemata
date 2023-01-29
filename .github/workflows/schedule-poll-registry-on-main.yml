@@ -22,7 +22,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: "Run registry tests"
-        run: "make -C registry check"
+        run: "make test-registry"
       - name: "Poll registry and serialise responses"
         run: "make registry"
       - name: "Commit and push to main"

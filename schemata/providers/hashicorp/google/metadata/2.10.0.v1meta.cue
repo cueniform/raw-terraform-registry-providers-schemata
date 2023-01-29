@@ -4,7 +4,7 @@ package v1
 	provider: "hashicorp/google"
 	version:  "2.10.0"
 	created: {
-		at: "2023-01-29T22:27:00+00:00"
+		at: "2023-01-29T23:57:57+00:00"
 		by: {
 			terraform: {
 				terraform_version: "1.3.7"
@@ -13,8 +13,8 @@ package v1
 				terraform_outdated: false
 			}
 			commit: {
-				trigger:      "315ebbc0bbdfbe98c980450f54a3ad8d1e796227"
-				workflow_sha: "315ebbc0bbdfbe98c980450f54a3ad8d1e796227"
+				trigger:      "83e5bf582f24e71a7a8fda880d7beabfa375b437"
+				workflow_sha: "83e5bf582f24e71a7a8fda880d7beabfa375b437"
 				workflow_ref: "cueniform/terraform-registry-schema-collector/.github/workflows/scheduled-fetch-schemas-on-main.yml@refs/heads/main"
 			}
 		}

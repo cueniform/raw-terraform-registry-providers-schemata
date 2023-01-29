@@ -1,4 +1,4 @@
-name: main/schedule/poll-registry-provider-versions
+name: scheduled/main/poll-registry-provider-versions
 
 "on":
   schedule:

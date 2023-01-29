@@ -1,4 +1,4 @@
-name: main/merge/develop
+name: push/develop/ff-merge-onto-main
 
 "on":
   push:
@@ -8,7 +8,7 @@ concurrency: "main"
 
 jobs:
   test_and_merge:
-    name: "Merge develop into main"
+    name: "Merge 'develop' onto 'main'"
     runs-on: "ubuntu-latest"
     permissions:
       contents: "write"
@@ -26,9 +26,9 @@ jobs:
         with:
           ref: "main"
           fetch-depth: 0
-      - name: "Check if `develop` has been rebased onto `main`"
+      - name: "Check if 'develop' can be merged onto 'main' via fast-forward"
         run: "git merge-base --is-ancestor main origin/develop"
-      - name: "Merge develop into main"
+      - name: "Fast-forward merge 'develop' onto 'main'"
         run: |
           git merge origin/develop --ff-only
           git push

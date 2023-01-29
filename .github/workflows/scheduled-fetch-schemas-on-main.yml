@@ -1,4 +1,4 @@
-name: main/schedule/fetch-missing-provider-schemas
+name: scheduled/main/fetch-missing-provider-schemas
 
 "on":
   schedule:

@@ -39,7 +39,7 @@ jobs:
           git config user.name "[bot] Schema Fetcher"
           git config user.email "<>"
 
-          outstanding=$(wc -l missing)
+          outstanding=$(grep -c ^ missing)
           echo "Schema fetcher: schemas outstanding: $outstanding."
 
           git add -v schemata/\*.zstd

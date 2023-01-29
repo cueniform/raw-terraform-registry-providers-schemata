@@ -50,7 +50,7 @@ jobs:
           added=$(git status -s | grep -c ^A)
           echo "Schema fetcher: new files added: $added."
 
-          if git commit -m "Schema fetcher: $num new schemas"; then
+          if git commit -m "Schema fetcher: $fetched new schemas"; then
             git push -v
           else
             echo "Schema fetcher: git commit failed: assuming no new files; not pushing"

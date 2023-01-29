@@ -65,16 +65,16 @@ schemata/providers/$(PROVIDER)/metadata/$(VERSION).v1meta.cue: build/meta/ | sch
 	} >"$@"
 	cue fmt "$@"
 
-schemata/providers/$(PROVIDER)/metadata/: | schemata/providers/$(PROVIDER)/metadata/metadata.cue
-schemata/providers/$(PROVIDER)/metadata/: | schemata/providers/$(PROVIDER)/metadata/v1meta.cue
+schemata/providers/$(PROVIDER)/metadata: schemata/providers/$(PROVIDER)/metadata/metadata.cue
+schemata/providers/$(PROVIDER)/metadata: schemata/providers/$(PROVIDER)/metadata/v1meta.cue
 
-schemata/providers/$(PROVIDER)/metadata/metadata.cue:
+schemata/providers/$(PROVIDER)/metadata/metadata.cue: schemata/providers/$(PROVIDER)/metadata/
 	$(MSG)
 	$(CUE) export cueniform.com/collector/lib/templates/metadata --force \
 	  --inject provider_identifier="$(PROVIDER)" \
 	  -e package_file.out --outfile "$@" --out text
 
-schemata/providers/$(PROVIDER)/metadata/v1meta.cue:
+schemata/providers/$(PROVIDER)/metadata/v1meta.cue: schemata/providers/$(PROVIDER)/metadata/
 	$(MSG)
 	echo "package v1" >"$@"
 
@@ -172,6 +172,7 @@ build/meta/meta.env_%.txt: FORCE
 # Directories without explicit recipes
 %/:
 	$(MSG)
+	mkdir -p "$@"
 	touch "$@"
 
 #######################################################

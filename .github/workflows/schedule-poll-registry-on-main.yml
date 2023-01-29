@@ -35,24 +35,24 @@ jobs:
       contents: "write"
     steps:
       - name: "Check out code"
-        id: check
-        if: ( github.event.schedule || github.event.inputs.schedule ) == matrix.cron
+        id: "check"
+        if: "( github.event.schedule || github.event.inputs.schedule ) == matrix.cron"
         uses: "actions/checkout@v3"
         with:
           fetch-depth: 0
       - name: "Install CUE"
-        needs: check
+        if: "steps.check.outcome == 'success'"
         uses: "cue-lang/setup-cue@0be332bb74c8a2f07821389447ba3163e2da3bfb"
         with:
           version: "latest"
       - name: "Run registry tests"
-        needs: check
+        if: "steps.check.outcome == 'success'"
         run: "make test-registry"
       - name: "Poll registry and serialise responses"
-        needs: check
+        if: "steps.check.outcome == 'success'"
         run: "make registry REGISTRY_TARGET=${{ matrix.target }}"
       - name: "Commit and push to main"
-        needs: check
+        if: "steps.check.outcome == 'success'"
         run: |
           git config user.name "[bot] Registry Poller"
           git config user.email "<>"

@@ -1,15 +1,15 @@
 package v1
 
-"4.32.0": {
+"4.6.0": {
 	provider: "hashicorp/aws"
-	version:  "4.32.0"
+	version:  "4.6.0"
 	created: {
-		at: "2023-01-29T22:48:02+00:00"
+		at: "2023-01-29T22:48:08+00:00"
 		by: {
 			terraform: {
 				terraform_version: "1.3.7"
 				platform:          "linux_amd64"
-				provider_selections: "registry.terraform.io/hashicorp/aws": "4.32.0"
+				provider_selections: "registry.terraform.io/hashicorp/aws": "4.6.0"
 				terraform_outdated: false
 			}
 			commit: {
@@ -21,16 +21,16 @@ package v1
 	}
 	contents: {
 		raw: {
-			filename: "4.32.0.json"
+			filename: "4.6.0.json"
 			format:   "json"
-			bytes:    "3336991"
-			sha512:   "db3a96d06a615f18fed165e213ced86a8f8f5726c42ab50ca8cf00ec257be0f2be69cca7e4115d3be318ed6783da72d8da9ed07d2f7cea7cd2488cfb45336e10"
+			bytes:    "2456967"
+			sha512:   "d86b9dceca22ee49056ba8689e60bd6a075e1704f0e8ffb0a8db095e5893491f8c71b1c65ac1313df63c9772fee164a047156e1863907bbfcdf97892899ae357"
 		}
 		compressed: {
-			filename: "4.32.0.json.zstd"
+			filename: "4.6.0.json.zstd"
 			format:   "zstd"
-			bytes:    "91264"
-			sha512:   "ff3172e3e7055b45592247dba18a20807bcdc6ca1d3b9c0d7297d4f4e9d3195b1d3be1a02d03fcf209523bef240bd671d684ed7dbf448d12e270366d7ef2dd6b"
+			bytes:    "78386"
+			sha512:   "d261a4fa3497662a08e4f9a38ddf673e402fb69e5f85754c5242717a4d73231046c60b9b31d1ca4578a69ab6ce67632ab295b9d63335f39a6ca10a438c534932"
 		}
 	}
 }

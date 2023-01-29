@@ -13,6 +13,10 @@ name: scheduled/main/fetch-missing-provider-schemas
 
 concurrency: "main"
 
+env:
+  TF_IN_AUTOMATION: yes it is
+  TF_INPUT: 0
+
 jobs:
   fetch_and_commit:
     name: "Fetch missing provider schemas"

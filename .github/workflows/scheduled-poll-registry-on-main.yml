@@ -22,6 +22,10 @@ name: scheduled/main/poll-registry-provider-versions
 
 concurrency: "main"
 
+env:
+  TF_IN_AUTOMATION: yes it is
+  TF_INPUT: 0
+
 jobs:
   poll_and_commit:
     name: "Poll registry for provider versions (${{ matrix.target }})"

@@ -2,7 +2,7 @@ name: main/schedule/poll-registry-provider-versions
 
 "on":
   schedule:
-    - cron: '33 3 * * *'
+    - cron: '33 * * * *'
 
 concurrency: "main"
 

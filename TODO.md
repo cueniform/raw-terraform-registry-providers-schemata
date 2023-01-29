@@ -7,3 +7,5 @@
 ```
 git ls-tree -rtz --name-only HEAD . | xargs -0 -I{} sh -xc 'touch --date "$(git log -1 --pretty="format:%aD" {})" {}' 2>&1 | fgrep -v '+ git log'
 ```
+
+- Add tests for top-level `registry REGISTRY_TARGET=bucket-X` make target

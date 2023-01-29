@@ -5,6 +5,16 @@ name: main/schedule/poll-registry-provider-versions
     - cron: "11 * * * *"
     - cron: "22 * * * *"
     - cron: "33 * * * *"
+  workflow_dispatch:
+    inputs:
+      schedule:
+        description: "A fake scheduled event to test GHA"
+        required: true
+        type: choice
+        options: # sync this with all the schedule:cron: elements, above
+          - "11 * * * *"
+          - "22 * * * *"
+          - "33 * * * *"
 
 concurrency: "main"
 
@@ -12,7 +22,6 @@ jobs:
   poll_and_commit:
     name: "Poll registry for provider versions (${{ matrix.target }})"
     runs-on: "ubuntu-latest"
-
     strategy:
       matrix:
         include:
@@ -22,12 +31,11 @@ jobs:
             target: "bucket-2"
           - cron: "33 * * * *"
             target: "bucket-3"
-
     permissions:
       contents: "write"
     steps:
       - name: "Check out code"
-        if: github.event.schedule == matrix.cron
+        if: ( github.event.schedule || github.event.inputs.schedule ) == matrix.cron
         uses: "actions/checkout@v3"
         with:
           fetch-depth: 0

@@ -166,9 +166,10 @@ build/meta/meta.env_%.txt: FORCE
 #######################################################
 
 .PHONY: registry
+registry: REGISTRY_TARGET?=all
 registry:
 	$(MSG)
-	make -C registry all
+	make -C registry $(REGISTRY_TARGET)
 
 #######################################################
 ### Asorted misc targets ##############################

@@ -2,32 +2,46 @@ name: main/schedule/poll-registry-provider-versions
 
 "on":
   schedule:
-    - cron: '33 * * * *'
+    - cron: "11 * * * *"
+    - cron: "22 * * * *"
+    - cron: "33 * * * *"
 
 concurrency: "main"
 
 jobs:
   poll_and_commit:
-    name: "Poll registry for provider versions"
+    name: "Poll registry for provider versions (${{ matrix.target }})"
     runs-on: "ubuntu-latest"
+
+    strategy:
+      matrix:
+        include:
+          - cron: "11 * * * *"
+            target: "bucket-1"
+          - cron: "22 * * * *"
+            target: "bucket-2"
+          - cron: "33 * * * *"
+            target: "bucket-3"
+
     permissions:
       contents: "write"
     steps:
+      - name: "Check out code"
+        if: github.event.schedule == matrix.cron
+        uses: "actions/checkout@v3"
+        with:
+          fetch-depth: 0
       - name: "Install CUE"
         uses: "cue-lang/setup-cue@0be332bb74c8a2f07821389447ba3163e2da3bfb"
         with:
           version: "latest"
-      - name: "Check out code"
-        uses: "actions/checkout@v3"
-        with:
-          fetch-depth: 0
       - name: "Run registry tests"
         run: "make test-registry"
       - name: "Poll registry and serialise responses"
-        run: "make registry"
+        run: "make registry REGISTRY_TARGET=${{ matrix.target }}"
       - name: "Commit and push to main"
         run: |
-          git config user.name "[bot] Registry Poller Bot"
+          git config user.name "[bot] Registry Poller"
           git config user.email "<>"
 
           git add -v registry

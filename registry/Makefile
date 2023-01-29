@@ -27,7 +27,7 @@ provider.namespace.%.cue: FORCE
 	$(CUE) vet -c "$@"
 
 FILES=$(sort $(PROVIDERS))
-BUCKETS:=0 1 2
+BUCKETS:=1 2 3
 NUM_BUCKETS:=$(words $(BUCKETS))
 $(foreach B,$(BUCKETS),$(eval BUCKET-$(B)!=echo $(FILES) | xargs -n1 | awk '!((NR+$(B))%$(NUM_BUCKETS))'))
 $(foreach B,$(BUCKETS),$(eval bucket-$(B): $$(BUCKET-$(B))))

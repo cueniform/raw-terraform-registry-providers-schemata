@@ -2,9 +2,9 @@ name: main/schedule/poll-registry-provider-versions
 
 "on":
   schedule:
-    - cron: "11 * * * *"
-    - cron: "22 * * * *"
-    - cron: "33 * * * *"
+    - cron: "11 1 * * *"
+    - cron: "22 2 * * *"
+    - cron: "33 3 * * *"
   workflow_dispatch:
     inputs:
       schedule:
@@ -12,9 +12,9 @@ name: main/schedule/poll-registry-provider-versions
         required: true
         type: choice
         options: # sync this with all the schedule:cron: elements, above
-          - "11 * * * *"
-          - "22 * * * *"
-          - "33 * * * *"
+          - "11 1 * * *"
+          - "22 2 * * *"
+          - "33 3 * * *"
 
 concurrency: "main"
 
@@ -25,11 +25,11 @@ jobs:
     strategy:
       matrix:
         include:
-          - cron: "11 * * * *"
+          - cron: "11 1 * * *"
             target: "bucket-1"
-          - cron: "22 * * * *"
+          - cron: "22 2 * * *"
             target: "bucket-2"
-          - cron: "33 * * * *"
+          - cron: "33 3 * * *"
             target: "bucket-3"
     permissions:
       contents: "write"

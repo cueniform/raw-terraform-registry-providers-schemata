@@ -46,3 +46,4 @@ check_missing_version:
 	make -f ../../Makefile missing_schemas
 	$(CUE) vet -c cueniform.com/collector/schemata/providers/hashicorp/null/metadata:v1
 	$(CUE) vet -c cueniform.com/collector/schemata/providers/hashicorp/null/metadata
+	$(ASSERT_AND_CLEAN)

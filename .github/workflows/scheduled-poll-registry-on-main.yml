@@ -1,20 +1,24 @@
 name: scheduled/main/poll-registry-provider-versions
 
 "on":
-  schedule:
-    - cron: "11 1 * * *"
-    - cron: "22 2 * * *"
+  schedule: # sync these with inputs.schedule and matrix.cron
+    - cron: "13 3 * * *"
+    - cron: "23 3 * * *"
     - cron: "33 3 * * *"
+    - cron: "43 3 * * *"
+    - cron: "53 3 * * *"
   workflow_dispatch:
     inputs:
       schedule:
         description: "A fake scheduled event to test GHA"
         required: true
         type: choice
-        options: # sync this with all the schedule:cron: elements, above
-          - "11 1 * * *"
-          - "22 2 * * *"
+        options:
+          - "13 3 * * *"
+          - "23 3 * * *"
           - "33 3 * * *"
+          - "43 3 * * *"
+          - "53 3 * * *"
 
 concurrency: "main"
 
@@ -24,13 +28,17 @@ jobs:
     runs-on: "ubuntu-latest"
     strategy:
       matrix:
-        include:
-          - cron: "11 1 * * *"
+        include: # sync these with the bucket definitions in registry/Makefile
+          - cron: "13 3 * * *"
             target: "bucket-1"
-          - cron: "22 2 * * *"
+          - cron: "23 3 * * *"
             target: "bucket-2"
           - cron: "33 3 * * *"
             target: "bucket-3"
+          - cron: "43 3 * * *"
+            target: "bucket-4"
+          - cron: "53 3 * * *"
+            target: "bucket-5"
     permissions:
       contents: "write"
     steps:

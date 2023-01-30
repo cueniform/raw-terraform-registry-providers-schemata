@@ -2,7 +2,8 @@ name: scheduled/main/fetch-missing-provider-schemas
 
 "on":
   schedule: # x7 minutes past each hour, except 03:x7 (which is the poller's hour)
-    - cron: "7/10 0,1,2,4-23 * * *"
+    - cron: "7/10 0-2  * * *"
+    - cron: "7/10 4-23 * * *"
   workflow_dispatch:
     inputs:
       count:

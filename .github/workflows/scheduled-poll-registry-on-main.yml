@@ -32,7 +32,7 @@ jobs:
     runs-on: "ubuntu-latest"
     strategy:
       matrix:
-        include: # sync these with the bucket definitions in registry/Makefile
+        include: # sync these with the bucket definitions in desiderata/Makefile
           - cron: "13 3 * * *"
             target: "bucket-1"
           - cron: "23 3 * * *"
@@ -57,19 +57,19 @@ jobs:
         uses: "cue-lang/setup-cue@0be332bb74c8a2f07821389447ba3163e2da3bfb"
         with:
           version: "latest"
-      - name: "Run registry tests"
+      - name: "Run desiderata tests"
         if: "steps.check.outcome == 'success'"
-        run: "make test-registry"
+        run: "make test-desiderata"
       - name: "Poll registry and serialise responses"
         if: "steps.check.outcome == 'success'"
-        run: "make registry REGISTRY_TARGET=${{ matrix.target }}"
+        run: "make desiderata DESIDERATA=${{ matrix.target }}"
       - name: "Commit and push to main"
         if: "steps.check.outcome == 'success'"
         run: |
           git config user.name "[bot] Registry Poller"
           git config user.email "<>"
 
-          git add -v registry
+          git add -v desiderata
 
           if git commit -m "Registry poller: new provider versions added"; then
             git push -v

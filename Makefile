@@ -1,6 +1,6 @@
 default: # no-op default target, defined at end of file
 THIS_MAKEFILE:=$(lastword $(MAKEFILE_LIST))
-GOALS_WITHOUT_PARAMS:=clean test deps registry test-registry test-schema missing_schemas missing
+GOALS_WITHOUT_PARAMS:=clean test deps desiderata test-desiderata test-schema missing_schemas missing
 TERRAFORM=terraform -chdir="build/terraform"
 PROVIDER_SPACE_SEP_STRING=$(subst /, ,$(PROVIDER))
 PROVIDER_VENDOR=$(word 1,$(PROVIDER_SPACE_SEP_STRING))
@@ -16,17 +16,17 @@ include Makefile.shared
 #######################################################
 
 .PHONY: test
-test: deps test-schema test-registry
+test: deps test-schema test-desiderata
 	$(MSG)
 .PHONY: test-schema
 test-schema:
 	$(MSG)
 	make -C test/one_provider_one_version check
 	make -C test/one_provider_two_version check
-.PHONY: test-registry
-test-registry:
+.PHONY: test-desiderata
+test-desiderata:
 	$(MSG)
-	make -C test/registry check
+	make -C test/desiderata check
 
 #######################################################
 ### Convenience shims #################################
@@ -179,11 +179,11 @@ build/meta/meta.env_%.txt: FORCE
 ### Sub-make targets ##################################
 #######################################################
 
-.PHONY: registry
-registry: REGISTRY_TARGET?=all
-registry:
+.PHONY: desiderata
+desiderata: DESIDERATA?=all
+desiderata:
 	$(MSG)
-	make -C registry $(REGISTRY_TARGET)
+	make -C desiderata $(DESIDERATA)
 
 #######################################################
 ### Asorted misc targets ##############################

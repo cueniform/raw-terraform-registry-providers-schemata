@@ -2,13 +2,13 @@ package missing
 
 import (
 	"strings"
-	"cueniform.com/collector/registry"
+	"cueniform.com/collector/desiderata"
 	"cueniform.com/collector/schemata"
 )
 
 #V4PluginOnly: ["4"]
 upstream: {
-	for namespace, providers in registry.provider
+	for namespace, providers in desiderata.provider
 	for provider, versions in providers
 	for version in versions.versions
 	for protocol in version.protocols {

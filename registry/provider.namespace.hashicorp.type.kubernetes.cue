@@ -135,9 +135,6 @@ provider: hashicorp: kubernetes: {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
 			os:   "openbsd"
 			arch: "amd64"
 		}, {
@@ -146,6 +143,9 @@ provider: hashicorp: kubernetes: {
 		}, {
 			os:   "linux"
 			arch: "386"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "386"
@@ -311,14 +311,14 @@ provider: hashicorp: kubernetes: {
 		version: "1.13.4"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
-			os:   "freebsd"
-			arch: "386"
-		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "darwin"
 			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "amd64"
@@ -414,6 +414,46 @@ provider: hashicorp: kubernetes: {
 		}, {
 			os:   "freebsd"
 			arch: "arm"
+		}]
+	}, {
+		version: "1.10.0"
+		protocols: ["4.0", "5.0"]
+		platforms: [{
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
 		}]
 	}, {
 		version: "1.6.1"
@@ -810,11 +850,11 @@ provider: hashicorp: kubernetes: {
 			os:   "linux"
 			arch: "arm"
 		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
 			os:   "windows"
 			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
 		}, {
 			os:   "freebsd"
 			arch: "386"
@@ -1023,46 +1063,6 @@ provider: hashicorp: kubernetes: {
 			arch: "386"
 		}]
 	}, {
-		version: "1.10.0"
-		protocols: ["4.0", "5.0"]
-		platforms: [{
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}]
-	}, {
 		version: "2.12.0"
 		protocols: ["5.0"]
 		platforms: [{
@@ -1140,10 +1140,10 @@ provider: hashicorp: kubernetes: {
 		version: "1.1.0"
 		protocols: ["4"]
 		platforms: [{
-			os:   "darwin"
+			os:   "windows"
 			arch: "amd64"
 		}, {
-			os:   "windows"
+			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "linux"
@@ -1214,11 +1214,11 @@ provider: hashicorp: kubernetes: {
 		version: "2.10.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "linux"
-			arch: "arm"
-		}, {
 			os:   "windows"
 			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "386"
@@ -1297,9 +1297,6 @@ provider: hashicorp: kubernetes: {
 			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
 			os:   "linux"
 			arch: "amd64"
 		}, {
@@ -1317,6 +1314,9 @@ provider: hashicorp: kubernetes: {
 		}, {
 			os:   "openbsd"
 			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "amd64"
@@ -1845,14 +1845,14 @@ provider: hashicorp: kubernetes: {
 			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
 			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "386"
 		}]
 	}, {
 		version: "0.1.2"
@@ -2050,13 +2050,13 @@ provider: hashicorp: kubernetes: {
 			arch: "amd64"
 		}, {
 			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "arm"

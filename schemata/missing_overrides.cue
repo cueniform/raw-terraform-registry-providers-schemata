@@ -9,4 +9,5 @@ collected: {
 	"hashicorp awscc 0.7.0":      "Error while installing hashicorp/awscc v0.7.0: checksum list has unexpected SHA-256 hash"
 	"hashicorp awscc 0.0.15":     "failed to retrieve authentication checksums for provider: 404 Not Found returned from releases.hashicorp.com"
 	"hashicorp vault 1.9.0":      "registry announces plugin's compatibility with protocol v5, but it only talks v4"
+	"hashicorp awscc 0.0.14":     "failed to retrieve authentication checksums for provider: 404 Not Found returned from releases.hashicorp.com"
 }

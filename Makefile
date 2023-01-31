@@ -189,11 +189,14 @@ desiderata:
 ### Asorted misc targets ##############################
 #######################################################
 
-missing: SORT?=shuf
+missing: SORT?=cat
 missing:
 	$(MSG)
-	$(CUE) export cueniform.com/collector/schemata:missing \
-	  -e text --out text \
+	$(CUE) export cueniform.com/collector/schemata:missing -e text --out text \
+	| sort -Vr \
+	| awk ' BEGIN{prev=""; pri=0} {cur=$$1" "$$2} prev==cur{pri++} prev!=cur{prev=cur; pri=0} {print $$0, pri} ' \
+	| sort -nk4,4 \
+	| awk '{print $$1, $$2, $$3}' \
 	| $(SORT) \
 	>"$@"
 

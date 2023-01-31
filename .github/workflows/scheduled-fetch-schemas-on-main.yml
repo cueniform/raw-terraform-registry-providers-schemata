@@ -1,9 +1,12 @@
 name: scheduled/main/fetch-missing-provider-schemas
 
 "on":
-  schedule: # x7 minutes past each hour, except 03:x7 (which is the poller's hour)
-    - cron: "7/10 0-2  * * *"
-    - cron: "7/10 4-23 * * *"
+  schedule:
+ # 42 minutes past every other hour from 04:42 to 23:42 inclusive
+    - cron: "42 4-23/2 * * *"
+ # x7 minutes past each hour, except 03:x7 (which is the poller's hour)
+ #    - cron: "7/10 0-2  * * *"
+ #    - cron: "7/10 4-23 * * *"
   workflow_dispatch:
     inputs:
       count:
@@ -29,7 +32,7 @@ jobs:
     permissions:
       contents: "write"
     env:
-      COUNT: "${{ github.event.inputs.count || 7 }}" # FIXME move this default to the repo env
+      COUNT: "${{ github.event.inputs.count || 20 }}" # FIXME move this default to the repo env
     steps:
       - name: "Check out code"
         uses: "actions/checkout@v3"

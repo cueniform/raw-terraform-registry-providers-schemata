@@ -12,6 +12,9 @@ provider: hashicorp: hcp: {
 			os:   "linux"
 			arch: "arm"
 		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
@@ -19,9 +22,6 @@ provider: hashicorp: hcp: {
 			arch: "386"
 		}, {
 			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "windows"
@@ -38,6 +38,43 @@ provider: hashicorp: hcp: {
 		}, {
 			os:   "linux"
 			arch: "arm64"
+		}]
+	}, {
+		version: "0.22.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
 		}]
 	}, {
 		version: "0.20.0"
@@ -117,9 +154,6 @@ provider: hashicorp: hcp: {
 		version: "0.16.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "windows"
-			arch: "386"
-		}, {
 			os:   "freebsd"
 			arch: "386"
 		}, {
@@ -128,6 +162,9 @@ provider: hashicorp: hcp: {
 		}, {
 			os:   "linux"
 			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "386"
@@ -169,9 +206,6 @@ provider: hashicorp: hcp: {
 			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
 			os:   "linux"
 			arch: "amd64"
 		}, {
@@ -186,6 +220,9 @@ provider: hashicorp: hcp: {
 		}, {
 			os:   "darwin"
 			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
 		}]
 	}, {
 		version: "0.21.1"
@@ -197,6 +234,9 @@ provider: hashicorp: hcp: {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
@@ -209,9 +249,6 @@ provider: hashicorp: hcp: {
 			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
@@ -223,43 +260,6 @@ provider: hashicorp: hcp: {
 		}, {
 			os:   "linux"
 			arch: "arm"
-		}]
-	}, {
-		version: "0.47.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
 		}]
 	}, {
 		version: "0.51.0"
@@ -280,9 +280,6 @@ provider: hashicorp: hcp: {
 			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
@@ -291,6 +288,9 @@ provider: hashicorp: hcp: {
 		}, {
 			os:   "windows"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
@@ -299,78 +299,41 @@ provider: hashicorp: hcp: {
 			arch: "arm64"
 		}]
 	}, {
-		version: "0.22.0"
+		version: "0.39.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "darwin"
+			arch: "amd64"
+		}, {
 			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "darwin"
 			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
 			arch: "arm64"
 		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
 			os:   "freebsd"
 			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}]
-	}, {
-		version: "0.15.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
 		}]
 	}, {
 		version: "0.37.0"
@@ -444,43 +407,6 @@ provider: hashicorp: hcp: {
 			arch: "arm"
 		}]
 	}, {
-		version: "0.39.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}]
-	}, {
 		version: "0.53.0"
 		protocols: ["5.0"]
 		platforms: [{
@@ -522,16 +448,16 @@ provider: hashicorp: hcp: {
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
 			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
 		}, {
 			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "windows"
 			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
@@ -556,6 +482,9 @@ provider: hashicorp: hcp: {
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "freebsd"
@@ -563,12 +492,6 @@ provider: hashicorp: hcp: {
 		}, {
 			os:   "windows"
 			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "amd64"
@@ -587,6 +510,9 @@ provider: hashicorp: hcp: {
 		}, {
 			os:   "darwin"
 			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
 		}]
 	}, {
 		version: "0.13.0"
@@ -630,10 +556,10 @@ provider: hashicorp: hcp: {
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "freebsd"
-			arch: "386"
+			arch: "arm"
 		}, {
 			os:   "freebsd"
-			arch: "arm"
+			arch: "386"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
@@ -666,6 +592,9 @@ provider: hashicorp: hcp: {
 		version: "0.33.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "darwin"
+			arch: "amd64"
+		}, {
 			os:   "linux"
 			arch: "386"
 		}, {
@@ -677,12 +606,6 @@ provider: hashicorp: hcp: {
 		}, {
 			os:   "linux"
 			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
 		}, {
 			os:   "darwin"
 			arch: "arm64"
@@ -698,6 +621,9 @@ provider: hashicorp: hcp: {
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
 		}]
 	}, {
 		version: "0.50.0"
@@ -1002,14 +928,14 @@ provider: hashicorp: hcp: {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
-			arch: "amd64"
+			os:   "linux"
+			arch: "arm64"
 		}, {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
-			os:   "linux"
-			arch: "arm64"
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "386"
@@ -1036,11 +962,11 @@ provider: hashicorp: hcp: {
 		version: "0.27.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "windows"
-			arch: "amd64"
-		}, {
 			os:   "linux"
 			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
@@ -1156,6 +1082,9 @@ provider: hashicorp: hcp: {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
@@ -1171,14 +1100,48 @@ provider: hashicorp: hcp: {
 			os:   "linux"
 			arch: "arm64"
 		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm"
+		}]
+	}, {
+		version: "0.15.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
 		}]
 	}, {
 		version: "0.1.0"
@@ -1218,9 +1181,6 @@ provider: hashicorp: hcp: {
 		version: "0.18.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "freebsd"
-			arch: "386"
-		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
@@ -1250,6 +1210,9 @@ provider: hashicorp: hcp: {
 		}, {
 			os:   "linux"
 			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "386"
 		}]
 	}, {
 		version: "0.7.0"
@@ -1296,19 +1259,19 @@ provider: hashicorp: hcp: {
 			arch: "amd64"
 		}, {
 			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "linux"
 			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
@@ -1350,14 +1313,14 @@ provider: hashicorp: hcp: {
 			os:   "freebsd"
 			arch: "386"
 		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
 			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
 		}]
 	}, {
 		version: "0.28.0"
@@ -1367,6 +1330,12 @@ provider: hashicorp: hcp: {
 			arch: "amd64"
 		}, {
 			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "freebsd"
@@ -1374,12 +1343,6 @@ provider: hashicorp: hcp: {
 		}, {
 			os:   "windows"
 			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
@@ -1400,6 +1363,9 @@ provider: hashicorp: hcp: {
 		version: "0.46.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "freebsd"
+			arch: "arm"
+		}, {
 			os:   "linux"
 			arch: "arm64"
 		}, {
@@ -1429,14 +1395,14 @@ provider: hashicorp: hcp: {
 		}, {
 			os:   "windows"
 			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
 		}]
 	}, {
 		version: "0.36.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "darwin"
+			arch: "amd64"
+		}, {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
@@ -1449,14 +1415,11 @@ provider: hashicorp: hcp: {
 			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
 			os:   "linux"
 			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
 		}, {
 			os:   "freebsd"
 			arch: "386"
@@ -1511,10 +1474,10 @@ provider: hashicorp: hcp: {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "linux"
+			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "windows"
+			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "freebsd"
@@ -1665,11 +1628,11 @@ provider: hashicorp: hcp: {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
 			os:   "darwin"
 			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
@@ -1730,9 +1693,6 @@ provider: hashicorp: hcp: {
 		version: "0.23.1"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
@@ -1750,6 +1710,9 @@ provider: hashicorp: hcp: {
 		}, {
 			os:   "freebsd"
 			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "amd64"
@@ -1879,6 +1842,9 @@ provider: hashicorp: hcp: {
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "linux"
@@ -1901,9 +1867,6 @@ provider: hashicorp: hcp: {
 		}, {
 			os:   "freebsd"
 			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "amd64"
@@ -1916,12 +1879,12 @@ provider: hashicorp: hcp: {
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "freebsd"
@@ -2035,9 +1998,6 @@ provider: hashicorp: hcp: {
 			os:   "linux"
 			arch: "arm64"
 		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
 			os:   "linux"
 			arch: "amd64"
 		}, {
@@ -2058,6 +2018,9 @@ provider: hashicorp: hcp: {
 		}, {
 			os:   "darwin"
 			arch: "arm64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
 		}]
 	}, {
 		version: "0.6.1"
@@ -2132,6 +2095,43 @@ provider: hashicorp: hcp: {
 		}, {
 			os:   "linux"
 			arch: "arm64"
+		}]
+	}, {
+		version: "0.47.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
 		}]
 	}]
 	warnings: null

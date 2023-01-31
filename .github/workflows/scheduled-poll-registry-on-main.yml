@@ -26,6 +26,10 @@ env:
   TF_IN_AUTOMATION: yes it is
   TF_INPUT: 0
 
+defaults:
+  run:
+    shell: nice -n 19 ionice --class 3 bash --noprofile --norc -eo pipefail {0}
+
 jobs:
   poll_and_commit:
     name: "Poll registry for provider versions (${{ matrix.target }})"

@@ -9,6 +9,9 @@ provider: hashicorp: salesforce: {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
@@ -17,9 +20,6 @@ provider: hashicorp: salesforce: {
 		}, {
 			os:   "freebsd"
 			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm64"

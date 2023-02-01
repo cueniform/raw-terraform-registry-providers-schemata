@@ -6,6 +6,12 @@ provider: hashicorp: salesforce: {
 		version: "0.1.0"
 		protocols: []
 		platforms: [{
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
@@ -24,17 +30,11 @@ provider: hashicorp: salesforce: {
 			os:   "linux"
 			arch: "arm64"
 		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
 			os:   "windows"
-			arch: "386"
+			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"

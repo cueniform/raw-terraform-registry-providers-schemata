@@ -49,13 +49,10 @@ provider: hashicorp: googleworkspace: {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
-			os:   "linux"
+			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "windows"
@@ -66,6 +63,9 @@ provider: hashicorp: googleworkspace: {
 		}, {
 			os:   "freebsd"
 			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "arm64"
@@ -80,29 +80,29 @@ provider: hashicorp: googleworkspace: {
 		version: "0.2.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "freebsd"
-			arch: "amd64"
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
 			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "linux"
-			arch: "arm64"
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "linux"
-			arch: "arm"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
 		}, {
 			os:   "darwin"
 			arch: "arm64"
@@ -117,19 +117,22 @@ provider: hashicorp: googleworkspace: {
 		version: "0.4.1"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "windows"
+			os:   "freebsd"
 			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
 			arch: "386"
 		}, {
-			os:   "freebsd"
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "linux"
@@ -146,25 +149,22 @@ provider: hashicorp: googleworkspace: {
 		}, {
 			os:   "freebsd"
 			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "386"
 		}]
 	}, {
 		version: "0.4.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "darwin"
+			arch: "amd64"
+		}, {
 			os:   "linux"
 			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "darwin"
-			arch: "amd64"
+			os:   "freebsd"
+			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "386"
@@ -197,6 +197,9 @@ provider: hashicorp: googleworkspace: {
 			os:   "linux"
 			arch: "amd64"
 		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
@@ -206,13 +209,10 @@ provider: hashicorp: googleworkspace: {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
+			os:   "linux"
 			arch: "arm"
 		}, {
-			os:   "linux"
+			os:   "freebsd"
 			arch: "arm"
 		}, {
 			os:   "freebsd"
@@ -229,17 +229,14 @@ provider: hashicorp: googleworkspace: {
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
 			arch: "arm64"
 		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
@@ -251,6 +248,9 @@ provider: hashicorp: googleworkspace: {
 		}, {
 			os:   "linux"
 			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
 		}, {
 			os:   "darwin"
 			arch: "arm64"
@@ -269,16 +269,16 @@ provider: hashicorp: googleworkspace: {
 			arch: "arm"
 		}, {
 			os:   "linux"
-			arch: "arm"
+			arch: "arm64"
 		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "linux"
-			arch: "arm64"
+			arch: "amd64"
 		}, {
 			os:   "linux"
-			arch: "amd64"
+			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "386"
@@ -302,11 +302,11 @@ provider: hashicorp: googleworkspace: {
 		version: "0.5.2"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "darwin"
-			arch: "arm64"
-		}, {
 			os:   "linux"
 			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
 		}, {
 			os:   "windows"
 			arch: "386"

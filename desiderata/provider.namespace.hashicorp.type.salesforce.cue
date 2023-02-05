@@ -6,23 +6,17 @@ provider: hashicorp: salesforce: {
 		version: "0.1.0"
 		protocols: []
 		platforms: [{
-			os:   "freebsd"
-			arch: "arm"
-		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
 			os:   "windows"
-			arch: "386"
+			arch: "amd64"
 		}, {
-			os:   "darwin"
-			arch: "arm64"
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm"
@@ -30,14 +24,20 @@ provider: hashicorp: salesforce: {
 			os:   "linux"
 			arch: "arm64"
 		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
 			os:   "windows"
-			arch: "amd64"
+			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "freebsd"
-			arch: "amd64"
+			arch: "386"
 		}]
 	}]
 	warnings: null

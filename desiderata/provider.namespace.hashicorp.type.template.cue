@@ -6,17 +6,17 @@ provider: hashicorp: template: {
 		version: "2.1.2"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
-			os:   "linux"
-			arch: "386"
-		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
-			os:   "windows"
+			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "solaris"
 			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
@@ -43,32 +43,72 @@ provider: hashicorp: template: {
 			arch: "386"
 		}]
 	}, {
-		version: "2.1.0"
-		protocols: ["4.0", "5.0"]
+		version: "2.0.0"
+		protocols: ["4.0"]
 		platforms: [{
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
 			os:   "windows"
-			arch: "386"
+			arch: "amd64"
 		}, {
 			os:   "solaris"
 			arch: "amd64"
 		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
 			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "openbsd"
 			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}]
+	}, {
+		version: "2.1.0"
+		protocols: ["4.0", "5.0"]
+		platforms: [{
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
 		}, {
 			os:   "openbsd"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "386"
@@ -86,19 +126,19 @@ provider: hashicorp: template: {
 		version: "1.0.0"
 		protocols: ["4"]
 		platforms: [{
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
 			os:   "openbsd"
-			arch: "386"
+			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
 			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "solaris"
@@ -121,58 +161,18 @@ provider: hashicorp: template: {
 		}, {
 			os:   "linux"
 			arch: "arm"
-		}]
-	}, {
-		version: "2.0.0"
-		protocols: ["4.0"]
-		platforms: [{
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "386"
 		}]
 	}, {
 		version: "2.1.1"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
-			os:   "linux"
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
 			arch: "386"
 		}, {
 			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "openbsd"
 			arch: "386"
 		}, {
 			os:   "darwin"
@@ -181,8 +181,8 @@ provider: hashicorp: template: {
 			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "windows"
-			arch: "amd64"
+			os:   "linux"
+			arch: "386"
 		}, {
 			os:   "solaris"
 			arch: "amd64"
@@ -206,8 +206,8 @@ provider: hashicorp: template: {
 		version: "0.1.0"
 		protocols: ["4"]
 		platforms: [{
-			os:   "freebsd"
-			arch: "arm"
+			os:   "solaris"
+			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "386"
@@ -215,17 +215,17 @@ provider: hashicorp: template: {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
 			os:   "freebsd"
-			arch: "386"
+			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
+			os:   "freebsd"
+			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "386"
@@ -246,14 +246,14 @@ provider: hashicorp: template: {
 		version: "0.1.1"
 		protocols: ["4"]
 		platforms: [{
-			os:   "freebsd"
-			arch: "amd64"
+			os:   "windows"
+			arch: "386"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "windows"
-			arch: "386"
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
@@ -287,19 +287,19 @@ provider: hashicorp: template: {
 		protocols: ["4.0", "5.0"]
 		platforms: [{
 			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "freebsd"
-			arch: "amd64"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
 			os:   "freebsd"
-			arch: "386"
+			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm64"

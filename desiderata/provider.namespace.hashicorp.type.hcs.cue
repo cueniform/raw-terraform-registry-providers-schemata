@@ -15,11 +15,11 @@ provider: hashicorp: hcs: {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
 			os:   "darwin"
 			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
@@ -47,15 +47,15 @@ provider: hashicorp: hcs: {
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
 			arch: "arm"
 		}, {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
 			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "linux"
@@ -117,11 +117,11 @@ provider: hashicorp: hcs: {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
 			os:   "linux"
 			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "amd64"
@@ -148,14 +148,14 @@ provider: hashicorp: hcs: {
 		version: "0.5.1"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "darwin"
+			arch: "amd64"
+		}, {
 			os:   "linux"
 			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "386"

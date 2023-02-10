@@ -3,90 +3,152 @@ package desiderata
 provider: hashicorp: aws: {
 	id: "hashicorp/aws"
 	versions: [{
-		version: "1.3.0"
-		protocols: ["4"]
+		version: "3.17.0"
+		protocols: ["5.0"]
 		platforms: [{
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "windows"
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}]
+	}, {
+		version: "2.54.0"
+		protocols: ["4.0", "5.0"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
 		}, {
 			os:   "solaris"
 			arch: "amd64"
 		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
+			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
 		}]
 	}, {
-		version: "4.43.0"
+		version: "2.68.0"
+		protocols: ["4.0", "5.0"]
+		platforms: [{
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}]
+	}, {
+		version: "3.14.1"
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "openbsd"
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
 			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
 		}]
 	}, {
 		version: "1.18.0"
@@ -129,53 +191,19 @@ provider: hashicorp: aws: {
 			arch: "arm"
 		}]
 	}, {
-		version: "2.35.0"
-		protocols: ["4.0", "5.0"]
-		platforms: [{
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}]
-	}, {
-		version: "2.70.3"
-		protocols: ["4.0,5.0"]
+		version: "3.68.0"
+		protocols: ["5.0"]
 		platforms: [{
 			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "freebsd"
@@ -185,154 +213,19 @@ provider: hashicorp: aws: {
 			arch: "amd64"
 		}, {
 			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
 			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm64"
 		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}]
-	}, {
-		version: "2.48.0"
-		protocols: ["4.0", "5.0"]
-		platforms: [{
 			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
+			arch: "386"
 		}, {
 			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}]
-	}, {
-		version: "1.1.0"
-		protocols: ["4"]
-		platforms: [{
-			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}]
-	}, {
-		version: "1.46.0"
-		protocols: ["4"]
-		platforms: [{
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
+			arch: "arm64"
 		}]
 	}, {
 		version: "2.44.0"
@@ -375,316 +268,26 @@ provider: hashicorp: aws: {
 			arch: "amd64"
 		}]
 	}, {
-		version: "4.33.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}]
-	}, {
-		version: "4.29.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}]
-	}, {
-		version: "4.45.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "openbsd"
-			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}]
-	}, {
-		version: "3.13.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}]
-	}, {
-		version: "3.14.1"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}]
-	}, {
-		version: "3.68.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}]
-	}, {
-		version: "3.63.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}]
-	}, {
-		version: "3.8.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}]
-	}, {
-		version: "1.24.0"
+		version: "1.46.0"
 		protocols: ["4"]
 		platforms: [{
-			os:   "linux"
-			arch: "amd64"
-		}, {
 			os:   "openbsd"
 			arch: "386"
 		}, {
-			os:   "freebsd"
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "windows"
-			arch: "386"
+			arch: "amd64"
 		}, {
 			os:   "solaris"
 			arch: "amd64"
@@ -692,14 +295,255 @@ provider: hashicorp: aws: {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}]
+	}, {
+		version: "3.29.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}]
+	}, {
+		version: "2.60.0"
+		protocols: ["4.0", "5.0"]
+		platforms: [{
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "386"
 		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}]
+	}, {
+		version: "2.21.1"
+		protocols: ["4.0", "5.0"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
 			os:   "linux"
 			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}]
+	}, {
+		version: "1.37.0"
+		protocols: ["4"]
+		platforms: [{
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}]
+	}, {
+		version: "3.74.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}]
+	}, {
+		version: "3.14.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}]
+	}, {
+		version: "3.76.1"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
@@ -708,74 +552,236 @@ provider: hashicorp: aws: {
 			arch: "amd64"
 		}, {
 			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
 			arch: "arm"
 		}]
 	}, {
-		version: "3.2.0"
-		protocols: ["5.0"]
+		version: "1.3.0"
+		protocols: ["4"]
 		platforms: [{
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
-			os:   "windows"
-			arch: "amd64"
+			os:   "linux"
+			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "amd64"
 		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
 			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "windows"
 			arch: "386"
 		}]
 	}, {
-		version: "3.65.0"
-		protocols: ["5.0"]
+		version: "2.70.3"
+		protocols: ["4.0,5.0"]
 		platforms: [{
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
 			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}]
+	}, {
+		version: "2.56.0"
+		protocols: ["4.0", "5.0"]
+		platforms: [{
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}]
+	}, {
+		version: "4.48.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "openbsd"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}]
+	}, {
+		version: "3.39.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "freebsd"
@@ -789,9 +795,6 @@ provider: hashicorp: aws: {
 			arch: "amd64"
 		}, {
 			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "darwin"
@@ -799,6 +802,9 @@ provider: hashicorp: aws: {
 		}, {
 			os:   "windows"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
 		}, {
 			os:   "openbsd"
 			arch: "amd64"
@@ -856,554 +862,6 @@ provider: hashicorp: aws: {
 			arch: "386"
 		}]
 	}, {
-		version: "3.74.2"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}]
-	}, {
-		version: "2.68.0"
-		protocols: ["4.0", "5.0"]
-		platforms: [{
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}]
-	}, {
-		version: "1.56.0"
-		protocols: ["4.0"]
-		platforms: [{
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}]
-	}, {
-		version: "2.34.0"
-		protocols: ["4.0", "5.0"]
-		platforms: [{
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}]
-	}, {
-		version: "3.29.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}]
-	}, {
-		version: "3.5.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}]
-	}, {
-		version: "1.26.0"
-		protocols: ["4"]
-		platforms: [{
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}]
-	}, {
-		version: "2.60.0"
-		protocols: ["4.0", "5.0"]
-		platforms: [{
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}]
-	}, {
-		version: "1.5.0"
-		protocols: ["4"]
-		platforms: [{
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}]
-	}, {
-		version: "4.48.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "openbsd"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}]
-	}, {
-		version: "4.41.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "arm"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}]
-	}, {
-		version: "3.14.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}]
-	}, {
-		version: "3.58.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}]
-	}, {
-		version: "2.54.0"
-		protocols: ["4.0", "5.0"]
-		platforms: [{
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}]
-	}, {
 		version: "3.53.0"
 		protocols: ["5.0"]
 		platforms: [{
@@ -1439,6 +897,437 @@ provider: hashicorp: aws: {
 		}, {
 			os:   "linux"
 			arch: "arm64"
+		}]
+	}, {
+		version: "4.4.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}]
+	}, {
+		version: "1.49.0"
+		protocols: ["4"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}]
+	}, {
+		version: "2.30.0"
+		protocols: ["4.0", "5.0"]
+		platforms: [{
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}]
+	}, {
+		version: "1.5.0"
+		protocols: ["4"]
+		platforms: [{
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}]
+	}, {
+		version: "1.2.0"
+		protocols: ["4"]
+		platforms: [{
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}]
+	}, {
+		version: "3.65.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}]
+	}, {
+		version: "2.26.0"
+		protocols: ["4.0", "5.0"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}]
+	}, {
+		version: "2.48.0"
+		protocols: ["4.0", "5.0"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}]
+	}, {
+		version: "1.24.0"
+		protocols: ["4"]
+		platforms: [{
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}]
+	}, {
+		version: "1.1.0"
+		protocols: ["4"]
+		platforms: [{
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}]
+	}, {
+		version: "4.36.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
 		}]
 	}, {
 		version: "4.39.0"
@@ -1487,134 +1376,75 @@ provider: hashicorp: aws: {
 			arch: "386"
 		}]
 	}, {
-		version: "3.45.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}]
-	}, {
-		version: "3.29.1"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}]
-	}, {
-		version: "4.23.0"
+		version: "4.43.0"
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "openbsd"
 			arch: "arm"
 		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
 			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "linux"
 			arch: "arm64"
 		}, {
 			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
 			arch: "arm64"
 		}]
 	}, {
-		version: "2.63.0"
+		version: "2.18.0"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
 			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
 			os:   "openbsd"
 			arch: "amd64"
 		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
 			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "solaris"
 			arch: "amd64"
 		}, {
-			os:   "linux"
-			arch: "arm"
+			os:   "windows"
+			arch: "amd64"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
@@ -1622,30 +1452,70 @@ provider: hashicorp: aws: {
 			os:   "freebsd"
 			arch: "386"
 		}, {
-			os:   "linux"
+			os:   "openbsd"
 			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
-			os:   "openbsd"
+			os:   "linux"
 			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
 		}]
 	}, {
-		version: "1.32.0"
-		protocols: ["4"]
+		version: "4.29.0"
+		protocols: ["5.0"]
 		platforms: [{
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
-			os:   "solaris"
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "darwin"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}]
+	}, {
+		version: "1.56.0"
+		protocols: ["4.0"]
+		platforms: [{
+			os:   "openbsd"
+			arch: "386"
 		}, {
 			os:   "openbsd"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
@@ -1653,25 +1523,19 @@ provider: hashicorp: aws: {
 			os:   "linux"
 			arch: "amd64"
 		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
 			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "solaris"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "windows"
 			arch: "386"
 		}]
 	}, {
@@ -1712,11 +1576,11 @@ provider: hashicorp: aws: {
 			arch: "amd64"
 		}]
 	}, {
-		version: "2.21.1"
+		version: "2.34.0"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
 			os:   "freebsd"
-			arch: "arm"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "386"
@@ -1724,11 +1588,23 @@ provider: hashicorp: aws: {
 			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "openbsd"
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "solaris"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "openbsd"
 			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
@@ -1736,47 +1612,97 @@ provider: hashicorp: aws: {
 			os:   "linux"
 			arch: "arm"
 		}, {
-			os:   "windows"
-			arch: "386"
+			os:   "linux"
+			arch: "amd64"
+		}]
+	}, {
+		version: "4.33.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "linux"
+			arch: "amd64"
 		}, {
-			os:   "openbsd"
-			arch: "386"
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "solaris"
-			arch: "amd64"
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "386"
 		}]
 	}, {
-		version: "4.4.0"
+		version: "3.74.2"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}]
+	}, {
+		version: "4.41.0"
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
 			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "linux"
 			arch: "arm64"
 		}, {
 			os:   "linux"
@@ -1785,41 +1711,50 @@ provider: hashicorp: aws: {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
 			os:   "darwin"
 			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "arm"
+		}, {
+			os:   "openbsd"
+			arch: "386"
 		}]
 	}, {
-		version: "2.30.0"
-		protocols: ["4.0", "5.0"]
+		version: "3.63.0"
+		protocols: ["5.0"]
 		platforms: [{
-			os:   "windows"
-			arch: "386"
+			os:   "linux"
+			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
-			os:   "linux"
+			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "openbsd"
-			arch: "amd64"
+			os:   "windows"
+			arch: "386"
 		}, {
 			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "freebsd"
@@ -1827,6 +1762,141 @@ provider: hashicorp: aws: {
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}]
+	}, {
+		version: "4.50.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "openbsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}]
+	}, {
+		version: "3.2.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}]
+	}, {
+		version: "4.45.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
 		}]
 	}, {
 		version: "1.11.0"
@@ -1869,477 +1939,37 @@ provider: hashicorp: aws: {
 			arch: "amd64"
 		}]
 	}, {
-		version: "1.2.0"
-		protocols: ["4"]
-		platforms: [{
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}]
-	}, {
-		version: "1.37.0"
-		protocols: ["4"]
-		platforms: [{
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}]
-	}, {
-		version: "4.50.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "openbsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}]
-	}, {
 		version: "3.19.0"
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}]
-	}, {
-		version: "1.14.0"
-		protocols: ["4"]
-		platforms: [{
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}]
-	}, {
-		version: "2.56.0"
-		protocols: ["4.0", "5.0"]
-		platforms: [{
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}]
-	}, {
-		version: "3.39.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}]
-	}, {
-		version: "3.76.1"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
 			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
-			os:   "openbsd"
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
 			arch: "arm"
-		}]
-	}, {
-		version: "4.27.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}]
-	}, {
-		version: "2.52.0"
-		protocols: ["4.0", "5.0"]
-		platforms: [{
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "386"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}]
-	}, {
-		version: "3.44.0"
-		protocols: ["5.0"]
-		platforms: [{
 			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}]
-	}, {
-		version: "4.21.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
 			arch: "386"
 		}]
 	}, {
@@ -2380,41 +2010,195 @@ provider: hashicorp: aws: {
 			arch: "arm64"
 		}]
 	}, {
-		version: "4.36.0"
+		version: "3.5.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}]
+	}, {
+		version: "3.44.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}]
+	}, {
+		version: "4.21.0"
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm64"
 		}, {
 			os:   "darwin"
-			arch: "arm64"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
 			os:   "freebsd"
 			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}]
+	}, {
+		version: "4.54.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}]
+	}, {
+		version: "4.27.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
 		}]
 	}, {
 		version: "2.7.0"
@@ -2457,13 +2241,53 @@ provider: hashicorp: aws: {
 			arch: "arm"
 		}]
 	}, {
-		version: "1.43.1"
-		protocols: ["4"]
+		version: "2.47.0"
+		protocols: ["4.0", "5.0"]
 		platforms: [{
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
 			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}]
+	}, {
+		version: "1.43.1"
+		protocols: ["4"]
+		platforms: [{
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "windows"
 			arch: "386"
 		}, {
 			os:   "freebsd"
@@ -2501,6 +2325,9 @@ provider: hashicorp: aws: {
 		protocols: ["4.0"]
 		platforms: [{
 			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "windows"
@@ -2508,9 +2335,6 @@ provider: hashicorp: aws: {
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "amd64"
@@ -2574,59 +2398,19 @@ provider: hashicorp: aws: {
 			arch: "arm"
 		}]
 	}, {
-		version: "2.47.0"
-		protocols: ["4.0", "5.0"]
-		platforms: [{
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}]
-	}, {
-		version: "1.20.0"
+		version: "1.14.0"
 		protocols: ["4"]
 		platforms: [{
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
 			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "freebsd"
@@ -2635,108 +2419,28 @@ provider: hashicorp: aws: {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
-			os:   "freebsd"
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "windows"
+			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "solaris"
 			arch: "amd64"
 		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
 			os:   "linux"
 			arch: "arm"
-		}]
-	}, {
-		version: "4.28.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}]
-	}, {
-		version: "2.2.0"
-		protocols: ["4.0"]
-		platforms: [{
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
 		}]
 	}, {
 		version: "3.37.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "linux"
-			arch: "amd64"
-		}, {
 			os:   "freebsd"
 			arch: "386"
 		}, {
@@ -2750,6 +2454,9 @@ provider: hashicorp: aws: {
 			arch: "amd64"
 		}, {
 			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "darwin"
@@ -2766,6 +2473,83 @@ provider: hashicorp: aws: {
 		}, {
 			os:   "linux"
 			arch: "arm64"
+		}]
+	}, {
+		version: "2.52.0"
+		protocols: ["4.0", "5.0"]
+		platforms: [{
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}]
+	}, {
+		version: "3.58.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "386"
 		}]
 	}, {
 		version: "2.31.0"
@@ -2968,13 +2752,13 @@ provider: hashicorp: aws: {
 		version: "2.65.0"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
-			os:   "freebsd"
+			os:   "windows"
 			arch: "386"
 		}, {
 			os:   "openbsd"
 			arch: "386"
 		}, {
-			os:   "windows"
+			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "linux"
@@ -3003,6 +2787,40 @@ provider: hashicorp: aws: {
 		}, {
 			os:   "freebsd"
 			arch: "arm"
+		}]
+	}, {
+		version: "3.29.1"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "amd64"
 		}]
 	}, {
 		version: "1.54.0"
@@ -3043,6 +2861,46 @@ provider: hashicorp: aws: {
 		}, {
 			os:   "windows"
 			arch: "amd64"
+		}]
+	}, {
+		version: "2.2.0"
+		protocols: ["4.0"]
+		platforms: [{
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
 		}]
 	}, {
 		version: "0.1.2"
@@ -3125,16 +2983,56 @@ provider: hashicorp: aws: {
 			arch: "386"
 		}]
 	}, {
-		version: "1.7.1"
+		version: "1.26.0"
 		protocols: ["4"]
 		platforms: [{
-			os:   "linux"
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "windows"
 			arch: "386"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
 			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}]
+	}, {
+		version: "1.7.1"
+		protocols: ["4"]
+		platforms: [{
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "windows"
@@ -3239,6 +3137,46 @@ provider: hashicorp: aws: {
 			arch: "arm64"
 		}]
 	}, {
+		version: "1.38.0"
+		protocols: ["4"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}]
+	}, {
 		version: "4.53.0"
 		protocols: ["5.0"]
 		platforms: [{
@@ -3292,14 +3230,14 @@ provider: hashicorp: aws: {
 			arch: "amd64"
 		}, {
 			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "linux"
 			arch: "arm64"
 		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
@@ -3329,46 +3267,6 @@ provider: hashicorp: aws: {
 		}, {
 			os:   "openbsd"
 			arch: "arm"
-		}]
-	}, {
-		version: "1.49.0"
-		protocols: ["4"]
-		platforms: [{
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
 		}]
 	}, {
 		version: "1.55.0"
@@ -3559,6 +3457,40 @@ provider: hashicorp: aws: {
 			arch: "arm64"
 		}]
 	}, {
+		version: "3.4.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}]
+	}, {
 		version: "2.41.0"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
@@ -3670,54 +3602,54 @@ provider: hashicorp: aws: {
 			arch: "amd64"
 		}]
 	}, {
-		version: "2.69.0"
+		version: "2.35.0"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
-			os:   "freebsd"
-			arch: "arm"
+			os:   "linux"
+			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "linux"
+			os:   "solaris"
 			arch: "amd64"
 		}, {
-			os:   "windows"
+			os:   "openbsd"
 			arch: "386"
 		}, {
 			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "solaris"
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "openbsd"
 			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
 		}]
 	}, {
 		version: "0.1.0"
 		protocols: ["4"]
 		platforms: [{
-			os:   "linux"
-			arch: "386"
-		}, {
 			os:   "solaris"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "amd64"
@@ -3861,6 +3793,46 @@ provider: hashicorp: aws: {
 			arch: "arm64"
 		}]
 	}, {
+		version: "2.69.0"
+		protocols: ["4.0", "5.0"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}]
+	}, {
 		version: "4.7.0"
 		protocols: ["5.0"]
 		platforms: [{
@@ -3935,38 +3907,41 @@ provider: hashicorp: aws: {
 			arch: "386"
 		}]
 	}, {
-		version: "3.67.0"
-		protocols: ["5.0"]
+		version: "1.41.0"
+		protocols: ["4"]
 		platforms: [{
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
+			os:   "openbsd"
 			arch: "amd64"
 		}, {
-			os:   "linux"
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "386"
 		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
 			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
+			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "amd64"
@@ -4052,19 +4027,93 @@ provider: hashicorp: aws: {
 			arch: "amd64"
 		}]
 	}, {
-		version: "2.22.0"
+		version: "3.13.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}]
+	}, {
+		version: "2.63.0"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
 			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "openbsd"
 			arch: "386"
 		}, {
+			os:   "windows"
+			arch: "amd64"
+		}]
+	}, {
+		version: "2.22.0"
+		protocols: ["4.0", "5.0"]
+		platforms: [{
 			os:   "freebsd"
 			arch: "386"
 		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
 			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "darwin"
@@ -4136,6 +4185,43 @@ provider: hashicorp: aws: {
 		}, {
 			os:   "windows"
 			arch: "amd64"
+		}]
+	}, {
+		version: "4.23.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm64"
 		}]
 	}, {
 		version: "0.1.4"
@@ -4218,14 +4304,17 @@ provider: hashicorp: aws: {
 		version: "2.58.0"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
-			os:   "windows"
-			arch: "386"
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "openbsd"
 			arch: "386"
 		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
 			os:   "linux"
-			arch: "arm"
+			arch: "amd64"
 		}, {
 			os:   "openbsd"
 			arch: "amd64"
@@ -4238,9 +4327,6 @@ provider: hashicorp: aws: {
 		}, {
 			os:   "linux"
 			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
@@ -4335,52 +4421,9 @@ provider: hashicorp: aws: {
 			arch: "386"
 		}]
 	}, {
-		version: "2.62.0"
-		protocols: ["4.0", "5.0"]
-		platforms: [{
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}]
-	}, {
 		version: "2.39.0"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
-			os:   "solaris"
-			arch: "amd64"
-		}, {
 			os:   "linux"
 			arch: "386"
 		}, {
@@ -4396,63 +4439,26 @@ provider: hashicorp: aws: {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}]
-	}, {
-		version: "1.38.0"
-		protocols: ["4"]
-		platforms: [{
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
 			os:   "solaris"
 			arch: "amd64"
 		}, {
-			os:   "windows"
-			arch: "386"
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "openbsd"
+			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "openbsd"
 			arch: "386"
 		}, {
-			os:   "darwin"
-			arch: "amd64"
+			os:   "freebsd"
+			arch: "arm"
 		}]
 	}, {
 		version: "4.18.0"
@@ -4495,11 +4501,11 @@ provider: hashicorp: aws: {
 		version: "4.15.1"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "windows"
-			arch: "386"
-		}, {
 			os:   "linux"
 			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "amd64"
@@ -4606,17 +4612,57 @@ provider: hashicorp: aws: {
 			arch: "amd64"
 		}]
 	}, {
-		version: "2.8.0"
-		protocols: ["4.0", "5.0"]
+		version: "1.32.0"
+		protocols: ["4"]
 		platforms: [{
-			os:   "darwin"
+			os:   "solaris"
 			arch: "amd64"
 		}, {
 			os:   "openbsd"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
 			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}]
+	}, {
+		version: "2.8.0"
+		protocols: ["4.0", "5.0"]
+		platforms: [{
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "amd64"
@@ -4770,10 +4816,10 @@ provider: hashicorp: aws: {
 			arch: "386"
 		}, {
 			os:   "darwin"
-			arch: "amd64"
+			arch: "arm64"
 		}, {
 			os:   "darwin"
-			arch: "arm64"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
@@ -4795,6 +4841,40 @@ provider: hashicorp: aws: {
 		}, {
 			os:   "windows"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}]
+	}, {
+		version: "3.23.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "amd64"
@@ -4917,14 +4997,14 @@ provider: hashicorp: aws: {
 		version: "2.9.0"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
-			os:   "linux"
-			arch: "amd64"
-		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "amd64"
 		}, {
 			os:   "openbsd"
 			arch: "386"
@@ -4994,10 +5074,13 @@ provider: hashicorp: aws: {
 		version: "2.25.0"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
-			os:   "darwin"
+			os:   "openbsd"
 			arch: "amd64"
 		}, {
-			os:   "openbsd"
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "solaris"
@@ -5005,9 +5088,6 @@ provider: hashicorp: aws: {
 		}, {
 			os:   "linux"
 			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "386"
@@ -5225,20 +5305,20 @@ provider: hashicorp: aws: {
 		version: "4.20.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "windows"
+			os:   "darwin"
 			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
 		}, {
 			os:   "linux"
 			arch: "arm64"
 		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
 			os:   "freebsd"
 			arch: "386"
 		}, {
-			os:   "darwin"
-			arch: "amd64"
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "darwin"
 			arch: "arm64"
@@ -5450,6 +5530,46 @@ provider: hashicorp: aws: {
 			arch: "amd64"
 		}]
 	}, {
+		version: "1.20.0"
+		protocols: ["4"]
+		platforms: [{
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}]
+	}, {
 		version: "3.15.0"
 		protocols: ["5.0"]
 		platforms: [{
@@ -5484,81 +5604,38 @@ provider: hashicorp: aws: {
 			arch: "amd64"
 		}]
 	}, {
-		version: "2.26.0"
-		protocols: ["4.0", "5.0"]
-		platforms: [{
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}]
-	}, {
-		version: "3.74.0"
+		version: "3.8.0"
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "linux"
 			arch: "arm"
 		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
 			os:   "linux"
 			arch: "arm64"
 		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
 			os:   "freebsd"
 			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
 		}]
 	}, {
 		version: "2.28.0"
@@ -5596,6 +5673,80 @@ provider: hashicorp: aws: {
 		}, {
 			os:   "openbsd"
 			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}]
+	}, {
+		version: "3.45.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}]
+	}, {
+		version: "4.28.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm64"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
@@ -5644,6 +5795,9 @@ provider: hashicorp: aws: {
 		version: "1.14.1"
 		protocols: ["4"]
 		platforms: [{
+			os:   "freebsd"
+			arch: "arm"
+		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
@@ -5652,9 +5806,6 @@ provider: hashicorp: aws: {
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
@@ -5684,13 +5835,13 @@ provider: hashicorp: aws: {
 		version: "3.75.1"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "windows"
+			arch: "amd64"
+		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "linux"
@@ -5721,14 +5872,14 @@ provider: hashicorp: aws: {
 		version: "2.50.0"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
+			os:   "freebsd"
+			arch: "386"
+		}, {
 			os:   "openbsd"
 			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
 		}, {
 			os:   "openbsd"
 			arch: "amd64"
@@ -5801,8 +5952,14 @@ provider: hashicorp: aws: {
 		version: "1.44.0"
 		protocols: ["4"]
 		platforms: [{
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
 			os:   "linux"
 			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
@@ -5813,16 +5970,10 @@ provider: hashicorp: aws: {
 			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
 			os:   "openbsd"
 			arch: "amd64"
 		}, {
 			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "openbsd"
@@ -5887,11 +6038,11 @@ provider: hashicorp: aws: {
 			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
 			os:   "linux"
 			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
@@ -5955,11 +6106,11 @@ provider: hashicorp: aws: {
 		version: "1.0.0"
 		protocols: ["4"]
 		platforms: [{
-			os:   "solaris"
-			arch: "amd64"
-		}, {
 			os:   "linux"
 			arch: "arm"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "386"
@@ -6030,6 +6181,46 @@ provider: hashicorp: aws: {
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
+		}]
+	}, {
+		version: "2.62.0"
+		protocols: ["4.0", "5.0"]
+		platforms: [{
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
 		}]
 	}, {
 		version: "4.13.0"
@@ -6189,11 +6380,11 @@ provider: hashicorp: aws: {
 		version: "3.3.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "linux"
-			arch: "arm64"
-		}, {
 			os:   "freebsd"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
 		}, {
 			os:   "windows"
 			arch: "386"
@@ -6257,10 +6448,10 @@ provider: hashicorp: aws: {
 		version: "2.10.0"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
-			os:   "linux"
+			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "darwin"
+			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "windows"
@@ -6292,68 +6483,28 @@ provider: hashicorp: aws: {
 		}, {
 			os:   "solaris"
 			arch: "amd64"
-		}]
-	}, {
-		version: "2.18.0"
-		protocols: ["4.0", "5.0"]
-		platforms: [{
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
 		}]
 	}, {
 		version: "4.47.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
 			os:   "linux"
 			arch: "arm64"
 		}, {
 			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
+			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
 			os:   "openbsd"
 			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
@@ -6417,6 +6568,9 @@ provider: hashicorp: aws: {
 		version: "3.76.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "windows"
+			arch: "amd64"
+		}, {
 			os:   "freebsd"
 			arch: "386"
 		}, {
@@ -6431,9 +6585,6 @@ provider: hashicorp: aws: {
 		}, {
 			os:   "windows"
 			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm64"
@@ -6463,12 +6614,12 @@ provider: hashicorp: aws: {
 		version: "2.33.0"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
+			os:   "linux"
+			arch: "386"
+		}, {
 			os:   "solaris"
 			arch: "amd64"
 		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
@@ -6497,56 +6648,22 @@ provider: hashicorp: aws: {
 			arch: "amd64"
 		}, {
 			os:   "windows"
-			arch: "amd64"
-		}]
-	}, {
-		version: "3.23.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "linux"
 			arch: "amd64"
 		}]
 	}, {
 		version: "2.3.0"
 		protocols: ["4.0"]
 		platforms: [{
-			os:   "solaris"
-			arch: "amd64"
+			os:   "freebsd"
+			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
 			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "solaris"
 			arch: "amd64"
 		}, {
 			os:   "openbsd"
@@ -6688,48 +6805,14 @@ provider: hashicorp: aws: {
 			arch: "arm"
 		}]
 	}, {
-		version: "3.17.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}]
-	}, {
 		version: "1.60.0"
 		protocols: ["4.0"]
 		platforms: [{
-			os:   "linux"
-			arch: "amd64"
-		}, {
 			os:   "freebsd"
 			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
 		}, {
 			os:   "openbsd"
 			arch: "386"
@@ -6775,13 +6858,13 @@ provider: hashicorp: aws: {
 			arch: "amd64"
 		}, {
 			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
 			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "386"
@@ -6805,9 +6888,6 @@ provider: hashicorp: aws: {
 			os:   "openbsd"
 			arch: "amd64"
 		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
@@ -6815,6 +6895,9 @@ provider: hashicorp: aws: {
 			arch: "arm"
 		}, {
 			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "openbsd"
 			arch: "386"
 		}, {
 			os:   "solaris"
@@ -6871,40 +6954,6 @@ provider: hashicorp: aws: {
 		}, {
 			os:   "linux"
 			arch: "386"
-		}]
-	}, {
-		version: "3.4.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
 		}]
 	}, {
 		version: "4.0.0"
@@ -6984,13 +7033,50 @@ provider: hashicorp: aws: {
 			arch: "amd64"
 		}]
 	}, {
-		version: "2.51.0"
-		protocols: ["4.0", "5.0"]
+		version: "3.67.0"
+		protocols: ["5.0"]
 		platforms: [{
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
 			os:   "freebsd"
 			arch: "386"
 		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
 			os:   "windows"
+			arch: "amd64"
+		}]
+	}, {
+		version: "2.51.0"
+		protocols: ["4.0", "5.0"]
+		platforms: [{
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "openbsd"
@@ -7064,46 +7150,6 @@ provider: hashicorp: aws: {
 			arch: "amd64"
 		}]
 	}, {
-		version: "1.41.0"
-		protocols: ["4"]
-		platforms: [{
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}]
-	}, {
 		version: "2.11.0"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
@@ -7117,12 +7163,12 @@ provider: hashicorp: aws: {
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "solaris"
@@ -7150,9 +7196,6 @@ provider: hashicorp: aws: {
 			os:   "openbsd"
 			arch: "386"
 		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
@@ -7161,6 +7204,9 @@ provider: hashicorp: aws: {
 		}, {
 			os:   "solaris"
 			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
 		}, {
 			os:   "openbsd"
 			arch: "amd64"
@@ -7188,10 +7234,10 @@ provider: hashicorp: aws: {
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "linux"
-			arch: "arm64"
+			arch: "arm"
 		}, {
 			os:   "linux"
-			arch: "arm"
+			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "386"
@@ -7227,6 +7273,9 @@ provider: hashicorp: aws: {
 			os:   "linux"
 			arch: "arm"
 		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
 			os:   "openbsd"
 			arch: "amd64"
 		}, {
@@ -7234,9 +7283,6 @@ provider: hashicorp: aws: {
 			arch: "386"
 		}, {
 			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "solaris"
@@ -7298,6 +7344,9 @@ provider: hashicorp: aws: {
 		version: "4.25.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "linux"
+			arch: "amd64"
+		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
@@ -7306,9 +7355,6 @@ provider: hashicorp: aws: {
 		}, {
 			os:   "linux"
 			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "386"
@@ -7413,6 +7459,9 @@ provider: hashicorp: aws: {
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "windows"
@@ -7423,9 +7472,6 @@ provider: hashicorp: aws: {
 		}, {
 			os:   "darwin"
 			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "amd64"
@@ -7563,13 +7609,13 @@ provider: hashicorp: aws: {
 			os:   "linux"
 			arch: "386"
 		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
 			os:   "openbsd"
 			arch: "386"
 		}, {
 			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "linux"
@@ -7641,13 +7687,13 @@ provider: hashicorp: aws: {
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "amd64"
@@ -7764,12 +7810,12 @@ provider: hashicorp: aws: {
 		protocols: ["4"]
 		platforms: [{
 			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "linux"
@@ -7926,10 +7972,10 @@ provider: hashicorp: aws: {
 		version: "1.23.0"
 		protocols: ["4"]
 		platforms: [{
-			os:   "windows"
+			os:   "freebsd"
 			arch: "386"
 		}, {
-			os:   "freebsd"
+			os:   "windows"
 			arch: "386"
 		}, {
 			os:   "openbsd"
@@ -8163,11 +8209,11 @@ provider: hashicorp: aws: {
 			os:   "freebsd"
 			arch: "386"
 		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
 			os:   "openbsd"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
@@ -8274,6 +8320,9 @@ provider: hashicorp: aws: {
 		version: "2.36.0"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
+			os:   "windows"
+			arch: "amd64"
+		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
@@ -8291,9 +8340,6 @@ provider: hashicorp: aws: {
 		}, {
 			os:   "linux"
 			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
@@ -8588,9 +8634,6 @@ provider: hashicorp: aws: {
 			os:   "solaris"
 			arch: "amd64"
 		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
@@ -8602,6 +8645,9 @@ provider: hashicorp: aws: {
 		}, {
 			os:   "openbsd"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "openbsd"
 			arch: "386"
@@ -8622,6 +8668,9 @@ provider: hashicorp: aws: {
 		version: "1.13.0"
 		protocols: ["4"]
 		platforms: [{
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
 			os:   "freebsd"
 			arch: "386"
 		}, {
@@ -8647,9 +8696,6 @@ provider: hashicorp: aws: {
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
 			arch: "amd64"
 		}, {
 			os:   "darwin"
@@ -8663,25 +8709,25 @@ provider: hashicorp: aws: {
 		protocols: ["4.0"]
 		platforms: [{
 			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
 			arch: "arm"
 		}, {
 			os:   "solaris"
 			arch: "amd64"
 		}, {
-			os:   "openbsd"
+			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "windows"
+			os:   "openbsd"
 			arch: "amd64"
 		}, {
 			os:   "openbsd"
 			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "386"
@@ -8746,19 +8792,19 @@ provider: hashicorp: aws: {
 			arch: "arm64"
 		}, {
 			os:   "linux"
-			arch: "amd64"
+			arch: "386"
 		}, {
 			os:   "linux"
-			arch: "386"
+			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "freebsd"
-			arch: "amd64"
+			arch: "386"
 		}, {
 			os:   "freebsd"
-			arch: "386"
+			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "386"
@@ -8859,9 +8905,6 @@ provider: hashicorp: aws: {
 			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
 			os:   "solaris"
 			arch: "amd64"
 		}, {
@@ -8876,6 +8919,9 @@ provider: hashicorp: aws: {
 		}, {
 			os:   "openbsd"
 			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "386"
@@ -8902,9 +8948,6 @@ provider: hashicorp: aws: {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
 			os:   "linux"
 			arch: "386"
 		}, {
@@ -8916,6 +8959,9 @@ provider: hashicorp: aws: {
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
 		}, {
 			os:   "solaris"
 			arch: "amd64"
@@ -8939,6 +8985,9 @@ provider: hashicorp: aws: {
 			os:   "freebsd"
 			arch: "386"
 		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
 			os:   "linux"
 			arch: "386"
 		}, {
@@ -8947,9 +8996,6 @@ provider: hashicorp: aws: {
 		}, {
 			os:   "linux"
 			arch: "arm"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "amd64"
@@ -9053,14 +9099,14 @@ provider: hashicorp: aws: {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
@@ -9272,9 +9318,6 @@ provider: hashicorp: aws: {
 		version: "3.31.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "windows"
-			arch: "386"
-		}, {
 			os:   "linux"
 			arch: "arm64"
 		}, {
@@ -9292,6 +9335,9 @@ provider: hashicorp: aws: {
 		}, {
 			os:   "windows"
 			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "arm"
@@ -9315,13 +9361,13 @@ provider: hashicorp: aws: {
 			os:   "linux"
 			arch: "386"
 		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "linux"
@@ -9463,10 +9509,10 @@ provider: hashicorp: aws: {
 		version: "3.9.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "darwin"
+			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "linux"
+			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
@@ -9663,14 +9709,14 @@ provider: hashicorp: aws: {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
 			os:   "openbsd"
 			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
 		}, {
 			os:   "openbsd"
 			arch: "amd64"
@@ -9740,10 +9786,10 @@ provider: hashicorp: aws: {
 			os:   "linux"
 			arch: "arm"
 		}, {
-			os:   "freebsd"
+			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "windows"
+			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "openbsd"
@@ -9817,23 +9863,23 @@ provider: hashicorp: aws: {
 			os:   "freebsd"
 			arch: "386"
 		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
 			os:   "linux"
 			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
 			os:   "openbsd"
 			arch: "386"
 		}, {
 			os:   "openbsd"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "arm"
@@ -9855,9 +9901,6 @@ provider: hashicorp: aws: {
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "linux"
 			arch: "arm64"
 		}, {
 			os:   "windows"
@@ -9868,6 +9911,9 @@ provider: hashicorp: aws: {
 		}, {
 			os:   "linux"
 			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "386"
 		}, {
 			os:   "darwin"
 			arch: "arm64"
@@ -10005,11 +10051,11 @@ provider: hashicorp: aws: {
 			os:   "linux"
 			arch: "arm64"
 		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
 			os:   "windows"
 			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
@@ -10116,9 +10162,6 @@ provider: hashicorp: aws: {
 		version: "2.14.0"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
@@ -10133,6 +10176,9 @@ provider: hashicorp: aws: {
 		}, {
 			os:   "freebsd"
 			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "amd64"
@@ -10159,8 +10205,8 @@ provider: hashicorp: aws: {
 			os:   "windows"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
-			arch: "arm"
+			os:   "darwin"
+			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "386"
@@ -10171,11 +10217,11 @@ provider: hashicorp: aws: {
 			os:   "linux"
 			arch: "arm64"
 		}, {
-			os:   "linux"
+			os:   "freebsd"
 			arch: "arm"
 		}, {
-			os:   "darwin"
-			arch: "amd64"
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "386"
@@ -10427,11 +10473,11 @@ provider: hashicorp: aws: {
 		version: "4.17.1"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "windows"
-			arch: "amd64"
-		}, {
 			os:   "darwin"
 			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm64"
@@ -10809,10 +10855,10 @@ provider: hashicorp: aws: {
 		version: "1.15.0"
 		protocols: ["4"]
 		platforms: [{
-			os:   "windows"
+			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "linux"
+			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "linux"
@@ -10893,13 +10939,13 @@ provider: hashicorp: aws: {
 			arch: "arm64"
 		}, {
 			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "openbsd"
 			arch: "arm"
@@ -11129,6 +11175,9 @@ provider: hashicorp: aws: {
 		version: "3.64.1"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "linux"
+			arch: "arm"
+		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
@@ -11140,9 +11189,6 @@ provider: hashicorp: aws: {
 		}, {
 			os:   "freebsd"
 			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
@@ -11321,13 +11367,13 @@ provider: hashicorp: aws: {
 			arch: "arm"
 		}, {
 			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
 		}, {
 			os:   "windows"
 			arch: "386"
@@ -11354,10 +11400,10 @@ provider: hashicorp: aws: {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "linux"
+			os:   "freebsd"
 			arch: "386"
 		}, {
-			os:   "freebsd"
+			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "solaris"
@@ -11391,20 +11437,20 @@ provider: hashicorp: aws: {
 		version: "1.42.0"
 		protocols: ["4"]
 		platforms: [{
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
 			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
 		}, {
 			os:   "darwin"
 			arch: "amd64"

@@ -6,10 +6,10 @@ provider: hashicorp: salesforce: {
 		version: "0.1.0"
 		protocols: []
 		platforms: [{
-			os:   "darwin"
+			os:   "windows"
 			arch: "amd64"
 		}, {
-			os:   "windows"
+			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "linux"

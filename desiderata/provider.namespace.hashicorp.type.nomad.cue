@@ -3,6 +3,46 @@ package desiderata
 provider: hashicorp: nomad: {
 	id: "hashicorp/nomad"
 	versions: [{
+		version: "1.0.0"
+		protocols: ["4"]
+		platforms: [{
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}]
+	}, {
 		version: "1.4.2"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
@@ -43,6 +83,46 @@ provider: hashicorp: nomad: {
 			arch: "amd64"
 		}]
 	}, {
+		version: "1.3.0"
+		protocols: ["4"]
+		platforms: [{
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}]
+	}, {
 		version: "1.4.15"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
@@ -80,17 +160,11 @@ provider: hashicorp: nomad: {
 			arch: "arm64"
 		}]
 	}, {
-		version: "1.0.0"
+		version: "1.2.0"
 		protocols: ["4"]
 		platforms: [{
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
 			os:   "linux"
-			arch: "arm"
+			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "386"
@@ -98,26 +172,32 @@ provider: hashicorp: nomad: {
 			os:   "openbsd"
 			arch: "386"
 		}, {
-			os:   "solaris"
-			arch: "amd64"
+			os:   "freebsd"
+			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "386"
 		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
-			arch: "arm"
+			os:   "openbsd"
+			arch: "amd64"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
 		}]
 	}, {
 		version: "1.4.10"
@@ -175,11 +255,11 @@ provider: hashicorp: nomad: {
 			os:   "windows"
 			arch: "amd64"
 		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
 			os:   "freebsd"
 			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "amd64"
@@ -197,11 +277,14 @@ provider: hashicorp: nomad: {
 		version: "1.1.0"
 		protocols: ["4"]
 		platforms: [{
-			os:   "linux"
-			arch: "386"
+			os:   "freebsd"
+			arch: "arm"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "amd64"
@@ -220,9 +303,6 @@ provider: hashicorp: nomad: {
 		}, {
 			os:   "windows"
 			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
 		}, {
 			os:   "solaris"
 			arch: "amd64"
@@ -305,46 +385,6 @@ provider: hashicorp: nomad: {
 			arch: "arm64"
 		}]
 	}, {
-		version: "1.2.0"
-		protocols: ["4"]
-		platforms: [{
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}]
-	}, {
 		version: "1.4.9"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
@@ -377,46 +417,6 @@ provider: hashicorp: nomad: {
 		}, {
 			os:   "freebsd"
 			arch: "386"
-		}]
-	}, {
-		version: "1.3.0"
-		protocols: ["4"]
-		platforms: [{
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
 		}]
 	}, {
 		version: "1.4.4"
@@ -502,10 +502,10 @@ provider: hashicorp: nomad: {
 		version: "0.1.0"
 		protocols: ["4"]
 		platforms: [{
-			os:   "freebsd"
+			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "windows"
+			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "freebsd"
@@ -616,6 +616,9 @@ provider: hashicorp: nomad: {
 			os:   "windows"
 			arch: "386"
 		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
@@ -624,9 +627,6 @@ provider: hashicorp: nomad: {
 		}, {
 			os:   "darwin"
 			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "arm"
@@ -776,9 +776,6 @@ provider: hashicorp: nomad: {
 			os:   "linux"
 			arch: "arm"
 		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
 			os:   "solaris"
 			arch: "amd64"
 		}, {
@@ -790,6 +787,9 @@ provider: hashicorp: nomad: {
 		}, {
 			os:   "windows"
 			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "386"

@@ -3,46 +3,6 @@ package desiderata
 provider: hashicorp: oraclepaas: {
 	id: "hashicorp/oraclepaas"
 	versions: [{
-		version: "1.3.0"
-		protocols: ["4"]
-		platforms: [{
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}]
-	}, {
 		version: "1.2.0"
 		protocols: ["4"]
 		platforms: [{
@@ -166,14 +126,14 @@ provider: hashicorp: oraclepaas: {
 		version: "1.3.1"
 		protocols: ["4"]
 		platforms: [{
+			os:   "linux"
+			arch: "386"
+		}, {
 			os:   "openbsd"
 			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "amd64"
@@ -200,6 +160,46 @@ provider: hashicorp: oraclepaas: {
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
+			arch: "amd64"
+		}]
+	}, {
+		version: "1.3.0"
+		protocols: ["4"]
+		platforms: [{
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
 			arch: "amd64"
 		}]
 	}, {
@@ -366,6 +366,9 @@ provider: hashicorp: oraclepaas: {
 		version: "1.5.3"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
+			os:   "openbsd"
+			arch: "386"
+		}, {
 			os:   "linux"
 			arch: "amd64"
 		}, {
@@ -374,9 +377,6 @@ provider: hashicorp: oraclepaas: {
 		}, {
 			os:   "linux"
 			arch: "arm"
-		}, {
-			os:   "openbsd"
-			arch: "386"
 		}, {
 			os:   "solaris"
 			arch: "amd64"
@@ -461,10 +461,10 @@ provider: hashicorp: oraclepaas: {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
-			os:   "openbsd"
+			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "linux"
+			os:   "openbsd"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
@@ -606,11 +606,11 @@ provider: hashicorp: oraclepaas: {
 		version: "1.4.0"
 		protocols: ["4"]
 		platforms: [{
-			os:   "linux"
-			arch: "amd64"
-		}, {
 			os:   "openbsd"
 			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "386"

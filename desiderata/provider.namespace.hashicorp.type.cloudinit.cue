@@ -111,6 +111,9 @@ provider: hashicorp: cloudinit: {
 		version: "1.0.0"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
 			os:   "openbsd"
 			arch: "386"
 		}, {
@@ -119,9 +122,6 @@ provider: hashicorp: cloudinit: {
 		}, {
 			os:   "freebsd"
 			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "386"

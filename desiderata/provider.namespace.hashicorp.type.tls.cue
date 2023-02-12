@@ -3,43 +3,6 @@ package desiderata
 provider: hashicorp: tls: {
 	id: "hashicorp/tls"
 	versions: [{
-		version: "3.2.1"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}]
-	}, {
 		version: "3.0.0"
 		protocols: ["5.0"]
 		platforms: [{
@@ -72,6 +35,43 @@ provider: hashicorp: tls: {
 		}, {
 			os:   "linux"
 			arch: "amd64"
+		}]
+	}, {
+		version: "3.3.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
 		}]
 	}, {
 		version: "4.0.2"
@@ -148,41 +148,41 @@ provider: hashicorp: tls: {
 			arch: "386"
 		}]
 	}, {
-		version: "3.2.0"
+		version: "3.2.1"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "darwin"
-			arch: "amd64"
-		}, {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "windows"
 			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "386"
 		}, {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
 			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
 			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
 		}]
 	}, {
 		version: "1.1.0"
@@ -299,6 +299,43 @@ provider: hashicorp: tls: {
 			arch: "arm64"
 		}]
 	}, {
+		version: "3.2.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}]
+	}, {
 		version: "1.2.0"
 		protocols: ["4"]
 		platforms: [{
@@ -337,43 +374,6 @@ provider: hashicorp: tls: {
 		}, {
 			os:   "openbsd"
 			arch: "386"
-		}]
-	}, {
-		version: "3.3.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
 		}]
 	}, {
 		version: "4.0.1"
@@ -459,6 +459,9 @@ provider: hashicorp: tls: {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
@@ -477,9 +480,6 @@ provider: hashicorp: tls: {
 			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
 			os:   "freebsd"
 			arch: "386"
 		}, {
@@ -493,14 +493,14 @@ provider: hashicorp: tls: {
 		version: "2.0.0"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
+			os:   "freebsd"
+			arch: "arm"
+		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "amd64"
@@ -576,6 +576,9 @@ provider: hashicorp: tls: {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
@@ -587,9 +590,6 @@ provider: hashicorp: tls: {
 		}, {
 			os:   "linux"
 			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "386"

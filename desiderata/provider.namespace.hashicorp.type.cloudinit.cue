@@ -6,11 +6,11 @@ provider: hashicorp: cloudinit: {
 		version: "2.2.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "darwin"
-			arch: "arm64"
-		}, {
 			os:   "windows"
 			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
@@ -49,17 +49,17 @@ provider: hashicorp: cloudinit: {
 			os:   "linux"
 			arch: "arm64"
 		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "windows"
+			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
@@ -111,11 +111,11 @@ provider: hashicorp: cloudinit: {
 		version: "1.0.0"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
 			os:   "openbsd"
 			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
 			os:   "openbsd"
 			arch: "amd64"

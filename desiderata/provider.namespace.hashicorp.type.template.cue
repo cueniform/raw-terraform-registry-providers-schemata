@@ -3,59 +3,19 @@ package desiderata
 provider: hashicorp: template: {
 	id: "hashicorp/template"
 	versions: [{
-		version: "2.0.0"
-		protocols: ["4.0"]
-		platforms: [{
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}]
-	}, {
 		version: "2.1.0"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
 			os:   "windows"
 			arch: "amd64"
 		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
 			os:   "openbsd"
 			arch: "amd64"
 		}, {
 			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "freebsd"
@@ -81,6 +41,46 @@ provider: hashicorp: template: {
 		}, {
 			os:   "darwin"
 			arch: "amd64"
+		}]
+	}, {
+		version: "2.0.0"
+		protocols: ["4.0"]
+		platforms: [{
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "386"
 		}]
 	}, {
 		version: "2.1.2"
@@ -126,14 +126,14 @@ provider: hashicorp: template: {
 		version: "1.0.0"
 		protocols: ["4"]
 		platforms: [{
-			os:   "darwin"
-			arch: "amd64"
-		}, {
 			os:   "openbsd"
 			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
 		}, {
 			os:   "openbsd"
 			arch: "amd64"
@@ -178,11 +178,11 @@ provider: hashicorp: template: {
 			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
 			os:   "freebsd"
 			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
 		}, {
 			os:   "solaris"
 			arch: "amd64"
@@ -209,10 +209,10 @@ provider: hashicorp: template: {
 			os:   "solaris"
 			arch: "amd64"
 		}, {
-			os:   "windows"
+			os:   "freebsd"
 			arch: "386"
 		}, {
-			os:   "freebsd"
+			os:   "windows"
 			arch: "386"
 		}, {
 			os:   "linux"

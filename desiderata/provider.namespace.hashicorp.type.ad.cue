@@ -41,10 +41,10 @@ provider: hashicorp: ad: {
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "linux"
-			arch: "386"
+			arch: "amd64"
 		}, {
 			os:   "linux"
-			arch: "amd64"
+			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
@@ -179,10 +179,10 @@ provider: hashicorp: ad: {
 			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "windows"
+			os:   "freebsd"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
+			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "windows"
@@ -210,13 +210,13 @@ provider: hashicorp: ad: {
 		version: "0.4.4"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "windows"
+			arch: "amd64"
+		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "linux"

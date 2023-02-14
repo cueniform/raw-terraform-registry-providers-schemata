@@ -6,11 +6,11 @@ provider: hashicorp: boundary: {
 		version: "1.0.1"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "linux"
-			arch: "arm64"
-		}, {
 			os:   "windows"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
@@ -37,60 +37,51 @@ provider: hashicorp: boundary: {
 			arch: "386"
 		}]
 	}, {
-		version: "0.1.4"
+		version: "1.0.5"
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "linux"
 			arch: "arm64"
 		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
 			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "windows"
-			arch: "amd64"
+			os:   "darwin"
+			arch: "arm64"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
 			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
 			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
 		}]
 	}, {
-		version: "1.0.12"
+		version: "1.0.10"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
+			os:   "linux"
+			arch: "arm64"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
@@ -99,13 +90,25 @@ provider: hashicorp: boundary: {
 			arch: "386"
 		}, {
 			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "linux"
 			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
 		}]
 	}, {
 		version: "1.0.4"
@@ -145,20 +148,20 @@ provider: hashicorp: boundary: {
 			arch: "arm64"
 		}]
 	}, {
-		version: "1.0.10"
+		version: "0.1.4"
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "linux"
-			arch: "arm64"
+			arch: "amd64"
 		}, {
 			os:   "darwin"
-			arch: "arm64"
+			arch: "amd64"
 		}, {
-			os:   "freebsd"
+			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "linux"
-			arch: "386"
+			arch: "arm64"
 		}, {
 			os:   "windows"
 			arch: "386"
@@ -167,19 +170,16 @@ provider: hashicorp: boundary: {
 			arch: "arm"
 		}, {
 			os:   "linux"
-			arch: "amd64"
+			arch: "386"
 		}, {
-			os:   "darwin"
-			arch: "amd64"
+			os:   "freebsd"
+			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
 			os:   "freebsd"
-			arch: "386"
+			arch: "amd64"
 		}]
 	}, {
 		version: "1.0.11"
@@ -191,69 +191,32 @@ provider: hashicorp: boundary: {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}]
-	}, {
-		version: "1.0.5"
-		protocols: ["5.0"]
-		platforms: [{
 			os:   "linux"
 			arch: "arm64"
 		}, {
 			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
 			arch: "arm"
 		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
+			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
-			os:   "linux"
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
 			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "386"
 		}]
 	}, {
 		version: "1.1.0"
@@ -262,11 +225,11 @@ provider: hashicorp: boundary: {
 			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
 			os:   "freebsd"
 			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
@@ -296,17 +259,17 @@ provider: hashicorp: boundary: {
 		version: "1.0.8"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
 		}, {
 			os:   "freebsd"
 			arch: "386"
@@ -330,20 +293,57 @@ provider: hashicorp: boundary: {
 			arch: "arm"
 		}]
 	}, {
-		version: "1.0.9"
+		version: "1.0.12"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "linux"
-			arch: "386"
-		}, {
 			os:   "freebsd"
 			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
 			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
 			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}]
+	}, {
+		version: "1.0.9"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "386"
@@ -370,20 +370,14 @@ provider: hashicorp: boundary: {
 		version: "1.0.3"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "linux"
+			os:   "freebsd"
 			arch: "arm"
 		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
+			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "linux"
-			arch: "amd64"
+			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "amd64"
@@ -391,11 +385,17 @@ provider: hashicorp: boundary: {
 			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "freebsd"
+			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "darwin"
 			arch: "arm64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm64"
@@ -410,11 +410,11 @@ provider: hashicorp: boundary: {
 			os:   "windows"
 			arch: "amd64"
 		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
 			os:   "windows"
 			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
@@ -445,22 +445,19 @@ provider: hashicorp: boundary: {
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "linux"
-			arch: "386"
+			arch: "arm"
 		}, {
-			os:   "darwin"
-			arch: "amd64"
+			os:   "linux"
+			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "386"
 		}, {
-			os:   "linux"
+			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "darwin"
 			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "arm"
 		}, {
 			os:   "linux"
 			arch: "arm64"
@@ -469,6 +466,9 @@ provider: hashicorp: boundary: {
 			arch: "386"
 		}, {
 			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
@@ -552,11 +552,11 @@ provider: hashicorp: boundary: {
 		version: "1.0.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "linux"
-			arch: "arm"
-		}, {
 			os:   "darwin"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "amd64"
@@ -586,14 +586,14 @@ provider: hashicorp: boundary: {
 		version: "1.0.7"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "linux"
+			arch: "386"
+		}, {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
@@ -623,11 +623,11 @@ provider: hashicorp: boundary: {
 		version: "1.1.1"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "darwin"
-			arch: "amd64"
-		}, {
 			os:   "linux"
 			arch: "arm64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "amd64"

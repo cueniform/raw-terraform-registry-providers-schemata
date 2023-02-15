@@ -6,10 +6,10 @@ provider: hashicorp: time: {
 		version: "0.7.1"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "windows"
+			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "linux"
+			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
@@ -228,11 +228,11 @@ provider: hashicorp: time: {
 		version: "0.4.0"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
-			os:   "freebsd"
-			arch: "arm"
-		}, {
 			os:   "linux"
 			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "amd64"
@@ -277,14 +277,14 @@ provider: hashicorp: time: {
 			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "386"
 		}, {
 			os:   "darwin"
 			arch: "amd64"

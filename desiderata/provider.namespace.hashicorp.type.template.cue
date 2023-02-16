@@ -86,14 +86,14 @@ provider: hashicorp: template: {
 		version: "2.1.0"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
-			os:   "linux"
-			arch: "amd64"
-		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
 			os:   "openbsd"
 			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "amd64"
@@ -126,10 +126,10 @@ provider: hashicorp: template: {
 		version: "1.0.0"
 		protocols: ["4"]
 		platforms: [{
-			os:   "openbsd"
+			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "linux"
+			os:   "openbsd"
 			arch: "386"
 		}, {
 			os:   "darwin"
@@ -212,6 +212,9 @@ provider: hashicorp: template: {
 			os:   "solaris"
 			arch: "amd64"
 		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
 			os:   "freebsd"
 			arch: "386"
 		}, {
@@ -223,9 +226,6 @@ provider: hashicorp: template: {
 		}, {
 			os:   "windows"
 			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "386"
@@ -246,14 +246,14 @@ provider: hashicorp: template: {
 		version: "0.1.1"
 		protocols: ["4"]
 		platforms: [{
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
@@ -286,6 +286,9 @@ provider: hashicorp: template: {
 		version: "2.2.0"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
+			os:   "freebsd"
+			arch: "386"
+		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
@@ -296,9 +299,6 @@ provider: hashicorp: template: {
 			arch: "arm"
 		}, {
 			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "linux"

@@ -6,9 +6,6 @@ provider: hashicorp: http: {
 		version: "1.0.1"
 		protocols: ["4"]
 		platforms: [{
-			os:   "openbsd"
-			arch: "386"
-		}, {
 			os:   "solaris"
 			arch: "amd64"
 		}, {
@@ -29,6 +26,9 @@ provider: hashicorp: http: {
 		}, {
 			os:   "openbsd"
 			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
@@ -197,11 +197,11 @@ provider: hashicorp: http: {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
 			os:   "linux"
 			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
 		}, {
 			os:   "darwin"
 			arch: "arm64"
@@ -234,14 +234,14 @@ provider: hashicorp: http: {
 			os:   "solaris"
 			arch: "amd64"
 		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "386"
@@ -348,16 +348,13 @@ provider: hashicorp: http: {
 		version: "1.2.0"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
+			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "linux"
+			os:   "openbsd"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
@@ -365,6 +362,9 @@ provider: hashicorp: http: {
 		}, {
 			os:   "openbsd"
 			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "arm"

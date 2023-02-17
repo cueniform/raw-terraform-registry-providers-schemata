@@ -6,31 +6,31 @@ provider: integrations: github: {
 		version: "4.19.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "windows"
-			arch: "amd64"
+			os:   "freebsd"
+			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "arm64"
 		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
 			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "arm"
+			arch: "amd64"
 		}, {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
 			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "linux"
@@ -44,52 +44,6 @@ provider: integrations: github: {
 		}, {
 			os:   "linux"
 			arch: "arm64"
-		}]
-	}, {
-		version: "5.5.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
 		}]
 	}, {
 		version: "4.20.0"
@@ -98,6 +52,9 @@ provider: integrations: github: {
 			os:   "linux"
 			arch: "386"
 		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
@@ -119,9 +76,6 @@ provider: integrations: github: {
 			os:   "freebsd"
 			arch: "386"
 		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
@@ -133,25 +87,71 @@ provider: integrations: github: {
 		}, {
 			os:   "windows"
 			arch: "arm"
+		}]
+	}, {
+		version: "5.9.2"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "arm64"
 		}]
 	}, {
 		version: "4.15.0"
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
 			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "freebsd"
-			arch: "arm64"
+			os:   "windows"
+			arch: "arm"
 		}, {
 			os:   "linux"
 			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "arm"
 		}, {
 			os:   "linux"
 			arch: "arm64"
@@ -176,104 +176,18 @@ provider: integrations: github: {
 		}, {
 			os:   "darwin"
 			arch: "amd64"
-		}]
-	}, {
-		version: "4.9.3"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}]
-	}, {
-		version: "4.12.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
 		}]
 	}, {
 		version: "5.16.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "linux"
-			arch: "arm64"
-		}, {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
 			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "freebsd"
@@ -282,11 +196,11 @@ provider: integrations: github: {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
 			os:   "freebsd"
 			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "arm"
@@ -317,22 +231,22 @@ provider: integrations: github: {
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
 			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "386"
@@ -399,13 +313,10 @@ provider: integrations: github: {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
-			os:   "freebsd"
+			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "windows"
+			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "linux"
@@ -425,6 +336,9 @@ provider: integrations: github: {
 		}, {
 			os:   "darwin"
 			arch: "arm64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "arm64"
@@ -446,12 +360,15 @@ provider: integrations: github: {
 			arch: "386"
 		}, {
 			os:   "windows"
-			arch: "386"
+			arch: "arm"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "windows"
 			arch: "386"
 		}, {
 			os:   "freebsd"
@@ -462,9 +379,6 @@ provider: integrations: github: {
 		}, {
 			os:   "linux"
 			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
@@ -482,20 +396,106 @@ provider: integrations: github: {
 			arch: "amd64"
 		}]
 	}, {
-		version: "4.9.0"
+		version: "5.5.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
 			os:   "freebsd"
 			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
 		}, {
 			os:   "freebsd"
 			arch: "arm64"
 		}, {
 			os:   "linux"
-			arch: "386"
+			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
+		}]
+	}, {
+		version: "4.9.3"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}]
+	}, {
+		version: "4.9.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
 		}, {
 			os:   "windows"
 			arch: "386"
@@ -505,6 +505,9 @@ provider: integrations: github: {
 		}, {
 			os:   "linux"
 			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "amd64"
@@ -526,13 +529,13 @@ provider: integrations: github: {
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "386"
@@ -618,13 +621,13 @@ provider: integrations: github: {
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
@@ -649,61 +652,15 @@ provider: integrations: github: {
 		}, {
 			os:   "linux"
 			arch: "arm64"
-		}]
-	}, {
-		version: "5.9.1"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
 		}]
 	}, {
 		version: "4.7.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "windows"
+			os:   "freebsd"
 			arch: "arm"
 		}, {
-			os:   "freebsd"
+			os:   "windows"
 			arch: "arm"
 		}, {
 			os:   "freebsd"
@@ -712,14 +669,14 @@ provider: integrations: github: {
 			os:   "linux"
 			arch: "amd64"
 		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
 		}, {
 			os:   "linux"
 			arch: "arm64"
@@ -749,11 +706,11 @@ provider: integrations: github: {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
 			os:   "linux"
 			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
@@ -780,6 +737,9 @@ provider: integrations: github: {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
 			os:   "linux"
 			arch: "amd64"
 		}, {
@@ -790,9 +750,6 @@ provider: integrations: github: {
 			arch: "arm64"
 		}, {
 			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "windows"
 			arch: "arm"
 		}, {
 			os:   "freebsd"
@@ -818,49 +775,6 @@ provider: integrations: github: {
 		}, {
 			os:   "windows"
 			arch: "arm64"
-		}]
-	}, {
-		version: "4.20.1"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
 		}]
 	}, {
 		version: "4.19.2"
@@ -912,17 +826,17 @@ provider: integrations: github: {
 			os:   "windows"
 			arch: "arm"
 		}, {
-			os:   "freebsd"
+			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "arm64"
 		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
 			os:   "freebsd"
 			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm"
@@ -949,29 +863,75 @@ provider: integrations: github: {
 			arch: "arm64"
 		}]
 	}, {
-		version: "4.9.2"
+		version: "5.9.1"
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "freebsd"
-			arch: "arm64"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm64"
 		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "linux"
+			os:   "freebsd"
 			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
 		}, {
 			os:   "darwin"
 			arch: "arm64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}]
+	}, {
+		version: "4.9.2"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "386"
@@ -1035,61 +995,12 @@ provider: integrations: github: {
 			arch: "amd64"
 		}]
 	}, {
-		version: "5.9.2"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "arm64"
-		}]
-	}, {
 		version: "4.23.0"
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "darwin"
 			arch: "arm64"
 		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
 			os:   "linux"
 			arch: "amd64"
 		}, {
@@ -1104,6 +1015,9 @@ provider: integrations: github: {
 		}, {
 			os:   "darwin"
 			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "arm"
@@ -1124,17 +1038,60 @@ provider: integrations: github: {
 			arch: "386"
 		}]
 	}, {
-		version: "4.31.0"
+		version: "4.12.0"
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}]
+	}, {
+		version: "4.31.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
 		}, {
 			os:   "darwin"
 			arch: "arm64"
@@ -1149,10 +1106,10 @@ provider: integrations: github: {
 			arch: "arm64"
 		}, {
 			os:   "windows"
-			arch: "arm64"
+			arch: "arm"
 		}, {
 			os:   "windows"
-			arch: "amd64"
+			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "386"
@@ -1219,19 +1176,13 @@ provider: integrations: github: {
 		version: "4.8.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
 			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "linux"
@@ -1239,6 +1190,12 @@ provider: integrations: github: {
 		}, {
 			os:   "linux"
 			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "386"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
@@ -1305,10 +1262,13 @@ provider: integrations: github: {
 		version: "4.30.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "windows"
-			arch: "arm64"
+			os:   "freebsd"
+			arch: "386"
 		}, {
 			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "windows"
 			arch: "arm64"
 		}, {
 			os:   "freebsd"
@@ -1319,9 +1279,6 @@ provider: integrations: github: {
 		}, {
 			os:   "linux"
 			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "arm"
@@ -1351,9 +1308,6 @@ provider: integrations: github: {
 		version: "4.19.1"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "windows"
-			arch: "386"
-		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
@@ -1365,6 +1319,9 @@ provider: integrations: github: {
 		}, {
 			os:   "linux"
 			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "386"
 		}, {
 			os:   "darwin"
 			arch: "arm64"
@@ -1394,6 +1351,9 @@ provider: integrations: github: {
 		version: "5.17.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
@@ -1405,9 +1365,6 @@ provider: integrations: github: {
 		}, {
 			os:   "windows"
 			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
 		}, {
 			os:   "windows"
 			arch: "arm"
@@ -1440,23 +1397,23 @@ provider: integrations: github: {
 		version: "4.5.1"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "linux"
+			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "darwin"
+			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
 			os:   "linux"
 			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "amd64"
@@ -1615,6 +1572,9 @@ provider: integrations: github: {
 		version: "4.22.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "linux"
+			arch: "amd64"
+		}, {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
@@ -1623,9 +1583,6 @@ provider: integrations: github: {
 		}, {
 			os:   "linux"
 			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "amd64"
@@ -1655,9 +1612,55 @@ provider: integrations: github: {
 			arch: "386"
 		}]
 	}, {
+		version: "4.20.1"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}]
+	}, {
 		version: "4.11.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "linux"
+			arch: "amd64"
+		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
@@ -1675,9 +1678,6 @@ provider: integrations: github: {
 		}, {
 			os:   "windows"
 			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm64"
@@ -1711,9 +1711,6 @@ provider: integrations: github: {
 			arch: "arm64"
 		}, {
 			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "linux"
@@ -1723,6 +1720,9 @@ provider: integrations: github: {
 			arch: "arm64"
 		}, {
 			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "windows"
@@ -1765,13 +1765,13 @@ provider: integrations: github: {
 			os:   "windows"
 			arch: "arm"
 		}, {
+			os:   "windows"
+			arch: "arm64"
+		}, {
 			os:   "linux"
 			arch: "arm64"
 		}, {
 			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "windows"
 			arch: "arm64"
 		}, {
 			os:   "windows"
@@ -1796,11 +1796,11 @@ provider: integrations: github: {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
 			os:   "darwin"
 			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm"
@@ -1839,17 +1839,20 @@ provider: integrations: github: {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "arm64"
+		}, {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
 		}, {
 			os:   "darwin"
 			arch: "arm64"
@@ -1859,9 +1862,6 @@ provider: integrations: github: {
 		}, {
 			os:   "windows"
 			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "arm"
@@ -1883,13 +1883,13 @@ provider: integrations: github: {
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "linux"
-			arch: "arm"
+			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "linux"
-			arch: "arm64"
+			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "arm64"
@@ -2005,14 +2005,17 @@ provider: integrations: github: {
 		version: "4.18.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "linux"
-			arch: "arm"
+			os:   "freebsd"
+			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "amd64"
@@ -2028,9 +2031,6 @@ provider: integrations: github: {
 		}, {
 			os:   "linux"
 			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
@@ -2048,14 +2048,11 @@ provider: integrations: github: {
 		version: "4.25.0-alpha"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "linux"
-			arch: "amd64"
-		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "linux"
-			arch: "arm64"
+			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "amd64"
@@ -2076,6 +2073,9 @@ provider: integrations: github: {
 			arch: "arm"
 		}, {
 			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "linux"
 			arch: "arm64"
 		}, {
 			os:   "windows"
@@ -2131,6 +2131,9 @@ provider: integrations: github: {
 		version: "5.6.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "windows"
+			arch: "amd64"
+		}, {
 			os:   "freebsd"
 			arch: "386"
 		}, {
@@ -2139,9 +2142,6 @@ provider: integrations: github: {
 		}, {
 			os:   "linux"
 			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm64"
@@ -2181,10 +2181,10 @@ provider: integrations: github: {
 			arch: "arm"
 		}, {
 			os:   "linux"
-			arch: "amd64"
+			arch: "386"
 		}, {
 			os:   "linux"
-			arch: "386"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "arm64"
@@ -2214,14 +2214,14 @@ provider: integrations: github: {
 		version: "5.2.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "freebsd"
+			arch: "386"
+		}, {
 			os:   "windows"
 			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "amd64"
@@ -2261,9 +2261,6 @@ provider: integrations: github: {
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "freebsd"
@@ -2273,7 +2270,7 @@ provider: integrations: github: {
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "amd64"
+			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "386"
@@ -2282,6 +2279,9 @@ provider: integrations: github: {
 			arch: "amd64"
 		}, {
 			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "linux"
@@ -2300,6 +2300,9 @@ provider: integrations: github: {
 			os:   "freebsd"
 			arch: "arm64"
 		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
 			os:   "linux"
 			arch: "386"
 		}, {
@@ -2308,9 +2311,6 @@ provider: integrations: github: {
 		}, {
 			os:   "linux"
 			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "arm"
 		}, {
 			os:   "linux"
 			arch: "arm"
@@ -2389,17 +2389,17 @@ provider: integrations: github: {
 		version: "4.10.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
@@ -2439,18 +2439,18 @@ provider: integrations: github: {
 			arch: "arm64"
 		}, {
 			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
 			arch: "arm"
 		}, {
-			os:   "linux"
-			arch: "386"
+			os:   "windows"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "freebsd"
@@ -2462,7 +2462,7 @@ provider: integrations: github: {
 			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "windows"
+			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "freebsd"
@@ -2484,14 +2484,11 @@ provider: integrations: github: {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
 			os:   "linux"
 			arch: "arm64"
 		}, {
-			os:   "freebsd"
-			arch: "386"
+			os:   "darwin"
+			arch: "arm64"
 		}, {
 			os:   "freebsd"
 			arch: "arm64"
@@ -2507,6 +2504,9 @@ provider: integrations: github: {
 		}, {
 			os:   "windows"
 			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "386"
@@ -2524,32 +2524,32 @@ provider: integrations: github: {
 		version: "4.21.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "windows"
+			arch: "arm"
+		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "freebsd"
-			arch: "arm"
+			os:   "linux"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
@@ -2611,15 +2611,15 @@ provider: integrations: github: {
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "arm64"
 		}, {
 			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
 			arch: "arm"
 		}, {
 			os:   "linux"
@@ -2696,11 +2696,11 @@ provider: integrations: github: {
 		version: "4.14.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "freebsd"
-			arch: "arm"
-		}, {
 			os:   "windows"
 			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
 		}, {
 			os:   "linux"
 			arch: "amd64"
@@ -2789,9 +2789,6 @@ provider: integrations: github: {
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "linux"
@@ -2805,6 +2802,9 @@ provider: integrations: github: {
 		}, {
 			os:   "freebsd"
 			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
 		}, {
 			os:   "windows"
 			arch: "386"
@@ -2837,23 +2837,23 @@ provider: integrations: github: {
 			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm64"
 		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
 			os:   "freebsd"
 			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
@@ -2966,11 +2966,11 @@ provider: integrations: github: {
 		version: "5.11.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "darwin"
+			arch: "arm64"
+		}, {
 			os:   "windows"
 			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "arm64"
@@ -2985,10 +2985,10 @@ provider: integrations: github: {
 			arch: "386"
 		}, {
 			os:   "linux"
-			arch: "amd64"
+			arch: "arm"
 		}, {
-			os:   "darwin"
-			arch: "arm64"
+			os:   "linux"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
@@ -3012,14 +3012,14 @@ provider: integrations: github: {
 		version: "4.18.1"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "linux"
-			arch: "amd64"
-		}, {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "386"
@@ -3055,19 +3055,16 @@ provider: integrations: github: {
 		version: "4.6.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "linux"
-			arch: "arm64"
-		}, {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
+			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "linux"
+			os:   "freebsd"
 			arch: "arm"
 		}, {
 			os:   "freebsd"
@@ -3075,6 +3072,9 @@ provider: integrations: github: {
 		}, {
 			os:   "darwin"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
 		}, {
 			os:   "windows"
 			arch: "amd64"

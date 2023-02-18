@@ -3,40 +3,6 @@ package desiderata
 provider: hashicorp: cloudinit: {
 	id: "hashicorp/cloudinit"
 	versions: [{
-		version: "2.0.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}]
-	}, {
 		version: "2.2.0"
 		protocols: ["5.0"]
 		platforms: [{
@@ -68,6 +34,40 @@ provider: hashicorp: cloudinit: {
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}]
+	}, {
+		version: "2.0.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "windows"
 			arch: "386"
 		}, {
 			os:   "linux"

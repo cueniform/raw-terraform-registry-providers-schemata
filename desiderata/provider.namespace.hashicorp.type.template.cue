@@ -169,11 +169,11 @@ provider: hashicorp: template: {
 			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
 			os:   "windows"
 			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "386"
@@ -289,9 +289,6 @@ provider: hashicorp: template: {
 			os:   "freebsd"
 			arch: "386"
 		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
@@ -299,6 +296,9 @@ provider: hashicorp: template: {
 			arch: "arm"
 		}, {
 			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "windows"
 			arch: "386"
 		}, {
 			os:   "linux"

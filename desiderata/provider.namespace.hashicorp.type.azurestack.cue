@@ -6,6 +6,9 @@ provider: hashicorp: azurestack: {
 		version: "0.4.0"
 		protocols: ["4"]
 		platforms: [{
+			os:   "windows"
+			arch: "amd64"
+		}, {
 			os:   "openbsd"
 			arch: "amd64"
 		}, {
@@ -23,9 +26,6 @@ provider: hashicorp: azurestack: {
 		}, {
 			os:   "linux"
 			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "amd64"
@@ -41,6 +41,46 @@ provider: hashicorp: azurestack: {
 		}, {
 			os:   "freebsd"
 			arch: "arm"
+		}]
+	}, {
+		version: "0.5.0"
+		protocols: ["4.0"]
+		platforms: [{
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
 		}]
 	}, {
 		version: "0.3.0"
@@ -164,6 +204,9 @@ provider: hashicorp: azurestack: {
 			arch: "386"
 		}, {
 			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "darwin"
@@ -177,9 +220,6 @@ provider: hashicorp: azurestack: {
 		}, {
 			os:   "freebsd"
 			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm64"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
@@ -274,46 +314,6 @@ provider: hashicorp: azurestack: {
 			arch: "amd64"
 		}]
 	}, {
-		version: "0.5.0"
-		protocols: ["4.0"]
-		platforms: [{
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}]
-	}, {
 		version: "0.11.0"
 		protocols: ["5.0"]
 		platforms: [{
@@ -400,14 +400,14 @@ provider: hashicorp: azurestack: {
 			os:   "openbsd"
 			arch: "386"
 		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "386"
@@ -434,10 +434,10 @@ provider: hashicorp: azurestack: {
 		version: "0.2.0"
 		protocols: ["4"]
 		platforms: [{
-			os:   "freebsd"
+			os:   "linux"
 			arch: "arm"
 		}, {
-			os:   "linux"
+			os:   "freebsd"
 			arch: "arm"
 		}, {
 			os:   "freebsd"
@@ -474,16 +474,16 @@ provider: hashicorp: azurestack: {
 		version: "0.7.0"
 		protocols: ["4.0"]
 		platforms: [{
-			os:   "solaris"
+			os:   "freebsd"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
+			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
-			os:   "linux"
+			os:   "solaris"
 			arch: "amd64"
 		}, {
 			os:   "openbsd"

@@ -774,10 +774,13 @@ provider: hashicorp: consul: {
 		protocols: ["4.0", "5.0"]
 		platforms: [{
 			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
 			arch: "386"
 		}, {
 			os:   "linux"
-			arch: "amd64"
+			arch: "386"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
@@ -786,9 +789,6 @@ provider: hashicorp: consul: {
 			arch: "arm64"
 		}, {
 			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "windows"
 			arch: "386"
 		}, {
 			os:   "linux"
@@ -847,20 +847,20 @@ provider: hashicorp: consul: {
 		version: "2.16.0"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
 			os:   "linux"
 			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "amd64"

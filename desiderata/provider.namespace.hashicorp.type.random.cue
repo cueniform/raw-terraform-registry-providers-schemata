@@ -3,41 +3,44 @@ package desiderata
 provider: hashicorp: random: {
 	id: "hashicorp/random"
 	versions: [{
-		version: "3.4.0"
-		protocols: ["5.0"]
+		version: "2.2.0"
+		protocols: ["4.0", "5.0"]
 		platforms: [{
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "darwin"
+			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "darwin"
-			arch: "arm64"
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
 			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
-			os:   "linux"
-			arch: "arm"
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
 		}]
 	}, {
 		version: "2.3.0"
@@ -78,6 +81,43 @@ provider: hashicorp: random: {
 		}, {
 			os:   "openbsd"
 			arch: "386"
+		}]
+	}, {
+		version: "3.4.3"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
 		}]
 	}, {
 		version: "2.0.0"
@@ -160,9 +200,6 @@ provider: hashicorp: random: {
 			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
@@ -171,6 +208,9 @@ provider: hashicorp: random: {
 		}, {
 			os:   "darwin"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
 		}, {
 			os:   "freebsd"
 			arch: "386"
@@ -229,19 +269,19 @@ provider: hashicorp: random: {
 		protocols: ["4"]
 		platforms: [{
 			os:   "linux"
-			arch: "386"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
 		}, {
 			os:   "linux"
-			arch: "arm"
+			arch: "386"
 		}, {
 			os:   "openbsd"
 			arch: "386"
 		}, {
 			os:   "openbsd"
 			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "386"
@@ -263,6 +303,43 @@ provider: hashicorp: random: {
 		}, {
 			os:   "darwin"
 			arch: "amd64"
+		}]
+	}, {
+		version: "3.4.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "arm"
 		}]
 	}, {
 		version: "3.1.1"
@@ -302,53 +379,13 @@ provider: hashicorp: random: {
 			arch: "386"
 		}]
 	}, {
-		version: "2.2.0"
-		protocols: ["4.0", "5.0"]
-		platforms: [{
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}]
-	}, {
 		version: "3.1.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "darwin"
+			os:   "linux"
 			arch: "arm64"
 		}, {
-			os:   "linux"
+			os:   "darwin"
 			arch: "arm64"
 		}, {
 			os:   "linux"
@@ -364,10 +401,10 @@ provider: hashicorp: random: {
 			arch: "386"
 		}, {
 			os:   "freebsd"
-			arch: "arm"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "amd64"
+			arch: "arm"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
@@ -382,74 +419,37 @@ provider: hashicorp: random: {
 		version: "3.3.2"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "darwin"
-			arch: "amd64"
-		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
 			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "linux"
 			arch: "amd64"
-		}]
-	}, {
-		version: "3.4.3"
-		protocols: ["5.0"]
-		platforms: [{
+		}, {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
 			os:   "linux"
 			arch: "arm64"
 		}, {
-			os:   "windows"
+			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
+			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
 			os:   "windows"
 			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
 		}, {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
-			os:   "darwin"
+			os:   "linux"
 			arch: "amd64"
 		}]
 	}, {
@@ -459,10 +459,10 @@ provider: hashicorp: random: {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
-			os:   "freebsd"
+			os:   "windows"
 			arch: "amd64"
 		}, {
-			os:   "windows"
+			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "linux"
@@ -496,11 +496,11 @@ provider: hashicorp: random: {
 		version: "1.3.1"
 		protocols: ["4"]
 		platforms: [{
-			os:   "freebsd"
-			arch: "386"
-		}, {
 			os:   "linux"
 			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "amd64"
@@ -730,10 +730,10 @@ provider: hashicorp: random: {
 		version: "3.3.1"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "darwin"
+			os:   "freebsd"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
+			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "windows"
@@ -767,6 +767,9 @@ provider: hashicorp: random: {
 		version: "3.3.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "darwin"
+			arch: "amd64"
+		}, {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
@@ -774,9 +777,6 @@ provider: hashicorp: random: {
 			arch: "arm"
 		}, {
 			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
@@ -813,10 +813,10 @@ provider: hashicorp: random: {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
-			os:   "darwin"
+			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "linux"
+			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "linux"

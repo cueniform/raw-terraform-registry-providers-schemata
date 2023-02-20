@@ -274,6 +274,9 @@ provider: hashicorp: googleworkspace: {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
@@ -284,9 +287,6 @@ provider: hashicorp: googleworkspace: {
 			arch: "arm"
 		}, {
 			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
 			arch: "386"
 		}, {
 			os:   "darwin"

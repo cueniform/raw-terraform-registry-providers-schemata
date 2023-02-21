@@ -89,11 +89,11 @@ provider: hashicorp: azurestack: {
 			os:   "windows"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
 			os:   "openbsd"
 			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "386"
@@ -130,6 +130,9 @@ provider: hashicorp: azurestack: {
 			arch: "amd64"
 		}, {
 			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "linux"
@@ -137,9 +140,6 @@ provider: hashicorp: azurestack: {
 		}, {
 			os:   "openbsd"
 			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
@@ -209,10 +209,10 @@ provider: hashicorp: azurestack: {
 			os:   "linux"
 			arch: "arm"
 		}, {
-			os:   "darwin"
+			os:   "windows"
 			arch: "amd64"
 		}, {
-			os:   "windows"
+			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "linux"
@@ -286,10 +286,10 @@ provider: hashicorp: azurestack: {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
-			os:   "solaris"
+			os:   "freebsd"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
+			os:   "solaris"
 			arch: "amd64"
 		}, {
 			os:   "darwin"

@@ -3,46 +3,6 @@ package desiderata
 provider: hashicorp: vault: {
 	id: "hashicorp/vault"
 	versions: [{
-		version: "1.9.0"
-		protocols: ["4.0", "5.0"]
-		platforms: [{
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}]
-	}, {
 		version: "2.1.0"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
@@ -86,12 +46,6 @@ provider: hashicorp: vault: {
 		version: "2.6.0"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
 			os:   "openbsd"
 			arch: "amd64"
 		}, {
@@ -100,6 +54,12 @@ provider: hashicorp: vault: {
 		}, {
 			os:   "windows"
 			arch: "amd64"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "386"
@@ -243,6 +203,40 @@ provider: hashicorp: vault: {
 			arch: "amd64"
 		}]
 	}, {
+		version: "2.14.0"
+		protocols: ["4.0", "5.0"]
+		platforms: [{
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}]
+	}, {
 		version: "2.23.0"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
@@ -278,46 +272,6 @@ provider: hashicorp: vault: {
 		}, {
 			os:   "linux"
 			arch: "arm"
-		}]
-	}, {
-		version: "2.5.0"
-		protocols: ["4.0", "5.0"]
-		platforms: [{
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
 		}]
 	}, {
 		version: "1.8.0"
@@ -363,9 +317,6 @@ provider: hashicorp: vault: {
 		version: "2.12.0"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
-			os:   "windows"
-			arch: "amd64"
-		}, {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
@@ -387,6 +338,9 @@ provider: hashicorp: vault: {
 			os:   "openbsd"
 			arch: "386"
 		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
 			os:   "linux"
 			arch: "amd64"
 		}, {
@@ -403,32 +357,32 @@ provider: hashicorp: vault: {
 		version: "3.13.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "freebsd"
-			arch: "arm"
-		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
 			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
 			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
@@ -628,6 +582,86 @@ provider: hashicorp: vault: {
 			arch: "386"
 		}]
 	}, {
+		version: "2.5.0"
+		protocols: ["4.0", "5.0"]
+		platforms: [{
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}]
+	}, {
+		version: "1.4.1"
+		protocols: ["4"]
+		platforms: [{
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}]
+	}, {
 		version: "2.19.1"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
@@ -669,13 +703,13 @@ provider: hashicorp: vault: {
 			arch: "arm"
 		}, {
 			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
 		}, {
 			os:   "linux"
 			arch: "arm64"
@@ -731,40 +765,6 @@ provider: hashicorp: vault: {
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
-		}]
-	}, {
-		version: "2.14.0"
-		protocols: ["4.0", "5.0"]
-		platforms: [{
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
 		}]
 	}, {
 		version: "2.22.1"
@@ -841,43 +841,43 @@ provider: hashicorp: vault: {
 			arch: "386"
 		}]
 	}, {
-		version: "1.4.1"
-		protocols: ["4"]
+		version: "1.9.0"
+		protocols: ["4.0", "5.0"]
 		platforms: [{
-			os:   "linux"
-			arch: "amd64"
+			os:   "freebsd"
+			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
 		}, {
 			os:   "openbsd"
 			arch: "amd64"
 		}, {
 			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "windows"
 			arch: "amd64"
 		}]
 	}, {
@@ -890,10 +890,10 @@ provider: hashicorp: vault: {
 			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "openbsd"
+			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "linux"
+			os:   "openbsd"
 			arch: "amd64"
 		}, {
 			os:   "openbsd"
@@ -1038,6 +1038,9 @@ provider: hashicorp: vault: {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
@@ -1049,9 +1052,6 @@ provider: hashicorp: vault: {
 		}, {
 			os:   "freebsd"
 			arch: "arm"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "amd64"
@@ -1112,14 +1112,14 @@ provider: hashicorp: vault: {
 		version: "3.8.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "darwin"
+			arch: "arm64"
+		}, {
 			os:   "linux"
 			arch: "arm64"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
@@ -1371,14 +1371,14 @@ provider: hashicorp: vault: {
 		version: "3.3.0"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
+			os:   "freebsd"
+			arch: "arm"
+		}, {
 			os:   "linux"
 			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "386"
@@ -1411,6 +1411,9 @@ provider: hashicorp: vault: {
 			os:   "windows"
 			arch: "amd64"
 		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
@@ -1419,9 +1422,6 @@ provider: hashicorp: vault: {
 		}, {
 			os:   "darwin"
 			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
 		}, {
 			os:   "linux"
 			arch: "amd64"
@@ -1627,9 +1627,6 @@ provider: hashicorp: vault: {
 		version: "2.9.0"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
-			os:   "linux"
-			arch: "arm"
-		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
@@ -1638,6 +1635,9 @@ provider: hashicorp: vault: {
 		}, {
 			os:   "windows"
 			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "openbsd"
 			arch: "386"
@@ -1824,9 +1824,6 @@ provider: hashicorp: vault: {
 			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
@@ -1835,6 +1832,9 @@ provider: hashicorp: vault: {
 		}, {
 			os:   "freebsd"
 			arch: "arm"
+		}, {
+			os:   "openbsd"
+			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "arm"
@@ -1978,12 +1978,6 @@ provider: hashicorp: vault: {
 		version: "1.0.0"
 		protocols: ["4"]
 		platforms: [{
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
@@ -1991,6 +1985,12 @@ provider: hashicorp: vault: {
 			arch: "amd64"
 		}, {
 			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
 			arch: "386"
 		}, {
 			os:   "linux"
@@ -2098,14 +2098,14 @@ provider: hashicorp: vault: {
 			os:   "freebsd"
 			arch: "386"
 		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
 			os:   "openbsd"
 			arch: "amd64"
 		}, {
 			os:   "solaris"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "linux"
 			arch: "amd64"
@@ -2249,9 +2249,6 @@ provider: hashicorp: vault: {
 		version: "3.1.0"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
-			os:   "windows"
-			arch: "amd64"
-		}, {
 			os:   "freebsd"
 			arch: "386"
 		}, {
@@ -2263,6 +2260,9 @@ provider: hashicorp: vault: {
 		}, {
 			os:   "freebsd"
 			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "386"
@@ -2286,14 +2286,14 @@ provider: hashicorp: vault: {
 		version: "2.18.0"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
+			os:   "windows"
+			arch: "386"
+		}, {
 			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "amd64"
@@ -2429,10 +2429,10 @@ provider: hashicorp: vault: {
 		protocols: ["4.0", "5.0"]
 		platforms: [{
 			os:   "linux"
-			arch: "arm"
+			arch: "arm64"
 		}, {
 			os:   "linux"
-			arch: "arm64"
+			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
@@ -2616,14 +2616,14 @@ provider: hashicorp: vault: {
 		version: "1.1.1"
 		protocols: ["4"]
 		platforms: [{
-			os:   "linux"
-			arch: "arm"
-		}, {
 			os:   "solaris"
 			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"

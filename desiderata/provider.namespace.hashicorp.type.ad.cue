@@ -77,6 +77,9 @@ provider: hashicorp: ad: {
 			os:   "windows"
 			arch: "amd64"
 		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
 			os:   "linux"
 			arch: "arm64"
 		}, {
@@ -91,9 +94,6 @@ provider: hashicorp: ad: {
 		}, {
 			os:   "freebsd"
 			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"

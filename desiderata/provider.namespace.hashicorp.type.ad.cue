@@ -12,14 +12,14 @@ provider: hashicorp: ad: {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
@@ -213,11 +213,11 @@ provider: hashicorp: ad: {
 			os:   "windows"
 			arch: "amd64"
 		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
 			os:   "darwin"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "linux"
 			arch: "386"
@@ -247,13 +247,13 @@ provider: hashicorp: ad: {
 		version: "0.4.3"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "windows"
-			arch: "386"
-		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "windows"
 			arch: "386"
 		}, {
 			os:   "linux"

@@ -3,40 +3,6 @@ package desiderata
 provider: hashicorp: archive: {
 	id: "hashicorp/archive"
 	versions: [{
-		version: "2.0.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}]
-	}, {
 		version: "1.0.3"
 		protocols: ["4"]
 		platforms: [{
@@ -77,9 +43,46 @@ provider: hashicorp: archive: {
 			arch: "amd64"
 		}]
 	}, {
+		version: "2.0.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}]
+	}, {
 		version: "0.1.0"
 		protocols: ["4"]
 		platforms: [{
+			os:   "windows"
+			arch: "amd64"
+		}, {
 			os:   "openbsd"
 			arch: "amd64"
 		}, {
@@ -97,9 +100,6 @@ provider: hashicorp: archive: {
 		}, {
 			os:   "windows"
 			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
@@ -163,10 +163,10 @@ provider: hashicorp: archive: {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
-			os:   "windows"
+			os:   "openbsd"
 			arch: "amd64"
 		}, {
-			os:   "openbsd"
+			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
@@ -240,9 +240,6 @@ provider: hashicorp: archive: {
 		version: "2.1.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "linux"
-			arch: "arm64"
-		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
@@ -254,6 +251,9 @@ provider: hashicorp: archive: {
 		}, {
 			os:   "freebsd"
 			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm64"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
@@ -280,11 +280,11 @@ provider: hashicorp: archive: {
 			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
 			os:   "freebsd"
 			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "386"
@@ -358,10 +358,10 @@ provider: hashicorp: archive: {
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "linux"
-			arch: "arm"
+			arch: "amd64"
 		}, {
 			os:   "linux"
-			arch: "amd64"
+			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "386"
@@ -398,15 +398,15 @@ provider: hashicorp: archive: {
 			arch: "amd64"
 		}, {
 			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
 			arch: "arm64"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "windows"

@@ -46,10 +46,10 @@ provider: hashicorp: null: {
 		version: "2.1.2"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
-			os:   "openbsd"
+			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "linux"
+			os:   "openbsd"
 			arch: "386"
 		}, {
 			os:   "freebsd"
@@ -197,14 +197,14 @@ provider: hashicorp: null: {
 		version: "1.0.0"
 		protocols: ["4"]
 		platforms: [{
+			os:   "openbsd"
+			arch: "386"
+		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
 			os:   "openbsd"
 			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "amd64"

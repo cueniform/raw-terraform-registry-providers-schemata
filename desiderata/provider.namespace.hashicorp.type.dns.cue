@@ -6,6 +6,9 @@ provider: hashicorp: dns: {
 		version: "2.1.0"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
+			os:   "freebsd"
+			arch: "arm"
+		}, {
 			os:   "openbsd"
 			arch: "386"
 		}, {
@@ -19,9 +22,6 @@ provider: hashicorp: dns: {
 			arch: "amd64"
 		}, {
 			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
 			arch: "arm"
 		}, {
 			os:   "freebsd"
@@ -83,10 +83,10 @@ provider: hashicorp: dns: {
 		version: "2.1.1"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
-			os:   "openbsd"
+			os:   "solaris"
 			arch: "amd64"
 		}, {
-			os:   "solaris"
+			os:   "openbsd"
 			arch: "amd64"
 		}, {
 			os:   "windows"
@@ -124,9 +124,6 @@ provider: hashicorp: dns: {
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "darwin"
@@ -140,6 +137,9 @@ provider: hashicorp: dns: {
 		}, {
 			os:   "linux"
 			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "arm"
@@ -389,15 +389,15 @@ provider: hashicorp: dns: {
 		protocols: ["4"]
 		platforms: [{
 			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
 			arch: "arm"
 		}, {
 			os:   "openbsd"
@@ -502,11 +502,11 @@ provider: hashicorp: dns: {
 			os:   "freebsd"
 			arch: "386"
 		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
 			os:   "linux"
 			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "amd64"

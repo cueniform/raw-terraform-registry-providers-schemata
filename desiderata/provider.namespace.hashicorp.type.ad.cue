@@ -74,26 +74,26 @@ provider: hashicorp: ad: {
 		version: "0.3.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "windows"
-			arch: "amd64"
-		}, {
 			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "linux"
-			arch: "arm64"
+			arch: "arm"
 		}, {
-			os:   "linux"
+			os:   "freebsd"
 			arch: "arm"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "freebsd"
-			arch: "arm"
+			os:   "linux"
+			arch: "arm64"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"

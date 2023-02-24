@@ -342,6 +342,9 @@ provider: hashicorp: tls: {
 		version: "4.0.3"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "darwin"
+			arch: "amd64"
+		}, {
 			os:   "freebsd"
 			arch: "386"
 		}, {
@@ -359,9 +362,6 @@ provider: hashicorp: tls: {
 		}, {
 			os:   "darwin"
 			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm"
@@ -573,13 +573,13 @@ provider: hashicorp: tls: {
 		version: "0.1.0"
 		protocols: ["4"]
 		platforms: [{
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
 			arch: "amd64"
 		}, {
 			os:   "linux"
@@ -613,6 +613,9 @@ provider: hashicorp: tls: {
 		version: "2.1.0"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
+			os:   "windows"
+			arch: "386"
+		}, {
 			os:   "freebsd"
 			arch: "386"
 		}, {
@@ -624,9 +627,6 @@ provider: hashicorp: tls: {
 		}, {
 			os:   "freebsd"
 			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "386"
 		}, {
 			os:   "openbsd"
 			arch: "amd64"
@@ -773,10 +773,10 @@ provider: hashicorp: tls: {
 		version: "4.0.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "freebsd"
+			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "linux"
+			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "windows"

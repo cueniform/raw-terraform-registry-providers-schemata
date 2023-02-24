@@ -126,9 +126,6 @@ provider: hashicorp: template: {
 		version: "2.1.0"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
-			os:   "windows"
-			arch: "386"
-		}, {
 			os:   "linux"
 			arch: "386"
 		}, {
@@ -149,6 +146,9 @@ provider: hashicorp: template: {
 		}, {
 			os:   "solaris"
 			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "386"
@@ -293,10 +293,10 @@ provider: hashicorp: template: {
 			arch: "386"
 		}, {
 			os:   "linux"
-			arch: "arm"
+			arch: "386"
 		}, {
 			os:   "linux"
-			arch: "386"
+			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "386"

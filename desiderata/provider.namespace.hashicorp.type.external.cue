@@ -425,11 +425,11 @@ provider: hashicorp: external: {
 		version: "1.1.2"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
-			os:   "linux"
-			arch: "386"
-		}, {
 			os:   "windows"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
 		}, {
 			os:   "openbsd"
 			arch: "386"

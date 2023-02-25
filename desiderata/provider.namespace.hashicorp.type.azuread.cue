@@ -3,6 +3,43 @@ package desiderata
 provider: hashicorp: azuread: {
 	id: "hashicorp/azuread"
 	versions: [{
+		version: "2.2.1"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}]
+	}, {
 		version: "2.33.0"
 		protocols: ["5.0"]
 		platforms: [{
@@ -40,33 +77,21 @@ provider: hashicorp: azuread: {
 			arch: "amd64"
 		}]
 	}, {
-		version: "0.10.0"
-		protocols: ["4.0", "5.0"]
+		version: "2.35.0"
+		protocols: ["5.0"]
 		platforms: [{
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
@@ -74,6 +99,52 @@ provider: hashicorp: azuread: {
 			arch: "386"
 		}, {
 			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}]
+	}, {
+		version: "2.6.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "freebsd"
@@ -120,14 +191,51 @@ provider: hashicorp: azuread: {
 			arch: "amd64"
 		}]
 	}, {
+		version: "2.22.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}]
+	}, {
 		version: "2.34.1"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "linux"
-			arch: "arm"
-		}, {
 			os:   "freebsd"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "amd64"
@@ -137,9 +245,6 @@ provider: hashicorp: azuread: {
 		}, {
 			os:   "freebsd"
 			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
 		}, {
 			os:   "darwin"
 			arch: "arm64"
@@ -154,44 +259,10 @@ provider: hashicorp: azuread: {
 			arch: "arm"
 		}, {
 			os:   "linux"
-			arch: "arm64"
-		}]
-	}, {
-		version: "2.2.1"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "darwin"
 			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
 		}]
 	}, {
 		version: "1.5.1"
@@ -231,20 +302,57 @@ provider: hashicorp: azuread: {
 			arch: "arm64"
 		}]
 	}, {
-		version: "2.34.0"
+		version: "0.10.0"
+		protocols: ["4.0", "5.0"]
+		platforms: [{
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}]
+	}, {
+		version: "1.2.1"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "windows"
+			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
-			arch: "arm"
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
@@ -252,25 +360,28 @@ provider: hashicorp: azuread: {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "linux"
+			os:   "windows"
 			arch: "amd64"
 		}, {
-			os:   "darwin"
-			arch: "arm64"
+			os:   "freebsd"
+			arch: "arm"
 		}, {
 			os:   "linux"
-			arch: "386"
+			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "386"
 		}]
 	}, {
 		version: "2.31.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "windows"
+			arch: "386"
+		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
@@ -278,9 +389,6 @@ provider: hashicorp: azuread: {
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "windows"
 			arch: "386"
 		}, {
 			os:   "freebsd"
@@ -644,6 +752,9 @@ provider: hashicorp: azuread: {
 		version: "0.1.0"
 		protocols: ["4"]
 		platforms: [{
+			os:   "linux"
+			arch: "amd64"
+		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
@@ -653,9 +764,6 @@ provider: hashicorp: azuread: {
 			os:   "openbsd"
 			arch: "amd64"
 		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
@@ -679,6 +787,43 @@ provider: hashicorp: azuread: {
 		}, {
 			os:   "freebsd"
 			arch: "386"
+		}]
+	}, {
+		version: "2.32.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
 		}]
 	}, {
 		version: "2.7.0"
@@ -724,11 +869,11 @@ provider: hashicorp: azuread: {
 			os:   "windows"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
 			os:   "linux"
 			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "amd64"
@@ -980,10 +1125,10 @@ provider: hashicorp: azuread: {
 			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "freebsd"
+			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "linux"
+			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
@@ -1048,115 +1193,41 @@ provider: hashicorp: azuread: {
 			arch: "arm64"
 		}]
 	}, {
-		version: "2.6.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}]
-	}, {
-		version: "2.32.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}]
-	}, {
-		version: "2.22.0"
+		version: "2.34.0"
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "windows"
 			arch: "386"
 		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
 			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
-			os:   "darwin"
-			arch: "amd64"
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
 		}]
 	}, {
 		version: "1.5.0"
@@ -1276,6 +1347,9 @@ provider: hashicorp: azuread: {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
 			os:   "openbsd"
 			arch: "amd64"
 		}, {
@@ -1290,9 +1364,6 @@ provider: hashicorp: azuread: {
 		}, {
 			os:   "freebsd"
 			arch: "arm"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "386"
@@ -1396,13 +1467,13 @@ provider: hashicorp: azuread: {
 			os:   "windows"
 			arch: "amd64"
 		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
 			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "windows"
@@ -1436,11 +1507,11 @@ provider: hashicorp: azuread: {
 			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
 			os:   "linux"
 			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
@@ -1496,40 +1567,6 @@ provider: hashicorp: azuread: {
 		}, {
 			os:   "linux"
 			arch: "amd64"
-		}]
-	}, {
-		version: "1.2.1"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "386"
 		}]
 	}, {
 		version: "1.1.1"
@@ -1687,6 +1724,9 @@ provider: hashicorp: azuread: {
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "darwin"
@@ -1697,9 +1737,6 @@ provider: hashicorp: azuread: {
 		}, {
 			os:   "freebsd"
 			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "arm"
@@ -1723,17 +1760,14 @@ provider: hashicorp: azuread: {
 		version: "2.20.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "386"
@@ -1746,6 +1780,9 @@ provider: hashicorp: azuread: {
 		}, {
 			os:   "freebsd"
 			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "386"
 		}, {
 			os:   "darwin"
 			arch: "arm64"
@@ -1909,6 +1946,9 @@ provider: hashicorp: azuread: {
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
@@ -1922,9 +1962,6 @@ provider: hashicorp: azuread: {
 		}, {
 			os:   "darwin"
 			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
@@ -1985,11 +2022,11 @@ provider: hashicorp: azuread: {
 		version: "1.0.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "freebsd"
-			arch: "386"
-		}, {
 			os:   "linux"
 			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "arm"
@@ -2019,11 +2056,11 @@ provider: hashicorp: azuread: {
 		version: "2.28.1"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "linux"
-			arch: "arm64"
-		}, {
 			os:   "freebsd"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
 		}, {
 			os:   "freebsd"
 			arch: "386"

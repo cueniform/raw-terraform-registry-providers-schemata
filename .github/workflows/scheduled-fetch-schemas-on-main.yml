@@ -23,7 +23,7 @@ env:
 
 defaults:
   run:
-    shell: nice -n 19 ionice --class 3 bash --noprofile --norc -eo pipefail {0}
+    shell: nice -n 19 ionice --class 3 bash --noprofile --norc -exo pipefail {0}
 
 jobs:
   fetch_and_commit:

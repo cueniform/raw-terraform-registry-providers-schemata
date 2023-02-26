@@ -10,13 +10,13 @@ provider: hashicorp: http: {
 			arch: "amd64"
 		}, {
 			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "arm"

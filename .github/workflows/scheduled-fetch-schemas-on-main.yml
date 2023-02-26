@@ -51,15 +51,15 @@ jobs:
           git config user.name "[bot] Schema Fetcher"
           git config user.email "<>"
 
-          outstanding=$(grep -c ^ missing)
+          outstanding=$(grep -c ^ missing || true)
           echo "Schema fetcher: schemas outstanding: $outstanding."
 
           git add -v schemata/\*.zstd
-          fetched=$(git status -s | grep -c ^A)
+          fetched=$(git status -s | grep -c ^A || true)
           echo "Schema fetcher: schemas fetched and added: $fetched."
 
           git add -v schemata
-          added=$(git status -s | grep -c ^A)
+          added=$(git status -s | grep -c ^A || true)
           echo "Schema fetcher: new files added: $added."
 
           if git commit -m "Schema fetcher: $fetched new schemas"; then

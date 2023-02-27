@@ -272,12 +272,12 @@ provider: hashicorp: http: {
 		protocols: ["4"]
 		platforms: [{
 			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
 			arch: "arm"
 		}, {
 			os:   "openbsd"

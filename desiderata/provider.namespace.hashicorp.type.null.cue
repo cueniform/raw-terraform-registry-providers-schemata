@@ -237,10 +237,10 @@ provider: hashicorp: null: {
 		version: "3.1.1"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "windows"
+			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "linux"
+			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "linux"

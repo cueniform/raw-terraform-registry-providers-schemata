@@ -13,9 +13,6 @@ provider: hashicorp: googleworkspace: {
 			arch: "amd64"
 		}, {
 			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "windows"
 			arch: "386"
 		}, {
 			os:   "linux"
@@ -29,6 +26,9 @@ provider: hashicorp: googleworkspace: {
 		}, {
 			os:   "linux"
 			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
@@ -265,6 +265,9 @@ provider: hashicorp: googleworkspace: {
 		version: "0.2.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "freebsd"
+			arch: "386"
+		}, {
 			os:   "linux"
 			arch: "amd64"
 		}, {
@@ -273,9 +276,6 @@ provider: hashicorp: googleworkspace: {
 		}, {
 			os:   "darwin"
 			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"

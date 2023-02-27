@@ -135,11 +135,11 @@ provider: hashicorp: oraclepaas: {
 			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
 			os:   "openbsd"
 			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "386"
@@ -249,9 +249,6 @@ provider: hashicorp: oraclepaas: {
 			os:   "openbsd"
 			arch: "386"
 		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
@@ -260,6 +257,9 @@ provider: hashicorp: oraclepaas: {
 		}, {
 			os:   "linux"
 			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "arm"

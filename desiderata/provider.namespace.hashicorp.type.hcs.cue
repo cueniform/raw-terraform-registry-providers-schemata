@@ -148,6 +148,9 @@ provider: hashicorp: hcs: {
 		version: "0.2.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "freebsd"
+			arch: "386"
+		}, {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
@@ -162,9 +165,6 @@ provider: hashicorp: hcs: {
 		}, {
 			os:   "linux"
 			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "amd64"

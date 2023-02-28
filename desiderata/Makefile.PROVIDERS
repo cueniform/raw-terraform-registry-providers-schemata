@@ -31,4 +31,12 @@ provider.namespace.hashicorp.type.time.cue \
 provider.namespace.hashicorp.type.tls.cue \
 provider.namespace.hashicorp.type.vault.cue \
 provider.namespace.hashicorp.type.vsphere.cue \
+provider.namespace.DataDog.type.datadog.cue \
+provider.namespace.cloudflare.type.cloudflare.cue \
 provider.namespace.integrations.type.github.cue \
+provider.namespace.newrelic.type.newrelic.cue \
+provider.namespace.PagerDuty.type.pagerduty.cue \
+provider.namespace.oracle.type.oci.cue \
+provider.namespace.okta.type.okta.cue \
+provider.namespace.grafana.type.grafana.cue \
+provider.namespace.gitlabhq.type.gitlab.cue \

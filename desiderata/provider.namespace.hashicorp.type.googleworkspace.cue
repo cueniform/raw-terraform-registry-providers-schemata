@@ -191,11 +191,11 @@ provider: hashicorp: googleworkspace: {
 		version: "0.4.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "linux"
-			arch: "arm64"
-		}, {
 			os:   "freebsd"
 			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "arm"

@@ -1,126 +1,111 @@
 package desiderata
 
-provider: integrations: github: {
-	id: "integrations/github"
+provider: cloudflare: cloudflare: {
+	id: "cloudflare/cloudflare"
 	versions: [{
-		version: "5.9.2"
+		version: "2.25.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "freebsd"
-			arch: "386"
-		}, {
 			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
-			os:   "linux"
-			arch: "arm64"
+			os:   "windows"
+			arch: "386"
 		}, {
-			os:   "freebsd"
+			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "darwin"
-			arch: "amd64"
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "arm64"
 		}, {
-			os:   "windows"
+			os:   "freebsd"
 			arch: "arm"
 		}, {
-			os:   "linux"
-			arch: "amd64"
+			os:   "freebsd"
+			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
-			os:   "linux"
-			arch: "arm"
+			os:   "darwin"
+			arch: "amd64"
 		}, {
-			os:   "windows"
-			arch: "386"
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
-			os:   "windows"
+			os:   "linux"
 			arch: "arm64"
 		}]
 	}, {
-		version: "4.12.2"
+		version: "2.19.1"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "freebsd"
-			arch: "amd64"
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
 		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "linux"
+			os:   "freebsd"
 			arch: "386"
 		}, {
-			os:   "freebsd"
+			os:   "linux"
 			arch: "arm64"
 		}, {
-			os:   "freebsd"
-			arch: "arm"
+			os:   "darwin"
+			arch: "amd64"
 		}, {
-			os:   "freebsd"
-			arch: "386"
+			os:   "windows"
+			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "darwin"
-			arch: "arm64"
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
-			os:   "linux"
+			os:   "freebsd"
 			arch: "arm64"
 		}, {
-			os:   "linux"
+			os:   "freebsd"
 			arch: "arm"
 		}, {
-			os:   "windows"
-			arch: "amd64"
+			os:   "linux"
+			arch: "386"
 		}]
 	}, {
-		version: "5.10.0"
+		version: "3.13.0"
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
 			arch: "arm64"
 		}, {
 			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "windows"
 			arch: "arm64"
 		}, {
-			os:   "darwin"
+			os:   "freebsd"
 			arch: "arm64"
 		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "freebsd"
-			arch: "amd64"
+			os:   "linux"
+			arch: "arm"
 		}, {
-			os:   "freebsd"
+			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "linux"
-			arch: "arm"
+			os:   "darwin"
+			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "arm"
@@ -128,39 +113,42 @@ provider: integrations: github: {
 			os:   "windows"
 			arch: "amd64"
 		}, {
-			os:   "linux"
-			arch: "386"
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "arm64"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
 			os:   "linux"
 			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
 		}]
 	}, {
-		version: "5.5.0"
+		version: "2.26.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "windows"
-			arch: "amd64"
+			os:   "linux"
+			arch: "386"
 		}, {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
-			os:   "linux"
-			arch: "amd64"
+			os:   "windows"
+			arch: "arm"
 		}, {
 			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
+			arch: "amd64"
 		}, {
 			os:   "windows"
-			arch: "arm"
+			arch: "amd64"
 		}, {
-			os:   "windows"
-			arch: "arm64"
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
@@ -168,51 +156,76 @@ provider: integrations: github: {
 			os:   "freebsd"
 			arch: "386"
 		}, {
-			os:   "darwin"
-			arch: "amd64"
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "linux"
 			arch: "arm64"
 		}, {
-			os:   "freebsd"
-			arch: "arm64"
+			os:   "windows"
+			arch: "386"
 		}, {
-			os:   "linux"
-			arch: "arm"
+			os:   "darwin"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "amd64"
+			arch: "arm64"
 		}]
 	}, {
-		version: "4.9.0"
+		version: "2.15.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "freebsd"
-			arch: "arm"
+			os:   "linux"
+			arch: "386"
 		}, {
-			os:   "freebsd"
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "linux"
-			arch: "amd64"
+			arch: "arm"
 		}, {
 			os:   "windows"
-			arch: "386"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "windows"
 			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
 			os:   "linux"
-			arch: "386"
+			arch: "amd64"
 		}, {
+			os:   "freebsd"
+			arch: "386"
+		}]
+	}, {
+		version: "3.9.0"
+		protocols: ["5.0"]
+		platforms: [{
 			os:   "windows"
-			arch: "amd64"
+			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm"
@@ -220,33 +233,39 @@ provider: integrations: github: {
 			os:   "linux"
 			arch: "arm64"
 		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}]
-	}, {
-		version: "5.9.0"
-		protocols: ["5.0"]
-		platforms: [{
+			os:   "windows"
+			arch: "arm64"
+		}, {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
-			os:   "linux"
+			os:   "freebsd"
 			arch: "amd64"
 		}, {
-			os:   "linux"
-			arch: "386"
+			os:   "freebsd"
+			arch: "arm64"
 		}, {
-			os:   "darwin"
+			os:   "windows"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
-			arch: "amd64"
+			os:   "linux"
+			arch: "386"
 		}, {
 			os:   "freebsd"
-			arch: "386"
+			arch: "arm"
+		}]
+	}, {
+		version: "2.22.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "linux"
+			arch: "arm64"
 		}, {
 			os:   "windows"
-			arch: "arm64"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "amd64"
@@ -254,923 +273,873 @@ provider: integrations: github: {
 			os:   "freebsd"
 			arch: "arm64"
 		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
 			os:   "linux"
-			arch: "arm"
+			arch: "amd64"
 		}, {
-			os:   "freebsd"
-			arch: "arm"
+			os:   "darwin"
+			arch: "arm64"
 		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "windows"
+			os:   "freebsd"
 			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
 		}, {
 			os:   "linux"
-			arch: "arm64"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
 		}]
 	}, {
-		version: "5.0.0"
-		protocols: ["5.0"]
+		version: "4.0.0-rc1"
+		protocols: ["6.0"]
 		platforms: [{
-			os:   "linux"
+			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "freebsd"
-			arch: "amd64"
+			arch: "arm64"
 		}, {
 			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "windows"
-			arch: "arm64"
+			arch: "386"
 		}, {
-			os:   "darwin"
+			os:   "windows"
 			arch: "arm64"
 		}, {
 			os:   "linux"
-			arch: "arm"
+			arch: "amd64"
 		}, {
-			os:   "freebsd"
-			arch: "arm"
+			os:   "darwin"
+			arch: "amd64"
 		}, {
-			os:   "freebsd"
+			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "linux"
-			arch: "arm64"
+			arch: "arm"
 		}, {
-			os:   "freebsd"
+			os:   "darwin"
 			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
 		}, {
 			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
 			arch: "amd64"
 		}, {
-			os:   "windows"
+			os:   "freebsd"
 			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "arm64"
 		}]
 	}, {
-		version: "4.9.3"
-		protocols: ["5.0"]
+		version: "4.0.0-rc2"
+		protocols: ["6.0"]
 		platforms: [{
 			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
+			arch: "arm"
 		}, {
-			os:   "freebsd"
+			os:   "windows"
 			arch: "386"
 		}, {
 			os:   "darwin"
 			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
 		}, {
 			os:   "linux"
-			arch: "386"
+			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
-			os:   "windows"
-			arch: "arm"
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm64"
 		}, {
-			os:   "linux"
-			arch: "arm"
+			os:   "darwin"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "windows"
 			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "amd64"
 		}]
 	}, {
-		version: "4.22.0"
+		version: "3.6.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "freebsd"
+			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "linux"
-			arch: "amd64"
+			os:   "freebsd"
+			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "darwin"
+			os:   "linux"
 			arch: "arm64"
 		}, {
-			os:   "darwin"
-			arch: "amd64"
+			os:   "windows"
+			arch: "arm"
 		}, {
 			os:   "linux"
-			arch: "arm64"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "windows"
-			arch: "arm"
+			arch: "arm64"
 		}, {
 			os:   "freebsd"
-			arch: "arm"
+			arch: "arm64"
 		}, {
 			os:   "linux"
-			arch: "386"
+			arch: "amd64"
 		}, {
-			os:   "freebsd"
+			os:   "darwin"
 			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "386"
 		}]
 	}, {
-		version: "4.3.0"
+		version: "2.16.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "freebsd"
-			arch: "386"
+			os:   "windows"
+			arch: "amd64"
 		}, {
 			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "linux"
-			arch: "amd64"
+			arch: "arm64"
 		}, {
-			os:   "freebsd"
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "freebsd"
-			arch: "arm64"
+			arch: "386"
 		}, {
 			os:   "freebsd"
-			arch: "amd64"
+			arch: "arm64"
 		}, {
-			os:   "linux"
-			arch: "386"
+			os:   "darwin"
+			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "windows"
+			os:   "freebsd"
 			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
 		}]
 	}, {
-		version: "4.24.0"
+		version: "3.9.1"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "windows"
+			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "linux"
-			arch: "arm64"
+			arch: "386"
 		}, {
 			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm"
+			arch: "arm64"
 		}, {
-			os:   "darwin"
+			os:   "windows"
 			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
 		}, {
-			os:   "linux"
-			arch: "amd64"
+			os:   "windows"
+			arch: "arm64"
 		}, {
 			os:   "linux"
-			arch: "386"
+			arch: "arm"
 		}, {
 			os:   "windows"
-			arch: "amd64"
+			arch: "arm"
 		}, {
-			os:   "darwin"
+			os:   "linux"
 			arch: "arm64"
 		}, {
-			os:   "windows"
-			arch: "arm64"
+			os:   "darwin"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "darwin"
 			arch: "arm64"
 		}, {
 			os:   "windows"
-			arch: "arm"
+			arch: "386"
 		}, {
-			os:   "freebsd"
+			os:   "linux"
 			arch: "amd64"
 		}]
 	}, {
-		version: "5.9.1"
+		version: "3.22.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "darwin"
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "windows"
 			arch: "arm64"
 		}, {
-			os:   "linux"
+			os:   "freebsd"
 			arch: "arm64"
 		}, {
 			os:   "darwin"
-			arch: "amd64"
+			arch: "arm64"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
-			os:   "freebsd"
-			arch: "arm64"
+			os:   "linux"
+			arch: "amd64"
 		}, {
-			os:   "freebsd"
+			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "linux"
+			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "windows"
 			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
 		}, {
-			os:   "windows"
-			arch: "arm"
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "windows"
+			os:   "linux"
 			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
 		}]
 	}, {
-		version: "4.7.0"
+		version: "3.32.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
+			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
 			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
 			arch: "arm64"
 		}, {
 			os:   "darwin"
-			arch: "amd64"
+			arch: "arm64"
 		}, {
 			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
 			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "amd64"
-		}]
-	}, {
-		version: "4.19.2"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "darwin"
 			arch: "arm64"
 		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "windows"
-			arch: "amd64"
+			os:   "linux"
+			arch: "arm64"
 		}, {
 			os:   "linux"
-			arch: "amd64"
+			arch: "386"
 		}, {
 			os:   "windows"
-			arch: "arm"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
 		}, {
 			os:   "linux"
-			arch: "arm64"
+			arch: "arm"
 		}, {
 			os:   "linux"
-			arch: "arm"
+			arch: "amd64"
 		}, {
-			os:   "freebsd"
-			arch: "arm64"
+			os:   "windows"
+			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
 		}]
 	}, {
-		version: "4.24.1"
+		version: "3.11.0"
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "linux"
 			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
 		}, {
-			os:   "freebsd"
+			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "darwin"
-			arch: "arm64"
+			arch: "amd64"
 		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
 			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "windows"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
 			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
-			arch: "arm64"
+			os:   "windows"
+			arch: "arm"
 		}, {
 			os:   "linux"
-			arch: "arm"
+			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
 			os:   "darwin"
-			arch: "amd64"
+			arch: "arm64"
 		}, {
-			os:   "windows"
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "linux"
 			arch: "arm64"
 		}]
 	}, {
-		version: "5.16.0"
+		version: "3.3.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "freebsd"
+			os:   "windows"
 			arch: "arm"
 		}, {
 			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
+			arch: "386"
 		}, {
-			os:   "freebsd"
+			os:   "windows"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
 		}, {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
-			os:   "linux"
+			os:   "freebsd"
 			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
 		}, {
 			os:   "windows"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
 			arch: "386"
 		}, {
-			os:   "windows"
+			os:   "linux"
 			arch: "arm"
 		}, {
-			os:   "windows"
+			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
 		}, {
 			os:   "windows"
-			arch: "arm64"
+			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
 		}]
 	}, {
-		version: "5.18.0"
+		version: "3.15.0"
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
-			arch: "arm64"
+			os:   "linux"
+			arch: "386"
 		}, {
 			os:   "freebsd"
-			arch: "386"
+			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "arm64"
 		}, {
-			os:   "darwin"
-			arch: "arm64"
+			os:   "freebsd"
+			arch: "386"
 		}, {
 			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "arm"
 		}, {
-			os:   "windows"
-			arch: "amd64"
+			os:   "darwin"
+			arch: "arm64"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
-			os:   "linux"
-			arch: "386"
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "arm64"
 		}]
 	}, {
-		version: "4.18.2"
+		version: "3.4.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "darwin"
+			arch: "arm64"
+		}, {
 			os:   "linux"
 			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "386"
 		}, {
 			os:   "windows"
-			arch: "amd64"
+			arch: "arm"
 		}, {
-			os:   "freebsd"
+			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "arm64"
+			arch: "386"
 		}, {
 			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "arm"
+			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "linux"
-			arch: "386"
+			os:   "windows"
+			arch: "arm64"
 		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
 			os:   "linux"
 			arch: "arm64"
 		}, {
 			os:   "windows"
 			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "386"
+			arch: "arm"
 		}, {
 			os:   "darwin"
-			arch: "arm64"
+			arch: "amd64"
 		}]
 	}, {
-		version: "4.20.0"
+		version: "3.21.0"
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "freebsd"
-			arch: "386"
+			arch: "arm"
 		}, {
-			os:   "freebsd"
-			arch: "amd64"
+			os:   "windows"
+			arch: "386"
 		}, {
 			os:   "linux"
-			arch: "386"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "arm"
+			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "arm64"
 		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
-			os:   "windows"
+			os:   "freebsd"
 			arch: "amd64"
 		}, {
-			os:   "windows"
+			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
-			os:   "darwin"
+			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "arm64"
+			arch: "386"
 		}, {
-			os:   "linux"
+			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "windows"
-			arch: "arm"
+			arch: "arm64"
 		}]
 	}, {
-		version: "4.5.2"
-		protocols: ["5.0"]
+		version: "3.34.0"
+		protocols: ["6.0"]
 		platforms: [{
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "linux"
+			os:   "windows"
 			arch: "arm64"
 		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
+			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "linux"
+			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "arm64"
+			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "arm"
-		}]
-	}, {
-		version: "4.23.0"
-		protocols: ["5.0"]
-		platforms: [{
+			arch: "arm64"
+		}, {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
 			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm64"
+			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "arm"
 		}, {
 			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
 			arch: "arm64"
 		}, {
 			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "freebsd"
+			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "386"
 		}]
 	}, {
-		version: "4.12.0"
+		version: "2.26.1"
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
+			arch: "386"
 		}, {
 			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
 			arch: "arm64"
 		}, {
-			os:   "windows"
+			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "freebsd"
-			arch: "arm"
+			arch: "arm64"
 		}, {
-			os:   "darwin"
+			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "arm"
 		}, {
 			os:   "darwin"
 			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "386"
 		}, {
-			os:   "linux"
-			arch: "arm64"
+			os:   "darwin"
+			arch: "amd64"
 		}, {
 			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
+			arch: "amd64"
 		}]
 	}, {
-		version: "4.15.0"
+		version: "3.7.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "linux"
-			arch: "amd64"
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "linux"
-			arch: "386"
+			arch: "amd64"
 		}, {
 			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "windows"
 			arch: "arm"
 		}, {
-			os:   "freebsd"
+			os:   "linux"
 			arch: "arm64"
 		}, {
 			os:   "windows"
 			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
-			os:   "linux"
-			arch: "arm"
+			os:   "windows"
+			arch: "arm64"
 		}, {
 			os:   "darwin"
 			arch: "arm64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "386"
 		}, {
-			os:   "darwin"
-			arch: "amd64"
+			os:   "freebsd"
+			arch: "arm64"
 		}]
 	}, {
-		version: "4.8.0"
+		version: "3.10.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "darwin"
-			arch: "amd64"
+			os:   "linux"
+			arch: "arm64"
 		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
 			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "linux"
-			arch: "arm64"
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "386"
+			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "windows"
-			arch: "386"
+			arch: "arm64"
 		}, {
-			os:   "linux"
+			os:   "windows"
 			arch: "arm"
 		}, {
-			os:   "freebsd"
+			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
+			os:   "darwin"
 			arch: "arm64"
 		}, {
 			os:   "freebsd"
-			arch: "arm"
+			arch: "386"
 		}]
 	}, {
-		version: "4.26.1"
+		version: "3.12.2"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "windows"
+			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "arm64"
 		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
 			os:   "windows"
 			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "386"
 		}, {
-			os:   "freebsd"
+			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "windows"
-			arch: "arm64"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm64"
 		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
-			os:   "linux"
-			arch: "arm"
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
-			os:   "linux"
+			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "linux"
-			arch: "amd64"
+			arch: "arm"
 		}]
 	}, {
-		version: "4.27.0"
+		version: "3.30.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
+			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "windows"
+			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "freebsd"
+			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "linux"
-			arch: "arm"
+			os:   "windows"
+			arch: "arm64"
 		}, {
-			os:   "linux"
+			os:   "freebsd"
 			arch: "386"
 		}, {
-			os:   "linux"
+			os:   "freebsd"
 			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
 		}, {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
 			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "arm64"
+			arch: "arm"
 		}, {
 			os:   "linux"
 			arch: "arm64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "arm"
 		}, {
-			os:   "freebsd"
+			os:   "linux"
 			arch: "arm"
 		}, {
-			os:   "freebsd"
-			arch: "arm64"
+			os:   "windows"
+			arch: "amd64"
 		}]
 	}, {
-		version: "5.17.0"
+		version: "3.27.0"
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "darwin"
 			arch: "arm64"
 		}, {
-			os:   "freebsd"
-			arch: "386"
+			os:   "windows"
+			arch: "amd64"
 		}, {
 			os:   "linux"
-			arch: "arm"
+			arch: "386"
 		}, {
 			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "windows"
+			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
-			os:   "linux"
+			os:   "freebsd"
 			arch: "arm64"
 		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
 			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
+			arch: "arm"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
@@ -1179,211 +1148,275 @@ provider: integrations: github: {
 			arch: "arm"
 		}, {
 			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "arm64"
+		}, {
+			os:   "linux"
 			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
 		}]
 	}, {
-		version: "4.30.0"
+		version: "3.29.0"
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "freebsd"
-			arch: "arm64"
+			arch: "386"
 		}, {
-			os:   "windows"
+			os:   "darwin"
 			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "arm64"
 		}, {
-			os:   "freebsd"
-			arch: "386"
+			os:   "darwin"
+			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "arm"
+			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
 		}, {
-			os:   "darwin"
+			os:   "windows"
 			arch: "arm64"
 		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
 			os:   "windows"
-			arch: "amd64"
+			arch: "arm"
 		}, {
-			os:   "linux"
+			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "freebsd"
+			os:   "windows"
 			arch: "amd64"
 		}, {
-			os:   "windows"
+			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "windows"
-			arch: "arm"
+			os:   "freebsd"
+			arch: "amd64"
 		}]
 	}, {
-		version: "4.17.0"
+		version: "3.19.0"
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "windows"
-			arch: "amd64"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "freebsd"
-			arch: "arm64"
+			arch: "amd64"
 		}, {
-			os:   "windows"
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "freebsd"
-			arch: "arm"
+			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "arm64"
 		}, {
 			os:   "freebsd"
-			arch: "amd64"
+			arch: "arm"
 		}, {
 			os:   "linux"
-			arch: "arm"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "darwin"
+			os:   "freebsd"
 			arch: "arm64"
 		}, {
 			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
+			arch: "arm64"
 		}]
 	}, {
-		version: "4.19.0"
+		version: "2.23.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
+			os:   "darwin"
 			arch: "arm64"
 		}, {
 			os:   "windows"
-			arch: "386"
+			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "arm"
 		}, {
-			os:   "freebsd"
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
 			arch: "386"
 		}, {
 			os:   "freebsd"
-			arch: "arm"
+			arch: "arm64"
 		}, {
 			os:   "darwin"
-			arch: "arm64"
+			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "linux"
-			arch: "arm"
+			arch: "arm64"
 		}, {
-			os:   "linux"
-			arch: "amd64"
+			os:   "freebsd"
+			arch: "arm"
 		}, {
-			os:   "darwin"
-			arch: "amd64"
+			os:   "freebsd"
+			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
 		}]
 	}, {
-		version: "4.19.1"
+		version: "3.0.1"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
 			os:   "windows"
-			arch: "386"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
 		}, {
 			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "linux"
 			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "arm64"
 		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
 			os:   "windows"
-			arch: "arm"
+			arch: "386"
+		}]
+	}, {
+		version: "4.0.0"
+		protocols: ["6.0"]
+		platforms: [{
+			os:   "windows"
+			arch: "arm64"
 		}, {
-			os:   "darwin"
-			arch: "amd64"
+			os:   "linux"
+			arch: "386"
 		}, {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
-			os:   "linux"
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "windows"
 			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
 			os:   "windows"
-			arch: "amd64"
+			arch: "arm"
 		}, {
-			os:   "freebsd"
+			os:   "linux"
 			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "386"
+			arch: "arm64"
 		}]
 	}, {
-		version: "4.5.1"
+		version: "3.2.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "windows"
+			arch: "arm64"
+		}, {
 			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
 			os:   "linux"
-			arch: "amd64"
+			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "arm64"
 		}, {
 			os:   "linux"
-			arch: "386"
+			arch: "amd64"
 		}, {
-			os:   "linux"
+			os:   "darwin"
 			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
 			os:   "freebsd"
 			arch: "386"
 		}, {
@@ -1392,156 +1425,110 @@ provider: integrations: github: {
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "arm"
 		}]
 	}, {
-		version: "5.1.0"
+		version: "3.33.0"
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "windows"
-			arch: "amd64"
+			arch: "arm64"
 		}, {
-			os:   "freebsd"
-			arch: "386"
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "arm"
 		}, {
 			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "freebsd"
+			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "darwin"
-			arch: "arm64"
+			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "darwin"
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "arm"
 		}, {
 			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "windows"
 			arch: "arm64"
 		}, {
 			os:   "freebsd"
-			arch: "arm"
+			arch: "386"
 		}, {
-			os:   "linux"
+			os:   "freebsd"
 			arch: "arm"
 		}, {
-			os:   "linux"
+			os:   "darwin"
 			arch: "arm64"
 		}]
 	}, {
-		version: "4.25.0"
-		protocols: ["5.0"]
+		version: "3.35.0"
+		protocols: ["6.0"]
 		platforms: [{
-			os:   "darwin"
-			arch: "amd64"
-		}, {
 			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
+			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "arm64"
 		}, {
 			os:   "windows"
-			arch: "386"
+			arch: "amd64"
 		}, {
-			os:   "linux"
+			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
 			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "windows"
 			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
 		}, {
 			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
 			arch: "amd64"
-		}]
-	}, {
-		version: "4.20.1"
-		protocols: ["5.0"]
-		platforms: [{
+		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "freebsd"
-			arch: "arm64"
+			arch: "arm"
 		}, {
 			os:   "linux"
-			arch: "386"
+			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
 			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
 			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
 		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
 			arch: "arm"
 		}]
 	}, {
-		version: "4.11.0"
+		version: "2.13.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "darwin"
+			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "linux"
@@ -1549,296 +1536,250 @@ provider: integrations: github: {
 		}, {
 			os:   "linux"
 			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
 		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
 			os:   "freebsd"
-			arch: "386"
+			arch: "arm"
 		}, {
-			os:   "windows"
+			os:   "darwin"
 			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
 		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}]
-	}, {
-		version: "4.26.0"
-		protocols: ["5.0"]
-		platforms: [{
 			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
 			arch: "arm64"
 		}, {
 			os:   "freebsd"
-			arch: "amd64"
+			arch: "386"
 		}, {
 			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "arm64"
+			arch: "amd64"
 		}, {
 			os:   "linux"
-			arch: "386"
+			arch: "arm64"
 		}, {
 			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "windows"
 			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
 		}]
 	}, {
-		version: "5.15.0"
+		version: "2.9.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "linux"
-			arch: "arm64"
-		}, {
 			os:   "windows"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
+			arch: "amd64"
 		}, {
-			os:   "windows"
+			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "linux"
-			arch: "arm"
+			arch: "386"
 		}, {
 			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "darwin"
+			os:   "freebsd"
 			arch: "arm64"
 		}, {
-			os:   "windows"
+			os:   "freebsd"
 			arch: "386"
 		}, {
-			os:   "linux"
+			os:   "windows"
 			arch: "386"
 		}, {
 			os:   "freebsd"
-			arch: "amd64"
+			arch: "arm"
 		}, {
 			os:   "linux"
-			arch: "amd64"
+			arch: "arm64"
 		}, {
-			os:   "freebsd"
+			os:   "linux"
 			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "amd64"
 		}]
 	}, {
-		version: "4.31.0"
+		version: "2.21.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "freebsd"
-			arch: "arm"
-		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "linux"
+			os:   "windows"
 			arch: "arm"
 		}, {
 			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "windows"
 			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
 		}, {
-			os:   "darwin"
+			os:   "freebsd"
 			arch: "arm64"
 		}, {
-			os:   "windows"
-			arch: "arm64"
+			os:   "freebsd"
+			arch: "386"
 		}, {
-			os:   "windows"
+			os:   "freebsd"
 			arch: "arm"
 		}, {
 			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "freebsd"
+			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "darwin"
 			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "386"
 		}, {
 			os:   "linux"
-			arch: "amd64"
+			arch: "arm64"
 		}, {
-			os:   "freebsd"
-			arch: "386"
+			os:   "windows"
+			arch: "amd64"
 		}]
 	}, {
-		version: "5.14.0"
+		version: "3.18.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "windows"
-			arch: "arm64"
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "386"
+			arch: "arm64"
 		}, {
-			os:   "linux"
-			arch: "arm"
+			os:   "darwin"
+			arch: "arm64"
 		}, {
 			os:   "windows"
-			arch: "386"
+			arch: "amd64"
 		}, {
 			os:   "linux"
-			arch: "arm64"
+			arch: "arm"
 		}, {
 			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "amd64"
+			arch: "386"
 		}, {
 			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "windows"
 			arch: "arm"
 		}, {
-			os:   "freebsd"
-			arch: "arm"
+			os:   "windows"
+			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "windows"
+			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "darwin"
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "linux"
 			arch: "arm64"
 		}, {
-			os:   "darwin"
-			arch: "amd64"
+			os:   "windows"
+			arch: "386"
 		}]
 	}, {
-		version: "4.9.2"
+		version: "3.20.0"
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm64"
+			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
-			os:   "freebsd"
-			arch: "386"
+			os:   "windows"
+			arch: "arm"
 		}, {
-			os:   "freebsd"
+			os:   "linux"
 			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "darwin"
+			os:   "windows"
 			arch: "amd64"
 		}, {
-			os:   "linux"
-			arch: "arm"
+			os:   "freebsd"
+			arch: "386"
 		}, {
 			os:   "windows"
-			arch: "arm"
+			arch: "arm64"
 		}, {
-			os:   "windows"
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "amd64"
+			arch: "arm64"
 		}]
 	}, {
-		version: "4.3.1"
+		version: "2.12.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "linux"
-			arch: "386"
-		}, {
 			os:   "freebsd"
-			arch: "arm"
+			arch: "amd64"
 		}, {
-			os:   "freebsd"
-			arch: "arm64"
+			os:   "windows"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "386"
 		}, {
-			os:   "darwin"
+			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
-			os:   "windows"
-			arch: "amd64"
+			os:   "linux"
+			arch: "386"
 		}, {
 			os:   "linux"
-			arch: "amd64"
+			arch: "arm64"
 		}, {
 			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm64"
 		}]
 	}, {
-		version: "4.12.1"
+		version: "3.8.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
@@ -1846,105 +1787,102 @@ provider: integrations: github: {
 			arch: "arm"
 		}, {
 			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
+			arch: "arm"
 		}, {
-			os:   "freebsd"
+			os:   "windows"
 			arch: "386"
 		}, {
 			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
+			arch: "arm64"
 		}, {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
-			os:   "darwin"
+			os:   "freebsd"
 			arch: "amd64"
 		}, {
-			os:   "windows"
-			arch: "arm"
+			os:   "linux"
+			arch: "amd64"
 		}, {
-			os:   "windows"
+			os:   "linux"
 			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm64"
 		}, {
-			os:   "freebsd"
+			os:   "windows"
 			arch: "arm64"
 		}]
 	}, {
-		version: "5.3.0"
+		version: "3.14.0"
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "windows"
 			arch: "arm"
 		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
 			os:   "linux"
-			arch: "arm64"
+			arch: "386"
 		}, {
 			os:   "freebsd"
-			arch: "arm"
+			arch: "386"
 		}, {
-			os:   "darwin"
+			os:   "freebsd"
 			arch: "arm64"
 		}, {
-			os:   "freebsd"
-			arch: "386"
+			os:   "windows"
+			arch: "arm64"
 		}, {
-			os:   "freebsd"
+			os:   "darwin"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "arm64"
 		}, {
 			os:   "linux"
-			arch: "386"
+			arch: "arm64"
 		}, {
 			os:   "freebsd"
-			arch: "arm64"
+			arch: "amd64"
 		}, {
-			os:   "linux"
+			os:   "freebsd"
 			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
 		}, {
 			os:   "windows"
 			arch: "amd64"
 		}]
 	}, {
-		version: "4.16.0"
+		version: "2.18.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "linux"
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
 			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
 		}, {
 			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "386"
+			arch: "arm64"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
@@ -1952,239 +1890,214 @@ provider: integrations: github: {
 			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "windows"
+			os:   "linux"
 			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "amd64"
+			arch: "arm"
 		}, {
 			os:   "freebsd"
-			arch: "arm"
+			arch: "386"
 		}]
 	}, {
-		version: "4.3.2"
+		version: "2.13.2"
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "freebsd"
+			os:   "linux"
 			arch: "arm64"
 		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "386"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "arm"
+			arch: "386"
 		}, {
-			os:   "freebsd"
+			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "linux"
-			arch: "386"
+			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
-			os:   "linux"
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
 			arch: "arm64"
 		}, {
 			os:   "linux"
-			arch: "amd64"
+			arch: "386"
 		}]
 	}, {
-		version: "4.15.1"
+		version: "2.20.0"
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
 			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
 		}, {
 			os:   "windows"
 			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
 		}, {
 			os:   "windows"
-			arch: "arm"
-		}]
-	}, {
-		version: "4.18.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "linux"
 			arch: "arm"
 		}, {
-			os:   "linux"
+			os:   "windows"
 			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
 		}, {
-			os:   "linux"
+			os:   "darwin"
 			arch: "arm64"
 		}, {
-			os:   "windows"
-			arch: "amd64"
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
 			arch: "arm64"
 		}, {
-			os:   "windows"
-			arch: "arm"
+			os:   "linux"
+			arch: "amd64"
 		}, {
-			os:   "windows"
+			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
 			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
 			arch: "arm64"
 		}]
 	}, {
-		version: "4.25.0-alpha"
+		version: "2.27.0"
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "windows"
 			arch: "arm64"
 		}, {
-			os:   "linux"
+			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
-			os:   "windows"
+			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "darwin"
-			arch: "arm64"
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
-			os:   "linux"
-			arch: "arm64"
+			os:   "windows"
+			arch: "386"
 		}, {
 			os:   "freebsd"
-			arch: "amd64"
+			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "arm"
 		}, {
 			os:   "windows"
-			arch: "386"
+			arch: "amd64"
 		}, {
-			os:   "linux"
-			arch: "386"
+			os:   "windows"
+			arch: "arm64"
 		}]
 	}, {
-		version: "4.5.0"
+		version: "2.13.1"
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "darwin"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
 		}, {
 			os:   "freebsd"
-			arch: "arm"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "386"
+			arch: "arm64"
 		}, {
 			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "windows"
-			arch: "amd64"
+			arch: "386"
 		}, {
-			os:   "freebsd"
+			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}]
+	}, {
+		version: "3.25.0"
+		protocols: ["5.0"]
+		platforms: [{
 			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "windows"
 			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "linux"
-			arch: "arm64"
-		}]
-	}, {
-		version: "5.6.0"
-		protocols: ["5.0"]
-		platforms: [{
 			os:   "linux"
 			arch: "arm64"
 		}, {
-			os:   "linux"
-			arch: "amd64"
+			os:   "windows"
+			arch: "386"
 		}, {
 			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "darwin"
 			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "amd64"
@@ -2193,93 +2106,118 @@ provider: integrations: github: {
 			arch: "arm"
 		}, {
 			os:   "freebsd"
+			arch: "arm64"
+		}]
+	}, {
+		version: "3.10.1"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "darwin"
-			arch: "arm64"
+			os:   "windows"
+			arch: "amd64"
 		}, {
-			os:   "linux"
+			os:   "windows"
 			arch: "arm"
 		}, {
 			os:   "linux"
-			arch: "386"
+			arch: "arm"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
-		}]
-	}, {
-		version: "4.2.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "linux"
+		}, {
+			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "linux"
 			arch: "arm64"
 		}, {
 			os:   "freebsd"
 			arch: "arm64"
 		}, {
-			os:   "linux"
-			arch: "arm"
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "arm64"
+		}]
+	}, {
+		version: "2.19.2"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
 		}, {
 			os:   "freebsd"
 			arch: "386"
 		}, {
-			os:   "darwin"
+			os:   "freebsd"
 			arch: "amd64"
 		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
-			os:   "windows"
+			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "linux"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
 		}]
 	}, {
-		version: "5.2.0"
+		version: "3.0.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
 			os:   "linux"
-			arch: "amd64"
+			arch: "arm64"
 		}, {
 			os:   "windows"
 			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "arm64"
 		}, {
 			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "linux"
-			arch: "arm64"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
 			os:   "darwin"
 			arch: "arm64"
@@ -2290,168 +2228,171 @@ provider: integrations: github: {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
-			arch: "arm64"
+			os:   "windows"
+			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
 			os:   "freebsd"
-			arch: "amd64"
+			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "arm"
 		}]
 	}, {
-		version: "4.4.0"
+		version: "3.26.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "windows"
+			arch: "arm64"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
 			os:   "linux"
-			arch: "amd64"
+			arch: "386"
 		}, {
 			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm64"
 		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
-		}, {
-			os:   "linux"
+		}]
+	}, {
+		version: "2.10.1"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "freebsd"
 			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
 		}, {
 			os:   "linux"
 			arch: "arm64"
 		}, {
-			os:   "linux"
-			arch: "arm"
-		}]
-	}, {
-		version: "5.7.0"
-		protocols: ["5.0"]
-		platforms: [{
 			os:   "linux"
-			arch: "amd64"
+			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "linux"
-			arch: "386"
+			arch: "amd64"
 		}, {
 			os:   "windows"
-			arch: "arm"
+			arch: "386"
 		}, {
 			os:   "freebsd"
-			arch: "arm"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "windows"
 			arch: "arm64"
 		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
 			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
 		}]
 	}, {
-		version: "4.29.0"
+		version: "3.12.1"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "freebsd"
-			arch: "arm64"
+			os:   "linux"
+			arch: "386"
 		}, {
 			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
+			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
-			os:   "darwin"
-			arch: "amd64"
+			os:   "windows"
+			arch: "arm64"
 		}, {
 			os:   "darwin"
 			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "windows"
-			arch: "386"
+			arch: "amd64"
 		}, {
-			os:   "freebsd"
-			arch: "386"
+			os:   "linux"
+			arch: "arm64"
 		}, {
 			os:   "windows"
-			arch: "arm64"
+			arch: "arm"
 		}, {
-			os:   "linux"
+			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "linux"
 			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
 		}]
 	}, {
-		version: "4.10.0"
+		version: "3.5.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "freebsd"
-			arch: "arm"
-		}, {
 			os:   "windows"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
 		}, {
 			os:   "windows"
 			arch: "arm"
 		}, {
 			os:   "freebsd"
-			arch: "amd64"
+			arch: "arm64"
 		}, {
-			os:   "freebsd"
+			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "linux"
+			os:   "darwin"
 			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "arm"
@@ -2459,268 +2400,278 @@ provider: integrations: github: {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
-			os:   "windows"
+			os:   "freebsd"
 			arch: "386"
 		}, {
-			os:   "linux"
+			os:   "windows"
 			arch: "arm64"
 		}, {
 			os:   "linux"
-			arch: "386"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
 			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
 		}]
 	}, {
-		version: "5.8.0"
+		version: "2.17.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "arm64"
 		}, {
-			os:   "freebsd"
+			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "arm64"
 		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
-			os:   "windows"
+			os:   "freebsd"
 			arch: "386"
 		}, {
-			os:   "windows"
+			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "linux"
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "windows"
-			arch: "arm64"
+			arch: "386"
 		}]
 	}, {
-		version: "5.13.0"
+		version: "3.28.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "linux"
+			arch: "arm64"
+		}, {
 			os:   "freebsd"
 			arch: "386"
 		}, {
-			os:   "darwin"
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "windows"
 			arch: "arm64"
 		}, {
 			os:   "windows"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "arm"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "linux"
+			os:   "freebsd"
 			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "arm"
+			arch: "amd64"
 		}, {
-			os:   "windows"
+			os:   "darwin"
 			arch: "arm64"
 		}, {
 			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "windows"
 			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "386"
 		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
 			os:   "linux"
 			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "386"
 		}]
 	}, {
-		version: "4.21.0"
+		version: "3.12.0"
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
 		}, {
 			os:   "linux"
-			arch: "386"
+			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "arm"
 		}, {
 			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
+			arch: "arm64"
 		}, {
-			os:   "freebsd"
+			os:   "linux"
 			arch: "arm64"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
-			os:   "darwin"
+			os:   "windows"
 			arch: "arm64"
 		}, {
 			os:   "freebsd"
-			arch: "arm"
+			arch: "386"
 		}, {
-			os:   "linux"
-			arch: "arm"
+			os:   "freebsd"
+			arch: "arm64"
 		}, {
 			os:   "linux"
-			arch: "arm64"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
 		}]
 	}, {
-		version: "4.9.1"
+		version: "2.10.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "windows"
-			arch: "arm"
+			os:   "darwin"
+			arch: "amd64"
 		}, {
-			os:   "freebsd"
+			os:   "linux"
 			arch: "arm"
 		}, {
-			os:   "freebsd"
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm64"
 		}, {
 			os:   "freebsd"
-			arch: "arm64"
+			arch: "386"
 		}, {
-			os:   "darwin"
+			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
 			arch: "arm"
 		}, {
-			os:   "linux"
-			arch: "amd64"
+			os:   "freebsd"
+			arch: "arm64"
 		}, {
-			os:   "windows"
+			os:   "linux"
 			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
 		}, {
 			os:   "windows"
 			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
 		}]
 	}, {
-		version: "4.10.1"
+		version: "3.24.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "freebsd"
+			arch: "arm"
+		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
+			os:   "darwin"
 			arch: "arm64"
 		}, {
 			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm"
+			arch: "arm64"
 		}, {
-			os:   "linux"
-			arch: "amd64"
+			os:   "windows"
+			arch: "arm64"
 		}, {
 			os:   "windows"
 			arch: "arm"
 		}, {
 			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "386"
 		}, {
-			os:   "darwin"
-			arch: "arm64"
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "linux"
 			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
 		}]
 	}, {
-		version: "4.13.0"
+		version: "2.11.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "darwin"
-			arch: "arm64"
-		}, {
 			os:   "freebsd"
 			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
 		}, {
 			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
 			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
-			arch: "arm"
+			os:   "linux"
+			arch: "arm64"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
-			arch: "arm64"
+			os:   "linux"
+			arch: "arm"
+		}]
+	}, {
+		version: "3.16.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "linux"
+			arch: "arm"
 		}, {
-			os:   "freebsd"
+			os:   "windows"
 			arch: "386"
 		}, {
 			os:   "linux"
@@ -2729,409 +2680,381 @@ provider: integrations: github: {
 			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "linux"
+			os:   "windows"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "linux"
-			arch: "arm"
+			arch: "amd64"
 		}, {
-			os:   "windows"
+			os:   "freebsd"
 			arch: "386"
-		}]
-	}, {
-		version: "4.14.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "linux"
+		}, {
+			os:   "windows"
 			arch: "amd64"
 		}, {
-			os:   "linux"
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "darwin"
 			arch: "arm64"
 		}, {
 			os:   "freebsd"
+			arch: "arm"
+		}]
+	}, {
+		version: "3.17.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "windows"
 			arch: "arm"
 		}, {
 			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
 			arch: "386"
 		}, {
-			os:   "windows"
-			arch: "386"
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
 			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "windows"
 			arch: "arm64"
 		}, {
 			os:   "freebsd"
 			arch: "arm64"
 		}, {
-			os:   "darwin"
+			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "freebsd"
-			arch: "amd64"
+			arch: "arm"
 		}, {
 			os:   "linux"
 			arch: "arm"
 		}]
 	}, {
-		version: "4.28.0"
+		version: "3.1.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "darwin"
-			arch: "amd64"
-		}, {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
-			os:   "windows"
-			arch: "amd64"
+			os:   "linux"
+			arch: "386"
 		}, {
-			os:   "freebsd"
+			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "freebsd"
+			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "linux"
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "windows"
-			arch: "386"
+			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
 			os:   "windows"
 			arch: "arm64"
 		}, {
-			os:   "windows"
+			os:   "freebsd"
 			arch: "arm"
 		}]
 	}, {
-		version: "4.27.1"
+		version: "2.24.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "linux"
+			os:   "freebsd"
 			arch: "arm64"
 		}, {
-			os:   "windows"
-			arch: "arm64"
+			os:   "freebsd"
+			arch: "arm"
 		}, {
-			os:   "darwin"
+			os:   "linux"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
-			os:   "darwin"
-			arch: "arm64"
+			os:   "windows"
+			arch: "386"
 		}, {
 			os:   "freebsd"
-			arch: "arm"
+			arch: "386"
 		}, {
-			os:   "windows"
-			arch: "arm"
+			os:   "linux"
+			arch: "arm64"
 		}, {
-			os:   "freebsd"
+			os:   "darwin"
 			arch: "arm64"
 		}, {
 			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "386"
+			arch: "arm"
 		}, {
-			os:   "linux"
+			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "arm"
 		}]
 	}, {
-		version: "4.9.4"
-		protocols: ["5.0"]
+		version: "3.33.1"
+		protocols: ["6.0"]
 		platforms: [{
 			os:   "darwin"
 			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "arm"
 		}, {
-			os:   "darwin"
-			arch: "arm64"
+			os:   "windows"
+			arch: "386"
 		}, {
 			os:   "linux"
-			arch: "386"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "arm64"
+			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "darwin"
 			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "386"
 		}, {
 			os:   "freebsd"
-			arch: "amd64"
+			arch: "386"
 		}, {
 			os:   "linux"
-			arch: "arm"
+			arch: "arm64"
 		}, {
 			os:   "freebsd"
-			arch: "arm"
+			arch: "arm64"
 		}, {
-			os:   "linux"
+			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "windows"
-			arch: "386"
+			arch: "arm64"
 		}]
 	}, {
-		version: "5.4.0"
+		version: "2.19.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "linux"
+			arch: "arm"
+		}, {
 			os:   "windows"
-			arch: "arm64"
+			arch: "386"
 		}, {
 			os:   "freebsd"
-			arch: "arm64"
+			arch: "386"
 		}, {
-			os:   "darwin"
+			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "windows"
 			arch: "arm"
 		}, {
-			os:   "freebsd"
+			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "darwin"
 			arch: "arm64"
 		}, {
 			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "windows"
-			arch: "amd64"
+			os:   "freebsd"
+			arch: "arm64"
 		}, {
-			os:   "linux"
+			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "linux"
-			arch: "386"
+			arch: "amd64"
 		}]
 	}, {
-		version: "5.12.0"
+		version: "2.14.0"
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "linux"
 			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "amd64"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "386"
 		}, {
 			os:   "freebsd"
-			arch: "arm"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "windows"
 			arch: "arm"
 		}, {
-			os:   "darwin"
-			arch: "arm64"
+			os:   "linux"
+			arch: "amd64"
 		}, {
 			os:   "windows"
-			arch: "arm64"
+			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}]
 	}, {
-		version: "5.11.0"
+		version: "3.23.0"
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "linux"
-			arch: "amd64"
+			arch: "386"
 		}, {
-			os:   "linux"
+			os:   "windows"
 			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
 		}, {
-			os:   "windows"
+			os:   "freebsd"
 			arch: "386"
 		}, {
-			os:   "windows"
+			os:   "darwin"
 			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
 		}, {
-			os:   "freebsd"
+			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "arm64"
 		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
 			os:   "darwin"
 			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "arm64"
-		}]
-	}, {
-		version: "4.18.1"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "freebsd"
-			arch: "arm"
 		}, {
-			os:   "linux"
+			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "windows"
-			arch: "386"
+			arch: "arm64"
 		}, {
-			os:   "linux"
-			arch: "386"
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
+		}]
+	}, {
+		version: "3.31.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "linux"
 			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
 			arch: "arm64"
 		}, {
-			os:   "windows"
-			arch: "arm"
+			os:   "freebsd"
+			arch: "386"
 		}, {
 			os:   "darwin"
-			arch: "arm64"
-		}]
-	}, {
-		version: "4.6.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "linux"
 			arch: "arm64"
 		}, {
-			os:   "linux"
+			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "freebsd"
+			os:   "windows"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
+			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
+			arch: "arm64"
 		}, {
-			os:   "linux"
+			os:   "freebsd"
 			arch: "arm"
 		}, {
 			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
 			arch: "arm64"
 		}, {
 			os:   "windows"
-			arch: "386"
+			arch: "arm"
 		}, {
-			os:   "linux"
+			os:   "freebsd"
 			arch: "amd64"
 		}]
 	}]

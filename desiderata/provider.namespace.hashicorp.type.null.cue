@@ -120,9 +120,6 @@ provider: hashicorp: null: {
 		version: "2.1.1"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
-			os:   "windows"
-			arch: "386"
-		}, {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
@@ -150,6 +147,9 @@ provider: hashicorp: null: {
 			os:   "linux"
 			arch: "386"
 		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
@@ -162,9 +162,6 @@ provider: hashicorp: null: {
 		platforms: [{
 			os:   "freebsd"
 			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm64"
 		}, {
 			os:   "windows"
 			arch: "386"
@@ -180,6 +177,9 @@ provider: hashicorp: null: {
 		}, {
 			os:   "freebsd"
 			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm64"
 		}, {
 			os:   "windows"
 			arch: "amd64"

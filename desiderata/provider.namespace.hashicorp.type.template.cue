@@ -50,21 +50,21 @@ provider: hashicorp: template: {
 			arch: "386"
 		}, {
 			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
 			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "amd64"
 		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
+			os:   "solaris"
 			arch: "amd64"
 		}, {
-			os:   "solaris"
+			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "windows"
@@ -286,6 +286,9 @@ provider: hashicorp: template: {
 		version: "2.2.0"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
+			os:   "linux"
+			arch: "arm64"
+		}, {
 			os:   "freebsd"
 			arch: "386"
 		}, {
@@ -300,9 +303,6 @@ provider: hashicorp: template: {
 		}, {
 			os:   "windows"
 			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm64"
 		}, {
 			os:   "windows"
 			arch: "amd64"

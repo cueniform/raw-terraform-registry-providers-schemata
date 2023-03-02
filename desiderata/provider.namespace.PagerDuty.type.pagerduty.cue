@@ -43,30 +43,153 @@ provider: PagerDuty: pagerduty: {
 			arch: "amd64"
 		}]
 	}, {
-		version: "2.5.0"
+		version: "2.10.2"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
 			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}]
+	}, {
+		version: "1.10.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
 			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "arm"
 		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}]
+	}, {
+		version: "2.5.1"
+		protocols: ["5.0"]
+		platforms: [{
 			os:   "linux"
 			arch: "arm64"
 		}, {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
 			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "386"
 		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}]
+	}, {
+		version: "2.5.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
 			os:   "linux"
 			arch: "amd64"
 		}, {
@@ -78,6 +201,40 @@ provider: PagerDuty: pagerduty: {
 		}, {
 			os:   "windows"
 			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}]
+	}, {
+		version: "1.9.5"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "arm64"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
@@ -96,13 +253,13 @@ provider: PagerDuty: pagerduty: {
 			arch: "amd64"
 		}, {
 			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "386"
@@ -114,97 +271,23 @@ provider: PagerDuty: pagerduty: {
 			arch: "arm"
 		}, {
 			os:   "windows"
-			arch: "amd64"
-		}]
-	}, {
-		version: "2.9.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}]
-	}, {
-		version: "1.9.5"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
 			arch: "amd64"
 		}]
 	}, {
 		version: "2.10.1"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
 			os:   "linux"
 			arch: "386"
 		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
 			os:   "windows"
 			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
 		}, {
 			os:   "freebsd"
 			arch: "386"
@@ -220,9 +303,6 @@ provider: PagerDuty: pagerduty: {
 		}, {
 			os:   "windows"
 			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "amd64"
@@ -233,8 +313,48 @@ provider: PagerDuty: pagerduty: {
 			os:   "linux"
 			arch: "arm"
 		}, {
+			os:   "windows"
+			arch: "arm64"
+		}]
+	}, {
+		version: "1.10.1"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
 			os:   "darwin"
 			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
 		}]
 	}, {
 		version: "1.9.7"
@@ -249,6 +369,9 @@ provider: PagerDuty: pagerduty: {
 			os:   "linux"
 			arch: "amd64"
 		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
 			os:   "linux"
 			arch: "386"
 		}, {
@@ -263,9 +386,6 @@ provider: PagerDuty: pagerduty: {
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "arm"
@@ -277,11 +397,17 @@ provider: PagerDuty: pagerduty: {
 			arch: "386"
 		}]
 	}, {
-		version: "1.11.0"
+		version: "1.7.9"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "linux"
+			arch: "386"
+		}, {
 			os:   "darwin"
 			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "arm64"
@@ -289,7 +415,38 @@ provider: PagerDuty: pagerduty: {
 			os:   "windows"
 			arch: "amd64"
 		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
 			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}]
+	}, {
+		version: "1.11.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "windows"
@@ -306,9 +463,6 @@ provider: PagerDuty: pagerduty: {
 		}, {
 			os:   "linux"
 			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
@@ -320,54 +474,11 @@ provider: PagerDuty: pagerduty: {
 		version: "2.10.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "linux"
-			arch: "arm64"
-		}, {
 			os:   "windows"
 			arch: "arm"
 		}, {
 			os:   "darwin"
 			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}]
-	}, {
-		version: "2.5.1"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
@@ -376,79 +487,36 @@ provider: PagerDuty: pagerduty: {
 			arch: "arm"
 		}, {
 			os:   "linux"
-			arch: "386"
+			arch: "arm64"
 		}, {
-			os:   "darwin"
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
 			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "linux"
-			arch: "arm64"
+			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}]
-	}, {
-		version: "2.6.3"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "arm64"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
 			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
 		}]
 	}, {
 		version: "1.9.6"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
@@ -460,6 +528,9 @@ provider: PagerDuty: pagerduty: {
 		}, {
 			os:   "linux"
 			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "386"
@@ -489,9 +560,6 @@ provider: PagerDuty: pagerduty: {
 			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
 			os:   "freebsd"
 			arch: "386"
 		}, {
@@ -521,6 +589,9 @@ provider: PagerDuty: pagerduty: {
 		}, {
 			os:   "windows"
 			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
 		}]
 	}, {
 		version: "2.2.0"
@@ -529,9 +600,6 @@ provider: PagerDuty: pagerduty: {
 			os:   "windows"
 			arch: "amd64"
 		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
 			os:   "linux"
 			arch: "386"
 		}, {
@@ -546,6 +614,9 @@ provider: PagerDuty: pagerduty: {
 		}, {
 			os:   "linux"
 			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "arm64"
@@ -572,13 +643,13 @@ provider: PagerDuty: pagerduty: {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
 			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "windows"
 			arch: "386"
 		}, {
 			os:   "darwin"
@@ -587,14 +658,14 @@ provider: PagerDuty: pagerduty: {
 			os:   "windows"
 			arch: "amd64"
 		}, {
-			os:   "windows"
-			arch: "arm64"
-		}, {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "windows"
-			arch: "arm"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "386"
@@ -609,11 +680,14 @@ provider: PagerDuty: pagerduty: {
 		version: "2.2.1"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "darwin"
+			arch: "arm64"
+		}, {
 			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "darwin"
-			arch: "arm64"
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
@@ -629,9 +703,6 @@ provider: PagerDuty: pagerduty: {
 		}, {
 			os:   "windows"
 			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "amd64"
@@ -649,11 +720,11 @@ provider: PagerDuty: pagerduty: {
 		version: "2.8.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "darwin"
-			arch: "arm64"
-		}, {
 			os:   "freebsd"
 			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "386"
@@ -693,10 +764,10 @@ provider: PagerDuty: pagerduty: {
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "linux"
-			arch: "386"
+			arch: "arm64"
 		}, {
 			os:   "linux"
-			arch: "arm64"
+			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "arm64"
@@ -732,41 +803,44 @@ provider: PagerDuty: pagerduty: {
 			arch: "amd64"
 		}]
 	}, {
-		version: "1.10.1"
+		version: "2.9.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
 			os:   "linux"
 			arch: "arm64"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
 		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "darwin"
 			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
@@ -775,14 +849,11 @@ provider: PagerDuty: pagerduty: {
 		version: "2.6.4"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "linux"
-			arch: "386"
-		}, {
 			os:   "windows"
 			arch: "arm"
 		}, {
 			os:   "linux"
-			arch: "arm"
+			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
@@ -799,6 +870,9 @@ provider: PagerDuty: pagerduty: {
 			os:   "windows"
 			arch: "386"
 		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
@@ -813,123 +887,6 @@ provider: PagerDuty: pagerduty: {
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
-		}]
-	}, {
-		version: "1.10.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}]
-	}, {
-		version: "2.10.2"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}]
-	}, {
-		version: "1.9.3"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
 		}]
 	}, {
 		version: "2.0.0"
@@ -944,6 +901,9 @@ provider: PagerDuty: pagerduty: {
 			os:   "freebsd"
 			arch: "386"
 		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
 			os:   "linux"
 			arch: "arm64"
 		}, {
@@ -958,11 +918,39 @@ provider: PagerDuty: pagerduty: {
 		}, {
 			os:   "darwin"
 			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}]
+	}, {
+		version: "1.9.3"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
 		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
 			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "linux"
@@ -970,6 +958,9 @@ provider: PagerDuty: pagerduty: {
 		}, {
 			os:   "linux"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
 		}]
 	}, {
 		version: "1.9.8"
@@ -1012,11 +1003,29 @@ provider: PagerDuty: pagerduty: {
 			arch: "amd64"
 		}]
 	}, {
-		version: "1.7.9"
+		version: "2.6.3"
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "linux"
 			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "arm"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
@@ -1024,26 +1033,17 @@ provider: PagerDuty: pagerduty: {
 			os:   "freebsd"
 			arch: "386"
 		}, {
-			os:   "linux"
-			arch: "arm64"
+			os:   "freebsd"
+			arch: "arm"
 		}, {
-			os:   "windows"
-			arch: "amd64"
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "amd64"
+			os:   "darwin"
+			arch: "arm64"
 		}]
 	}, {
 		version: "2.3.0"
@@ -1053,10 +1053,10 @@ provider: PagerDuty: pagerduty: {
 			arch: "arm"
 		}, {
 			os:   "windows"
-			arch: "386"
+			arch: "arm"
 		}, {
 			os:   "windows"
-			arch: "arm"
+			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "amd64"
@@ -1089,9 +1089,6 @@ provider: PagerDuty: pagerduty: {
 		version: "2.8.1"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "darwin"
-			arch: "amd64"
-		}, {
 			os:   "windows"
 			arch: "arm64"
 		}, {
@@ -1104,11 +1101,14 @@ provider: PagerDuty: pagerduty: {
 			os:   "freebsd"
 			arch: "386"
 		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "linux"
-			arch: "386"
+			os:   "darwin"
+			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm"
@@ -1172,31 +1172,31 @@ provider: PagerDuty: pagerduty: {
 		version: "2.6.2"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
 			os:   "freebsd"
 			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "arm64"
 		}, {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
 			os:   "windows"
+			arch: "arm64"
+		}, {
+			os:   "windows"
 			arch: "arm"
 		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
-			os:   "freebsd"
+			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "linux"
@@ -1249,14 +1249,14 @@ provider: PagerDuty: pagerduty: {
 		version: "1.9.4"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "freebsd"
-			arch: "386"
-		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
@@ -1326,11 +1326,11 @@ provider: PagerDuty: pagerduty: {
 		version: "1.9.9"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "windows"
-			arch: "arm"
-		}, {
 			os:   "linux"
 			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "arm"
 		}, {
 			os:   "linux"
 			arch: "386"
@@ -1338,14 +1338,14 @@ provider: PagerDuty: pagerduty: {
 			os:   "linux"
 			arch: "arm64"
 		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
@@ -1369,10 +1369,13 @@ provider: PagerDuty: pagerduty: {
 			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "linux"
+			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
@@ -1380,9 +1383,6 @@ provider: PagerDuty: pagerduty: {
 		}, {
 			os:   "linux"
 			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "386"
@@ -1447,24 +1447,24 @@ provider: PagerDuty: pagerduty: {
 			arch: "arm64"
 		}, {
 			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
 			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
 			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "windows"
 			arch: "amd64"
 		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "windows"
+			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "linux"
@@ -1517,6 +1517,9 @@ provider: PagerDuty: pagerduty: {
 		version: "2.1.1"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
@@ -1531,9 +1534,6 @@ provider: PagerDuty: pagerduty: {
 		}, {
 			os:   "linux"
 			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm64"
@@ -1561,10 +1561,10 @@ provider: PagerDuty: pagerduty: {
 			arch: "arm64"
 		}, {
 			os:   "windows"
-			arch: "arm"
+			arch: "386"
 		}, {
 			os:   "windows"
-			arch: "386"
+			arch: "arm"
 		}, {
 			os:   "linux"
 			arch: "386"
@@ -1598,6 +1598,9 @@ provider: PagerDuty: pagerduty: {
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "windows"
@@ -1605,9 +1608,6 @@ provider: PagerDuty: pagerduty: {
 		}, {
 			os:   "windows"
 			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "arm"
@@ -1683,14 +1683,14 @@ provider: PagerDuty: pagerduty: {
 		version: "1.8.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "freebsd"
-			arch: "arm"
-		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
 		}, {
 			os:   "linux"
 			arch: "amd64"
@@ -1717,35 +1717,35 @@ provider: PagerDuty: pagerduty: {
 		version: "2.7.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "windows"
-			arch: "386"
-		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "arm64"
-		}, {
-			os:   "linux"
 			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
@@ -1763,26 +1763,26 @@ provider: PagerDuty: pagerduty: {
 			os:   "windows"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
 			os:   "linux"
 			arch: "arm64"
 		}, {
 			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "386"

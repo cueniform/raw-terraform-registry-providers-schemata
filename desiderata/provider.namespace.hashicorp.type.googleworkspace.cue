@@ -271,13 +271,13 @@ provider: hashicorp: googleworkspace: {
 			os:   "freebsd"
 			arch: "386"
 		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
 			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "linux"

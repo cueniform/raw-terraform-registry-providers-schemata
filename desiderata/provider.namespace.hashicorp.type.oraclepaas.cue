@@ -12,20 +12,20 @@ provider: hashicorp: oraclepaas: {
 			os:   "windows"
 			arch: "amd64"
 		}, {
-			os:   "solaris"
+			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "linux"
-			arch: "amd64"
+			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
-			os:   "linux"
-			arch: "386"
+			os:   "solaris"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
@@ -41,6 +41,46 @@ provider: hashicorp: oraclepaas: {
 		}, {
 			os:   "darwin"
 			arch: "amd64"
+		}]
+	}, {
+		version: "1.5.1"
+		protocols: ["4.0"]
+		platforms: [{
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "386"
 		}]
 	}, {
 		version: "1.5.2"
@@ -123,46 +163,6 @@ provider: hashicorp: oraclepaas: {
 			arch: "amd64"
 		}]
 	}, {
-		version: "1.4.1"
-		protocols: ["4"]
-		platforms: [{
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}]
-	}, {
 		version: "1.5.3"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
@@ -203,84 +203,84 @@ provider: hashicorp: oraclepaas: {
 			arch: "amd64"
 		}]
 	}, {
-		version: "1.5.1"
-		protocols: ["4.0"]
+		version: "1.3.1"
+		protocols: ["4"]
 		platforms: [{
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
 			os:   "openbsd"
 			arch: "386"
 		}, {
-			os:   "freebsd"
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
 			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "linux"
+			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "linux"
-			arch: "386"
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
 		}, {
 			os:   "solaris"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "darwin"
 			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "386"
 		}]
 	}, {
-		version: "1.3.1"
+		version: "1.4.1"
 		protocols: ["4"]
 		platforms: [{
 			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
 			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "openbsd"
 			arch: "amd64"
 		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
 			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "solaris"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
+			os:   "darwin"
 			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
 		}]
 	}, {
 		version: "1.0.0"
@@ -295,11 +295,11 @@ provider: hashicorp: oraclepaas: {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
 			os:   "openbsd"
 			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "amd64"
@@ -406,6 +406,9 @@ provider: hashicorp: oraclepaas: {
 		version: "1.2.1"
 		protocols: ["4"]
 		platforms: [{
+			os:   "darwin"
+			arch: "amd64"
+		}, {
 			os:   "openbsd"
 			arch: "386"
 		}, {
@@ -416,9 +419,6 @@ provider: hashicorp: oraclepaas: {
 			arch: "amd64"
 		}, {
 			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"

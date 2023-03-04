@@ -3,6 +3,46 @@ package desiderata
 provider: hashicorp: vsphere: {
 	id: "hashicorp/vsphere"
 	versions: [{
+		version: "1.13.0"
+		protocols: ["4.0", "5.0"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}]
+	}, {
 		version: "1.21.0"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
@@ -81,46 +121,6 @@ provider: hashicorp: vsphere: {
 		}, {
 			os:   "freebsd"
 			arch: "arm"
-		}]
-	}, {
-		version: "1.18.1"
-		protocols: ["4.0", "5.0"]
-		platforms: [{
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
 		}]
 	}, {
 		version: "1.3.2"
@@ -246,14 +246,14 @@ provider: hashicorp: vsphere: {
 		version: "1.8.0"
 		protocols: ["4"]
 		platforms: [{
+			os:   "linux"
+			arch: "arm"
+		}, {
 			os:   "solaris"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
 		}, {
 			os:   "openbsd"
 			arch: "386"
@@ -283,44 +283,44 @@ provider: hashicorp: vsphere: {
 			arch: "amd64"
 		}]
 	}, {
-		version: "1.13.0"
-		protocols: ["4.0", "5.0"]
+		version: "1.8.1"
+		protocols: ["4"]
 		platforms: [{
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "386"
 		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
 		}]
 	}, {
 		version: "0.2.2"
@@ -406,7 +406,7 @@ provider: hashicorp: vsphere: {
 		version: "1.2.0"
 		protocols: ["4"]
 		platforms: [{
-			os:   "linux"
+			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
@@ -421,7 +421,7 @@ provider: hashicorp: vsphere: {
 			os:   "linux"
 			arch: "arm"
 		}, {
-			os:   "windows"
+			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "openbsd"
@@ -520,9 +520,6 @@ provider: hashicorp: vsphere: {
 		version: "2.3.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "windows"
-			arch: "386"
-		}, {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
@@ -531,6 +528,9 @@ provider: hashicorp: vsphere: {
 		}, {
 			os:   "linux"
 			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
@@ -674,54 +674,14 @@ provider: hashicorp: vsphere: {
 			arch: "amd64"
 		}]
 	}, {
-		version: "1.16.2"
-		protocols: ["4.0", "5.0"]
-		platforms: [{
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}]
-	}, {
 		version: "1.3.0"
 		protocols: ["4"]
 		platforms: [{
-			os:   "freebsd"
-			arch: "arm"
-		}, {
 			os:   "linux"
 			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
 		}, {
 			os:   "solaris"
 			arch: "amd64"
@@ -758,16 +718,16 @@ provider: hashicorp: vsphere: {
 		protocols: ["4"]
 		platforms: [{
 			os:   "linux"
-			arch: "amd64"
+			arch: "386"
 		}, {
 			os:   "solaris"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
+			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "linux"
-			arch: "386"
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
 			os:   "openbsd"
 			arch: "amd64"
@@ -837,10 +797,10 @@ provider: hashicorp: vsphere: {
 		version: "1.5.0"
 		protocols: ["4"]
 		platforms: [{
-			os:   "openbsd"
+			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "darwin"
+			os:   "openbsd"
 			arch: "amd64"
 		}, {
 			os:   "linux"
@@ -874,23 +834,60 @@ provider: hashicorp: vsphere: {
 			arch: "386"
 		}]
 	}, {
+		version: "2.0.1"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}]
+	}, {
 		version: "1.4.1"
 		protocols: ["4"]
 		platforms: [{
+			os:   "windows"
+			arch: "386"
+		}, {
 			os:   "solaris"
 			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
 			os:   "linux"
 			arch: "arm"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
@@ -1203,14 +1200,14 @@ provider: hashicorp: vsphere: {
 			os:   "freebsd"
 			arch: "386"
 		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
 			os:   "openbsd"
 			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
@@ -1228,6 +1225,46 @@ provider: hashicorp: vsphere: {
 			arch: "386"
 		}, {
 			os:   "linux"
+			arch: "amd64"
+		}]
+	}, {
+		version: "1.16.2"
+		protocols: ["4.0", "5.0"]
+		platforms: [{
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "darwin"
 			arch: "amd64"
 		}]
 	}, {
@@ -1271,43 +1308,6 @@ provider: hashicorp: vsphere: {
 			arch: "arm"
 		}]
 	}, {
-		version: "2.0.1"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}]
-	}, {
 		version: "2.0.0"
 		protocols: ["5.0"]
 		platforms: [{
@@ -1343,46 +1343,6 @@ provider: hashicorp: vsphere: {
 		}, {
 			os:   "linux"
 			arch: "386"
-		}]
-	}, {
-		version: "1.8.1"
-		protocols: ["4"]
-		platforms: [{
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
 		}]
 	}, {
 		version: "1.9.1"
@@ -1499,17 +1459,11 @@ provider: hashicorp: vsphere: {
 			arch: "386"
 		}]
 	}, {
-		version: "0.3.0"
-		protocols: ["4"]
+		version: "1.18.1"
+		protocols: ["4.0", "5.0"]
 		platforms: [{
-			os:   "freebsd"
+			os:   "openbsd"
 			arch: "386"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
@@ -1518,10 +1472,56 @@ provider: hashicorp: vsphere: {
 			arch: "arm"
 		}, {
 			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}]
+	}, {
+		version: "0.3.0"
+		protocols: ["4"]
+		platforms: [{
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "openbsd"
 			arch: "386"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
@@ -1653,6 +1653,9 @@ provider: hashicorp: vsphere: {
 		version: "1.4.0"
 		protocols: ["4"]
 		platforms: [{
+			os:   "linux"
+			arch: "arm"
+		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
@@ -1667,9 +1670,6 @@ provider: hashicorp: vsphere: {
 		}, {
 			os:   "freebsd"
 			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "amd64"
@@ -1693,11 +1693,11 @@ provider: hashicorp: vsphere: {
 		version: "1.7.0"
 		protocols: ["4"]
 		platforms: [{
-			os:   "windows"
-			arch: "386"
-		}, {
 			os:   "darwin"
 			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
 		}, {
 			os:   "openbsd"
 			arch: "386"
@@ -1767,11 +1767,11 @@ provider: hashicorp: vsphere: {
 		version: "2.2.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "freebsd"
-			arch: "arm"
-		}, {
 			os:   "darwin"
 			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
 		}, {
 			os:   "linux"
 			arch: "arm"
@@ -2042,18 +2042,18 @@ provider: hashicorp: vsphere: {
 		protocols: ["4.0", "5.0"]
 		platforms: [{
 			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
 			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "darwin"
@@ -2115,10 +2115,10 @@ provider: hashicorp: vsphere: {
 		version: "1.17.4"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
-			os:   "openbsd"
+			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "linux"
+			os:   "openbsd"
 			arch: "amd64"
 		}, {
 			os:   "solaris"
@@ -2130,17 +2130,17 @@ provider: hashicorp: vsphere: {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
 			os:   "openbsd"
 			arch: "386"
 		}, {
 			os:   "windows"
-			arch: "amd64"
+			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "arm"
@@ -2195,23 +2195,23 @@ provider: hashicorp: vsphere: {
 		version: "1.12.0"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
-			os:   "freebsd"
-			arch: "arm"
-		}, {
 			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "windows"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "linux"
+			os:   "freebsd"
 			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "386"
@@ -2315,9 +2315,6 @@ provider: hashicorp: vsphere: {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
@@ -2335,6 +2332,9 @@ provider: hashicorp: vsphere: {
 		}, {
 			os:   "solaris"
 			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "386"
@@ -2355,11 +2355,11 @@ provider: hashicorp: vsphere: {
 			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
 			os:   "windows"
 			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"

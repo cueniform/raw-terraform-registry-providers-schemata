@@ -198,16 +198,16 @@ provider: hashicorp: null: {
 		protocols: ["4"]
 		platforms: [{
 			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
 			arch: "386"
 		}, {
-			os:   "linux"
+			os:   "openbsd"
 			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
@@ -243,14 +243,14 @@ provider: hashicorp: null: {
 			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm64"
 		}, {
 			os:   "freebsd"
 			arch: "arm"

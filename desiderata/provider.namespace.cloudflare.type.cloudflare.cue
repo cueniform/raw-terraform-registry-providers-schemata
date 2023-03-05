@@ -9,9 +9,6 @@ provider: cloudflare: cloudflare: {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
@@ -21,11 +18,14 @@ provider: cloudflare: cloudflare: {
 			os:   "windows"
 			arch: "amd64"
 		}, {
-			os:   "windows"
-			arch: "arm64"
+			os:   "linux"
+			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "arm64"
 		}, {
 			os:   "freebsd"
 			arch: "arm64"
@@ -52,10 +52,10 @@ provider: cloudflare: cloudflare: {
 		version: "2.22.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "linux"
+			os:   "windows"
 			arch: "arm"
 		}, {
-			os:   "windows"
+			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "freebsd"
@@ -70,106 +70,26 @@ provider: cloudflare: cloudflare: {
 			os:   "freebsd"
 			arch: "386"
 		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
 			os:   "linux"
 			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}]
-	}, {
-		version: "2.18.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}]
-	}, {
-		version: "2.26.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm64"
 		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
 			os:   "darwin"
-			arch: "amd64"
+			arch: "arm64"
 		}, {
 			os:   "freebsd"
-			arch: "arm64"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
 		}]
 	}, {
 		version: "2.15.0"
@@ -209,56 +129,277 @@ provider: cloudflare: cloudflare: {
 			arch: "386"
 		}]
 	}, {
-		version: "3.15.0"
+		version: "2.18.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
 			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}]
+	}, {
+		version: "2.26.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "darwin"
 			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "amd64"
 		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}]
+	}, {
+		version: "3.19.0"
+		protocols: ["5.0"]
+		platforms: [{
 			os:   "windows"
 			arch: "arm"
 		}, {
 			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "arm64"
+		}, {
+			os:   "linux"
 			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}]
+	}, {
+		version: "4.0.0-rc1"
+		protocols: ["6.0"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}]
+	}, {
+		version: "3.6.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}]
+	}, {
+		version: "3.30.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "windows"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
 		}, {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
 			os:   "freebsd"
-			arch: "386"
+			arch: "arm"
 		}, {
-			os:   "freebsd"
-			arch: "amd64"
+			os:   "linux"
+			arch: "arm64"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
 			os:   "windows"
-			arch: "386"
+			arch: "arm"
 		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "arm64"
 		}]
 	}, {
 		version: "2.16.0"
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "linux"
@@ -269,9 +410,6 @@ provider: cloudflare: cloudflare: {
 		}, {
 			os:   "linux"
 			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm64"
 		}, {
 			os:   "freebsd"
 			arch: "386"
@@ -290,144 +428,6 @@ provider: cloudflare: cloudflare: {
 		}, {
 			os:   "freebsd"
 			arch: "arm"
-		}]
-	}, {
-		version: "4.0.0-rc1"
-		protocols: ["6.0"]
-		platforms: [{
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}]
-	}, {
-		version: "3.30.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}]
-	}, {
-		version: "3.11.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
 		}]
 	}, {
 		version: "4.0.0-rc2"
@@ -442,12 +442,6 @@ provider: cloudflare: cloudflare: {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
@@ -463,8 +457,14 @@ provider: cloudflare: cloudflare: {
 			os:   "linux"
 			arch: "arm64"
 		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
 			os:   "freebsd"
 			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "386"
@@ -476,49 +476,49 @@ provider: cloudflare: cloudflare: {
 			arch: "386"
 		}]
 	}, {
-		version: "3.6.0"
+		version: "3.15.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
 			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "windows"
-			arch: "arm"
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
 			arch: "arm64"
 		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
 			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "windows"
 			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "windows"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "darwin"
+			os:   "windows"
 			arch: "arm64"
 		}]
 	}, {
@@ -526,7 +526,7 @@ provider: cloudflare: cloudflare: {
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "linux"
-			arch: "arm64"
+			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "arm"
@@ -535,7 +535,7 @@ provider: cloudflare: cloudflare: {
 			arch: "amd64"
 		}, {
 			os:   "linux"
-			arch: "386"
+			arch: "arm64"
 		}, {
 			os:   "freebsd"
 			arch: "arm64"
@@ -571,75 +571,11 @@ provider: cloudflare: cloudflare: {
 		version: "3.22.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "windows"
-			arch: "arm64"
-		}, {
 			os:   "freebsd"
 			arch: "arm64"
 		}, {
 			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "darwin"
 			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}]
-	}, {
-		version: "2.26.1"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "arm"
@@ -647,30 +583,48 @@ provider: cloudflare: cloudflare: {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
 			os:   "freebsd"
-			arch: "arm64"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm64"
 		}]
 	}, {
 		version: "3.27.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "windows"
-			arch: "amd64"
+			os:   "linux"
+			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "386"
 		}, {
 			os:   "darwin"
 			arch: "arm64"
@@ -683,6 +637,9 @@ provider: cloudflare: cloudflare: {
 		}, {
 			os:   "windows"
 			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
@@ -743,9 +700,6 @@ provider: cloudflare: cloudflare: {
 		version: "3.9.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "windows"
-			arch: "arm64"
-		}, {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
@@ -755,7 +709,7 @@ provider: cloudflare: cloudflare: {
 			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "darwin"
+			os:   "windows"
 			arch: "arm64"
 		}, {
 			os:   "linux"
@@ -771,6 +725,9 @@ provider: cloudflare: cloudflare: {
 			arch: "amd64"
 		}, {
 			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "darwin"
 			arch: "arm64"
 		}, {
 			os:   "freebsd"
@@ -881,7 +838,7 @@ provider: cloudflare: cloudflare: {
 		version: "3.34.0"
 		protocols: ["6.0"]
 		platforms: [{
-			os:   "windows"
+			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "darwin"
@@ -903,9 +860,6 @@ provider: cloudflare: cloudflare: {
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
 			arch: "arm64"
 		}, {
 			os:   "windows"
@@ -915,6 +869,9 @@ provider: cloudflare: cloudflare: {
 			arch: "arm64"
 		}, {
 			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "windows"
 			arch: "386"
 		}, {
 			os:   "freebsd"
@@ -930,10 +887,10 @@ provider: cloudflare: cloudflare: {
 			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "linux"
+			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "windows"
+			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "darwin"
@@ -973,6 +930,9 @@ provider: cloudflare: cloudflare: {
 			os:   "linux"
 			arch: "arm64"
 		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
 			os:   "freebsd"
 			arch: "arm64"
 		}, {
@@ -989,9 +949,6 @@ provider: cloudflare: cloudflare: {
 			arch: "amd64"
 		}, {
 			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "windows"
@@ -1023,13 +980,13 @@ provider: cloudflare: cloudflare: {
 			arch: "amd64"
 		}, {
 			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "windows"
 			arch: "arm"
 		}, {
 			os:   "linux"
 			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "amd64"
@@ -1059,158 +1016,60 @@ provider: cloudflare: cloudflare: {
 			arch: "arm64"
 		}]
 	}, {
-		version: "3.10.0"
+		version: "3.11.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}]
-	}, {
-		version: "3.12.2"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}]
-	}, {
-		version: "3.19.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
 			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "windows"
 			arch: "arm64"
 		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
 			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "linux"
 			arch: "arm64"
 		}]
 	}, {
 		version: "3.4.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "darwin"
-			arch: "arm64"
-		}, {
 			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "amd64"
@@ -1220,6 +1079,12 @@ provider: cloudflare: cloudflare: {
 		}, {
 			os:   "linux"
 			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
@@ -1286,11 +1151,60 @@ provider: cloudflare: cloudflare: {
 			arch: "amd64"
 		}]
 	}, {
+		version: "3.12.2"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}]
+	}, {
 		version: "3.0.1"
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "freebsd"
 			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "arm"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
@@ -1300,9 +1214,6 @@ provider: cloudflare: cloudflare: {
 		}, {
 			os:   "freebsd"
 			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "arm"
 		}, {
 			os:   "linux"
 			arch: "amd64"
@@ -1393,6 +1304,9 @@ provider: cloudflare: cloudflare: {
 			os:   "freebsd"
 			arch: "386"
 		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
 			os:   "linux"
 			arch: "arm64"
 		}, {
@@ -1409,9 +1323,6 @@ provider: cloudflare: cloudflare: {
 			arch: "arm64"
 		}, {
 			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "windows"
 			arch: "arm"
 		}, {
 			os:   "windows"
@@ -1428,13 +1339,16 @@ provider: cloudflare: cloudflare: {
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "linux"
-			arch: "arm64"
+			arch: "amd64"
 		}, {
 			os:   "linux"
-			arch: "amd64"
+			arch: "arm64"
 		}, {
 			os:   "windows"
 			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "arm"
@@ -1447,9 +1361,6 @@ provider: cloudflare: cloudflare: {
 		}, {
 			os:   "darwin"
 			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
@@ -1474,15 +1385,18 @@ provider: cloudflare: cloudflare: {
 		protocols: ["6.0"]
 		platforms: [{
 			os:   "windows"
-			arch: "arm64"
+			arch: "amd64"
 		}, {
 			os:   "windows"
-			arch: "amd64"
+			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "arm64"
 		}, {
 			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
 			arch: "arm64"
 		}, {
 			os:   "windows"
@@ -1499,9 +1413,6 @@ provider: cloudflare: cloudflare: {
 		}, {
 			os:   "freebsd"
 			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
 		}, {
 			os:   "windows"
 			arch: "386"
@@ -1556,11 +1467,11 @@ provider: cloudflare: cloudflare: {
 		version: "3.2.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "windows"
-			arch: "arm64"
-		}, {
 			os:   "linux"
 			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "arm64"
 		}, {
 			os:   "windows"
 			arch: "amd64"
@@ -1597,6 +1508,95 @@ provider: cloudflare: cloudflare: {
 		}, {
 			os:   "windows"
 			arch: "arm"
+		}]
+	}, {
+		version: "3.10.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "windows"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}]
+	}, {
+		version: "2.26.1"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
 		}]
 	}, {
 		version: "2.9.0"
@@ -1642,11 +1642,11 @@ provider: cloudflare: cloudflare: {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
 			os:   "freebsd"
 			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "arm64"
@@ -1737,11 +1737,11 @@ provider: cloudflare: cloudflare: {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
 			os:   "linux"
 			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "arm"
 		}, {
 			os:   "darwin"
 			arch: "arm64"
@@ -1777,25 +1777,25 @@ provider: cloudflare: cloudflare: {
 			os:   "windows"
 			arch: "amd64"
 		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
 			os:   "freebsd"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "arm64"
 		}, {
 			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "freebsd"
@@ -1811,11 +1811,11 @@ provider: cloudflare: cloudflare: {
 		version: "3.8.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
 			os:   "linux"
 			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
 		}, {
 			os:   "windows"
 			arch: "arm"
@@ -1903,9 +1903,6 @@ provider: cloudflare: cloudflare: {
 		version: "2.13.2"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "darwin"
-			arch: "amd64"
-		}, {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
@@ -1913,6 +1910,9 @@ provider: cloudflare: cloudflare: {
 			arch: "386"
 		}, {
 			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "windows"
@@ -1940,14 +1940,14 @@ provider: cloudflare: cloudflare: {
 		version: "2.20.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "windows"
+			arch: "arm"
+		}, {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "amd64"
@@ -1984,14 +1984,17 @@ provider: cloudflare: cloudflare: {
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
 			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
 			os:   "linux"
 			arch: "arm64"
 		}, {
@@ -2000,9 +2003,6 @@ provider: cloudflare: cloudflare: {
 		}, {
 			os:   "linux"
 			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "386"
@@ -2029,14 +2029,14 @@ provider: cloudflare: cloudflare: {
 		version: "2.13.1"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "arm64"
@@ -2066,20 +2066,11 @@ provider: cloudflare: cloudflare: {
 		version: "3.25.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
 			os:   "windows"
 			arch: "arm64"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "386"
@@ -2087,10 +2078,19 @@ provider: cloudflare: cloudflare: {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
 			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "darwin"
@@ -2112,11 +2112,14 @@ provider: cloudflare: cloudflare: {
 		version: "3.10.1"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "freebsd"
+			arch: "386"
+		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "386"
+			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "arm"
@@ -2126,9 +2129,6 @@ provider: cloudflare: cloudflare: {
 		}, {
 			os:   "linux"
 			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
@@ -2164,23 +2164,23 @@ provider: cloudflare: cloudflare: {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "freebsd"
+			os:   "linux"
 			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "amd64"
@@ -2199,6 +2199,9 @@ provider: cloudflare: cloudflare: {
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "windows"
 			arch: "arm"
 		}, {
 			os:   "linux"
@@ -2227,9 +2230,6 @@ provider: cloudflare: cloudflare: {
 		}, {
 			os:   "windows"
 			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
@@ -2244,9 +2244,6 @@ provider: cloudflare: cloudflare: {
 		version: "3.26.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "windows"
-			arch: "arm64"
-		}, {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
@@ -2255,6 +2252,9 @@ provider: cloudflare: cloudflare: {
 		}, {
 			os:   "linux"
 			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "arm64"
 		}, {
 			os:   "windows"
 			arch: "arm"
@@ -2293,9 +2293,6 @@ provider: cloudflare: cloudflare: {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
 			os:   "freebsd"
 			arch: "386"
 		}, {
@@ -2304,6 +2301,9 @@ provider: cloudflare: cloudflare: {
 		}, {
 			os:   "linux"
 			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "amd64"
@@ -2373,11 +2373,11 @@ provider: cloudflare: cloudflare: {
 		version: "3.5.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "windows"
-			arch: "amd64"
-		}, {
 			os:   "linux"
 			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "arm"
@@ -2419,17 +2419,14 @@ provider: cloudflare: cloudflare: {
 		version: "2.17.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
 			os:   "linux"
 			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm64"
 		}, {
 			os:   "freebsd"
 			arch: "arm64"
@@ -2442,6 +2439,9 @@ provider: cloudflare: cloudflare: {
 		}, {
 			os:   "linux"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "amd64"
@@ -2456,9 +2456,6 @@ provider: cloudflare: cloudflare: {
 		version: "3.28.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "linux"
-			arch: "arm64"
-		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
@@ -2476,6 +2473,9 @@ provider: cloudflare: cloudflare: {
 		}, {
 			os:   "windows"
 			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "arm64"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
@@ -2548,17 +2548,17 @@ provider: cloudflare: cloudflare: {
 		version: "2.10.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
 		}, {
 			os:   "linux"
 			arch: "arm64"
@@ -2597,9 +2597,6 @@ provider: cloudflare: cloudflare: {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
@@ -2610,6 +2607,9 @@ provider: cloudflare: cloudflare: {
 			arch: "arm64"
 		}, {
 			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
 			arch: "arm"
 		}, {
 			os:   "windows"
@@ -2672,10 +2672,10 @@ provider: cloudflare: cloudflare: {
 			arch: "arm"
 		}, {
 			os:   "linux"
-			arch: "arm64"
+			arch: "386"
 		}, {
 			os:   "linux"
-			arch: "386"
+			arch: "arm64"
 		}, {
 			os:   "windows"
 			arch: "386"
@@ -2775,9 +2775,6 @@ provider: cloudflare: cloudflare: {
 			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
 			os:   "windows"
 			arch: "arm"
 		}, {
@@ -2787,11 +2784,14 @@ provider: cloudflare: cloudflare: {
 			os:   "windows"
 			arch: "amd64"
 		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
 			os:   "linux"
 			arch: "arm64"
 		}, {
 			os:   "freebsd"
-			arch: "arm64"
+			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "amd64"
@@ -2853,9 +2853,6 @@ provider: cloudflare: cloudflare: {
 			arch: "386"
 		}, {
 			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "windows"
 			arch: "arm"
 		}, {
 			os:   "freebsd"
@@ -2869,6 +2866,9 @@ provider: cloudflare: cloudflare: {
 		}, {
 			os:   "linux"
 			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "386"
 		}, {
 			os:   "darwin"
 			arch: "arm64"
@@ -2895,11 +2895,11 @@ provider: cloudflare: cloudflare: {
 		version: "2.19.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "freebsd"
-			arch: "arm"
-		}, {
 			os:   "windows"
 			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "386"
@@ -2932,9 +2932,6 @@ provider: cloudflare: cloudflare: {
 		version: "2.14.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "linux"
-			arch: "arm64"
-		}, {
 			os:   "freebsd"
 			arch: "386"
 		}, {
@@ -2942,6 +2939,9 @@ provider: cloudflare: cloudflare: {
 			arch: "arm"
 		}, {
 			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "linux"
 			arch: "arm64"
 		}, {
 			os:   "freebsd"
@@ -2969,20 +2969,20 @@ provider: cloudflare: cloudflare: {
 		version: "3.23.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "freebsd"
+			arch: "386"
+		}, {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
-			os:   "freebsd"
-			arch: "386"
+			os:   "linux"
+			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "arm"

@@ -12,10 +12,10 @@ provider: hashicorp: salesforce: {
 			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
+			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "darwin"
+			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "windows"

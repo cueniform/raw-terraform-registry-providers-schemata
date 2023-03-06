@@ -3,6 +3,43 @@ package desiderata
 provider: hashicorp: hcs: {
 	id: "hashicorp/hcs"
 	versions: [{
+		version: "0.3.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}]
+	}, {
 		version: "0.5.1"
 		protocols: ["5.0"]
 		platforms: [{
@@ -108,43 +145,6 @@ provider: hashicorp: hcs: {
 			arch: "amd64"
 		}]
 	}, {
-		version: "0.3.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}]
-	}, {
 		version: "0.2.0"
 		protocols: ["5.0"]
 		platforms: [{
@@ -154,6 +154,9 @@ provider: hashicorp: hcs: {
 			os:   "windows"
 			arch: "386"
 		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
@@ -162,9 +165,6 @@ provider: hashicorp: hcs: {
 		}, {
 			os:   "freebsd"
 			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "amd64"

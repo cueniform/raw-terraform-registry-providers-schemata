@@ -80,7 +80,7 @@ provider: hashicorp: null: {
 		version: "2.0.0"
 		protocols: ["4.0"]
 		platforms: [{
-			os:   "darwin"
+			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
@@ -89,10 +89,10 @@ provider: hashicorp: null: {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
-			os:   "linux"
+			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "windows"
+			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "linux"
@@ -363,10 +363,10 @@ provider: hashicorp: null: {
 			os:   "freebsd"
 			arch: "386"
 		}, {
-			os:   "linux"
+			os:   "openbsd"
 			arch: "amd64"
 		}, {
-			os:   "openbsd"
+			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "windows"

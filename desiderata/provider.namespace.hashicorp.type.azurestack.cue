@@ -3,52 +3,15 @@ package desiderata
 provider: hashicorp: azurestack: {
 	id: "hashicorp/azurestack"
 	versions: [{
-		version: "0.8.1"
-		protocols: ["4.0", "5.0"]
-		platforms: [{
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}]
-	}, {
 		version: "0.4.0"
 		protocols: ["4"]
 		platforms: [{
 			os:   "windows"
 			arch: "386"
 		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
 			os:   "freebsd"
 			arch: "386"
 		}, {
@@ -63,9 +26,6 @@ provider: hashicorp: azurestack: {
 		}, {
 			os:   "linux"
 			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "amd64"
@@ -278,6 +238,46 @@ provider: hashicorp: azurestack: {
 		}, {
 			os:   "darwin"
 			arch: "arm64"
+		}]
+	}, {
+		version: "0.8.1"
+		protocols: ["4.0", "5.0"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
 		}]
 	}, {
 		version: "0.10.0"

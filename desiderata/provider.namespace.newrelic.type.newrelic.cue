@@ -3,59 +3,163 @@ package desiderata
 provider: newrelic: newrelic: {
 	id: "newrelic/newrelic"
 	versions: [{
-		version: "3.13.0"
+		version: "3.5.2"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "arm64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
 			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "windows"
 			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}]
+	}, {
+		version: "2.36.2"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "arm"
 		}, {
 			os:   "solaris"
 			arch: "amd64"
 		}, {
 			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}]
+	}, {
+		version: "2.24.1"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "linux"
 			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
 		}, {
 			os:   "openbsd"
 			arch: "386"
 		}, {
 			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "windows"
 			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
 		}]
 	}, {
 		version: "2.39.0"
@@ -64,14 +168,14 @@ provider: newrelic: newrelic: {
 			os:   "linux"
 			arch: "arm"
 		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
 			os:   "openbsd"
 			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
@@ -102,6 +206,61 @@ provider: newrelic: newrelic: {
 		}, {
 			os:   "freebsd"
 			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}]
+	}, {
+		version: "2.45.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "linux"
 			arch: "386"
@@ -113,26 +272,26 @@ provider: newrelic: newrelic: {
 		version: "2.2.1"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
 			os:   "openbsd"
 			arch: "386"
 		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "linux"
 			arch: "arm64"
 		}, {
 			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "windows"
 			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "386"
@@ -153,20 +312,170 @@ provider: newrelic: newrelic: {
 			arch: "arm"
 		}, {
 			os:   "linux"
+			arch: "amd64"
+		}]
+	}, {
+		version: "2.6.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}]
+	}, {
+		version: "2.48.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}]
+	}, {
+		version: "2.7.5"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "windows"
 			arch: "amd64"
 		}]
 	}, {
 		version: "2.36.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "windows"
-			arch: "amd64"
+			os:   "freebsd"
+			arch: "arm64"
 		}, {
 			os:   "openbsd"
 			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
 		}, {
 			os:   "openbsd"
 			arch: "amd64"
@@ -175,18 +484,15 @@ provider: newrelic: newrelic: {
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "arm"
 		}, {
 			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
 			arch: "arm64"
 		}, {
 			os:   "freebsd"
@@ -206,263 +512,12 @@ provider: newrelic: newrelic: {
 		}, {
 			os:   "solaris"
 			arch: "amd64"
-		}]
-	}, {
-		version: "2.50.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}]
-	}, {
-		version: "2.43.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}]
-	}, {
-		version: "2.7.2"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}]
-	}, {
-		version: "2.36.1"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}]
-	}, {
-		version: "2.5.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
 		}]
 	}, {
 		version: "2.48.1"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "solaris"
+			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "darwin"
@@ -480,6 +535,9 @@ provider: newrelic: newrelic: {
 			os:   "windows"
 			arch: "arm64"
 		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
@@ -488,9 +546,6 @@ provider: newrelic: newrelic: {
 		}, {
 			os:   "linux"
 			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm64"
@@ -514,10 +569,135 @@ provider: newrelic: newrelic: {
 			arch: "arm"
 		}]
 	}, {
-		version: "3.10.0"
+		version: "3.13.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "windows"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}]
+	}, {
+		version: "2.1.2"
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}]
+	}, {
+		version: "2.6.1"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "openbsd"
 			arch: "386"
 		}, {
 			os:   "linux"
@@ -526,20 +706,45 @@ provider: newrelic: newrelic: {
 			os:   "linux"
 			arch: "arm"
 		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}]
+	}, {
+		version: "3.10.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
 			os:   "windows"
 			arch: "arm64"
 		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
 			os:   "linux"
 			arch: "arm64"
 		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
 			os:   "openbsd"
 			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "386"
@@ -552,9 +757,6 @@ provider: newrelic: newrelic: {
 		}, {
 			os:   "darwin"
 			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
@@ -572,20 +774,20 @@ provider: newrelic: newrelic: {
 		version: "2.4.2"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
 			os:   "openbsd"
 			arch: "386"
 		}, {
 			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "amd64"
@@ -613,6 +815,162 @@ provider: newrelic: newrelic: {
 		}, {
 			os:   "solaris"
 			arch: "amd64"
+		}]
+	}, {
+		version: "3.15.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}]
+	}, {
+		version: "2.45.1"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}]
+	}, {
+		version: "2.5.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
 		}]
 	}, {
 		version: "1.19.1"
@@ -661,129 +1019,141 @@ provider: newrelic: newrelic: {
 			arch: "amd64"
 		}]
 	}, {
-		version: "3.15.0"
+		version: "3.6.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
 			os:   "solaris"
 			arch: "amd64"
 		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
 			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "openbsd"
+			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "openbsd"
 			arch: "386"
 		}, {
-			os:   "windows"
-			arch: "arm64"
-		}, {
 			os:   "linux"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "linux"
 			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "386"
 		}]
 	}, {
-		version: "2.45.1"
+		version: "2.7.2"
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
 			os:   "windows"
 			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
 		}, {
 			os:   "openbsd"
 			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "openbsd"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
 		}]
 	}, {
-		version: "2.30.2"
+		version: "2.50.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
 			os:   "linux"
 			arch: "arm64"
 		}, {
-			os:   "openbsd"
-			arch: "386"
+			os:   "windows"
+			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "arm64"
 		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
 			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "openbsd"
@@ -792,139 +1162,14 @@ provider: newrelic: newrelic: {
 			os:   "solaris"
 			arch: "amd64"
 		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
 			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}]
-	}, {
-		version: "2.24.1"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "openbsd"
 			arch: "386"
 		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}]
-	}, {
-		version: "2.46.1"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
 			os:   "linux"
 			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
@@ -933,14 +1178,14 @@ provider: newrelic: newrelic: {
 		version: "2.15.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "windows"
+			arch: "amd64"
+		}, {
 			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "amd64"
 		}, {
 			os:   "openbsd"
 			arch: "386"
@@ -974,236 +1219,25 @@ provider: newrelic: newrelic: {
 		}, {
 			os:   "openbsd"
 			arch: "amd64"
-		}]
-	}, {
-		version: "2.45.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "arm64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}]
-	}, {
-		version: "3.14.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}]
-	}, {
-		version: "2.15.1"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}]
-	}, {
-		version: "2.6.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
 		}]
 	}, {
 		version: "3.6.1"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "windows"
+			arch: "amd64"
+		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
 			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "arm"
 		}, {
 			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
+			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "arm64"
@@ -1213,6 +1247,15 @@ provider: newrelic: newrelic: {
 		}, {
 			os:   "solaris"
 			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
 		}, {
 			os:   "linux"
 			arch: "386"
@@ -1236,38 +1279,38 @@ provider: newrelic: newrelic: {
 		version: "3.12.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
 			os:   "solaris"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "windows"
-			arch: "arm"
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "arm64"
 		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
 			os:   "freebsd"
-			arch: "386"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
 		}, {
 			os:   "openbsd"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
+			os:   "windows"
 			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "arm"
@@ -1288,95 +1331,55 @@ provider: newrelic: newrelic: {
 			arch: "amd64"
 		}]
 	}, {
-		version: "2.7.5"
+		version: "2.30.2"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "darwin"
-			arch: "amd64"
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
 		}, {
 			os:   "openbsd"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "openbsd"
 			arch: "386"
 		}, {
 			os:   "solaris"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
+			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "openbsd"
+			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
 			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}]
-	}, {
-		version: "2.4.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
 			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "darwin"
-			arch: "amd64"
+			arch: "arm64"
 		}, {
-			os:   "solaris"
-			arch: "amd64"
+			os:   "freebsd"
+			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
-			arch: "386"
+			os:   "windows"
+			arch: "arm"
 		}, {
-			os:   "openbsd"
+			os:   "linux"
 			arch: "386"
 		}]
 	}, {
@@ -1487,1581 +1490,6 @@ provider: newrelic: newrelic: {
 			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}]
-	}, {
-		version: "2.22.1"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}]
-	}, {
-		version: "2.48.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "arm64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}]
-	}, {
-		version: "2.30.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}]
-	}, {
-		version: "3.7.1"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}]
-	}, {
-		version: "2.11.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}]
-	}, {
-		version: "2.21.2"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}]
-	}, {
-		version: "2.10.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}]
-	}, {
-		version: "3.5.2"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "arm64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}]
-	}, {
-		version: "2.10.2"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}]
-	}, {
-		version: "3.2.1"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}]
-	}, {
-		version: "2.10.3"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}]
-	}, {
-		version: "2.34.1"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}]
-	}, {
-		version: "2.13.3"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}]
-	}, {
-		version: "3.4.1"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}]
-	}, {
-		version: "2.6.1"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}]
-	}, {
-		version: "3.4.4"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}]
-	}, {
-		version: "2.41.3"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}]
-	}, {
-		version: "3.11.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}]
-	}, {
-		version: "3.0.3"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}]
-	}, {
-		version: "2.43.1"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}]
-	}, {
-		version: "2.2.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}]
-	}, {
-		version: "3.6.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}]
-	}, {
-		version: "2.43.4"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}]
-	}, {
-		version: "2.48.2"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}]
-	}, {
-		version: "2.23.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}]
-	}, {
-		version: "2.32.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}]
-	}, {
-		version: "2.17.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}]
-	}, {
-		version: "2.18.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}]
-	}, {
-		version: "2.39.1"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}]
-	}, {
-		version: "2.40.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
 			os:   "openbsd"
 			arch: "386"
 		}, {
@@ -3069,129 +1497,33 @@ provider: newrelic: newrelic: {
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "amd64"
-		}]
-	}, {
-		version: "2.1.2"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
 			arch: "arm64"
 		}, {
 			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "windows"
 			arch: "386"
 		}, {
 			os:   "openbsd"
 			arch: "amd64"
 		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
 			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}]
-	}, {
-		version: "2.22.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}]
-	}, {
-		version: "2.38.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "windows"
@@ -3200,332 +1532,8 @@ provider: newrelic: newrelic: {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
 			os:   "windows"
 			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}]
-	}, {
-		version: "2.21.1"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}]
-	}, {
-		version: "2.41.4"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}]
-	}, {
-		version: "2.31.1"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}]
-	}, {
-		version: "2.42.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}]
-	}, {
-		version: "3.3.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}]
-	}, {
-		version: "2.13.2"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
 		}]
 	}, {
 		version: "2.41.0-beta.1"
@@ -3580,14 +1588,130 @@ provider: newrelic: newrelic: {
 			arch: "386"
 		}]
 	}, {
-		version: "2.7.3"
+		version: "2.15.1"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}]
+	}, {
+		version: "2.4.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}]
+	}, {
+		version: "2.22.1"
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "freebsd"
 			arch: "arm"
 		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
 			os:   "linux"
 			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
 		}, {
 			os:   "solaris"
 			arch: "amd64"
@@ -3595,7 +1719,1785 @@ provider: newrelic: newrelic: {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
 			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}]
+	}, {
+		version: "3.14.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "arm64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}]
+	}, {
+		version: "2.30.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}]
+	}, {
+		version: "2.13.2"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}]
+	}, {
+		version: "3.7.1"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}]
+	}, {
+		version: "2.21.2"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}]
+	}, {
+		version: "2.10.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}]
+	}, {
+		version: "3.2.1"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "arm64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}]
+	}, {
+		version: "2.10.3"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}]
+	}, {
+		version: "2.34.1"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}]
+	}, {
+		version: "2.13.3"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}]
+	}, {
+		version: "3.4.1"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "arm64"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}]
+	}, {
+		version: "3.4.4"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}]
+	}, {
+		version: "2.46.1"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "arm64"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}]
+	}, {
+		version: "2.41.3"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}]
+	}, {
+		version: "3.11.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}]
+	}, {
+		version: "3.0.3"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}]
+	}, {
+		version: "2.10.2"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}]
+	}, {
+		version: "2.36.1"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}]
+	}, {
+		version: "2.43.1"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}]
+	}, {
+		version: "2.2.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}]
+	}, {
+		version: "2.43.4"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}]
+	}, {
+		version: "2.48.2"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}]
+	}, {
+		version: "2.23.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}]
+	}, {
+		version: "2.17.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}]
+	}, {
+		version: "2.18.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}]
+	}, {
+		version: "2.39.1"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}]
+	}, {
+		version: "2.40.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}]
+	}, {
+		version: "2.22.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}]
+	}, {
+		version: "2.38.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}]
+	}, {
+		version: "2.21.1"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}]
+	}, {
+		version: "2.41.4"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}]
+	}, {
+		version: "2.31.1"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}]
+	}, {
+		version: "2.42.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}]
+	}, {
+		version: "3.3.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "arm64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}]
+	}, {
+		version: "2.7.3"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "linux"
@@ -3607,8 +3509,8 @@ provider: newrelic: newrelic: {
 			os:   "freebsd"
 			arch: "386"
 		}, {
-			os:   "linux"
-			arch: "arm64"
+			os:   "solaris"
+			arch: "amd64"
 		}, {
 			os:   "openbsd"
 			arch: "amd64"
@@ -3650,17 +3552,17 @@ provider: newrelic: newrelic: {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
 			os:   "windows"
 			arch: "arm"
 		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
 			os:   "windows"
 			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "amd64"
@@ -3684,10 +3586,13 @@ provider: newrelic: newrelic: {
 		version: "2.13.5"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "freebsd"
+			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "linux"
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "linux"
@@ -3695,9 +3600,6 @@ provider: newrelic: newrelic: {
 		}, {
 			os:   "linux"
 			arch: "386"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "arm64"
@@ -3724,52 +3626,6 @@ provider: newrelic: newrelic: {
 			arch: "amd64"
 		}, {
 			os:   "openbsd"
-			arch: "amd64"
-		}]
-	}, {
-		version: "2.12.0"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "solaris"
 			arch: "amd64"
 		}]
 	}, {
@@ -3780,6 +3636,9 @@ provider: newrelic: newrelic: {
 			arch: "arm64"
 		}, {
 			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
 			arch: "arm"
 		}, {
 			os:   "linux"
@@ -3787,9 +3646,6 @@ provider: newrelic: newrelic: {
 		}, {
 			os:   "linux"
 			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm64"
@@ -3828,17 +3684,14 @@ provider: newrelic: newrelic: {
 		version: "3.1.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "windows"
-			arch: "arm64"
-		}, {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
 			os:   "solaris"
 			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "arm64"
@@ -3846,17 +3699,20 @@ provider: newrelic: newrelic: {
 			os:   "windows"
 			arch: "amd64"
 		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
 			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "openbsd"
 			arch: "amd64"
 		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
 			os:   "freebsd"
 			arch: "arm64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "386"
@@ -3889,11 +3745,8 @@ provider: newrelic: newrelic: {
 			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "windows"
+			os:   "linux"
 			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
 		}, {
 			os:   "openbsd"
 			arch: "amd64"
@@ -3902,19 +3755,22 @@ provider: newrelic: newrelic: {
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
 			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm64"
 		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "windows"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
 			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "386"
@@ -3938,14 +3794,11 @@ provider: newrelic: newrelic: {
 		version: "2.13.4"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
 			os:   "windows"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "386"
@@ -3953,8 +3806,8 @@ provider: newrelic: newrelic: {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
-			os:   "linux"
-			arch: "arm64"
+			os:   "openbsd"
+			arch: "amd64"
 		}, {
 			os:   "openbsd"
 			arch: "386"
@@ -3964,6 +3817,9 @@ provider: newrelic: newrelic: {
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
@@ -3999,9 +3855,6 @@ provider: newrelic: newrelic: {
 			os:   "linux"
 			arch: "arm64"
 		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
@@ -4013,6 +3866,9 @@ provider: newrelic: newrelic: {
 		}, {
 			os:   "openbsd"
 			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
 		}, {
 			os:   "solaris"
 			arch: "amd64"
@@ -4049,19 +3905,19 @@ provider: newrelic: newrelic: {
 			arch: "386"
 		}, {
 			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "windows"
 			arch: "amd64"
 		}, {
-			os:   "darwin"
-			arch: "arm64"
+			os:   "windows"
+			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "arm64"
 		}, {
 			os:   "freebsd"
 			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "386"
@@ -4095,28 +3951,28 @@ provider: newrelic: newrelic: {
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "openbsd"
 			arch: "amd64"
 		}, {
-			os:   "windows"
-			arch: "arm"
+			os:   "openbsd"
+			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "windows"
 			arch: "386"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "arm64"
 		}, {
 			os:   "darwin"
 			arch: "arm64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm64"
@@ -4143,14 +3999,60 @@ provider: newrelic: newrelic: {
 			arch: "arm"
 		}]
 	}, {
-		version: "3.5.1"
+		version: "2.12.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "openbsd"
+			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
 			arch: "arm64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}]
+	}, {
+		version: "3.5.1"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "arm64"
@@ -4207,10 +4109,10 @@ provider: newrelic: newrelic: {
 			os:   "windows"
 			arch: "arm"
 		}, {
-			os:   "linux"
+			os:   "freebsd"
 			arch: "386"
 		}, {
-			os:   "freebsd"
+			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "darwin"
@@ -4250,14 +4152,57 @@ provider: newrelic: newrelic: {
 			arch: "386"
 		}]
 	}, {
+		version: "2.11.0"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}]
+	}, {
 		version: "2.35.0"
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "linux"
 			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "arm64"
@@ -4270,6 +4215,9 @@ provider: newrelic: newrelic: {
 		}, {
 			os:   "freebsd"
 			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "386"
 		}, {
 			os:   "darwin"
 			arch: "arm64"
@@ -4305,17 +4253,14 @@ provider: newrelic: newrelic: {
 		version: "2.1.1"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "freebsd"
+			os:   "openbsd"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
 			os:   "freebsd"
-			arch: "386"
+			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "arm64"
@@ -4326,8 +4271,11 @@ provider: newrelic: newrelic: {
 			os:   "windows"
 			arch: "amd64"
 		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
 			os:   "openbsd"
-			arch: "amd64"
+			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "arm64"
@@ -4351,14 +4299,14 @@ provider: newrelic: newrelic: {
 		version: "2.27.1"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "linux"
+			arch: "arm"
+		}, {
 			os:   "freebsd"
 			arch: "386"
 		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
+			os:   "darwin"
+			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "386"
@@ -4372,8 +4320,8 @@ provider: newrelic: newrelic: {
 			os:   "linux"
 			arch: "arm64"
 		}, {
-			os:   "darwin"
-			arch: "arm64"
+			os:   "solaris"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
@@ -4446,23 +4394,75 @@ provider: newrelic: newrelic: {
 			arch: "amd64"
 		}]
 	}, {
-		version: "2.4.1"
+		version: "2.43.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "freebsd"
-			arch: "arm64"
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
 		}, {
 			os:   "openbsd"
 			arch: "386"
 		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
 			os:   "linux"
 			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}]
+	}, {
+		version: "2.4.1"
+		protocols: ["5.0"]
+		platforms: [{
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
@@ -4492,62 +4492,62 @@ provider: newrelic: newrelic: {
 			arch: "386"
 		}]
 	}, {
-		version: "2.36.2"
+		version: "2.32.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
 			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "windows"
 			arch: "arm"
 		}, {
 			os:   "solaris"
 			arch: "amd64"
 		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
 			os:   "linux"
 			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "arm64"
 		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
-			os:   "linux"
-			arch: "arm"
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
 		}]
 	}, {
 		version: "2.49.1"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "linux"
+			os:   "openbsd"
 			arch: "386"
 		}, {
 			os:   "windows"
@@ -4561,6 +4561,9 @@ provider: newrelic: newrelic: {
 		}, {
 			os:   "solaris"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
@@ -4576,9 +4579,6 @@ provider: newrelic: newrelic: {
 		}, {
 			os:   "linux"
 			arch: "arm64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "arm64"
@@ -4602,29 +4602,29 @@ provider: newrelic: newrelic: {
 		version: "2.7.1"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "linux"
-			arch: "arm64"
-		}, {
 			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "solaris"
 			arch: "amd64"
 		}, {
 			os:   "openbsd"
 			arch: "386"
 		}, {
-			os:   "freebsd"
-			arch: "arm"
+			os:   "linux"
+			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "arm"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
@@ -4649,12 +4649,6 @@ provider: newrelic: newrelic: {
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "linux"
@@ -4669,11 +4663,17 @@ provider: newrelic: newrelic: {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "amd64"
@@ -4703,11 +4703,17 @@ provider: newrelic: newrelic: {
 		version: "2.26.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "freebsd"
+			os:   "linux"
 			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
 			os:   "darwin"
 			arch: "arm64"
@@ -4725,9 +4731,6 @@ provider: newrelic: newrelic: {
 			arch: "386"
 		}, {
 			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "windows"
@@ -4737,9 +4740,6 @@ provider: newrelic: newrelic: {
 			arch: "amd64"
 		}, {
 			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
@@ -4755,20 +4755,8 @@ provider: newrelic: newrelic: {
 		version: "2.43.2"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
 			os:   "windows"
 			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "386"
@@ -4776,10 +4764,16 @@ provider: newrelic: newrelic: {
 			os:   "linux"
 			arch: "arm64"
 		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
 			os:   "openbsd"
-			arch: "386"
+			arch: "amd64"
 		}, {
 			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "openbsd"
 			arch: "386"
 		}, {
 			os:   "freebsd"
@@ -4787,6 +4781,12 @@ provider: newrelic: newrelic: {
 		}, {
 			os:   "windows"
 			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
@@ -4807,11 +4807,14 @@ provider: newrelic: newrelic: {
 		version: "2.11.1"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "freebsd"
+			os:   "linux"
 			arch: "arm"
 		}, {
-			os:   "freebsd"
+			os:   "windows"
 			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "amd64"
@@ -4822,14 +4825,11 @@ provider: newrelic: newrelic: {
 			os:   "linux"
 			arch: "arm64"
 		}, {
-			os:   "linux"
+			os:   "freebsd"
 			arch: "arm"
 		}, {
-			os:   "windows"
+			os:   "freebsd"
 			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "arm64"
@@ -4853,19 +4853,19 @@ provider: newrelic: newrelic: {
 		version: "2.49.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "darwin"
+			arch: "amd64"
+		}, {
 			os:   "linux"
 			arch: "arm64"
 		}, {
-			os:   "darwin"
-			arch: "amd64"
+			os:   "linux"
+			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "arm64"
 		}, {
 			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "solaris"
@@ -4909,9 +4909,6 @@ provider: newrelic: newrelic: {
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "darwin"
@@ -4922,9 +4919,6 @@ provider: newrelic: newrelic: {
 		}, {
 			os:   "linux"
 			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
@@ -4932,11 +4926,17 @@ provider: newrelic: newrelic: {
 			os:   "solaris"
 			arch: "amd64"
 		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "linux"
 			arch: "arm64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
@@ -4957,7 +4957,7 @@ provider: newrelic: newrelic: {
 		version: "2.19.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "openbsd"
+			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "freebsd"
@@ -4969,14 +4969,14 @@ provider: newrelic: newrelic: {
 			os:   "linux"
 			arch: "arm"
 		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
 			os:   "freebsd"
 			arch: "arm64"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "amd64"
@@ -5113,26 +5113,26 @@ provider: newrelic: newrelic: {
 			os:   "linux"
 			arch: "arm64"
 		}, {
-			os:   "linux"
+			os:   "windows"
 			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "386"
 		}, {
-			os:   "windows"
+			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "openbsd"
 			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "amd64"
 		}, {
 			os:   "openbsd"
 			arch: "amd64"
@@ -5171,13 +5171,10 @@ provider: newrelic: newrelic: {
 			os:   "freebsd"
 			arch: "arm64"
 		}, {
-			os:   "freebsd"
+			os:   "openbsd"
 			arch: "amd64"
 		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "openbsd"
+			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "solaris"
@@ -5185,6 +5182,9 @@ provider: newrelic: newrelic: {
 		}, {
 			os:   "darwin"
 			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "386"
@@ -5214,32 +5214,32 @@ provider: newrelic: newrelic: {
 		version: "2.3.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
 			os:   "freebsd"
 			arch: "arm"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "386"
@@ -5260,6 +5260,12 @@ provider: newrelic: newrelic: {
 		version: "1.20.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
@@ -5278,16 +5284,10 @@ provider: newrelic: newrelic: {
 			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "solaris"
-			arch: "amd64"
-		}, {
-			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "openbsd"
@@ -5306,23 +5306,23 @@ provider: newrelic: newrelic: {
 		version: "3.4.2"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "linux"
+			arch: "arm64"
+		}, {
 			os:   "windows"
 			arch: "arm"
 		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
 			os:   "freebsd"
 			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm64"
 		}, {
 			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
@@ -5362,7 +5362,7 @@ provider: newrelic: newrelic: {
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "linux"
-			arch: "amd64"
+			arch: "arm64"
 		}, {
 			os:   "freebsd"
 			arch: "arm64"
@@ -5371,7 +5371,7 @@ provider: newrelic: newrelic: {
 			arch: "amd64"
 		}, {
 			os:   "linux"
-			arch: "arm64"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
@@ -5413,17 +5413,17 @@ provider: newrelic: newrelic: {
 		version: "2.9.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "linux"
-			arch: "arm"
-		}, {
 			os:   "darwin"
 			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
-			os:   "windows"
-			arch: "386"
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "solaris"
 			arch: "amd64"
@@ -5459,8 +5459,8 @@ provider: newrelic: newrelic: {
 		version: "2.50.2"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "freebsd"
-			arch: "386"
+			os:   "linux"
+			arch: "arm64"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
@@ -5477,11 +5477,11 @@ provider: newrelic: newrelic: {
 			os:   "windows"
 			arch: "386"
 		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
 			os:   "solaris"
 			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
@@ -5514,6 +5514,12 @@ provider: newrelic: newrelic: {
 		version: "2.43.3"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
 			os:   "linux"
 			arch: "arm64"
 		}, {
@@ -5531,12 +5537,6 @@ provider: newrelic: newrelic: {
 		}, {
 			os:   "freebsd"
 			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "386"
 		}, {
 			os:   "openbsd"
 			arch: "386"
@@ -5612,38 +5612,38 @@ provider: newrelic: newrelic: {
 		version: "2.47.1"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
 			os:   "darwin"
 			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "openbsd"
+			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "386"
@@ -5667,9 +5667,6 @@ provider: newrelic: newrelic: {
 		version: "1.20.1"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
 			os:   "openbsd"
 			arch: "386"
 		}, {
@@ -5684,6 +5681,9 @@ provider: newrelic: newrelic: {
 		}, {
 			os:   "linux"
 			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
 		}, {
 			os:   "freebsd"
 			arch: "386"
@@ -5713,35 +5713,35 @@ provider: newrelic: newrelic: {
 		version: "3.7.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "windows"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
 			os:   "solaris"
 			arch: "amd64"
 		}, {
 			os:   "windows"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
-			os:   "darwin"
-			arch: "arm64"
+			os:   "linux"
+			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
 		}, {
 			os:   "windows"
 			arch: "arm"
@@ -5769,10 +5769,10 @@ provider: newrelic: newrelic: {
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "freebsd"
-			arch: "arm64"
+			arch: "386"
 		}, {
 			os:   "freebsd"
-			arch: "386"
+			arch: "arm64"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
@@ -5814,6 +5814,12 @@ provider: newrelic: newrelic: {
 		version: "2.7.4"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
@@ -5822,12 +5828,6 @@ provider: newrelic: newrelic: {
 		}, {
 			os:   "solaris"
 			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "arm"
@@ -5841,8 +5841,8 @@ provider: newrelic: newrelic: {
 			os:   "freebsd"
 			arch: "386"
 		}, {
-			os:   "openbsd"
-			arch: "386"
+			os:   "windows"
+			arch: "amd64"
 		}, {
 			os:   "openbsd"
 			arch: "amd64"
@@ -5860,25 +5860,25 @@ provider: newrelic: newrelic: {
 		version: "2.5.1"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "freebsd"
-			arch: "386"
-		}, {
 			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
 			arch: "amd64"
 		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
-			arch: "arm"
+			arch: "amd64"
 		}, {
 			os:   "openbsd"
 			arch: "386"
 		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
 			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "freebsd"
 			arch: "386"
 		}, {
 			os:   "linux"
@@ -5906,6 +5906,12 @@ provider: newrelic: newrelic: {
 		version: "2.29.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
+		}, {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
@@ -5914,9 +5920,6 @@ provider: newrelic: newrelic: {
 		}, {
 			os:   "freebsd"
 			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
 		}, {
 			os:   "openbsd"
 			arch: "386"
@@ -5930,11 +5933,8 @@ provider: newrelic: newrelic: {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
-			os:   "linux"
-			arch: "arm64"
-		}, {
 			os:   "freebsd"
-			arch: "386"
+			arch: "amd64"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
@@ -5961,23 +5961,17 @@ provider: newrelic: newrelic: {
 			os:   "linux"
 			arch: "386"
 		}, {
-			os:   "linux"
-			arch: "arm"
+			os:   "darwin"
+			arch: "arm64"
 		}, {
 			os:   "freebsd"
 			arch: "386"
 		}, {
-			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
 			os:   "darwin"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
 		}, {
 			os:   "linux"
 			arch: "arm64"
@@ -5990,6 +5984,12 @@ provider: newrelic: newrelic: {
 		}, {
 			os:   "openbsd"
 			arch: "amd64"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
+			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "amd64"
@@ -6013,16 +6013,19 @@ provider: newrelic: newrelic: {
 		version: "3.2.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "freebsd"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "arm64"
+		}, {
 			os:   "solaris"
 			arch: "amd64"
 		}, {
 			os:   "windows"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
-			os:   "freebsd"
 			arch: "arm64"
 		}, {
 			os:   "linux"
@@ -6033,9 +6036,6 @@ provider: newrelic: newrelic: {
 		}, {
 			os:   "windows"
 			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "arm64"
 		}, {
 			os:   "openbsd"
 			arch: "amd64"
@@ -6068,17 +6068,17 @@ provider: newrelic: newrelic: {
 		version: "2.30.1"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "darwin"
+			arch: "arm64"
+		}, {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
 			os:   "freebsd"
 			arch: "386"
 		}, {
-			os:   "darwin"
-			arch: "arm64"
+			os:   "linux"
+			arch: "386"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
@@ -6120,23 +6120,20 @@ provider: newrelic: newrelic: {
 		version: "2.42.1"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "linux"
-			arch: "arm64"
-		}, {
 			os:   "windows"
 			arch: "arm"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "freebsd"
-			arch: "386"
-		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "solaris"
 			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "386"
 		}, {
 			os:   "openbsd"
 			arch: "386"
@@ -6152,6 +6149,9 @@ provider: newrelic: newrelic: {
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm64"
 		}, {
 			os:   "linux"
 			arch: "amd64"
@@ -6172,10 +6172,10 @@ provider: newrelic: newrelic: {
 		version: "3.8.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "freebsd"
+			os:   "solaris"
 			arch: "amd64"
 		}, {
-			os:   "solaris"
+			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "windows"
@@ -6184,13 +6184,13 @@ provider: newrelic: newrelic: {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "linux"
 			arch: "amd64"
 		}, {
 			os:   "linux"
@@ -6236,10 +6236,10 @@ provider: newrelic: newrelic: {
 			os:   "windows"
 			arch: "arm64"
 		}, {
-			os:   "windows"
+			os:   "freebsd"
 			arch: "arm"
 		}, {
-			os:   "freebsd"
+			os:   "windows"
 			arch: "arm"
 		}, {
 			os:   "freebsd"
@@ -6282,8 +6282,8 @@ provider: newrelic: newrelic: {
 		version: "2.16.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "windows"
-			arch: "386"
+			os:   "openbsd"
+			arch: "amd64"
 		}, {
 			os:   "openbsd"
 			arch: "386"
@@ -6291,8 +6291,8 @@ provider: newrelic: newrelic: {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
-			os:   "openbsd"
-			arch: "amd64"
+			os:   "windows"
+			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "arm64"
@@ -6329,19 +6329,19 @@ provider: newrelic: newrelic: {
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "darwin"
-			arch: "amd64"
+			arch: "arm64"
 		}, {
 			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "darwin"
-			arch: "arm64"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "arm64"
@@ -6380,9 +6380,6 @@ provider: newrelic: newrelic: {
 		version: "2.25.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "linux"
-			arch: "amd64"
-		}, {
 			os:   "darwin"
 			arch: "arm64"
 		}, {
@@ -6391,6 +6388,9 @@ provider: newrelic: newrelic: {
 		}, {
 			os:   "linux"
 			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
@@ -6438,14 +6438,14 @@ provider: newrelic: newrelic: {
 			os:   "freebsd"
 			arch: "arm64"
 		}, {
-			os:   "freebsd"
-			arch: "386"
+			os:   "windows"
+			arch: "amd64"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "windows"
-			arch: "amd64"
+			os:   "freebsd"
+			arch: "386"
 		}, {
 			os:   "openbsd"
 			arch: "amd64"
@@ -6478,6 +6478,12 @@ provider: newrelic: newrelic: {
 		version: "2.41.1"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "solaris"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
@@ -6493,14 +6499,8 @@ provider: newrelic: newrelic: {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
-			os:   "solaris"
-			arch: "amd64"
-		}, {
 			os:   "darwin"
 			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "arm"
@@ -6530,6 +6530,9 @@ provider: newrelic: newrelic: {
 		version: "2.8.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "solaris"
+			arch: "amd64"
+		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
@@ -6537,9 +6540,6 @@ provider: newrelic: newrelic: {
 			arch: "386"
 		}, {
 			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "solaris"
 			arch: "amd64"
 		}, {
 			os:   "linux"
@@ -6577,19 +6577,22 @@ provider: newrelic: newrelic: {
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "windows"
-			arch: "arm"
+			arch: "386"
 		}, {
 			os:   "darwin"
 			arch: "arm64"
+		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
 		}, {
 			os:   "openbsd"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "386"
 		}, {
 			os:   "windows"
 			arch: "amd64"
@@ -6599,9 +6602,6 @@ provider: newrelic: newrelic: {
 		}, {
 			os:   "linux"
 			arch: "arm64"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
 		}, {
 			os:   "openbsd"
 			arch: "386"
@@ -6629,20 +6629,17 @@ provider: newrelic: newrelic: {
 		protocols: ["5.0"]
 		platforms: [{
 			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "linux"
 			arch: "arm64"
-		}, {
-			os:   "windows"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "386"
 		}, {
+			os:   "windows"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
 			os:   "linux"
 			arch: "arm"
 		}, {
@@ -6651,6 +6648,9 @@ provider: newrelic: newrelic: {
 		}, {
 			os:   "freebsd"
 			arch: "arm"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "arm64"
@@ -6683,8 +6683,11 @@ provider: newrelic: newrelic: {
 		version: "3.9.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "darwin"
-			arch: "arm64"
+			os:   "openbsd"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
 		}, {
 			os:   "solaris"
 			arch: "amd64"
@@ -6705,12 +6708,9 @@ provider: newrelic: newrelic: {
 			arch: "arm64"
 		}, {
 			os:   "darwin"
-			arch: "amd64"
+			arch: "arm64"
 		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "openbsd"
+			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "linux"
@@ -6738,32 +6738,32 @@ provider: newrelic: newrelic: {
 		version: "2.7.0"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "freebsd"
+			arch: "arm"
+		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
 			os:   "freebsd"
 			arch: "386"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
 		}, {
 			os:   "linux"
 			arch: "arm64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
 			os:   "solaris"
 			arch: "amd64"
@@ -6784,11 +6784,11 @@ provider: newrelic: newrelic: {
 		version: "2.21.0"
 		protocols: ["5.0"]
 		platforms: [{
-			os:   "windows"
-			arch: "amd64"
-		}, {
 			os:   "freebsd"
 			arch: "386"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
 		}, {
 			os:   "openbsd"
 			arch: "386"
@@ -6796,13 +6796,13 @@ provider: newrelic: newrelic: {
 			os:   "linux"
 			arch: "arm"
 		}, {
-			os:   "openbsd"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
+			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "openbsd"
 			arch: "amd64"
 		}, {
 			os:   "linux"

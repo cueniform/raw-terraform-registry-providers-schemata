@@ -10,9 +10,6 @@ provider: hashicorp: oraclepaas: {
 			arch: "386"
 		}, {
 			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "solaris"
@@ -23,6 +20,9 @@ provider: hashicorp: oraclepaas: {
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
@@ -126,6 +126,9 @@ provider: hashicorp: oraclepaas: {
 		version: "1.3.0"
 		protocols: ["4"]
 		platforms: [{
+			os:   "linux"
+			arch: "arm"
+		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
@@ -143,9 +146,6 @@ provider: hashicorp: oraclepaas: {
 		}, {
 			os:   "linux"
 			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "arm"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
@@ -246,13 +246,13 @@ provider: hashicorp: oraclepaas: {
 		version: "1.3.1"
 		protocols: ["4"]
 		platforms: [{
-			os:   "linux"
-			arch: "386"
-		}, {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
 			os:   "openbsd"
+			arch: "386"
+		}, {
+			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "linux"
@@ -495,6 +495,9 @@ provider: hashicorp: oraclepaas: {
 			os:   "linux"
 			arch: "386"
 		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
@@ -509,9 +512,6 @@ provider: hashicorp: oraclepaas: {
 		}, {
 			os:   "solaris"
 			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
 		}, {
 			os:   "windows"
 			arch: "386"
@@ -567,13 +567,13 @@ provider: hashicorp: oraclepaas: {
 		protocols: ["4"]
 		platforms: [{
 			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "linux"
 			arch: "arm"
 		}, {
 			os:   "darwin"
 			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "386"
 		}, {
 			os:   "freebsd"
 			arch: "amd64"
@@ -609,13 +609,13 @@ provider: hashicorp: oraclepaas: {
 			os:   "linux"
 			arch: "amd64"
 		}, {
+			os:   "linux"
+			arch: "386"
+		}, {
 			os:   "freebsd"
 			arch: "arm"
 		}, {
 			os:   "openbsd"
-			arch: "386"
-		}, {
-			os:   "linux"
 			arch: "386"
 		}, {
 			os:   "linux"

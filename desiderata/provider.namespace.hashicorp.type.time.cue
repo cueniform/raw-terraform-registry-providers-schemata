@@ -228,6 +228,9 @@ provider: hashicorp: time: {
 		version: "0.4.0"
 		protocols: ["4.0", "5.0"]
 		platforms: [{
+			os:   "freebsd"
+			arch: "386"
+		}, {
 			os:   "linux"
 			arch: "386"
 		}, {
@@ -239,9 +242,6 @@ provider: hashicorp: time: {
 		}, {
 			os:   "linux"
 			arch: "arm"
-		}, {
-			os:   "freebsd"
-			arch: "386"
 		}, {
 			os:   "openbsd"
 			arch: "386"
@@ -309,10 +309,10 @@ provider: hashicorp: time: {
 			arch: "amd64"
 		}, {
 			os:   "linux"
-			arch: "amd64"
+			arch: "arm"
 		}, {
 			os:   "linux"
-			arch: "arm"
+			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "386"

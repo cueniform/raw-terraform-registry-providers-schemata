@@ -126,6 +126,9 @@ provider: hashicorp: opc: {
 		version: "1.3.2"
 		protocols: ["4.0"]
 		platforms: [{
+			os:   "solaris"
+			arch: "amd64"
+		}, {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
@@ -137,9 +140,6 @@ provider: hashicorp: opc: {
 		}, {
 			os:   "freebsd"
 			arch: "arm"
-		}, {
-			os:   "solaris"
-			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "386"
@@ -440,13 +440,13 @@ provider: hashicorp: opc: {
 		version: "1.1.1"
 		protocols: ["4"]
 		platforms: [{
-			os:   "solaris"
-			arch: "amd64"
-		}, {
 			os:   "windows"
 			arch: "386"
 		}, {
 			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "solaris"
 			arch: "amd64"
 		}, {
 			os:   "linux"
@@ -800,11 +800,11 @@ provider: hashicorp: opc: {
 		version: "0.1.0"
 		protocols: ["4"]
 		platforms: [{
-			os:   "freebsd"
-			arch: "arm"
-		}, {
 			os:   "windows"
 			arch: "amd64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
 		}, {
 			os:   "linux"
 			arch: "386"

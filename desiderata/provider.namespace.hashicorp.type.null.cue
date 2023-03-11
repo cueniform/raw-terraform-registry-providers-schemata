@@ -391,14 +391,14 @@ provider: hashicorp: null: {
 			os:   "darwin"
 			arch: "amd64"
 		}, {
+			os:   "openbsd"
+			arch: "386"
+		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
 			os:   "linux"
 			arch: "amd64"
-		}, {
-			os:   "openbsd"
-			arch: "386"
 		}, {
 			os:   "linux"
 			arch: "386"

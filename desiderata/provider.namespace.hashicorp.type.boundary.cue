@@ -3,43 +3,6 @@ package desiderata
 provider: hashicorp: boundary: {
 	id: "hashicorp/boundary"
 	versions: [{
-		version: "1.0.10"
-		protocols: ["5.0"]
-		platforms: [{
-			os:   "linux"
-			arch: "arm64"
-		}, {
-			os:   "darwin"
-			arch: "arm64"
-		}, {
-			os:   "freebsd"
-			arch: "amd64"
-		}, {
-			os:   "windows"
-			arch: "386"
-		}, {
-			os:   "linux"
-			arch: "386"
-		}, {
-			os:   "freebsd"
-			arch: "arm"
-		}, {
-			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
-			arch: "amd64"
-		}, {
-			os:   "linux"
-			arch: "arm"
-		}, {
-			os:   "windows"
-			arch: "amd64"
-		}, {
-			os:   "freebsd"
-			arch: "386"
-		}]
-	}, {
 		version: "1.0.4"
 		protocols: ["5.0"]
 		platforms: [{
@@ -404,12 +367,46 @@ provider: hashicorp: boundary: {
 			arch: "arm"
 		}]
 	}, {
-		version: "1.0.3"
+		version: "1.0.10"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "linux"
+			arch: "386"
+		}, {
+			os:   "darwin"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "amd64"
+		}, {
+			os:   "windows"
+			arch: "386"
+		}, {
+			os:   "linux"
+			arch: "arm64"
+		}, {
+			os:   "freebsd"
+			arch: "arm"
+		}, {
+			os:   "linux"
+			arch: "amd64"
+		}, {
+			os:   "darwin"
+			arch: "amd64"
+		}, {
+			os:   "linux"
+			arch: "arm"
+		}, {
 			os:   "windows"
 			arch: "amd64"
 		}, {
+			os:   "freebsd"
+			arch: "386"
+		}]
+	}, {
+		version: "1.0.3"
+		protocols: ["5.0"]
+		platforms: [{
 			os:   "linux"
 			arch: "amd64"
 		}, {
@@ -421,6 +418,9 @@ provider: hashicorp: boundary: {
 		}, {
 			os:   "linux"
 			arch: "386"
+		}, {
+			os:   "windows"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "arm"
@@ -697,6 +697,9 @@ provider: hashicorp: boundary: {
 		version: "1.0.6"
 		protocols: ["5.0"]
 		platforms: [{
+			os:   "darwin"
+			arch: "amd64"
+		}, {
 			os:   "linux"
 			arch: "arm64"
 		}, {
@@ -707,9 +710,6 @@ provider: hashicorp: boundary: {
 			arch: "386"
 		}, {
 			os:   "linux"
-			arch: "amd64"
-		}, {
-			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "freebsd"

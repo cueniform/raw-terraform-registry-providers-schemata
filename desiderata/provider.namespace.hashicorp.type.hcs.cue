@@ -154,10 +154,10 @@ provider: hashicorp: hcs: {
 			os:   "freebsd"
 			arch: "amd64"
 		}, {
-			os:   "darwin"
+			os:   "windows"
 			arch: "amd64"
 		}, {
-			os:   "windows"
+			os:   "darwin"
 			arch: "amd64"
 		}, {
 			os:   "linux"

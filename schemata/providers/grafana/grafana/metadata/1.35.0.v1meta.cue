@@ -4,7 +4,7 @@ package v1
 	provider: "grafana/grafana"
 	version:  "1.35.0"
 	created: {
-		at: "2023-03-12T14:44:26+00:00"
+		at: "2023-03-12T16:46:15+00:00"
 		by: {
 			terraform: {
 				terraform_version: "1.3.9"
@@ -13,8 +13,8 @@ package v1
 				terraform_outdated: true
 			}
 			commit: {
-				trigger:      "2c2f8f4bcf336abafb5bae0300afd75729e5e1f6"
-				workflow_sha: "2c2f8f4bcf336abafb5bae0300afd75729e5e1f6"
+				trigger:      "bab7c00c633895e22fd8934b1abeaf201c549e10"
+				workflow_sha: "bab7c00c633895e22fd8934b1abeaf201c549e10"
 				workflow_ref: "cueniform/terraform-registry-schema-collector/.github/workflows/scheduled-fetch-schemas-on-main.yml@refs/heads/main"
 			}
 		}

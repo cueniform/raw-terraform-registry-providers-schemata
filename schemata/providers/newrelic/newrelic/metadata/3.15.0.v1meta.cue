@@ -4,7 +4,7 @@ package v1
 	provider: "newrelic/newrelic"
 	version:  "3.15.0"
 	created: {
-		at: "2023-03-12T14:44:05+00:00"
+		at: "2023-03-12T16:46:02+00:00"
 		by: {
 			terraform: {
 				terraform_version: "1.3.9"
@@ -13,8 +13,8 @@ package v1
 				terraform_outdated: true
 			}
 			commit: {
-				trigger:      "2c2f8f4bcf336abafb5bae0300afd75729e5e1f6"
-				workflow_sha: "2c2f8f4bcf336abafb5bae0300afd75729e5e1f6"
+				trigger:      "bab7c00c633895e22fd8934b1abeaf201c549e10"
+				workflow_sha: "bab7c00c633895e22fd8934b1abeaf201c549e10"
 				workflow_ref: "cueniform/terraform-registry-schema-collector/.github/workflows/scheduled-fetch-schemas-on-main.yml@refs/heads/main"
 			}
 		}
@@ -24,13 +24,13 @@ package v1
 			filename: "3.15.0.json"
 			format:   "json"
 			bytes:    "158217"
-			sha512:   "32bf4357443dace5ab8f66e9f9ea72b609461c9842fd2180c73b417701e66ef243f960f58ca2cf54c1a5627623b2c3d326a01d99ba7b0347c41a3d6dd42506fa"
+			sha512:   "82c716186eda256b0c4250d20ae3c66f8e4dfa70b311da911e8b31a63ee9ca357100cd178d2f047ae04c6d0a686be3736ebd46a88326c20736ecf5fea0679147"
 		}
 		compressed: {
 			filename: "3.15.0.json.zstd"
 			format:   "zstd"
-			bytes:    "13280"
-			sha512:   "e4bf4e749d2c90c57410ff1758edfcce9e8029b6394056b923da79218a5a8d1a2c0fabbf442d3be9ab04f3e146002a0e8481f80329024c7a8946535e7e521dd8"
+			bytes:    "13272"
+			sha512:   "b5533e8ae179f90980be63d6df9c3bc6ce82b02d207adc453d628aa186039ee311d0a8bd08d6ebdff95eea3917ebffc08acffbe6cd2848ef89e4adda1352e3a9"
 		}
 	}
 }

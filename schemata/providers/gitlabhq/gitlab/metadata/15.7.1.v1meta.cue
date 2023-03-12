@@ -1,15 +1,15 @@
 package v1
 
-"15.8.0": {
+"15.7.1": {
 	provider: "gitlabhq/gitlab"
-	version:  "15.8.0"
+	version:  "15.7.1"
 	created: {
-		at: "2023-03-12T14:43:57+00:00"
+		at: "2023-03-12T14:44:23+00:00"
 		by: {
 			terraform: {
 				terraform_version: "1.3.9"
 				platform:          "linux_amd64"
-				provider_selections: "registry.terraform.io/gitlabhq/gitlab": "15.8.0"
+				provider_selections: "registry.terraform.io/gitlabhq/gitlab": "15.7.1"
 				terraform_outdated: true
 			}
 			commit: {
@@ -21,16 +21,16 @@ package v1
 	}
 	contents: {
 		raw: {
-			filename: "15.8.0.json"
+			filename: "15.7.1.json"
 			format:   "json"
-			bytes:    "296657"
-			sha512:   "ec2006c8d3d8e8ee9252095557d3fe5d3c0c2b0355c247c7f3f49884cc4c7a2c0e4e4cf465d48701f50a5feb3734132506ee53abddfab4a207cb8100b8c4f20a"
+			bytes:    "294554"
+			sha512:   "4110f3ffe896f22de84de1c5a9e4cd1b19497dffeb10bf839082ba323cfc7e5a0fc3f6b0826c512af26795f1df17aa58e591ba07dec7cfb93d64e26b2a537976"
 		}
 		compressed: {
-			filename: "15.8.0.json.zstd"
+			filename: "15.7.1.json.zstd"
 			format:   "zstd"
-			bytes:    "33770"
-			sha512:   "2db4bd08ebd906adb7fa3d05d8c64acbe990dc7c95113c895673596e1ae1b8e8684264ae9caa5d5c49826dc371ed9c4d19cd24d6bdd968277c725a232aa281dc"
+			bytes:    "33237"
+			sha512:   "614283bae8fae77b465a6cc79d074337555997b31146de6801070619a270e141fb3e6d72ac719106db9a33b84e9032f43291ced157af206990d6ee1ff4702039"
 		}
 	}
 }

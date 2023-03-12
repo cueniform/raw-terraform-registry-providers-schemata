@@ -1,15 +1,15 @@
 package v1
 
-"1.36.1": {
+"1.35.0": {
 	provider: "grafana/grafana"
-	version:  "1.36.1"
+	version:  "1.35.0"
 	created: {
-		at: "2023-03-12T14:43:26+00:00"
+		at: "2023-03-12T14:44:26+00:00"
 		by: {
 			terraform: {
 				terraform_version: "1.3.9"
 				platform:          "linux_amd64"
-				provider_selections: "registry.terraform.io/grafana/grafana": "1.36.1"
+				provider_selections: "registry.terraform.io/grafana/grafana": "1.35.0"
 				terraform_outdated: true
 			}
 			commit: {
@@ -21,16 +21,16 @@ package v1
 	}
 	contents: {
 		raw: {
-			filename: "1.36.1.json"
+			filename: "1.35.0.json"
 			format:   "json"
-			bytes:    "181844"
-			sha512:   "abfff16a86034e269097deeef78ea9240d1cab131703fb6ffb207d35fcb1ee1484fd419ec5643b0051c0ea1baf52b2d2db923601cdaf4789f57580a8f8a0a4f5"
+			bytes:    "177151"
+			sha512:   "f7cc8c891e12bb2c16df4c178b71c7f381f231e15366305161c8b39ff69e78c02c2e175780ae85e958a3988dab51f46f635fabe610030a432b5c87c09e6f92e7"
 		}
 		compressed: {
-			filename: "1.36.1.json.zstd"
+			filename: "1.35.0.json.zstd"
 			format:   "zstd"
-			bytes:    "20586"
-			sha512:   "fd1b1eb52c7d9a7d2dae747d1a55a27c2e978fdde842cb7802e4a633e3bbc62d33db01f27475338d5a52c3264aaeefd01741a80c35b983740022bed4e6eebbf3"
+			bytes:    "20331"
+			sha512:   "2e5644d159da4286977bdab4ae18effcb25cc071578bdba937c2603b4842b37000e8fd53df34f1fe83e85dea984d2c6f5b16b2bd1966e5f8350b0c9e08da97a8"
 		}
 	}
 }

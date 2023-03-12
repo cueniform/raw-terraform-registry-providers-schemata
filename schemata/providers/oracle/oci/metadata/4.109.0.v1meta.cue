@@ -1,15 +1,15 @@
 package v1
 
-"4.111.0": {
+"4.109.0": {
 	provider: "oracle/oci"
-	version:  "4.111.0"
+	version:  "4.109.0"
 	created: {
-		at: "2023-03-12T14:43:44+00:00"
+		at: "2023-03-12T14:44:39+00:00"
 		by: {
 			terraform: {
 				terraform_version: "1.3.9"
 				platform:          "linux_amd64"
-				provider_selections: "registry.terraform.io/oracle/oci": "4.111.0"
+				provider_selections: "registry.terraform.io/oracle/oci": "4.109.0"
 				terraform_outdated: true
 			}
 			commit: {
@@ -21,16 +21,16 @@ package v1
 	}
 	contents: {
 		raw: {
-			filename: "4.111.0.json"
+			filename: "4.109.0.json"
 			format:   "json"
-			bytes:    "3243910"
-			sha512:   "6a13dcbff1f61a97c629d065e1e4170e4ce8c9ef38dcb5b81b4ca1a7cc04bd580bc05cdde3d848b58e22d1137f61210d13a9715521678e6407abfc0234fc451b"
+			bytes:    "3239342"
+			sha512:   "38b3e850d7f433e8d1ac49e5a57dc1b29ef1ffa485bcf102cb67b653362e993bd819818e04c5e99a6d9880afe0f8bb63d517e439bcdf7597b885e5bbf6090027"
 		}
 		compressed: {
-			filename: "4.111.0.json.zstd"
+			filename: "4.109.0.json.zstd"
 			format:   "zstd"
-			bytes:    "117746"
-			sha512:   "f5bac2ac98e19e999a8bfcbad03b3f88d64135f914779125e15f289941729b30a89df0b83a371b4a23a5ffab5a7c5e9d81c96022465264a8648ab38f10a7f679"
+			bytes:    "117148"
+			sha512:   "9a4fedb82f9ab6d34ab286eef2aa608ae4e951c4567dc7ba244f908bd766f09b69be0dc873411480d892a3aa13a7f42185361f0af38ad728324d65e15203da43"
 		}
 	}
 }

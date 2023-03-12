@@ -1,15 +1,15 @@
 package v1
 
-"4.0.0-rc2": {
+"4.0.0-rc1": {
 	provider: "cloudflare/cloudflare"
-	version:  "4.0.0-rc2"
+	version:  "4.0.0-rc1"
 	created: {
-		at: "2023-03-12T14:43:54+00:00"
+		at: "2023-03-12T14:44:20+00:00"
 		by: {
 			terraform: {
 				terraform_version: "1.3.9"
 				platform:          "linux_amd64"
-				provider_selections: "registry.terraform.io/cloudflare/cloudflare": "4.0.0-rc2"
+				provider_selections: "registry.terraform.io/cloudflare/cloudflare": "4.0.0-rc1"
 				terraform_outdated: true
 			}
 			commit: {
@@ -21,16 +21,16 @@ package v1
 	}
 	contents: {
 		raw: {
-			filename: "4.0.0-rc2.json"
+			filename: "4.0.0-rc1.json"
 			format:   "json"
-			bytes:    "299695"
-			sha512:   "8f6d0cc51f494eb7a7fb48fd47414a9af7cce30a6792a572256f9505c468fd9a645fbed1ddd77e4834cdc6a6b79a25744001f0274e8d97bad53ac3d8b02e718d"
+			bytes:    "299304"
+			sha512:   "f79a7229d564f702a82d5437c7711e0a373ec681efe2926618bfa1663cc2ef454bbfa7d819a1305eea7f27bfa27f6db8fa05da61e40a377ae8bcdc31cddaa137"
 		}
 		compressed: {
-			filename: "4.0.0-rc2.json.zstd"
+			filename: "4.0.0-rc1.json.zstd"
 			format:   "zstd"
-			bytes:    "35094"
-			sha512:   "42719f65c64160e1c6a79e4dde781b8faba8fd62035e55dfc621a7214a82831cb80688dc7fa729c5f84da113e066f391a851af21b30292e8db6cbd2e6978867c"
+			bytes:    "35030"
+			sha512:   "e34957eec4db865bebac33007429ac7f5067b23fb0dedeb25c86e3cb62268e84ae97dbf6246ff11ea538e5fb7d380395fb0a352a611c4d0b49df22f9dc2f3eba"
 		}
 	}
 }

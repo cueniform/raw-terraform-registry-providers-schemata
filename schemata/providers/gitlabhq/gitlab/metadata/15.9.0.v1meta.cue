@@ -4,7 +4,7 @@ package v1
 	provider: "gitlabhq/gitlab"
 	version:  "15.9.0"
 	created: {
-		at: "2023-03-12T11:52:45+00:00"
+		at: "2023-03-12T14:43:22+00:00"
 		by: {
 			terraform: {
 				terraform_version: "1.3.9"
@@ -13,8 +13,8 @@ package v1
 				terraform_outdated: true
 			}
 			commit: {
-				trigger:      "394b104b72f964f9d28fa8ccc9f9225bdc47e630"
-				workflow_sha: "394b104b72f964f9d28fa8ccc9f9225bdc47e630"
+				trigger:      "2c2f8f4bcf336abafb5bae0300afd75729e5e1f6"
+				workflow_sha: "2c2f8f4bcf336abafb5bae0300afd75729e5e1f6"
 				workflow_ref: "cueniform/terraform-registry-schema-collector/.github/workflows/scheduled-fetch-schemas-on-main.yml@refs/heads/main"
 			}
 		}

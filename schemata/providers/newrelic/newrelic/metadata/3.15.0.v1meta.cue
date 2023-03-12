@@ -1,15 +1,15 @@
 package v1
 
-"3.16.0": {
+"3.15.0": {
 	provider: "newrelic/newrelic"
-	version:  "3.16.0"
+	version:  "3.15.0"
 	created: {
-		at: "2023-03-12T14:43:37+00:00"
+		at: "2023-03-12T14:44:05+00:00"
 		by: {
 			terraform: {
 				terraform_version: "1.3.9"
 				platform:          "linux_amd64"
-				provider_selections: "registry.terraform.io/newrelic/newrelic": "3.16.0"
+				provider_selections: "registry.terraform.io/newrelic/newrelic": "3.15.0"
 				terraform_outdated: true
 			}
 			commit: {
@@ -21,16 +21,16 @@ package v1
 	}
 	contents: {
 		raw: {
-			filename: "3.16.0.json"
+			filename: "3.15.0.json"
 			format:   "json"
-			bytes:    "160963"
-			sha512:   "4e7c06c8d46abf6b12226948c23ded99776038a08967a54ba0ebc1f9cc8a97dcc1eb0a60a89b609e267b8b8da85f15b36e76c8843a67e375da04cb54ae6e0c0c"
+			bytes:    "158217"
+			sha512:   "32bf4357443dace5ab8f66e9f9ea72b609461c9842fd2180c73b417701e66ef243f960f58ca2cf54c1a5627623b2c3d326a01d99ba7b0347c41a3d6dd42506fa"
 		}
 		compressed: {
-			filename: "3.16.0.json.zstd"
+			filename: "3.15.0.json.zstd"
 			format:   "zstd"
-			bytes:    "13596"
-			sha512:   "4f1d59fdb3e971ffa3f738256ca2594fc485c89808ce33e001504d052c244e7e6cfd8311bf015a54fa2ff3904963aad50cd6867eec190c343ec3d9499d396040"
+			bytes:    "13280"
+			sha512:   "e4bf4e749d2c90c57410ff1758edfcce9e8029b6394056b923da79218a5a8d1a2c0fabbf442d3be9ab04f3e146002a0e8481f80329024c7a8946535e7e521dd8"
 		}
 	}
 }

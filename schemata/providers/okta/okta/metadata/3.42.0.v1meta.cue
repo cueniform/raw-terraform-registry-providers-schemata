@@ -1,15 +1,15 @@
 package v1
 
-"3.44.0": {
+"3.42.0": {
 	provider: "okta/okta"
-	version:  "3.44.0"
+	version:  "3.42.0"
 	created: {
-		at: "2023-03-12T14:43:40+00:00"
+		at: "2023-03-12T14:44:34+00:00"
 		by: {
 			terraform: {
 				terraform_version: "1.3.9"
 				platform:          "linux_amd64"
-				provider_selections: "registry.terraform.io/okta/okta": "3.44.0"
+				provider_selections: "registry.terraform.io/okta/okta": "3.42.0"
 				terraform_outdated: true
 			}
 			commit: {
@@ -21,16 +21,16 @@ package v1
 	}
 	contents: {
 		raw: {
-			filename: "3.44.0.json"
+			filename: "3.42.0.json"
 			format:   "json"
-			bytes:    "310769"
-			sha512:   "2b1d63340e99e3f1743e0dba05bc52b0856901e0155def985dada1ef46284320533383b70575fd0530909b03c7e13ad3d55cd24f37ec841bedf9c2f2c7bef4f0"
+			bytes:    "310137"
+			sha512:   "1a55e7d0601b57f563ee7ba1aaf45d58d976de7b2993a766495959efc3436b99198e4e90a7f0fa65a98774cdcad5b1b52cc9260bf4861b4399db1a7c99535d5d"
 		}
 		compressed: {
-			filename: "3.44.0.json.zstd"
+			filename: "3.42.0.json.zstd"
 			format:   "zstd"
-			bytes:    "19325"
-			sha512:   "40690f6a55dc7737859f7650cd70eba03084a1547c7591df92250236c7427faacee2a93738af88e55f9eec7728bdf0146edd7786514f433dac6e93ecd87760c2"
+			bytes:    "19262"
+			sha512:   "8e47ccb8e3403ac27b360f77377347d32e973b65c649df589ad6670850b9a2bfeab4d3864c2fd30606112fe232bb4bbb3b3ecef7629900bf73c7daa0bb44b39f"
 		}
 	}
 }

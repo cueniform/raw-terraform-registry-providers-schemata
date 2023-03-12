@@ -14,7 +14,7 @@ import (
 				terraform_version: =~"1.3."
 				platform:          "linux_amd64"
 				provider_selections: "registry.terraform.io/hashicorp/null": "3.2.1"
-				terraform_outdated: false
+				terraform_outdated: bool
 			}
 			commit: {
 				trigger:      "GITHUB_SHA-is-set-in-test-makefile"

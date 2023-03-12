@@ -92,10 +92,10 @@ provider: hashicorp: template: {
 			os:   "openbsd"
 			arch: "amd64"
 		}, {
-			os:   "solaris"
+			os:   "linux"
 			arch: "amd64"
 		}, {
-			os:   "linux"
+			os:   "solaris"
 			arch: "amd64"
 		}, {
 			os:   "openbsd"
@@ -206,11 +206,11 @@ provider: hashicorp: template: {
 		version: "0.1.0"
 		protocols: ["4"]
 		platforms: [{
-			os:   "solaris"
-			arch: "amd64"
-		}, {
 			os:   "freebsd"
 			arch: "arm"
+		}, {
+			os:   "solaris"
+			arch: "amd64"
 		}, {
 			os:   "freebsd"
 			arch: "386"

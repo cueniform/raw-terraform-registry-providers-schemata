@@ -4,7 +4,7 @@ package v1
 	provider: "cloudflare/cloudflare"
 	version:  "4.1.0"
 	created: {
-		at: "2023-03-12T18:43:10+00:00"
+		at: "2023-03-12T20:43:03+00:00"
 		by: {
 			terraform: {
 				terraform_version: "1.3.9"
@@ -13,8 +13,8 @@ package v1
 				terraform_outdated: true
 			}
 			commit: {
-				trigger:      "8a731f09b6377d41b241dc40e605cc6e79fc3859"
-				workflow_sha: "8a731f09b6377d41b241dc40e605cc6e79fc3859"
+				trigger:      "5fb3a062bddd6fed671995e056aee8b13195a26e"
+				workflow_sha: "5fb3a062bddd6fed671995e056aee8b13195a26e"
 				workflow_ref: "cueniform/terraform-registry-schema-collector/.github/workflows/scheduled-fetch-schemas-on-main.yml@refs/heads/main"
 			}
 		}

@@ -4,7 +4,7 @@ package v1
 	provider: "oracle/oci"
 	version:  "4.111.0"
 	created: {
-		at: "2023-03-12T16:45:50+00:00"
+		at: "2023-03-12T18:43:28+00:00"
 		by: {
 			terraform: {
 				terraform_version: "1.3.9"
@@ -13,8 +13,8 @@ package v1
 				terraform_outdated: true
 			}
 			commit: {
-				trigger:      "bab7c00c633895e22fd8934b1abeaf201c549e10"
-				workflow_sha: "bab7c00c633895e22fd8934b1abeaf201c549e10"
+				trigger:      "8a731f09b6377d41b241dc40e605cc6e79fc3859"
+				workflow_sha: "8a731f09b6377d41b241dc40e605cc6e79fc3859"
 				workflow_ref: "cueniform/terraform-registry-schema-collector/.github/workflows/scheduled-fetch-schemas-on-main.yml@refs/heads/main"
 			}
 		}

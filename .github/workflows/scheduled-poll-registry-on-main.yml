@@ -1,24 +1,14 @@
-name: scheduled/main/poll-registry-provider-versions
+name: scheduled/main/update-desiderata
 
 "on":
-  schedule: # sync these with inputs.schedule and matrix.cron
+  schedule:
     - cron: "13 3 * * *"
-    - cron: "23 3 * * *"
-    - cron: "33 3 * * *"
-    - cron: "43 3 * * *"
-    - cron: "53 3 * * *"
   workflow_dispatch:
     inputs:
-      schedule:
-        description: "A fake scheduled event to test GHA"
-        required: true
-        type: choice
-        options:
-          - "13 3 * * *"
-          - "23 3 * * *"
-          - "33 3 * * *"
-          - "43 3 * * *"
-          - "53 3 * * *"
+      delay:
+        description: "(int) The delay in seconds between API requests"
+        type: "number"
+        required: false
 
 concurrency: "main"
 
@@ -32,45 +22,38 @@ defaults:
 
 jobs:
   poll_and_commit:
-    name: "Poll registry for provider versions (${{ matrix.target }})"
+    name: "Update desiderata for all known providers"
     runs-on: "ubuntu-latest"
-    strategy:
-      matrix:
-        include: # sync these with the bucket definitions in desiderata/Makefile
-          - cron: "13 3 * * *"
-            target: "bucket-1"
-          - cron: "23 3 * * *"
-            target: "bucket-2"
-          - cron: "33 3 * * *"
-            target: "bucket-3"
-          - cron: "43 3 * * *"
-            target: "bucket-4"
-          - cron: "53 3 * * *"
-            target: "bucket-5"
     permissions:
       contents: "write"
+    env:
+      DELAY: "${{ inputs.delay || 5 }}"
+
     steps:
+
       - name: "Check out code"
-        id: "check"
-        if: "( github.event.schedule || github.event.inputs.schedule ) == matrix.cron"
         uses: "actions/checkout@v3"
         with:
           fetch-depth: 0
+
       - name: "Install CUE"
-        if: "steps.check.outcome == 'success'"
         uses: "cue-lang/setup-cue@0be332bb74c8a2f07821389447ba3163e2da3bfb"
         with:
-          version: "latest"
-      - name: "Run desiderata tests"
-        if: "steps.check.outcome == 'success'"
-        run: "make test-desiderata"
-      - name: "Poll registry and serialise responses"
-        if: "steps.check.outcome == 'success'"
-        run: "make desiderata DESIDERATA=${{ matrix.target }}"
+          version: "v0.6.0-alpha.1"
+
+      - name: "Install Terraform"
+        uses: "hashicorp/setup-terraform"
+        with:
+          terraform_version: "1.4.x"
+          terraform_wrapper: false
+
+      - name: "Poll registry and update desiderata"
+        run: "./bin/generate-desiderata-for-all-providers.sh ${DELAY}"
+
       - name: "Commit and push to main"
         if: "steps.check.outcome == 'success'"
         run: |
-          git config user.name "[bot] Registry Poller"
+          git config user.name "[bot] Registry poller"
           git config user.email "<>"
 
           git add -v desiderata
@@ -78,5 +61,5 @@ jobs:
           if git commit -m "Registry poller: new provider versions added"; then
             git push -v
           else
-            echo "Registry poller: no new provider versions detected"
+            echo "Registry poller: nothing to do"
           fi

@@ -2,18 +2,18 @@ name: scheduled/main/fetch-missing-provider-schemas
 
 "on":
   schedule:
- # 42 minutes past every other hour from 04:42 to 23:42 inclusive
+#            42 minutes past every other hour from 04:42 to 23:42 inclusive
     - cron: "42 4-23/2 * * *"
- # x7 minutes past each hour, except 03:x7 (which is the poller's hour)
- #    - cron: "7/10 0-2  * * *"
- #    - cron: "7/10 4-23 * * *"
   workflow_dispatch:
     inputs:
       count:
-        description: "Number of schemas to fetch"
+        description: "(int) Number of schemas to fetch"
         required: false
-        type: number
-        default: 2
+        type: "number"
+      delay:
+        description: "(int) The delay in seconds between each schema being fetched"
+        type: "number"
+        required: false
 
 concurrency: "main"
 
@@ -27,40 +27,46 @@ defaults:
 
 jobs:
   fetch_and_commit:
-    name: "Fetch missing provider schemas"
+    name: "Fetch provider schemas"
     runs-on: "ubuntu-latest"
     permissions:
       contents: "write"
     env:
-      COUNT: "${{ github.event.inputs.count || 20 }}" # FIXME move this default to the repo env
+      DELAY: "${{ inputs.delay  || 5 }}"
+      COUNT: "${{ inputs.count || 20 }}"
     steps:
+
       - name: "Check out code"
         uses: "actions/checkout@v3"
         with:
           fetch-depth: 0
+
       - name: "Install CUE"
         uses: "cue-lang/setup-cue@0be332bb74c8a2f07821389447ba3163e2da3bfb"
         with:
-          version: "latest"
-      - name: "Run missing-provider-schema-related tests"
-        run: "make -C test/one_provider_two_version check"
-      - name: "Fetch up to ${{ env.COUNT }} missing provider schemas"
-        run: "make missing_schemas COUNT=$COUNT"
+          version: "v0.6.0-alpha.1"
+
+      - name: "Install Terraform"
+        uses: "hashicorp/setup-terraform"
+        with:
+          terraform_version: "1.4.x"
+          terraform_wrapper: false
+
+      - name: "Fetch provider schemas (up to ${{ env.COUNT }})"
+        run: "./bin/process-next-N-missing-provider-versions.sh ${COUNT} ${DELAY}"
+
       - name: "Commit and push to main"
         run: |
-          git config user.name "[bot] Schema Fetcher"
+          git config user.name "[bot] Schema fetcher"
           git config user.email "<>"
 
-          outstanding=$(grep -c ^ missing || true)
-          echo "Schema fetcher: schemas outstanding: $outstanding."
-
-          git add -v schemata/\*.zstd
+          git add -v schemata/\*.zst
           fetched=$(git status -s | grep -c ^A || true)
-          echo "Schema fetcher: schemas fetched and added: $fetched."
+          echo "Fetched $fetched schemas"
 
           git add -v schemata
           added=$(git status -s | grep -c ^A || true)
-          echo "Schema fetcher: new files added: $added."
+          echo "Added $added files"
 
           if git commit -m "Schema fetcher: $fetched new schemas"; then
             git push -v

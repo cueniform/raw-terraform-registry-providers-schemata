@@ -1,2 +1,0 @@
-PROVIDERS:=\
-provider.namespace.hashicorp.type.null.cue \

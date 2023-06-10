@@ -1,0 +1,3 @@
+registry.terraform.io/hashicorp/google-beta
+registry.terraform.io/hashicorp/aws
+registry.terraform.io/hashicorp/null

@@ -1,6 +1,7 @@
 /tmp/
-/build/*
-/build/terraform/*
-/build/meta/*
-/missing
+
+/test/schemata/registry.terraform.io_*.metadata.cue
+/test/schemata/registry.terraform.io_*.json.zst
+/test/desiderata/registry.terraform.io_*.txt
+
 !.gitkeep

@@ -1,0 +1,2 @@
+registry.terraform.io/datadog/datadog
+registry.terraform.io/anexia-it/anxcloud

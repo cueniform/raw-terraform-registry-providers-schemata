@@ -1,2 +1,10 @@
-registry.terraform.io/datadog/datadog
 registry.terraform.io/anexia-it/anxcloud
+registry.terraform.io/cloudflare/cloudflare
+registry.terraform.io/datadog/datadog
+registry.terraform.io/gitlabhq/gitlab
+registry.terraform.io/grafana/grafana
+registry.terraform.io/integrations/github
+registry.terraform.io/newrelic/newrelic
+registry.terraform.io/okta/okta
+registry.terraform.io/oracle/oci
+registry.terraform.io/pagerduty/pagerduty

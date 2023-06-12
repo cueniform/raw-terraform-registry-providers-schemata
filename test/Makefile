@@ -1,5 +1,4 @@
-default:
-	false
+include ../make/defaults.mk
 
 DELAY?=0
 

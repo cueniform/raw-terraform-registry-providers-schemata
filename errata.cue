@@ -16,6 +16,10 @@ errata: {
 	"registry.terraform.io/hashicorp/vault": {
 		"1.9.0": "registry announces plugin's compatibility with protocol v5, but it only talks v4"
 	}
+	"registry.terraform.io/anexia-it/anxcloud": {
+		"0.3.4-pre.1":
+			"failed to retrieve authentication checksums for provider: 404 Not Found returned from releases.hashicorp.com"
+	}
 }
 
 provider: {

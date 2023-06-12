@@ -7,7 +7,7 @@ import (
 _providers: {
 	_test + _inherited
 	_inherited: {
-		_errata: 3
+		_errata: 4
 		_errata
 	}
 	_test: 2

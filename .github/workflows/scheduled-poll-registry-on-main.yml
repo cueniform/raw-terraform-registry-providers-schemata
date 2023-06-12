@@ -22,7 +22,7 @@ defaults:
 
 jobs:
   poll_and_commit:
-    name: "Update desiderata for all known providers"
+    name: "Update desiderata"
     runs-on: "ubuntu-latest"
     permissions:
       contents: "write"

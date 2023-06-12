@@ -4,8 +4,8 @@ import "strings"
 
 provider: _
 
-// the existing schemata on which we're building
-strata: {
+// the schemata we already possess
+inventory: {
 	text: strings.Join([
 		for address, versions in provider
 		for version, schema in versions

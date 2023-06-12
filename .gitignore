@@ -4,4 +4,9 @@
 /test/schemata/registry.terraform.io_*.json.zst
 /test/desiderata/registry.terraform.io_*.txt
 
+schemata/empty.cue
+schemata.txt
+delta.txt
+priorities.txt
+
 !.gitkeep

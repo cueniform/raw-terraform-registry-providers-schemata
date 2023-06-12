@@ -3,7 +3,7 @@ set -euo pipefail
 
 function cleanup() {
     _log_cmd \
-        rm -vf schemata.txt schemata/empty.cue desiderata.txt
+        rm -vf priorities.txt
 }
 
 function main() {
@@ -13,30 +13,9 @@ function main() {
     local log_prefix="main"
     _log "${log_prefix}: delay=${delay_sec}"
 
-    echo "package schemata" >schemata/empty.cue
-    cue export ./schemata \
-        -e 'strata.text' \
-        --outfile schemata.txt \
-        --force
+    make priorities.txt
 
-    cat desiderata/*.txt \
-    | { grep \
-        --invert-match \
-        --line-regexp \
-        --fixed-strings \
-        --file=schemata.txt \
-    || true ; } \
-    | sort -Vr \
-    | awk '
-        BEGIN{prev=""; pri=0}
-        {cur=$1}
-        prev==cur{pri++}
-        prev!=cur{prev=cur; pri=0}
-        {print $0, pri}' \
-    | sort -k3 \
-    >desiderata.txt
-
-    head --lines=${num_to_process} desiderata.txt \
+    tail --lines=${num_to_process} priorities.txt \
     | while read address version priority; do
         ./bin/generate-schema-for-provider-version.sh "${address}" "${version}"
         _log "${log_prefix}: sleeping ${delay_sec}"

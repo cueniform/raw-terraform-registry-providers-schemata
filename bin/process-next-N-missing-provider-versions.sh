@@ -7,7 +7,7 @@ function cleanup() {
 }
 
 function main() {
-    local num_to_process="$1"
+    local num_to_process="${1:-1}"
     local delay_sec="${2:-0}s"
 
     local log_prefix="main"

@@ -6,6 +6,11 @@ DELAY?=0
 .PHONY: test
 test: clean-1 test_e2e clean-2
 
+.PHONY: quick
+quick: clean-1
+	./bin/generate-desiderata-for-all-providers.sh      0
+	./bin/process-next-N-missing-provider-versions.sh 1 0
+
 .PHONY: test_e2e
 test_e2e:
 	./bin/generate-desiderata-for-all-providers.sh      $(DELAY)

@@ -2,10 +2,10 @@ default: # no-op default target, defined at end of file
 
 SHELL:=/bin/bash -euo pipefail
 
-.PHONY: test
-test:
+.PHONY: test quick
+test quick:
 	$(TESTMSG)
-	$(MAKE) -C test/ test
+	$(MAKE) -C test/ "$@"
 
 .PHONY: clean
 clean:

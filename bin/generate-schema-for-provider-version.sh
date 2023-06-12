@@ -1,8 +1,15 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+trap 'cleanup' EXIT
+
+dir_tf="$(mktemp -d --tmpdir=.)"
+
 function cleanup() {
-    :
+    _log_cmd \
+        rm -vf schemata/registry.terraform.io_*.json
+    _log_cmd \
+        rm -fr "${dir_tf}"
 }
 
 function setup() {
@@ -10,9 +17,6 @@ function setup() {
     local provider_version="$2"
 
     local log_prefix="${provider_address}/${provider_version}: setup"
-    _log "${log_prefix}"
-
-    local dir_tf="$(mktemp -d --tmpdir=.)"
     _log "${log_prefix}: using dir: ${dir_tf}"
 
     _log_cmd \
@@ -102,10 +106,6 @@ function main() {
     >"${path_metadata_cue}"
 
     echo "${dir_base}/${file_base}"
-
-    _log_cmd \
-        rm -rf "${dir_tf}"
-    cleanup
 }
 
 SCRIPT_DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"

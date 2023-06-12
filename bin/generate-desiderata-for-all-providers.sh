@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+trap 'cleanup' EXIT
+
 function cleanup() { :
     _log_cmd \
         rm -vf "tmp.sd.*"
@@ -93,8 +95,6 @@ function main() {
         _log "main: sleeping ${delay_secs}"
         sleep "${delay_secs}"
     done
-
-    cleanup
 }
 
 SCRIPT_DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"

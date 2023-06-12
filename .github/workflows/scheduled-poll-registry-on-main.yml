@@ -42,7 +42,7 @@ jobs:
           version: "v0.6.0-alpha.1"
 
       - name: "Install Terraform"
-        uses: "hashicorp/setup-terraform"
+        uses: "hashicorp/setup-terraform@v2"
         with:
           terraform_version: "1.4.x"
           terraform_wrapper: false

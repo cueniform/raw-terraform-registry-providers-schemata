@@ -57,7 +57,7 @@ jobs:
 
           git add -v desiderata
 
-          if git commit -m "Registry poller: new provider versions added"; then
+          if git commit -m "[bot] poller: $(git diff --cached --shortstat desiderata)"; then
             git push -v
           else
             echo "Registry poller: nothing to do"

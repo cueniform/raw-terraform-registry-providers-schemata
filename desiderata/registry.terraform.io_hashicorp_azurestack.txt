@@ -1,0 +1,7 @@
+registry.terraform.io/hashicorp/azurestack 0.6.0
+registry.terraform.io/hashicorp/azurestack 0.8.0
+registry.terraform.io/hashicorp/azurestack 0.8.1
+registry.terraform.io/hashicorp/azurestack 0.9.0
+registry.terraform.io/hashicorp/azurestack 0.10.0
+registry.terraform.io/hashicorp/azurestack 0.11.0
+registry.terraform.io/hashicorp/azurestack 1.0.0

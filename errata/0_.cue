@@ -1,3 +1,3 @@
 package errata
 
-"0": "": "https://github.com/cueniform/raw-terraform-registry-providers-schemata/actions/runs/5256998603"
+"0": "": "https://github.com/cueniform/raw-terraform-registry-providers-schemata/actions/runs/5258224762"

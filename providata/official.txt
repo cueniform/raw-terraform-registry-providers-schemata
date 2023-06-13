@@ -25,7 +25,6 @@ registry.terraform.io/hashicorp/null
 registry.terraform.io/hashicorp/opc
 registry.terraform.io/hashicorp/oraclepaas
 registry.terraform.io/hashicorp/random
-registry.terraform.io/hashicorp/salesforce
 registry.terraform.io/hashicorp/template
 registry.terraform.io/hashicorp/tfe
 registry.terraform.io/hashicorp/time

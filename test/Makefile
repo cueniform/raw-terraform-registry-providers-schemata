@@ -1,5 +1,5 @@
-include ../make/defaults.mk
-include ../make/files.mk
+include make/defaults.mk
+include make/files.mk
 
 DELAY?=0
 

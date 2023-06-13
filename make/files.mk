@@ -30,11 +30,6 @@ priorities.txt: delta.txt
 	# $@
 	@cat delta.txt \
 	| sort -Vr \
-	| awk ' \
-	    BEGIN{prev=""; pri=0} \
-	    {cur=$$1} \
-	    prev==cur{pri++} \
-	    prev!=cur{prev=cur; pri=0} \
-	    {print $$0, pri}' \
+	| awk --file=make/priorities.awk \
 	| sort -rk3 \
 	>"$@"

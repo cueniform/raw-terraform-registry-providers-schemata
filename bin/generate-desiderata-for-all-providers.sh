@@ -89,6 +89,8 @@ function main() {
     local delay_secs="${1:-0}s"
     _log "main: delay=${delay_secs}"
 
+    _log_cmd \
+        rm -vf desiderata/*.txt
     cat providata/*.txt \
     | while IFS=/ read h n t; do
         process_provider "${h}" "${n}" "${t}"

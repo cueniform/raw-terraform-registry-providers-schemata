@@ -28,7 +28,7 @@ versions: [...#version]
 				for k in X.protocols {
 					*strconv.ParseFloat(k, 64) | 1.0
 				}]
-			max: list.Max(new.protocols.to_float)
+			max: *list.Max(new.protocols.to_float) | 1.0
 		}
 	}
 }

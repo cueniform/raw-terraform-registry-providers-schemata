@@ -16,6 +16,8 @@ function main() {
     _log "${log_prefix}: delay=${delay_sec}"
 
     make priorities.txt
+    _log_cmd \
+        tail --lines=${num_to_process} priorities.txt
 
     tail --lines=${num_to_process} priorities.txt \
     | while read address version priority; do

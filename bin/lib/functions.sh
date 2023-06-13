@@ -1,7 +1,7 @@
 function _log() {
     local message="$1"
 
-    echo "# $(date -uIns): ${message}" >&2
+    echo "# $(date -uIs): ${message}" >&2
 }
 
 function _log_stream() {

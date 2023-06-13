@@ -2,17 +2,19 @@ name: scheduled/main/fetch-missing-provider-schemas
 
 "on":
   schedule:
-#            42 minutes past every other hour from 04:42 to 23:42 inclusive
-    - cron: "42 4-23/2 * * *"
+#            42 minutes past every hour from 04:42 to 23:42 inclusive
+    - cron: "42 4-23 * * *"
   workflow_dispatch:
     inputs:
       count:
         description: "(int) Number of schemas to fetch"
+        type: "number"
+        default: 20
         required: false
-        type: "number"
       delay:
-        description: "(int) The delay in seconds between each schema being fetched"
+        description: "(int) Delay in seconds between each schema being fetched"
         type: "number"
+        default: 5
         required: false
 
 concurrency: "main"
@@ -32,8 +34,8 @@ jobs:
     permissions:
       contents: "write"
     env:
-      DELAY: "${{ inputs.delay  || 5 }}"
-      COUNT: "${{ inputs.count || 20 }}"
+      DELAY: "${{ inputs.delay || 15 }}"
+      COUNT: "${{ inputs.count || 50 }}"
     steps:
 
       - name: "Check out code"

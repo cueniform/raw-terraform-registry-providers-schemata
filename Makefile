@@ -10,3 +10,4 @@ test quick:
 clean:
 	$(MSG)
 	$(MAKE) -C test/ clean
+	rm -vf schemata/empty.cue schemata.txt delta.txt priorities.txt

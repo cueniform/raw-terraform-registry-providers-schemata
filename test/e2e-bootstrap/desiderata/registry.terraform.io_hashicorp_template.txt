@@ -1,0 +1,4 @@
+registry.terraform.io/hashicorp/template 2.1.0
+registry.terraform.io/hashicorp/template 2.1.1
+registry.terraform.io/hashicorp/template 2.1.2
+registry.terraform.io/hashicorp/template 2.2.0

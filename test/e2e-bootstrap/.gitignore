@@ -1,0 +1,9 @@
+# files generated during tests, which musn't trigger the non-clean-directory # assertion
+schemata/registry.terraform.io_hashicorp_oraclepaas_1.5.3.json.zst
+schemata/registry.terraform.io_hashicorp_oraclepaas_1.5.3.metadata.cue
+schemata/registry.terraform.io_hashicorp_template_2.1.1.json.zst
+schemata/registry.terraform.io_hashicorp_template_2.1.1.metadata.cue
+schemata/registry.terraform.io_hashicorp_template_2.1.2.json.zst
+schemata/registry.terraform.io_hashicorp_template_2.1.2.metadata.cue
+schemata/registry.terraform.io_hashicorp_template_2.2.0.json.zst
+schemata/registry.terraform.io_hashicorp_template_2.2.0.metadata.cue

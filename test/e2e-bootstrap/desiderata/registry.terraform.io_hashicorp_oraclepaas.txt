@@ -1,0 +1,2 @@
+registry.terraform.io/hashicorp/oraclepaas 1.5.2
+registry.terraform.io/hashicorp/oraclepaas 1.5.3

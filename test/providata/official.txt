@@ -1,2 +1,0 @@
-registry.terraform.io/hashicorp/hashicups
-registry.terraform.io/hashicorp/null

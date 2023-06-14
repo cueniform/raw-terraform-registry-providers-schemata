@@ -2,6 +2,7 @@ include make/defaults.mk
 include make/files.mk
 
 DELAY?=0
+export RUNNING_IN_TEST=true
 
 .PHONY: test
 test: clean-1 test_e2e clean-2

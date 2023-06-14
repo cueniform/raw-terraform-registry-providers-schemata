@@ -34,7 +34,7 @@ function record_errata() {
     local address="${1}"
     local version="${2}"
 
-    _log "errata: adding ${address}/${version}"
+    local log_prefix="errata: ${address}/${version}"
 
     local gha_url
     if [ -z "${GITHUB_ACTIONS:-}" ]; then
@@ -44,6 +44,8 @@ function record_errata() {
     fi
 
     file_errata="errata/automata/$(echo "${address}/${version}" | tr / _).cue"
+
+    _log "${log_prefix}: adding ${file_errata}"
 
     cue export \
         ./internal/templates \
@@ -55,6 +57,19 @@ function record_errata() {
     | sed '1i package errata' \
     | cue fmt - \
     >"${file_errata}"
+
+    if   [ -z "${RUNNING_IN_TEST:-}" ]; then
+        _log "${log_prefix}: running inside a test; not opening an Issue"
+    elif [ -z "${GITHUB_ACTIONS:-}" ]; then
+        _log "${log_prefix}: not running inside GHA; not opening an Issue"
+    else
+        _log_cmd \
+            gh issue create \
+            --title    "errata: ${address} ${version} failed to install" \
+            --body     "File: \`${file_errata}\`\nGHA run: ${gha_url}" \
+            --assignee "@jpluscplusm"
+    fi
+
 }
 
 SCRIPT_DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"

@@ -11,7 +11,7 @@ test quick: FORCE
 
 clean: FORCE
 	$(MSG)
-	git clean -n -dfX $(GIT_PATH)
+	git clean -dfX $(GIT_PATH)
 
 desiderata/: FORCE
 	$(MSG)

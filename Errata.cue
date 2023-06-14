@@ -4,12 +4,8 @@ import (
 	"cueniform.com/collector/errata/automata:errata"
 )
 
-_errata: {
-	errata
-}
-
 provider: {
-	for provider_address, versions in _errata
+	for provider_address, versions in errata
 	for provider_version, problem in versions {
 		(provider_address): (provider_version): {
 			error: problem

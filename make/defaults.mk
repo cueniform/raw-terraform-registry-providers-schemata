@@ -1,4 +1,8 @@
-default: # no-op default target, defined at end of file
+default: # no-op default target
+	$(MSG)
+	false
+
+FORCE: ;
 
 SHELL:=/bin/bash -euo pipefail
 MAKEFLAGS+=--no-builtin-rules
@@ -21,7 +25,3 @@ define MSG
 # $(BOLD_GREEN)Making: $@$(COLOUR_RESET)
 #
 endef
-
-default:
-	$(MSG)
-	false

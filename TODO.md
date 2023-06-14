@@ -1,7 +1,5 @@
 # TODO
 
-- Stop using GHA runner's built-in `terraform`.
-
 - Use for provider polling age-related queue:
 
    ```

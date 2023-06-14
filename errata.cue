@@ -1,7 +1,7 @@
 package schemata
 
 import (
-	"cueniform.com/collector/errata"
+	"cueniform.com/collector/errata/automata:errata"
 )
 
 _errata: {

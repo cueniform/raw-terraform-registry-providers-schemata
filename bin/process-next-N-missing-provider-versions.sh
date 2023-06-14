@@ -43,7 +43,7 @@ function record_errata() {
         gha_url="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
     fi
 
-    file_errata="errata/$(echo "${address}/${version}" | tr / _).cue"
+    file_errata="errata/automata/$(echo "${address}/${version}" | tr / _).cue"
 
     cue export \
         ./internal/templates \

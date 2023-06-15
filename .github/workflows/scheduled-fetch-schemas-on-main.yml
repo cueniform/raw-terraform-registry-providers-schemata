@@ -55,6 +55,9 @@ jobs:
           terraform_version: "1.4.x"
           terraform_wrapper: false
 
+      - name: "Build download list"
+        run: "make priorities.txt"
+
       - name: "Fetch provider schemas (up to ${{ env.COUNT }})"
         env:
           GH_TOKEN: "${{ github.token }}"

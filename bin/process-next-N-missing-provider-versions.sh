@@ -58,7 +58,7 @@ function record_errata() {
     | cue fmt - \
     >"${file_errata}"
 
-    if   [ -z "${RUNNING_IN_TEST:-}" ]; then
+    if ! [ -z "${RUNNING_IN_TEST:-}" ]; then
         _log "${log_prefix}: running inside a test; not opening an Issue"
     elif [ -z "${GITHUB_ACTIONS:-}" ]; then
         _log "${log_prefix}: not running inside GHA; not opening an Issue"

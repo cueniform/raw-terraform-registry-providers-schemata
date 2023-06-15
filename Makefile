@@ -7,7 +7,7 @@ GIT_PATH=.
 
 test: FORCE
 	$(TESTMSG)
-	$(MAKE) -C test/ "$@"
+	$(MAKE) -j -C test/ test
 
 clean: FORCE
 	$(MSG)

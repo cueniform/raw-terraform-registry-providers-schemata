@@ -4,7 +4,7 @@ export DELAY?=0
 export RUNNING_IN_TEST:=true
 
 DRUN=cd "$(@)" &&
-TEST=$(DRUN) $(MAKE)
+TEST=$(DRUN) $(MAKE) --jobs=1
 ASSERT_SCHEMATA=$(DRUN) cue export ./schemata | cue vet -c .:tests json: -
 
 test: FORCE
@@ -17,7 +17,6 @@ generate-desiderata-from-provider-list: FORCE
 	$(TEST) desiderata/ check_clean_working_tree
 
 e2e-bootstrap: FORCE
-	$(DRUN) rm -f desiderata/*.txt
 	$(TEST) desiderata/ check_clean_working_tree
 
 	$(ASSERT_SCHEMATA) -d before.definition

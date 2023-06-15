@@ -1,6 +1,6 @@
 package errata
 
-"registry.terraform.io/aztfmod/azurecaf":
-	"2.0.0-preview-2":
+"registry.terraform.io/heroku/heroku":
+	"5.1.13-pre.2":
 		"failed to retrieve authentication checksums for provider:" +
 		" 404 Not Found returned from github.com"

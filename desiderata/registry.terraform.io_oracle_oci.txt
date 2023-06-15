@@ -63,3 +63,4 @@ registry.terraform.io/oracle/oci 4.121.0
 registry.terraform.io/oracle/oci 4.122.0
 registry.terraform.io/oracle/oci 4.123.0
 registry.terraform.io/oracle/oci 5.0.0
+registry.terraform.io/oracle/oci 5.1.0

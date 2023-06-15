@@ -1,0 +1,9 @@
+registry.terraform.io/statuscakedev/statuscake 1.0.1
+registry.terraform.io/statuscakedev/statuscake 2.0.0-pre
+registry.terraform.io/statuscakedev/statuscake 2.0.1-pre
+registry.terraform.io/statuscakedev/statuscake 2.0.2-pre
+registry.terraform.io/statuscakedev/statuscake 2.0.3
+registry.terraform.io/statuscakedev/statuscake 2.0.4
+registry.terraform.io/statuscakedev/statuscake 2.0.5
+registry.terraform.io/statuscakedev/statuscake 2.0.6
+registry.terraform.io/statuscakedev/statuscake 2.1.0

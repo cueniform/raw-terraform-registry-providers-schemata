@@ -63,10 +63,10 @@ function record_errata() {
     elif [ -z "${GITHUB_ACTIONS:-}" ]; then
         _log "${log_prefix}: not running inside GHA; not opening an Issue"
     else
-        _log_cmd \
-            gh issue create \
-            --title    "\"errata: ${address} ${version} failed to install\"" \
-            --body     "\"File: \`${file_errata}\`\nGHA run: ${gha_url}\"" \
+        _log "${log_prefix}: opening a new issue:"
+        gh issue create \
+            --title    "errata: ${address} ${version} failed to install" \
+            --body     "File: \`${file_errata}\`\nGHA run: ${gha_url}" \
             --assignee "@jpluscplusm"
     fi
 

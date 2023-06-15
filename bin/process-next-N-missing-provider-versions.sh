@@ -66,7 +66,7 @@ function record_errata() {
         _log "${log_prefix}: opening a new issue:"
         gh issue create \
             --title    "errata: ${address} ${version} failed to install" \
-            --body     "File: \`${file_errata}\`\nGHA run: ${gha_url}" \
+            --body     "File: \`${file_errata}\` GHA run: ${gha_url}" \
             --assignee "jpluscplusm"
     fi
 

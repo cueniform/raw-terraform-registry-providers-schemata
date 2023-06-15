@@ -24,21 +24,23 @@ check_clean_working_tree: FORCE
 	$(TESTMSG)
 	test -z "$$(git status --porcelain $(GIT_PATH))" || { git status $(GIT_PATH); git diff $(GIT_PATH); false; }
 
-.INTERMEDIATE: schemata/empty.cue
 schemata/empty.cue:
 	# $@
 	@echo "package schemata" >"$@"
 
-.PHONY .INTERMEDIATE: schemata.txt
 schemata.txt: schemata/empty.cue
+schemata.txt: $(wildcard schemata/*.metadata.cue)
+schemata.txt: $(shell grep --files-with-matches '^package schemata$$' *.cue)
+schemata.txt:
 	# $@
 	@cue export ./schemata \
 	  -e 'inventory.text' \
 	  --out text \
 	>"$@"
 
-.INTERMEDIATE: delta.txt
-delta.txt: schemata.txt $(wildcard desiderata/*.txt)
+delta.txt: schemata.txt
+delta.txt: $(wildcard desiderata/*.txt)
+delta.txt:
 	# $@
 	@cat desiderata/*.txt \
 	| { grep \

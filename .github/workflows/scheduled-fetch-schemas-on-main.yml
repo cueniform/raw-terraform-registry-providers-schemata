@@ -33,6 +33,7 @@ jobs:
     runs-on: "ubuntu-latest"
     permissions:
       contents: "write"
+      issues: "write"
     env:
       DELAY: "${{ inputs.delay || 15 }}"
       COUNT: "${{ inputs.count || 50 }}"

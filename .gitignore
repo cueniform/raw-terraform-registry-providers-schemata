@@ -1,10 +1,4 @@
-/tmp/
-
-/test/schemata/registry.terraform.io_*.metadata.cue
-/test/schemata/registry.terraform.io_*.json.zst
-/test/desiderata/registry.terraform.io_*.txt
-
-schemata/empty.cue
+**/schemata/empty.cue
 schemata.txt
 delta.txt
 priorities.txt

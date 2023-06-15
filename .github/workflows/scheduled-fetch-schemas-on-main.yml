@@ -55,6 +55,7 @@ jobs:
           terraform_wrapper: false
 
       - name: "Fetch provider schemas (up to ${{ env.COUNT }})"
+        env: GH_TOKEN: "${{ github.token }}"
         run: "./bin/process-next-N-missing-provider-versions.sh ${COUNT} ${DELAY}"
 
       - name: "Commit and push to main"

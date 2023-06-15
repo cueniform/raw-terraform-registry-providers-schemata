@@ -7,7 +7,7 @@ GIT_PATH=.
 
 test: FORCE
 	$(TESTMSG)
-	$(MAKE) -j -C test/ test
+	$(MAKE) --jobs --output-sync=target -C test/ test
 
 clean: FORCE
 	$(MSG)

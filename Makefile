@@ -5,7 +5,7 @@ DELAY?=5
 COUNT?=20
 GIT_PATH=.
 
-test quick: FORCE
+test: FORCE
 	$(TESTMSG)
 	$(MAKE) -C test/ "$@"
 

@@ -213,3 +213,4 @@ registry.terraform.io/jfrog/artifactory 7.11.0
 registry.terraform.io/jfrog/artifactory 7.11.1
 registry.terraform.io/jfrog/artifactory 7.11.2
 registry.terraform.io/jfrog/artifactory 8.0.0
+registry.terraform.io/jfrog/artifactory 8.1.0

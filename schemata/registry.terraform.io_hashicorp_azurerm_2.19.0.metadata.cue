@@ -1,0 +1,31 @@
+package schemata
+
+provider: "registry.terraform.io/hashicorp/azurerm": "2.19.0": {
+	generated: {
+		at: "2023-06-17T14:48:26+00:00"
+		by: {
+			terraform: {
+				version:  "1.4.6"
+				platform: "linux_amd64"
+				provider: {
+					address: "registry.terraform.io/hashicorp/azurerm"
+					version: "2.19.0"
+				}
+			}
+			commit: id: "3207d3741c44db45432229682c83358ac28396ca"
+		}
+	}
+	content: {
+		uncompressed: {
+			file:  "registry.terraform.io_hashicorp_azurerm_2.19.0.json"
+			bytes: "990178"
+			hash: md5: "15c2ca176ec3e7970a3f4b4d61da2472"
+		}
+		compressed: {
+			file:  "registry.terraform.io_hashicorp_azurerm_2.19.0.json.zst"
+			bytes: "34100"
+			hash: md5: "36e5fc5186fe6cfcf3337bb4071143b5"
+		}
+	}
+	error: null
+}

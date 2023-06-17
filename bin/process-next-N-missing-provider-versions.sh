@@ -58,6 +58,11 @@ function record_errata() {
     | cue fmt - \
     >"${file_errata}"
 
+    # Don't open issues from now on. Wait until the 1st/2nd-failure logic is
+    # implemented
+
+    return
+
     if ! [ -z "${RUNNING_IN_TEST:-}" ]; then
         _log "${log_prefix}: running inside a test; not opening an Issue"
     elif [ -z "${GITHUB_ACTIONS:-}" ]; then

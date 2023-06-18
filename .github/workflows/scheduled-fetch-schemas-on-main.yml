@@ -2,8 +2,7 @@ name: scheduled/main/fetch-missing-provider-schemas
 
 "on":
   schedule:
-#            42 minutes past every hour from 04:42 to 23:42 inclusive
-    - cron: "42 4-23 * * *"
+    - cron: "42 5-6 * * *"
   workflow_dispatch:
     inputs:
       count:

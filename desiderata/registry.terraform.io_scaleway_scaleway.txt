@@ -46,3 +46,4 @@ registry.terraform.io/scaleway/scaleway 2.18.0
 registry.terraform.io/scaleway/scaleway 2.19.0
 registry.terraform.io/scaleway/scaleway 2.20.0
 registry.terraform.io/scaleway/scaleway 2.21.0
+registry.terraform.io/scaleway/scaleway 2.22.0

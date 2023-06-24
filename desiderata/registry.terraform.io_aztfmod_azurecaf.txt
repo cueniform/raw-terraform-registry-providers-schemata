@@ -38,6 +38,7 @@ registry.terraform.io/aztfmod/azurecaf 1.2.23
 registry.terraform.io/aztfmod/azurecaf 1.2.24
 registry.terraform.io/aztfmod/azurecaf 1.2.24-preview
 registry.terraform.io/aztfmod/azurecaf 1.2.25
+registry.terraform.io/aztfmod/azurecaf 1.2.26
 registry.terraform.io/aztfmod/azurecaf 2.0.0-preview3
 registry.terraform.io/aztfmod/azurecaf 2.0.0-preview-1
 registry.terraform.io/aztfmod/azurecaf 2.0.0-preview-2

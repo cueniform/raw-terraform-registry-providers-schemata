@@ -47,4 +47,5 @@ registry.terraform.io/splunk-terraform/signalfx 6.21.0
 registry.terraform.io/splunk-terraform/signalfx 6.22.0
 registry.terraform.io/splunk-terraform/signalfx 6.23.0
 registry.terraform.io/splunk-terraform/signalfx 6.24.0
+registry.terraform.io/splunk-terraform/signalfx 7.0.0
 registry.terraform.io/splunk-terraform/signalfx 7.0.0-beta1

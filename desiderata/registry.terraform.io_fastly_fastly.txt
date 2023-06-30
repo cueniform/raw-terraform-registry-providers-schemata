@@ -66,3 +66,4 @@ registry.terraform.io/fastly/fastly 5.0.0
 registry.terraform.io/fastly/fastly 5.1.0
 registry.terraform.io/fastly/fastly 5.2.0
 registry.terraform.io/fastly/fastly 5.2.1
+registry.terraform.io/fastly/fastly 5.2.2

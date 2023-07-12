@@ -122,3 +122,4 @@ registry.terraform.io/spotinst/spotinst 1.122.2
 registry.terraform.io/spotinst/spotinst 1.123.0
 registry.terraform.io/spotinst/spotinst 1.124.0
 registry.terraform.io/spotinst/spotinst 1.125.0
+registry.terraform.io/spotinst/spotinst 1.125.1

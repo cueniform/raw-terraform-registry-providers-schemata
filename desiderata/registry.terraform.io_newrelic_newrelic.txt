@@ -152,3 +152,4 @@ registry.terraform.io/newrelic/newrelic 3.24.1
 registry.terraform.io/newrelic/newrelic 3.24.2
 registry.terraform.io/newrelic/newrelic 3.25.0
 registry.terraform.io/newrelic/newrelic 3.25.1
+registry.terraform.io/newrelic/newrelic 3.25.2

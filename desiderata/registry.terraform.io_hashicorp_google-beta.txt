@@ -202,3 +202,4 @@ registry.terraform.io/hashicorp/google-beta 4.71.0
 registry.terraform.io/hashicorp/google-beta 4.72.0
 registry.terraform.io/hashicorp/google-beta 4.72.1
 registry.terraform.io/hashicorp/google-beta 4.73.0
+registry.terraform.io/hashicorp/google-beta 4.73.1

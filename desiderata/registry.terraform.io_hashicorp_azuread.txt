@@ -66,3 +66,4 @@ registry.terraform.io/hashicorp/azuread 2.37.1
 registry.terraform.io/hashicorp/azuread 2.37.2
 registry.terraform.io/hashicorp/azuread 2.38.0
 registry.terraform.io/hashicorp/azuread 2.39.0
+registry.terraform.io/hashicorp/azuread 2.40.0

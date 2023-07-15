@@ -25,3 +25,4 @@ registry.terraform.io/f5networks/bigip 1.16.2
 registry.terraform.io/f5networks/bigip 1.17.0
 registry.terraform.io/f5networks/bigip 1.17.1
 registry.terraform.io/f5networks/bigip 1.18.0
+registry.terraform.io/f5networks/bigip 1.18.1

@@ -72,3 +72,4 @@ registry.terraform.io/strongdm/sdm 4.2.0
 registry.terraform.io/strongdm/sdm 4.3.0
 registry.terraform.io/strongdm/sdm 4.4.0
 registry.terraform.io/strongdm/sdm 4.5.0
+registry.terraform.io/strongdm/sdm 5.0.0

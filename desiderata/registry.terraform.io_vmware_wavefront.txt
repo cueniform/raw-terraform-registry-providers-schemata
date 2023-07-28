@@ -18,3 +18,4 @@ registry.terraform.io/vmware/wavefront 3.3.0
 registry.terraform.io/vmware/wavefront 3.4.0
 registry.terraform.io/vmware/wavefront 3.5.0
 registry.terraform.io/vmware/wavefront 3.6.0
+registry.terraform.io/vmware/wavefront 4.0.0

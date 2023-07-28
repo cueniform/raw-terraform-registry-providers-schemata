@@ -34,3 +34,4 @@ registry.terraform.io/ns1-terraform/ns1 2.0.1
 registry.terraform.io/ns1-terraform/ns1 2.0.2
 registry.terraform.io/ns1-terraform/ns1 2.0.3
 registry.terraform.io/ns1-terraform/ns1 2.0.4
+registry.terraform.io/ns1-terraform/ns1 2.0.5

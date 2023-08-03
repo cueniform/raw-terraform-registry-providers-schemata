@@ -30,3 +30,4 @@ registry.terraform.io/dome9/dome9 1.29.0
 registry.terraform.io/dome9/dome9 1.29.2
 registry.terraform.io/dome9/dome9 1.29.3
 registry.terraform.io/dome9/dome9 1.29.4
+registry.terraform.io/dome9/dome9 1.29.5

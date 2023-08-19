@@ -207,3 +207,4 @@ registry.terraform.io/hashicorp/azurerm 3.66.0
 registry.terraform.io/hashicorp/azurerm 3.67.0
 registry.terraform.io/hashicorp/azurerm 3.68.0
 registry.terraform.io/hashicorp/azurerm 3.69.0
+registry.terraform.io/hashicorp/azurerm 3.70.0

@@ -61,3 +61,4 @@ registry.terraform.io/pagerduty/pagerduty 2.15.0
 registry.terraform.io/pagerduty/pagerduty 2.15.1
 registry.terraform.io/pagerduty/pagerduty 2.15.2
 registry.terraform.io/pagerduty/pagerduty 2.15.3
+registry.terraform.io/pagerduty/pagerduty 2.16.0

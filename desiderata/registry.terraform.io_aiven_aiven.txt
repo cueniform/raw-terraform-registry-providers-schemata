@@ -80,3 +80,4 @@ registry.terraform.io/aiven/aiven 4.4.1
 registry.terraform.io/aiven/aiven 4.5.0
 registry.terraform.io/aiven/aiven 4.6.0
 registry.terraform.io/aiven/aiven 4.7.0
+registry.terraform.io/aiven/aiven 4.8.0

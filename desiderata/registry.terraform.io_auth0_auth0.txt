@@ -33,3 +33,4 @@ registry.terraform.io/auth0/auth0 0.50.0
 registry.terraform.io/auth0/auth0 0.50.1
 registry.terraform.io/auth0/auth0 1.0.0-beta.0
 registry.terraform.io/auth0/auth0 1.0.0-beta.1
+registry.terraform.io/auth0/auth0 1.0.0-beta.2

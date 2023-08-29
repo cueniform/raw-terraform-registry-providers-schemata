@@ -19,6 +19,7 @@ registry.terraform.io/hashicorp/nomad 1.4.17
 registry.terraform.io/hashicorp/nomad 1.4.18
 registry.terraform.io/hashicorp/nomad 1.4.19
 registry.terraform.io/hashicorp/nomad 1.4.20
+registry.terraform.io/hashicorp/nomad 2.0.0
 registry.terraform.io/hashicorp/nomad 2.0.0-beta.1
 registry.terraform.io/hashicorp/nomad 2.0.0-rc.1
 registry.terraform.io/hashicorp/nomad 2.0.0-rc.2

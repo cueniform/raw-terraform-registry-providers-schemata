@@ -47,3 +47,4 @@ registry.terraform.io/akamai/akamai 4.1.0
 registry.terraform.io/akamai/akamai 5.0.0
 registry.terraform.io/akamai/akamai 5.0.1
 registry.terraform.io/akamai/akamai 5.1.0
+registry.terraform.io/akamai/akamai 5.2.0

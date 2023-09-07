@@ -55,3 +55,4 @@ registry.terraform.io/grafana/grafana 1.43.0
 registry.terraform.io/grafana/grafana 2.0.0
 registry.terraform.io/grafana/grafana 2.1.0
 registry.terraform.io/grafana/grafana 2.2.0
+registry.terraform.io/grafana/grafana 2.3.0

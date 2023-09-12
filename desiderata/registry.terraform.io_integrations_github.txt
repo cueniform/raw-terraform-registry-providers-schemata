@@ -90,3 +90,4 @@ registry.terraform.io/integrations/github 5.32.0
 registry.terraform.io/integrations/github 5.33.0
 registry.terraform.io/integrations/github 5.34.0
 registry.terraform.io/integrations/github 5.35.0
+registry.terraform.io/integrations/github 5.36.0

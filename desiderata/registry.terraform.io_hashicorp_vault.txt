@@ -61,3 +61,4 @@ registry.terraform.io/hashicorp/vault 3.17.0
 registry.terraform.io/hashicorp/vault 3.18.0
 registry.terraform.io/hashicorp/vault 3.19.0
 registry.terraform.io/hashicorp/vault 3.20.0
+registry.terraform.io/hashicorp/vault 3.20.1

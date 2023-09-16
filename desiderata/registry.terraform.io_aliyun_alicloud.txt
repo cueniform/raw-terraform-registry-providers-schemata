@@ -139,3 +139,4 @@ registry.terraform.io/aliyun/alicloud 1.208.0
 registry.terraform.io/aliyun/alicloud 1.208.1
 registry.terraform.io/aliyun/alicloud 1.209.0
 registry.terraform.io/aliyun/alicloud 1.209.1
+registry.terraform.io/aliyun/alicloud 1.210.0

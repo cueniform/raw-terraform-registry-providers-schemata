@@ -62,3 +62,4 @@ registry.terraform.io/confluentinc/confluent 1.49.0
 registry.terraform.io/confluentinc/confluent 1.50.0
 registry.terraform.io/confluentinc/confluent 1.51.0
 registry.terraform.io/confluentinc/confluent 1.52.0
+registry.terraform.io/confluentinc/confluent 1.53.0

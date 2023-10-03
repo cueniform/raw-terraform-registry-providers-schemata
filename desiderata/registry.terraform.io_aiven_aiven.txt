@@ -64,6 +64,7 @@ registry.terraform.io/aiven/aiven 3.13.0
 registry.terraform.io/aiven/aiven 3.13.1
 registry.terraform.io/aiven/aiven 3.13.2
 registry.terraform.io/aiven/aiven 3.13.3
+registry.terraform.io/aiven/aiven 3.13.4
 registry.terraform.io/aiven/aiven 4.0.0
 registry.terraform.io/aiven/aiven 4.0.0-rc1
 registry.terraform.io/aiven/aiven 4.0.0-rc3

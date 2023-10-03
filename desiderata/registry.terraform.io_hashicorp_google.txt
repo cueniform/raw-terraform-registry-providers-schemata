@@ -215,3 +215,4 @@ registry.terraform.io/hashicorp/google 4.81.0
 registry.terraform.io/hashicorp/google 4.82.0
 registry.terraform.io/hashicorp/google 4.83.0
 registry.terraform.io/hashicorp/google 4.84.0
+registry.terraform.io/hashicorp/google 5.0.0

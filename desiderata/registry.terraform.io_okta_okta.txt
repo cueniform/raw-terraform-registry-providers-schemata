@@ -83,3 +83,4 @@ registry.terraform.io/okta/okta 4.3.0
 registry.terraform.io/okta/okta 4.4.0
 registry.terraform.io/okta/okta 4.4.1
 registry.terraform.io/okta/okta 4.4.2
+registry.terraform.io/okta/okta 4.4.3

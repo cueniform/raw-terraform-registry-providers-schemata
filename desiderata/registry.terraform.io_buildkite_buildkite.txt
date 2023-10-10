@@ -39,3 +39,4 @@ registry.terraform.io/buildkite/buildkite 1.0.0-docs
 registry.terraform.io/buildkite/buildkite 1.0.0-docs.2
 registry.terraform.io/buildkite/buildkite 1.0.1
 registry.terraform.io/buildkite/buildkite 1.0.2
+registry.terraform.io/buildkite/buildkite 1.0.3

@@ -144,3 +144,4 @@ registry.terraform.io/spotinst/spotinst 1.143.0
 registry.terraform.io/spotinst/spotinst 1.144.0
 registry.terraform.io/spotinst/spotinst 1.145.0
 registry.terraform.io/spotinst/spotinst 1.146.0
+registry.terraform.io/spotinst/spotinst 1.147.0

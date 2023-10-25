@@ -73,3 +73,4 @@ registry.terraform.io/lacework/lacework 1.13.3
 registry.terraform.io/lacework/lacework 1.14.0
 registry.terraform.io/lacework/lacework 1.15.0
 registry.terraform.io/lacework/lacework 1.15.1
+registry.terraform.io/lacework/lacework 1.16.0

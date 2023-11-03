@@ -46,3 +46,4 @@ registry.terraform.io/aviatrixsystems/aviatrix 3.0.6
 registry.terraform.io/aviatrixsystems/aviatrix 3.1.0
 registry.terraform.io/aviatrixsystems/aviatrix 3.1.1
 registry.terraform.io/aviatrixsystems/aviatrix 3.1.2
+registry.terraform.io/aviatrixsystems/aviatrix 3.1.3

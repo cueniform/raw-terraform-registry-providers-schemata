@@ -82,3 +82,4 @@ registry.terraform.io/oracle/oci 5.15.0
 registry.terraform.io/oracle/oci 5.16.0
 registry.terraform.io/oracle/oci 5.17.0
 registry.terraform.io/oracle/oci 5.18.0
+registry.terraform.io/oracle/oci 5.19.0

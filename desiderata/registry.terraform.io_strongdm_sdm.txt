@@ -85,3 +85,4 @@ registry.terraform.io/strongdm/sdm 6.0.1
 registry.terraform.io/strongdm/sdm 6.0.3
 registry.terraform.io/strongdm/sdm 6.0.4
 registry.terraform.io/strongdm/sdm 6.0.5
+registry.terraform.io/strongdm/sdm 6.0.6

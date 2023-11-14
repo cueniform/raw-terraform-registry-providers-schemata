@@ -26,3 +26,5 @@ registry.terraform.io/vmware/wavefront 5.0.1
 registry.terraform.io/vmware/wavefront 5.0.2
 registry.terraform.io/vmware/wavefront 5.0.3
 registry.terraform.io/vmware/wavefront 5.0.4
+registry.terraform.io/vmware/wavefront 5.0.5
+registry.terraform.io/vmware/wavefront 5.1.0

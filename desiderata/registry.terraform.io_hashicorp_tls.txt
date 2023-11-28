@@ -14,3 +14,4 @@ registry.terraform.io/hashicorp/tls 4.0.1
 registry.terraform.io/hashicorp/tls 4.0.2
 registry.terraform.io/hashicorp/tls 4.0.3
 registry.terraform.io/hashicorp/tls 4.0.4
+registry.terraform.io/hashicorp/tls 4.0.5

@@ -155,3 +155,4 @@ registry.terraform.io/spotinst/spotinst 1.153.0
 registry.terraform.io/spotinst/spotinst 1.153.1
 registry.terraform.io/spotinst/spotinst 1.155.0
 registry.terraform.io/spotinst/spotinst 1.156.0
+registry.terraform.io/spotinst/spotinst 1.157.0

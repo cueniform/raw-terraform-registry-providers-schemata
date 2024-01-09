@@ -56,3 +56,4 @@ registry.terraform.io/hashicorp/kubernetes 2.23.0
 registry.terraform.io/hashicorp/kubernetes 2.24.0
 registry.terraform.io/hashicorp/kubernetes 2.25.0
 registry.terraform.io/hashicorp/kubernetes 2.25.1
+registry.terraform.io/hashicorp/kubernetes 2.25.2

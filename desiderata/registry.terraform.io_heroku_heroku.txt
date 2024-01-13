@@ -56,3 +56,4 @@ registry.terraform.io/heroku/heroku 5.2.5
 registry.terraform.io/heroku/heroku 5.2.6
 registry.terraform.io/heroku/heroku 5.2.7
 registry.terraform.io/heroku/heroku 5.2.7-pre.1
+registry.terraform.io/heroku/heroku 5.2.8

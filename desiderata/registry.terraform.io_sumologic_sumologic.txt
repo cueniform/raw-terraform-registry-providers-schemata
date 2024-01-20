@@ -60,3 +60,4 @@ registry.terraform.io/sumologic/sumologic 2.25.0
 registry.terraform.io/sumologic/sumologic 2.26.0
 registry.terraform.io/sumologic/sumologic 2.27.0
 registry.terraform.io/sumologic/sumologic 2.28.0
+registry.terraform.io/sumologic/sumologic 2.28.1

@@ -26,3 +26,4 @@ registry.terraform.io/hashicorp/boundary 1.1.9
 registry.terraform.io/hashicorp/boundary 1.1.10
 registry.terraform.io/hashicorp/boundary 1.1.11
 registry.terraform.io/hashicorp/boundary 1.1.12
+registry.terraform.io/hashicorp/boundary 1.1.13

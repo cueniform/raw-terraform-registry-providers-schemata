@@ -85,3 +85,4 @@ registry.terraform.io/pagerduty/pagerduty 3.6.0
 registry.terraform.io/pagerduty/pagerduty 3.7.0
 registry.terraform.io/pagerduty/pagerduty 3.7.1
 registry.terraform.io/pagerduty/pagerduty 3.8.0
+registry.terraform.io/pagerduty/pagerduty 3.8.1

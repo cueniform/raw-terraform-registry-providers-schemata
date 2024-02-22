@@ -102,3 +102,4 @@ registry.terraform.io/databricks/databricks 1.36.0
 registry.terraform.io/databricks/databricks 1.36.1
 registry.terraform.io/databricks/databricks 1.36.2
 registry.terraform.io/databricks/databricks 1.36.3
+registry.terraform.io/databricks/databricks 1.37.0

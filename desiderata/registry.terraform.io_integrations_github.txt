@@ -105,3 +105,4 @@ registry.terraform.io/integrations/github 6.0.0-alpha
 registry.terraform.io/integrations/github 6.0.0-beta
 registry.terraform.io/integrations/github 6.0.0-rc1
 registry.terraform.io/integrations/github 6.0.0-rc2
+registry.terraform.io/integrations/github 6.0.1

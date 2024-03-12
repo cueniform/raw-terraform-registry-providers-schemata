@@ -12,3 +12,5 @@ registry.terraform.io/hashicorp/local 2.2.3
 registry.terraform.io/hashicorp/local 2.3.0
 registry.terraform.io/hashicorp/local 2.4.0
 registry.terraform.io/hashicorp/local 2.4.1
+registry.terraform.io/hashicorp/local 2.5.0
+registry.terraform.io/hashicorp/local 2.5.1

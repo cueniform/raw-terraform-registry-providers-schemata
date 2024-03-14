@@ -53,3 +53,4 @@ registry.terraform.io/buildkite/buildkite 1.4.0
 registry.terraform.io/buildkite/buildkite 1.4.1
 registry.terraform.io/buildkite/buildkite 1.5.0
 registry.terraform.io/buildkite/buildkite 1.5.1
+registry.terraform.io/buildkite/buildkite 1.5.2

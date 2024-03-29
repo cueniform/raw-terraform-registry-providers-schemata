@@ -6,3 +6,4 @@ registry.terraform.io/hashicorp/ad 0.4.1
 registry.terraform.io/hashicorp/ad 0.4.2
 registry.terraform.io/hashicorp/ad 0.4.3
 registry.terraform.io/hashicorp/ad 0.4.4
+registry.terraform.io/hashicorp/ad 0.5.0

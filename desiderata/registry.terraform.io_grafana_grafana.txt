@@ -77,3 +77,4 @@ registry.terraform.io/grafana/grafana 2.14.0
 registry.terraform.io/grafana/grafana 2.14.1
 registry.terraform.io/grafana/grafana 2.14.2
 registry.terraform.io/grafana/grafana 2.14.3
+registry.terraform.io/grafana/grafana 2.15.0

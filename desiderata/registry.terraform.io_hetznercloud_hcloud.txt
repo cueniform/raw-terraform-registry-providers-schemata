@@ -51,3 +51,4 @@ registry.terraform.io/hetznercloud/hcloud 1.43.0
 registry.terraform.io/hetznercloud/hcloud 1.44.0
 registry.terraform.io/hetznercloud/hcloud 1.44.1
 registry.terraform.io/hetznercloud/hcloud 1.45.0
+registry.terraform.io/hetznercloud/hcloud 1.46.1

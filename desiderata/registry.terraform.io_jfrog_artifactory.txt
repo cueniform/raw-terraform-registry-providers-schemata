@@ -268,3 +268,4 @@ registry.terraform.io/jfrog/artifactory 10.4.1
 registry.terraform.io/jfrog/artifactory 10.4.2
 registry.terraform.io/jfrog/artifactory 10.4.3
 registry.terraform.io/jfrog/artifactory 10.4.4
+registry.terraform.io/jfrog/artifactory 10.5.0

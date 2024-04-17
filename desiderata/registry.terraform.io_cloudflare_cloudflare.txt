@@ -98,3 +98,4 @@ registry.terraform.io/cloudflare/cloudflare 4.26.0
 registry.terraform.io/cloudflare/cloudflare 4.27.0
 registry.terraform.io/cloudflare/cloudflare 4.28.0
 registry.terraform.io/cloudflare/cloudflare 4.29.0
+registry.terraform.io/cloudflare/cloudflare 4.30.0

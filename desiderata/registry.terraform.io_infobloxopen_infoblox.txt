@@ -8,3 +8,4 @@ registry.terraform.io/infobloxopen/infoblox 2.3.0
 registry.terraform.io/infobloxopen/infoblox 2.4.0
 registry.terraform.io/infobloxopen/infoblox 2.4.1
 registry.terraform.io/infobloxopen/infoblox 2.5.0
+registry.terraform.io/infobloxopen/infoblox 2.6.0

@@ -16,3 +16,4 @@ registry.terraform.io/vmware/vcd 3.9.0-beta.2
 registry.terraform.io/vmware/vcd 3.10.0
 registry.terraform.io/vmware/vcd 3.11.0
 registry.terraform.io/vmware/vcd 3.12.0
+registry.terraform.io/vmware/vcd 3.12.1

@@ -18,3 +18,4 @@ registry.terraform.io/vmware/nsxt 3.3.2
 registry.terraform.io/vmware/nsxt 3.4.0
 registry.terraform.io/vmware/nsxt 3.5.0
 registry.terraform.io/vmware/nsxt 3.6.0
+registry.terraform.io/vmware/nsxt 3.6.1

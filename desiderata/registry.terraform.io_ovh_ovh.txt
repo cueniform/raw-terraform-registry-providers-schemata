@@ -37,3 +37,4 @@ registry.terraform.io/ovh/ovh 0.41.0
 registry.terraform.io/ovh/ovh 0.42.0
 registry.terraform.io/ovh/ovh 0.43.0
 registry.terraform.io/ovh/ovh 0.43.1
+registry.terraform.io/ovh/ovh 0.44.0

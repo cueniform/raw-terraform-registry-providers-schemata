@@ -32,3 +32,4 @@ registry.terraform.io/f5networks/bigip 1.20.1
 registry.terraform.io/f5networks/bigip 1.20.2
 registry.terraform.io/f5networks/bigip 1.21.0
 registry.terraform.io/f5networks/bigip 1.22.0
+registry.terraform.io/f5networks/bigip 1.22.1

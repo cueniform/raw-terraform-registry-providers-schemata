@@ -98,3 +98,4 @@ registry.terraform.io/strongdm/sdm 8.0.0
 registry.terraform.io/strongdm/sdm 8.1.0
 registry.terraform.io/strongdm/sdm 9.0.0
 registry.terraform.io/strongdm/sdm 9.1.0
+registry.terraform.io/strongdm/sdm 9.3.0

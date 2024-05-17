@@ -82,3 +82,4 @@ registry.terraform.io/snowflake-labs/snowflake 0.87.3-pre
 registry.terraform.io/snowflake-labs/snowflake 0.88.0
 registry.terraform.io/snowflake-labs/snowflake 0.89.0
 registry.terraform.io/snowflake-labs/snowflake 0.90.0
+registry.terraform.io/snowflake-labs/snowflake 0.91.0

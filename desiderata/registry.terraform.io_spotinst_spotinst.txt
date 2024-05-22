@@ -185,3 +185,4 @@ registry.terraform.io/spotinst/spotinst 1.172.0
 registry.terraform.io/spotinst/spotinst 1.172.1
 registry.terraform.io/spotinst/spotinst 1.172.2
 registry.terraform.io/spotinst/spotinst 1.172.3
+registry.terraform.io/spotinst/spotinst 1.173.0

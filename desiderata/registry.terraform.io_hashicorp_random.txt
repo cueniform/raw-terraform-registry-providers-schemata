@@ -23,3 +23,4 @@ registry.terraform.io/hashicorp/random 3.5.0
 registry.terraform.io/hashicorp/random 3.5.1
 registry.terraform.io/hashicorp/random 3.6.0
 registry.terraform.io/hashicorp/random 3.6.1
+registry.terraform.io/hashicorp/random 3.6.2

@@ -57,3 +57,4 @@ registry.terraform.io/splunk-terraform/signalfx 9.1.0
 registry.terraform.io/splunk-terraform/signalfx 9.1.1
 registry.terraform.io/splunk-terraform/signalfx 9.1.2
 registry.terraform.io/splunk-terraform/signalfx 9.1.3
+registry.terraform.io/splunk-terraform/signalfx 9.1.4

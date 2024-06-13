@@ -97,3 +97,4 @@ registry.terraform.io/pagerduty/pagerduty 3.11.4
 registry.terraform.io/pagerduty/pagerduty 3.12.0
 registry.terraform.io/pagerduty/pagerduty 3.12.1
 registry.terraform.io/pagerduty/pagerduty 3.12.2
+registry.terraform.io/pagerduty/pagerduty 3.13.1

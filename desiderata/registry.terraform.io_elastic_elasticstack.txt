@@ -17,3 +17,4 @@ registry.terraform.io/elastic/elasticstack 0.11.0
 registry.terraform.io/elastic/elasticstack 0.11.1
 registry.terraform.io/elastic/elasticstack 0.11.2
 registry.terraform.io/elastic/elasticstack 0.11.3
+registry.terraform.io/elastic/elasticstack 0.11.4

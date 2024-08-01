@@ -1,0 +1,31 @@
+package schemata
+
+provider: "registry.terraform.io/pagerduty/pagerduty": "3.15.1": {
+	generated: {
+		at: "2024-08-01T05:48:53+00:00"
+		by: {
+			terraform: {
+				version:  "1.4.7"
+				platform: "linux_amd64"
+				provider: {
+					address: "registry.terraform.io/pagerduty/pagerduty"
+					version: "3.15.1"
+				}
+			}
+			commit: id: "6d354ac0f1bed6bfa6e4e651fdec577fbfa629f2"
+		}
+	}
+	content: {
+		uncompressed: {
+			file:  "registry.terraform.io_pagerduty_pagerduty_3.15.1.json"
+			bytes: "78375"
+			hash: md5: "8c60957728e8cf167d430cac1bc905f2"
+		}
+		compressed: {
+			file:  "registry.terraform.io_pagerduty_pagerduty_3.15.1.json.zst"
+			bytes: "4321"
+			hash: md5: "01897bc6851ab4b31f5009945f571e93"
+		}
+	}
+	error: null
+}

@@ -9,3 +9,4 @@ registry.terraform.io/hashicorp/archive 2.3.0
 registry.terraform.io/hashicorp/archive 2.4.0
 registry.terraform.io/hashicorp/archive 2.4.1
 registry.terraform.io/hashicorp/archive 2.4.2
+registry.terraform.io/hashicorp/archive 2.5.0

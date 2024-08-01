@@ -291,3 +291,4 @@ registry.terraform.io/jfrog/artifactory 11.2.0
 registry.terraform.io/jfrog/artifactory 11.2.1
 registry.terraform.io/jfrog/artifactory 11.2.2
 registry.terraform.io/jfrog/artifactory 11.3.0
+registry.terraform.io/jfrog/artifactory 11.4.0

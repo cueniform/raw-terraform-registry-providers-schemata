@@ -19,3 +19,4 @@ registry.terraform.io/hashicorp/consul 2.17.0
 registry.terraform.io/hashicorp/consul 2.18.0
 registry.terraform.io/hashicorp/consul 2.19.0
 registry.terraform.io/hashicorp/consul 2.20.0
+registry.terraform.io/hashicorp/consul 2.21.0

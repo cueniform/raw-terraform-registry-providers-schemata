@@ -43,3 +43,4 @@ registry.terraform.io/dome9/dome9 1.35.1
 registry.terraform.io/dome9/dome9 1.35.2
 registry.terraform.io/dome9/dome9 1.35.3
 registry.terraform.io/dome9/dome9 1.35.4
+registry.terraform.io/dome9/dome9 1.35.5

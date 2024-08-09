@@ -116,3 +116,5 @@ registry.terraform.io/oracle/oci 6.1.0
 registry.terraform.io/oracle/oci 6.2.0
 registry.terraform.io/oracle/oci 6.3.0
 registry.terraform.io/oracle/oci 6.4.0
+registry.terraform.io/oracle/oci 6.5.0
+registry.terraform.io/oracle/oci 6.6.0

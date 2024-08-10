@@ -55,3 +55,4 @@ registry.terraform.io/paloaltonetworks/prismacloud 1.5.4
 registry.terraform.io/paloaltonetworks/prismacloud 1.5.5
 registry.terraform.io/paloaltonetworks/prismacloud 1.5.6
 registry.terraform.io/paloaltonetworks/prismacloud 1.5.7
+registry.terraform.io/paloaltonetworks/prismacloud 1.5.8

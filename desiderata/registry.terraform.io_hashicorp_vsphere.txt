@@ -46,3 +46,4 @@ registry.terraform.io/hashicorp/vsphere 2.7.0
 registry.terraform.io/hashicorp/vsphere 2.8.0
 registry.terraform.io/hashicorp/vsphere 2.8.1
 registry.terraform.io/hashicorp/vsphere 2.8.2
+registry.terraform.io/hashicorp/vsphere 2.8.3

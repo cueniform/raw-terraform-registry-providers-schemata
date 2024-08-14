@@ -28,3 +28,4 @@ registry.terraform.io/hashicorp/nomad 2.1.0
 registry.terraform.io/hashicorp/nomad 2.1.1
 registry.terraform.io/hashicorp/nomad 2.2.0
 registry.terraform.io/hashicorp/nomad 2.3.0
+registry.terraform.io/hashicorp/nomad 2.3.1

@@ -91,3 +91,4 @@ registry.terraform.io/mongodb/mongodbatlas 1.17.3
 registry.terraform.io/mongodb/mongodbatlas 1.17.4
 registry.terraform.io/mongodb/mongodbatlas 1.17.5
 registry.terraform.io/mongodb/mongodbatlas 1.17.6
+registry.terraform.io/mongodb/mongodbatlas 1.18.0

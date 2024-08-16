@@ -54,3 +54,4 @@ registry.terraform.io/gitlabhq/gitlab 17.0.0
 registry.terraform.io/gitlabhq/gitlab 17.0.1
 registry.terraform.io/gitlabhq/gitlab 17.1.0
 registry.terraform.io/gitlabhq/gitlab 17.2.0
+registry.terraform.io/gitlabhq/gitlab 17.3.0

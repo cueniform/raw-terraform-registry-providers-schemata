@@ -165,3 +165,4 @@ registry.terraform.io/spectrocloud/spectrocloud 0.19.3
 registry.terraform.io/spectrocloud/spectrocloud 0.20.6
 registry.terraform.io/spectrocloud/spectrocloud 0.20.7
 registry.terraform.io/spectrocloud/spectrocloud 0.20.8
+registry.terraform.io/spectrocloud/spectrocloud 0.21.0

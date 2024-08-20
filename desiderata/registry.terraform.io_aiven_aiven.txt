@@ -110,3 +110,4 @@ registry.terraform.io/aiven/aiven 4.19.1
 registry.terraform.io/aiven/aiven 4.20.0
 registry.terraform.io/aiven/aiven 4.21.0
 registry.terraform.io/aiven/aiven 4.22.0
+registry.terraform.io/aiven/aiven 4.23.0

@@ -110,3 +110,4 @@ registry.terraform.io/pagerduty/pagerduty 3.15.2
 registry.terraform.io/pagerduty/pagerduty 3.15.3
 registry.terraform.io/pagerduty/pagerduty 3.15.4
 registry.terraform.io/pagerduty/pagerduty 3.15.5
+registry.terraform.io/pagerduty/pagerduty 3.15.6

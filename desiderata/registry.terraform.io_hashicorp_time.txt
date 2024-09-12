@@ -13,3 +13,4 @@ registry.terraform.io/hashicorp/time 0.11.0
 registry.terraform.io/hashicorp/time 0.11.1
 registry.terraform.io/hashicorp/time 0.11.2
 registry.terraform.io/hashicorp/time 0.12.0
+registry.terraform.io/hashicorp/time 0.12.1

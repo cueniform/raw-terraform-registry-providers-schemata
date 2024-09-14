@@ -108,3 +108,4 @@ registry.terraform.io/hashicorp/hcp 0.94.0
 registry.terraform.io/hashicorp/hcp 0.94.1
 registry.terraform.io/hashicorp/hcp 0.95.0
 registry.terraform.io/hashicorp/hcp 0.95.1
+registry.terraform.io/hashicorp/hcp 0.96.0

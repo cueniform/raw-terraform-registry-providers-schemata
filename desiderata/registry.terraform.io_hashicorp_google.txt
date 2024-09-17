@@ -269,3 +269,4 @@ registry.terraform.io/hashicorp/google 6.0.0
 registry.terraform.io/hashicorp/google 6.0.1
 registry.terraform.io/hashicorp/google 6.1.0
 registry.terraform.io/hashicorp/google 6.2.0
+registry.terraform.io/hashicorp/google 6.3.0

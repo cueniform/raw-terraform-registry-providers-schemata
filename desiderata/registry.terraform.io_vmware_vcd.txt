@@ -18,3 +18,4 @@ registry.terraform.io/vmware/vcd 3.11.0
 registry.terraform.io/vmware/vcd 3.12.0
 registry.terraform.io/vmware/vcd 3.12.1
 registry.terraform.io/vmware/vcd 3.13.0
+registry.terraform.io/vmware/vcd 3.14.0

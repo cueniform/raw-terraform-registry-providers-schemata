@@ -122,3 +122,5 @@ registry.terraform.io/strongdm/sdm 11.12.0
 registry.terraform.io/strongdm/sdm 11.12.1
 registry.terraform.io/strongdm/sdm 11.13.0
 registry.terraform.io/strongdm/sdm 11.13.1
+registry.terraform.io/strongdm/sdm 11.14.0
+registry.terraform.io/strongdm/sdm 11.14.1

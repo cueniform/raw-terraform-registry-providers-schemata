@@ -304,3 +304,4 @@ registry.terraform.io/jfrog/artifactory 12.0.0
 registry.terraform.io/jfrog/artifactory 12.1.0
 registry.terraform.io/jfrog/artifactory 12.2.0
 registry.terraform.io/jfrog/artifactory 12.3.0
+registry.terraform.io/jfrog/artifactory 12.3.1

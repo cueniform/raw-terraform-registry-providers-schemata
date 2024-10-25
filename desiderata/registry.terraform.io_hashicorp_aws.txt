@@ -318,3 +318,4 @@ registry.terraform.io/hashicorp/aws 5.69.0
 registry.terraform.io/hashicorp/aws 5.70.0
 registry.terraform.io/hashicorp/aws 5.72.0
 registry.terraform.io/hashicorp/aws 5.72.1
+registry.terraform.io/hashicorp/aws 5.73.0

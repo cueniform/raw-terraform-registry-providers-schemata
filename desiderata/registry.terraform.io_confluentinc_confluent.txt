@@ -101,3 +101,4 @@ registry.terraform.io/confluentinc/confluent 2.4.0
 registry.terraform.io/confluentinc/confluent 2.5.0
 registry.terraform.io/confluentinc/confluent 2.6.0
 registry.terraform.io/confluentinc/confluent 2.7.0
+registry.terraform.io/confluentinc/confluent 2.8.0

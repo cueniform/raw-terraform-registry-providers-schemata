@@ -92,3 +92,4 @@ registry.terraform.io/hashicorp/awscc 1.16.0
 registry.terraform.io/hashicorp/awscc 1.16.1
 registry.terraform.io/hashicorp/awscc 1.17.0
 registry.terraform.io/hashicorp/awscc 1.18.0
+registry.terraform.io/hashicorp/awscc 1.19.0

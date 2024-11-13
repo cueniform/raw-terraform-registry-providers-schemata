@@ -24,3 +24,4 @@ registry.terraform.io/anexia-it/anxcloud 0.6.0
 registry.terraform.io/anexia-it/anxcloud 0.6.1
 registry.terraform.io/anexia-it/anxcloud 0.6.2
 registry.terraform.io/anexia-it/anxcloud 0.6.4
+registry.terraform.io/anexia-it/anxcloud 0.6.5

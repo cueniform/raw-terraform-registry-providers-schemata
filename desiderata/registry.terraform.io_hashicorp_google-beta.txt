@@ -284,3 +284,4 @@ registry.terraform.io/hashicorp/google-beta 6.10.0
 registry.terraform.io/hashicorp/google-beta 6.11.0
 registry.terraform.io/hashicorp/google-beta 6.11.1
 registry.terraform.io/hashicorp/google-beta 6.11.2
+registry.terraform.io/hashicorp/google-beta 6.12.0

@@ -75,3 +75,4 @@ registry.terraform.io/datadog/datadog 3.46.0
 registry.terraform.io/datadog/datadog 3.47.0
 registry.terraform.io/datadog/datadog 3.48.0
 registry.terraform.io/datadog/datadog 3.48.1
+registry.terraform.io/datadog/datadog 3.49.0

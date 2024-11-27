@@ -100,3 +100,4 @@ registry.terraform.io/mongodb/mongodbatlas 1.21.1
 registry.terraform.io/mongodb/mongodbatlas 1.21.2
 registry.terraform.io/mongodb/mongodbatlas 1.21.3
 registry.terraform.io/mongodb/mongodbatlas 1.21.4
+registry.terraform.io/mongodb/mongodbatlas 1.22.0

@@ -57,3 +57,5 @@ registry.terraform.io/rancher/rancher2 4.3.0
 registry.terraform.io/rancher/rancher2 4.4.0
 registry.terraform.io/rancher/rancher2 5.0.0
 registry.terraform.io/rancher/rancher2 5.1.0
+registry.terraform.io/rancher/rancher2 5.2.0
+registry.terraform.io/rancher/rancher2 6.0.0

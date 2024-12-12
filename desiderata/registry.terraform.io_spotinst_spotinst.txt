@@ -225,3 +225,4 @@ registry.terraform.io/spotinst/spotinst 1.199.1
 registry.terraform.io/spotinst/spotinst 1.199.2
 registry.terraform.io/spotinst/spotinst 1.199.3
 registry.terraform.io/spotinst/spotinst 1.200.0
+registry.terraform.io/spotinst/spotinst 1.201.0

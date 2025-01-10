@@ -109,3 +109,4 @@ registry.terraform.io/grafana/grafana 3.15.0
 registry.terraform.io/grafana/grafana 3.15.1
 registry.terraform.io/grafana/grafana 3.15.2
 registry.terraform.io/grafana/grafana 3.15.3
+registry.terraform.io/grafana/grafana 3.16.0

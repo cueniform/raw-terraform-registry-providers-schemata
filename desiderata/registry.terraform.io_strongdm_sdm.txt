@@ -136,3 +136,4 @@ registry.terraform.io/strongdm/sdm 12.1.0
 registry.terraform.io/strongdm/sdm 12.2.0
 registry.terraform.io/strongdm/sdm 12.5.0
 registry.terraform.io/strongdm/sdm 12.6.0
+registry.terraform.io/strongdm/sdm 12.8.0

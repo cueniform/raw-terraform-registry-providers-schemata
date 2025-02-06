@@ -234,3 +234,5 @@ registry.terraform.io/spotinst/spotinst 1.205.1
 registry.terraform.io/spotinst/spotinst 1.206.0
 registry.terraform.io/spotinst/spotinst 1.207.0
 registry.terraform.io/spotinst/spotinst 1.208.0
+registry.terraform.io/spotinst/spotinst 1.209.0
+registry.terraform.io/spotinst/spotinst 1.209.1

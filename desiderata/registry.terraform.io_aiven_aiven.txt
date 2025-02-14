@@ -124,3 +124,4 @@ registry.terraform.io/aiven/aiven 4.32.0
 registry.terraform.io/aiven/aiven 4.33.0
 registry.terraform.io/aiven/aiven 4.34.0
 registry.terraform.io/aiven/aiven 4.34.1
+registry.terraform.io/aiven/aiven 4.34.2

@@ -18,3 +18,4 @@ registry.terraform.io/paloaltonetworks/panos 2.0.0-rc.1
 registry.terraform.io/paloaltonetworks/panos 2.0.0-rc.2
 registry.terraform.io/paloaltonetworks/panos 2.0.0-rc.3
 registry.terraform.io/paloaltonetworks/panos 2.0.0-rc.4
+registry.terraform.io/paloaltonetworks/panos 2.0.0-rc.5

@@ -72,3 +72,4 @@ registry.terraform.io/digitalocean/digitalocean 2.47.0
 registry.terraform.io/digitalocean/digitalocean 2.48.0
 registry.terraform.io/digitalocean/digitalocean 2.48.1
 registry.terraform.io/digitalocean/digitalocean 2.48.2
+registry.terraform.io/digitalocean/digitalocean 2.49.0

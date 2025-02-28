@@ -8,3 +8,4 @@ registry.terraform.io/hashicorp/cloudinit 2.3.2
 registry.terraform.io/hashicorp/cloudinit 2.3.3
 registry.terraform.io/hashicorp/cloudinit 2.3.4
 registry.terraform.io/hashicorp/cloudinit 2.3.5
+registry.terraform.io/hashicorp/cloudinit 2.3.6

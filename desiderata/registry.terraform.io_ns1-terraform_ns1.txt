@@ -55,3 +55,4 @@ registry.terraform.io/ns1-terraform/ns1 2.4.5
 registry.terraform.io/ns1-terraform/ns1 2.5.0
 registry.terraform.io/ns1-terraform/ns1 2.5.1
 registry.terraform.io/ns1-terraform/ns1 2.5.2
+registry.terraform.io/ns1-terraform/ns1 2.5.3

@@ -28,3 +28,4 @@ registry.terraform.io/azure/azapi 2.0.0-beta
 registry.terraform.io/azure/azapi 2.0.1
 registry.terraform.io/azure/azapi 2.1.0
 registry.terraform.io/azure/azapi 2.2.0
+registry.terraform.io/azure/azapi 2.3.0

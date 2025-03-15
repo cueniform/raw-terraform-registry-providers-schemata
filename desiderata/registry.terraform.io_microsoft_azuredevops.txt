@@ -31,3 +31,4 @@ registry.terraform.io/microsoft/azuredevops 1.5.0
 registry.terraform.io/microsoft/azuredevops 1.6.0
 registry.terraform.io/microsoft/azuredevops 1.7.0
 registry.terraform.io/microsoft/azuredevops 1.8.0
+registry.terraform.io/microsoft/azuredevops 1.8.1

@@ -27,3 +27,4 @@ registry.terraform.io/elastic/elasticstack 0.11.10
 registry.terraform.io/elastic/elasticstack 0.11.11
 registry.terraform.io/elastic/elasticstack 0.11.12
 registry.terraform.io/elastic/elasticstack 0.11.13
+registry.terraform.io/elastic/elasticstack 0.11.14

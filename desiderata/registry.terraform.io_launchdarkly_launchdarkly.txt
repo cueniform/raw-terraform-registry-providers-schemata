@@ -62,3 +62,4 @@ registry.terraform.io/launchdarkly/launchdarkly 2.22.0
 registry.terraform.io/launchdarkly/launchdarkly 2.23.0
 registry.terraform.io/launchdarkly/launchdarkly 2.23.1
 registry.terraform.io/launchdarkly/launchdarkly 2.24.0
+registry.terraform.io/launchdarkly/launchdarkly 2.25.0

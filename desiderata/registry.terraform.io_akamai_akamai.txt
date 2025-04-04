@@ -61,3 +61,4 @@ registry.terraform.io/akamai/akamai 6.5.0
 registry.terraform.io/akamai/akamai 6.6.0
 registry.terraform.io/akamai/akamai 6.6.1
 registry.terraform.io/akamai/akamai 7.0.0
+registry.terraform.io/akamai/akamai 7.1.0

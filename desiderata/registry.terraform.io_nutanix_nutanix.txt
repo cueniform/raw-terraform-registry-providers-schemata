@@ -25,3 +25,4 @@ registry.terraform.io/nutanix/nutanix 1.9.4
 registry.terraform.io/nutanix/nutanix 1.9.5
 registry.terraform.io/nutanix/nutanix 2.0.0
 registry.terraform.io/nutanix/nutanix 2.1.0
+registry.terraform.io/nutanix/nutanix 2.1.1

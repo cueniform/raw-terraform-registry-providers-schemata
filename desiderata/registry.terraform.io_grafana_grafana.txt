@@ -122,3 +122,4 @@ registry.terraform.io/grafana/grafana 3.21.0
 registry.terraform.io/grafana/grafana 3.22.0
 registry.terraform.io/grafana/grafana 3.22.1
 registry.terraform.io/grafana/grafana 3.22.2
+registry.terraform.io/grafana/grafana 3.22.3

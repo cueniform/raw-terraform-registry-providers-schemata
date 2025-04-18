@@ -218,3 +218,4 @@ registry.terraform.io/newrelic/newrelic 3.59.0
 registry.terraform.io/newrelic/newrelic 3.60.0
 registry.terraform.io/newrelic/newrelic 3.60.1
 registry.terraform.io/newrelic/newrelic 3.60.2
+registry.terraform.io/newrelic/newrelic 3.61.0

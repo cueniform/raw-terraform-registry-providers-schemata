@@ -155,3 +155,4 @@ registry.terraform.io/strongdm/sdm 14.0.0
 registry.terraform.io/strongdm/sdm 14.2.0
 registry.terraform.io/strongdm/sdm 14.3.0
 registry.terraform.io/strongdm/sdm 14.4.0
+registry.terraform.io/strongdm/sdm 14.5.0

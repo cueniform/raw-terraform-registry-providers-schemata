@@ -16,3 +16,4 @@ registry.terraform.io/hashicorp/http 3.4.2
 registry.terraform.io/hashicorp/http 3.4.3
 registry.terraform.io/hashicorp/http 3.4.4
 registry.terraform.io/hashicorp/http 3.4.5
+registry.terraform.io/hashicorp/http 3.5.0

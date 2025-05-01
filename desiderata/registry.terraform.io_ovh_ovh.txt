@@ -56,3 +56,4 @@ registry.terraform.io/ovh/ovh 1.7.0
 registry.terraform.io/ovh/ovh 1.8.0
 registry.terraform.io/ovh/ovh 2.0.0
 registry.terraform.io/ovh/ovh 2.1.0
+registry.terraform.io/ovh/ovh 2.2.0

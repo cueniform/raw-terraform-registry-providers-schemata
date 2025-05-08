@@ -66,3 +66,4 @@ registry.terraform.io/auth0/auth0 1.16.0
 registry.terraform.io/auth0/auth0 1.17.0
 registry.terraform.io/auth0/auth0 1.18.0
 registry.terraform.io/auth0/auth0 1.19.0
+registry.terraform.io/auth0/auth0 1.19.1

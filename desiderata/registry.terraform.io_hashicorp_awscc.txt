@@ -115,3 +115,4 @@ registry.terraform.io/hashicorp/awscc 1.38.0
 registry.terraform.io/hashicorp/awscc 1.39.0
 registry.terraform.io/hashicorp/awscc 1.39.0-alpha1
 registry.terraform.io/hashicorp/awscc 1.40.0
+registry.terraform.io/hashicorp/awscc 1.41.0

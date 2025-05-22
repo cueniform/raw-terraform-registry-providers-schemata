@@ -84,3 +84,4 @@ registry.terraform.io/sumologic/sumologic 3.0.8
 registry.terraform.io/sumologic/sumologic 3.0.9
 registry.terraform.io/sumologic/sumologic 3.0.10
 registry.terraform.io/sumologic/sumologic 3.0.11
+registry.terraform.io/sumologic/sumologic 3.0.12

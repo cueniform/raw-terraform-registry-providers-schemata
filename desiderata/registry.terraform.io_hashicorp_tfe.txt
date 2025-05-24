@@ -88,3 +88,4 @@ registry.terraform.io/hashicorp/tfe 0.65.0
 registry.terraform.io/hashicorp/tfe 0.65.1
 registry.terraform.io/hashicorp/tfe 0.65.2
 registry.terraform.io/hashicorp/tfe 0.65.4-alpha.1
+registry.terraform.io/hashicorp/tfe 0.66.0

@@ -93,4 +93,5 @@ registry.terraform.io/datadog/datadog 3.60.1
 registry.terraform.io/datadog/datadog 3.61.0
 registry.terraform.io/datadog/datadog 3.62.0
 registry.terraform.io/datadog/datadog 3.63.0
+registry.terraform.io/datadog/datadog 3.64.0
 registry.terraform.io/datadog/datadog 3.65.0

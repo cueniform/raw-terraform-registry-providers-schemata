@@ -355,3 +355,4 @@ registry.terraform.io/hashicorp/aws 5.99.0
 registry.terraform.io/hashicorp/aws 5.99.1
 registry.terraform.io/hashicorp/aws 6.0.0-beta1
 registry.terraform.io/hashicorp/aws 6.0.0-beta2
+registry.terraform.io/hashicorp/aws 6.0.0-beta3

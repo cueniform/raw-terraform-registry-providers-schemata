@@ -323,3 +323,4 @@ registry.terraform.io/jfrog/artifactory 12.9.1
 registry.terraform.io/jfrog/artifactory 12.9.2
 registry.terraform.io/jfrog/artifactory 12.9.3
 registry.terraform.io/jfrog/artifactory 12.9.4
+registry.terraform.io/jfrog/artifactory 12.9.5
